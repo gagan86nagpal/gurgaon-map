@@ -736,8 +736,8 @@ footer p{max-width:90ch;margin:0}
   <div class="grp"><span class="eyebrow">Layers</span>
   <div class="chips" role="group" aria-label="Map layers">
     <button class="chip layer" data-l="metro" aria-pressed="true">Metro</button>
-    <button class="chip layer" data-l="landmarks" aria-pressed="true">Landmarks</button>
-    <button class="chip layer" data-l="placenames" aria-pressed="true">Place names</button>
+    <button class="chip layer" data-l="landmarks" aria-pressed="false">Landmarks</button>
+    <button class="chip layer" data-l="placenames" aria-pressed="false">Place names</button>
     <button class="chip layer" data-l="minor" aria-pressed="true">Minor roads</button>
     <button class="chip layer" data-l="societies" aria-pressed="true">Society names when zoomed</button>
   </div></div>
@@ -1066,6 +1066,7 @@ svg.addEventListener('keydown', ev=>{
 // ---- layers ------------------------------------------------------------
 const LAYER = {metro:['g-metro','g-stations'], landmarks:['g-landmarks','g-entries','g-areas'], minor:['g-roads-minor'], societies:['g-soc'], placenames:[]};
 for(const c of document.querySelectorAll('.chip.layer')){
+  if(c.getAttribute('aria-pressed')!=='true'){ for(const id of LAYER[c.dataset.l]) G(id).classList.add('hide'); if(c.dataset.l==='placenames') svg.classList.add('nonames'); }
   c.addEventListener('click', ()=>{ const on = c.getAttribute('aria-pressed')==='true'; c.setAttribute('aria-pressed', on?'false':'true'); for(const id of LAYER[c.dataset.l]) G(id).classList.toggle('hide', on); if(c.dataset.l==='placenames') svg.classList.toggle('nonames', on); });
 }
 
