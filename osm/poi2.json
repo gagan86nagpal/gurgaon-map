@@ -1,0 +1,3445 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-15T15:22:01Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 249132377,
+  "lat": 28.4547327,
+  "lon": 77.1047103,
+  "tags": {
+    "barrier": "gate",
+    "leisure": "golf_course",
+    "name": "DLF Golf Links Golf Course"
+  }
+},
+{
+  "type": "node",
+  "id": 249221479,
+  "lat": 28.4623384,
+  "lon": 77.0658862,
+  "tags": {
+    "barrier": "gate",
+    "created_by": "JOSM",
+    "material": "metal",
+    "name": "South City - I Gate",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 266650106,
+  "lat": 28.4186114,
+  "lon": 77.0453995,
+  "tags": {
+    "barrier": "gate",
+    "ele": "177.540000",
+    "name": "South City - II Gate",
+    "wpt_description": "Sat May 24 18:08:09 2008"
+  }
+},
+{
+  "type": "node",
+  "id": 312920685,
+  "lat": 28.4741492,
+  "lon": 77.0769923,
+  "tags": {
+    "name": "Sushant Lok I",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 312920709,
+  "lat": 28.4874910,
+  "lon": 77.0709797,
+  "tags": {
+    "alt_name": "Sirhaul Village",
+    "name": "Sirhaul",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 312921201,
+  "lat": 28.4320628,
+  "lon": 77.0383684,
+  "tags": {
+    "alt_name": "Islampur Village",
+    "name": "Islampur",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 312921205,
+  "lat": 28.4597391,
+  "lon": 77.0612091,
+  "tags": {
+    "name": "South City",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 325428810,
+  "lat": 28.5115958,
+  "lon": 77.0364654,
+  "tags": {
+    "name": "Palam Vihar",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 332066852,
+  "lat": 28.4629930,
+  "lon": 77.0728175,
+  "tags": {
+    "amenity": "police",
+    "check_date": "2025-02-23",
+    "name": "Sushant Lok Police Station"
+  }
+},
+{
+  "type": "node",
+  "id": 332066858,
+  "lat": 28.4637070,
+  "lon": 77.0729645,
+  "tags": {
+    "amenity": "fire_station",
+    "check_date": "2025-02-23",
+    "name": "Sushant Lok Fire Station"
+  }
+},
+{
+  "type": "node",
+  "id": 355436035,
+  "lat": 28.4164250,
+  "lon": 77.0436967,
+  "tags": {
+    "amenity": "post_office",
+    "name": "South City II Post Office",
+    "pin_code": "122018"
+  }
+},
+{
+  "type": "node",
+  "id": 438035810,
+  "lat": 28.5013247,
+  "lon": 77.0894338,
+  "tags": {
+    "name": "Trident Hotel",
+    "operator": "Trident",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 535297593,
+  "lat": 28.4812716,
+  "lon": 77.0930017,
+  "tags": {
+    "name": "Sikanderpur",
+    "name:en": "Sikanderpur",
+    "name:fa": "سکندر پور",
+    "name:hi": "सिकंदरपुर",
+    "name:ru": "Сикандарпур",
+    "name:ur": "سکندر پور",
+    "network": "Delhi Metro",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/23)",
+    "operator": "Delhi Metro Rail Corporation Limited",
+    "public_transport": "station",
+    "railway": "station",
+    "ref": "SKRP",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q11307061",
+    "wikipedia": "en:Sikanderpur metro station"
+  }
+},
+{
+  "type": "node",
+  "id": 574363832,
+  "lat": 28.4184887,
+  "lon": 77.0456182,
+  "tags": {
+    "information": "map",
+    "map_size": "region",
+    "map_type": "street",
+    "name": "South City II",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 765413621,
+  "lat": 28.4337620,
+  "lon": 77.0877572,
+  "tags": {
+    "alt_name": "Wazirabad Village",
+    "name": "Wazirabad",
+    "name:en": "Wazirabad",
+    "name:hi": "वजीराबाद",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 789442314,
+  "lat": 28.3932757,
+  "lon": 77.0484201,
+  "tags": {
+    "name": "Badshahpur",
+    "name:en": "Badshahpur",
+    "name:hi": "बादशाहपुर",
+    "name:ur": "بادشاہ پور",
+    "place": "locality",
+    "wikidata": "Q4841149",
+    "wikipedia": "en:Badshahpur"
+  }
+},
+{
+  "type": "node",
+  "id": 1567946882,
+  "lat": 28.4018679,
+  "lon": 76.9838785,
+  "tags": {
+    "name": "Islampur",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 1648206921,
+  "lat": 28.4895112,
+  "lon": 77.0998782,
+  "tags": {
+    "alt_name": "Nathupur Village",
+    "name": "Nathupur",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 1988848900,
+  "lat": 28.4809969,
+  "lon": 77.0944367,
+  "tags": {
+    "legal_entity": "Rapid Metrorail Gurgaon Limited",
+    "name": "Sikanderpur RMRG Station",
+    "name:hi": "सिकंदरपुर आर.एम.आर.जी. स्टेशन",
+    "network": "Rapid Metro Gurgaon",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/23)",
+    "operator": "Haryana Mass Rapid Transport Corporation Limited",
+    "public_transport": "station",
+    "railway": "station",
+    "ref": "SKRP",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2721026098,
+  "lat": 28.4642280,
+  "lon": 77.0767240,
+  "tags": {
+    "name": "Sushant Lok I",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 2721690488,
+  "lat": 28.4499797,
+  "lon": 77.0877451,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "yes",
+    "foot": "yes",
+    "horse": "permissive",
+    "locked": "no",
+    "material": "steel",
+    "motor_vehicle": "no",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2721729425,
+  "lat": 28.4545693,
+  "lon": 77.0826249,
+  "tags": {
+    "admin_level": "10",
+    "name": "Sushant Lok I",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 2747679781,
+  "lat": 28.4128327,
+  "lon": 77.0345031,
+  "tags": {
+    "name": "Vipul World",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 2833058753,
+  "lat": 28.5648350,
+  "lon": 77.1226566,
+  "tags": {
+    "name": "Terminal 1 IGI Airport",
+    "name:fa": "ترمینال ۱ فرودگاه بین‌المللی ایندیرا گاندی",
+    "name:hi": "टर्मिनल 1 आईजीआई एयरपोर्ट",
+    "network": "Delhi Metro",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/22)",
+    "operator": "Delhi Metro Rail Corporation Limited",
+    "public_transport": "station",
+    "railway": "station",
+    "ref": "IGDA",
+    "station": "subway",
+    "subway": "yes",
+    "wikidata": "Q28172567",
+    "wikipedia": "en:Terminal 1-IGI Airport metro station"
+  }
+},
+{
+  "type": "node",
+  "id": 2892662230,
+  "lat": 28.4345999,
+  "lon": 77.0592381,
+  "tags": {
+    "name": "HUDA Market",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "node",
+  "id": 3736001854,
+  "lat": 28.5164657,
+  "lon": 77.0339696,
+  "tags": {
+    "internet_access": "no",
+    "name": "Palam Vihar",
+    "network": "IR",
+    "operator": "NR",
+    "public_transport": "halt",
+    "railway": "halt",
+    "ref": "PLVR",
+    "train": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4071085016,
+  "lat": 28.4170701,
+  "lon": 77.0506999,
+  "tags": {
+    "amenity": "post_office",
+    "name": "South City II Post Office",
+    "pin_code": "122018"
+  }
+},
+{
+  "type": "node",
+  "id": 4146170287,
+  "lat": 28.4624392,
+  "lon": 77.0896769,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4146172803,
+  "lat": 28.4639324,
+  "lon": 77.0893414,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4212555609,
+  "lat": 28.5115274,
+  "lon": 77.0420264,
+  "tags": {
+    "amenity": "cinema",
+    "name": "Big Cinemas Palam Vihar"
+  }
+},
+{
+  "type": "node",
+  "id": 4212577540,
+  "lat": 28.5086533,
+  "lon": 77.0311908,
+  "tags": {
+    "amenity": "marketplace",
+    "name": "Palam Vihar Vyapar kendra"
+  }
+},
+{
+  "type": "node",
+  "id": 4212600960,
+  "lat": 28.5149894,
+  "lon": 77.0344564,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "covered": "no",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Palam Vihar bus stop",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/25)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4252796216,
+  "lat": 28.5007712,
+  "lon": 77.0398992,
+  "tags": {
+    "name": "Palam Vihar Extension",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 4798577251,
+  "lat": 28.4817361,
+  "lon": 77.0942535,
+  "tags": {
+    "junction": "yes",
+    "name": "Sikanderpur Chowk"
+  }
+},
+{
+  "type": "node",
+  "id": 5350937424,
+  "lat": 28.4962947,
+  "lon": 77.0891919,
+  "tags": {
+    "name": "DLF Cyber Hub",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 5698863055,
+  "lat": 28.4645841,
+  "lon": 76.9828171,
+  "tags": {
+    "internet_access": "no",
+    "name": "Basai Dhankot",
+    "network": "IR",
+    "operator": "NR",
+    "public_transport": "station",
+    "railway": "station",
+    "ref": "BDXT",
+    "train": "yes",
+    "wikidata": "Q63355795"
+  }
+},
+{
+  "type": "node",
+  "id": 5777601807,
+  "lat": 28.4812957,
+  "lon": 77.0929927,
+  "tags": {
+    "name": "Sikanderpur",
+    "name:en": "Sikanderpur",
+    "name:hi": "सिकंदरपुर",
+    "network": "Delhi Metro",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/23)",
+    "operator": "Delhi Metro Rail Corporation Limited",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "SKRP",
+    "subway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5777631192,
+  "lat": 28.5648680,
+  "lon": 77.1226721,
+  "tags": {
+    "name": "Terminal 1 IGI Airport",
+    "network": "Delhi Metro",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/22)",
+    "operator": "Delhi Metro Rail Corporation Limited",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "IGDA",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6005139388,
+  "lat": 28.5645266,
+  "lon": 77.1209496,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "level": "0",
+    "name": "Shuttle bus to Terminal 3",
+    "name:en": "Shuttle Bus to Terminal 3. ₹25",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 6063296164,
+  "lat": 28.4465523,
+  "lon": 77.0281357,
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "Rajiv Chowk Mosque",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "node",
+  "id": 6071161053,
+  "lat": 28.4813386,
+  "lon": 77.0923940,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Sikanderpur Metro Station",
+    "name:en": "Sikanderpur Metro Station",
+    "name:hi": "सिकंदरपुर मेट्रो स्टेशन",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6088400755,
+  "lat": 28.4360145,
+  "lon": 77.0103267,
+  "tags": {
+    "crossing": "informal",
+    "highway": "crossing",
+    "name": "Hero Honda Chowk",
+    "name:hi": "हीरो होंडा चौक"
+  }
+},
+{
+  "type": "node",
+  "id": 6221553473,
+  "lat": 28.4277156,
+  "lon": 77.0371069,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Subhash Chowk",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6547772094,
+  "lat": 28.4812437,
+  "lon": 77.0930074,
+  "tags": {
+    "name": "Sikanderpur",
+    "name:en": "Sikanderpur",
+    "name:hi": "सिकंदरपुर",
+    "network": "Delhi Metro",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/23)",
+    "operator": "Delhi Metro Rail Corporation Limited",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "SKRP",
+    "subway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6547772095,
+  "lat": 28.4809994,
+  "lon": 77.0944203,
+  "tags": {
+    "legal_entity": "Rapid Metrorail Gurgaon Limited",
+    "name": "Sikanderpur",
+    "name:en": "Sikanderpur",
+    "name:hi": "सिकंदरपुर",
+    "network": "Rapid Metro Gurgaon",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/23)",
+    "operator": "Haryana Mass Rapid Transport Corporation Limited",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "SKRP",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6820758891,
+  "lat": 28.5555490,
+  "lon": 77.0853221,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Shuttle Bus to Terminal 1 - Pillar 10",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 6952025655,
+  "lat": 28.4674734,
+  "lon": 77.0822644,
+  "tags": {
+    "addr:city": "Gurugram",
+    "addr:district": "Gurugram",
+    "addr:housenumber": "R1",
+    "addr:postcode": "122022",
+    "addr:street": "Galleria Market",
+    "air_conditioning": "yes",
+    "amenity": "cafe",
+    "branch": "Galleria Market, Gurugram",
+    "check_date": "2025-02-23",
+    "email": "bahrisons@outlook.com",
+    "level": "2",
+    "mobile": "+917678609336",
+    "name": "Bahrisons Galleria Market Book cafe",
+    "opening_hours": "Mo-Su 10:30-20:00",
+    "operator": "Bahrisons",
+    "phone": "+911244562264",
+    "second_hand": "no",
+    "shop": "books",
+    "website": "https://www.booksatbahri.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 7138493261,
+  "lat": 28.5781838,
+  "lon": 77.1178174,
+  "tags": {
+    "addr:district": "New Delhi",
+    "addr:full": "Palam",
+    "addr:postcode": "110010",
+    "addr:state": "Delhi",
+    "amenity": "clinic",
+    "contact:phone": "25687194",
+    "description": "Dispensaries",
+    "health_facility:type": "dispensary",
+    "healthcare": "centre",
+    "name": "Air Force Station Palam",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 7168803860,
+  "lat": 28.4325690,
+  "lon": 77.0869120,
+  "tags": {
+    "addr:district": "Gurugram",
+    "addr:full": "Wazirabad, Sector 52, Gurugram",
+    "addr:postcode": "122022",
+    "addr:state": "Haryana",
+    "description": "Primary Health Centre",
+    "healthcare": "centre",
+    "name": "Primary Health Centre, Wazirabad",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 7306565441,
+  "lat": 28.4497532,
+  "lon": 77.0876897,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "yes",
+    "foot": "yes",
+    "horse": "permissive",
+    "locked": "no",
+    "material": "steel",
+    "motor_vehicle": "no",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8064593905,
+  "lat": 28.4809937,
+  "lon": 77.0944544,
+  "tags": {
+    "legal_entity": "Rapid Metrorail Gurgaon Limited",
+    "name": "Sikanderpur",
+    "name:en": "Sikanderpur",
+    "name:hi": "सिकंदरपुर",
+    "network": "Rapid Metro Gurgaon",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/23)",
+    "operator": "Haryana Mass Rapid Transport Corporation Limited",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "SKRP",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8393348400,
+  "lat": 28.4854624,
+  "lon": 77.0086885,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Gurugram Railway Station",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9240935053,
+  "lat": 28.5508070,
+  "lon": 77.0452914,
+  "tags": {
+    "name": "Yashobhoomi Dwarka Sector 25",
+    "name:hi": "यशोभूमि द्वारका सेक्टर - २५",
+    "network": "Delhi Metro",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/22)",
+    "operator": "Delhi Metro Rail Corporation Limited",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "IICC",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9240935054,
+  "lat": 28.5508515,
+  "lon": 77.0453294,
+  "tags": {
+    "name": "Yashobhoomi Dwarka Sector 25",
+    "name:hi": "यशोभूमि द्वारका सेक्टर - २५",
+    "network": "Delhi Metro",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/22)",
+    "operator": "Delhi Metro Rail Corporation Limited",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "IICC",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9937092489,
+  "lat": 28.5648599,
+  "lon": 77.1226212,
+  "tags": {
+    "name": "Terminal 1 IGI Airport",
+    "network": "Delhi Metro",
+    "note": "Contributors are requested to not edit the \"network\" and the \"operator\" tags. (2023/06/22)",
+    "operator": "Delhi Metro Rail Corporation Limited",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "IGDA",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10064542582,
+  "lat": 28.4803345,
+  "lon": 77.0939011,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "description": "Route No - 112 (Kishan Chowk Palam Vihar to Sector 55/56 Metro Station)",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Sikanderpur Metro Station",
+    "name:en": "Sikanderpur Metro Station",
+    "name:hi": "सिकंदरपुर मेट्रो स्टेशन",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10127533004,
+  "lat": 28.4723223,
+  "lon": 77.0933688,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10127533007,
+  "lat": 28.4721296,
+  "lon": 77.0935196,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "maxwidth:physical": "1.9",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "source:maxwidth:physical": "ARCore",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10127538926,
+  "lat": 28.4707912,
+  "lon": 77.0891322,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10127538927,
+  "lat": 28.4707580,
+  "lon": 77.0890333,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10869059232,
+  "lat": 28.4313538,
+  "lon": 77.0953808,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10895371698,
+  "lat": 28.4102815,
+  "lon": 77.0684926,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "description": "Route Number 111E",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Nirvana Country",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "ref": "98",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10916618084,
+  "lat": 28.4607030,
+  "lon": 77.0809710,
+  "tags": {
+    "amenity": "police",
+    "name": "Police Station Sushant Lok"
+  }
+},
+{
+  "type": "node",
+  "id": 11015529454,
+  "lat": 28.4680915,
+  "lon": 77.0877030,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11037384825,
+  "lat": 28.4803227,
+  "lon": 77.0943651,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Sikanderpur Metro Station",
+    "name:en": "Sikanderpur Metro Station",
+    "name:hi": "सिकंदरपुर मेट्रो स्टेशन",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "ref": "330C",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11091626076,
+  "lat": 28.4283365,
+  "lon": 77.0587858,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "description": "Route Number 111",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Mayfield Garden",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "ref": "529",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11093572416,
+  "lat": 28.4479354,
+  "lon": 77.0880568,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11093572417,
+  "lat": 28.4481093,
+  "lon": 77.0879743,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11093572469,
+  "lat": 28.4561246,
+  "lon": 77.0894476,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11093572471,
+  "lat": 28.4562125,
+  "lon": 77.0894532,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11093572488,
+  "lat": 28.4621886,
+  "lon": 77.0896963,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11093572490,
+  "lat": 28.4635180,
+  "lon": 77.0895166,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11093572495,
+  "lat": 28.4678472,
+  "lon": 77.0878075,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "designated",
+    "foot": "designated",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11093572500,
+  "lat": 28.4716679,
+  "lon": 77.0915205,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "maxwidth:physical": "0.5",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "source:maxwidth:physical": "ARCore",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11182549231,
+  "lat": 28.4599658,
+  "lon": 77.0777975,
+  "tags": {
+    "access": "private",
+    "barrier": "gate",
+    "material": "metal",
+    "name": "Sushant Lok Phase 1 Block B",
+    "name:en": "Sushant Lok Phase 1 Block B",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11203142798,
+  "lat": 28.5508323,
+  "lon": 77.0453073,
+  "tags": {
+    "alt_name": "IICC Dwarka Sector 25",
+    "name": "Yashobhoomi Dwarka Sector 25",
+    "name:fa": "یاشوبهومی دوارکا، بخش ۲۵",
+    "name:hi": "यशोभूमि द्वारका सेक्टर - २५",
+    "network": "Delhi Metro",
+    "network:wikidata": "Q271195",
+    "operator": "Delhi Metro Rail Corporation Limited",
+    "operator:wikidata": "Q1029339",
+    "public_transport": "station",
+    "railway": "station",
+    "ref": "IICC",
+    "station": "subway",
+    "subway": "yes",
+    "wikidata": "Q112787125",
+    "wikipedia": "en:Yashobhoomi Dwarka Sector - 25 metro station"
+  }
+},
+{
+  "type": "node",
+  "id": 11283899254,
+  "lat": 28.4707090,
+  "lon": 77.0891937,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11283899255,
+  "lat": 28.4706623,
+  "lon": 77.0890967,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Chakkarpur Bundh",
+    "name:en": "Eco Restoration — Chakkarpur Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11283899259,
+  "lat": 28.4371157,
+  "lon": 77.0936016,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11630824454,
+  "lat": 28.4506049,
+  "lon": 77.0643698,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Sector 45/South City 1",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/25)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11630908389,
+  "lat": 28.4445246,
+  "lon": 77.0585474,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "check_date": "2026-04-22",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Unitech Cyber Park (B)",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/25)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11633737068,
+  "lat": 28.4396234,
+  "lon": 77.0883169,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Wazirabad",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11633737880,
+  "lat": 28.4514599,
+  "lon": 77.0656700,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Sector 45/South City 1",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11633746983,
+  "lat": 28.4259755,
+  "lon": 77.0566337,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Mayfield Garden",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/20)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11834312808,
+  "lat": 28.4100049,
+  "lon": 77.0686973,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Nirvana Country",
+    "network": "Gurugaman",
+    "network:en": "Gurugaman",
+    "note": "Contributors are requested to not edit the \"network\", \"network:en\", \"operator\", \"operator:en\" and \"operator:hi\" tags. (2024/05/25)",
+    "operator": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:en": "Gurugram Metropolitan City Bus Limited (GMCBL)",
+    "operator:hi": "गुरुग्राम मेट्रोपोलिटन सिटी बस लिमिटेड",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12087087721,
+  "lat": 28.4231061,
+  "lon": 77.0613263,
+  "tags": {
+    "barrier": "gate",
+    "name": "C Block, Mayfield Garden",
+    "operator": "RWA, C Block, Mayfield Garden"
+  }
+},
+{
+  "type": "node",
+  "id": 12149777783,
+  "lat": 28.4413505,
+  "lon": 77.0919243,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12149777784,
+  "lat": 28.4414482,
+  "lon": 77.0918600,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12149777785,
+  "lat": 28.4544858,
+  "lon": 77.0889365,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12401406843,
+  "lat": 28.5852029,
+  "lon": 77.0714840,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-12-07",
+    "level": "0",
+    "name": "Kali Ghata Sweets Chaat Bakery"
+  }
+},
+{
+  "type": "node",
+  "id": 13124497226,
+  "lat": 28.4345697,
+  "lon": 77.0798032,
+  "tags": {
+    "addr:city": "Gurugram",
+    "addr:district": "Gurugram",
+    "addr:village": "Wazirabad",
+    "amenity": "school",
+    "name": "Government Model Senior Secondary School, Wazirabad",
+    "name:en": "Government Model Senior Secondary School, Wazirabad"
+  }
+},
+{
+  "type": "node",
+  "id": 13124497227,
+  "lat": 28.4343321,
+  "lon": 77.0803974,
+  "tags": {
+    "addr:city": "Gurugram",
+    "addr:district": "Gurugram",
+    "addr:village": "Wazirabad",
+    "alt_name": "Govt Boys Model Sanskriti Primary School, Wazirabad",
+    "amenity": "school",
+    "name": "Government Boys Model Sanskriti Primary School, Wazirabad"
+  }
+},
+{
+  "type": "node",
+  "id": 13237235295,
+  "lat": 28.4545392,
+  "lon": 77.0888341,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no",
+    "material": "steel",
+    "name": "Eco Restoration — Wazirabad Bundh",
+    "name:en": "Eco Restoration — Wazirabad Bundh",
+    "operator": "Haryana Forest Department",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13294710269,
+  "lat": 28.5490353,
+  "lon": 77.1194315,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Shuttle Bus for Terminal 1"
+  }
+},
+{
+  "type": "node",
+  "id": 13369737988,
+  "lat": 28.4634665,
+  "lon": 77.0604620,
+  "tags": {
+    "addr:city": "Gurgaon",
+    "addr:housenumber": "The Sixth Element School | South City 1 Campus",
+    "addr:postcode": "122001",
+    "addr:street": "A-B Block Road, South City 1, Near Signature Towers",
+    "name": "The Sixth Element School | South City 1 Campus",
+    "office": "educational_institution",
+    "phone": "9716811986",
+    "website": "The Sixth Element School | South City 1 Campus"
+  }
+},
+{
+  "type": "node",
+  "id": 13999730702,
+  "lat": 28.5144089,
+  "lon": 77.0353507,
+  "tags": {
+    "addr:city": "Gurgaon",
+    "addr:country": "IN",
+    "addr:postcode": "122017",
+    "addr:state": "Haryana",
+    "addr:street": "Shree Ram Mandir Complex, H Block, Palam Vihar, Opposite Celebrity Home",
+    "name": "CUT&STYLE Salon - Palam Vihar, Gurugram",
+    "phone": "078258 93508",
+    "website": "https://salons.cutandstyle.in/palam-vihar-gurugram-34318/home?utm_source=GMB/"
+  }
+},
+{
+  "type": "way",
+  "id": 24501701,
+  "center": {
+    "lat": 28.4691967,
+    "lon": 77.0660875
+  },
+  "tags": {
+    "barrier": "wall",
+    "leisure": "park",
+    "name": "Leisure Valley Park",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "way",
+  "id": 24520729,
+  "center": {
+    "lat": 28.4181105,
+    "lon": 77.0428598
+  },
+  "tags": {
+    "highway": "secondary",
+    "maxspeed": "40",
+    "name": "South City II",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 27061753,
+  "center": {
+    "lat": 28.4179069,
+    "lon": 77.0429031
+  },
+  "tags": {
+    "highway": "secondary",
+    "maxspeed": "40",
+    "name": "South City II",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 28517901,
+  "center": {
+    "lat": 28.4189036,
+    "lon": 77.0453172
+  },
+  "tags": {
+    "highway": "secondary",
+    "name": "South City II",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 28534422,
+  "center": {
+    "lat": 28.4664845,
+    "lon": 77.0581249
+  },
+  "tags": {
+    "landuse": "commercial",
+    "name": "Signature Tower"
+  }
+},
+{
+  "type": "way",
+  "id": 28534454,
+  "center": {
+    "lat": 28.4474884,
+    "lon": 77.0328110
+  },
+  "tags": {
+    "alt_name": "Sohna Road",
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Rajiv Chowk Underpass",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 34940767,
+  "center": {
+    "lat": 28.4430912,
+    "lon": 77.0561074
+  },
+  "tags": {
+    "addr:city": "Gurgaon",
+    "addr:street": "Arya Samaj Rd",
+    "area": "yes",
+    "barrier": "wall",
+    "is_in:city": "Gurgaon",
+    "is_in:country": "India",
+    "is_in:state": "Haryana",
+    "is_in:state_code": "HR",
+    "landuse": "commercial",
+    "name": "Unitech Cyber Park",
+    "website": "https://www.unitechgroup.com/pdetail/commercial-projects-22/gurgaon/completed-projects/none-93-0-29--unitech-cyber-park"
+  }
+},
+{
+  "type": "way",
+  "id": 35463239,
+  "center": {
+    "lat": 28.5021059,
+    "lon": 77.0568284
+  },
+  "tags": {
+    "leisure": "park",
+    "name": "Tau Devi Lal Park",
+    "name:etymology:wikidata": "Q1764533"
+  }
+},
+{
+  "type": "way",
+  "id": 38108841,
+  "center": {
+    "lat": 28.4184206,
+    "lon": 77.1048590
+  },
+  "tags": {
+    "barrier": "wall",
+    "name": "Ghata Sector 56 Substation",
+    "power": "substation",
+    "substation": "substation",
+    "voltage": "220000;66000"
+  }
+},
+{
+  "type": "way",
+  "id": 38108844,
+  "center": {
+    "lat": 28.4841112,
+    "lon": 77.0956937
+  },
+  "tags": {
+    "name": "Nathupur Substation",
+    "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+    "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+    "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+    "power": "substation",
+    "voltage": "66000"
+  }
+},
+{
+  "type": "way",
+  "id": 44888165,
+  "center": {
+    "lat": 28.4164760,
+    "lon": 77.0437490
+  },
+  "tags": {
+    "building": "yes",
+    "name": "South City 2 Maintainence Office"
+  }
+},
+{
+  "type": "way",
+  "id": 45769561,
+  "center": {
+    "lat": 28.4438373,
+    "lon": 77.0567276
+  },
+  "tags": {
+    "addr:city": "Gurugram",
+    "addr:country": "IN",
+    "addr:district": "Gurgaon",
+    "addr:postcode": "122022",
+    "addr:state": "Haryana",
+    "building": "commercial",
+    "name": "Unitech Cyber Park Tower-D",
+    "name:en": "Unitech Cyber Park Tower-D",
+    "note": "Durga Colony,Sector 39"
+  }
+},
+{
+  "type": "way",
+  "id": 51419058,
+  "center": {
+    "lat": 28.5548532,
+    "lon": 77.0841717
+  },
+  "tags": {
+    "addr:street": "インドデリー空港",
+    "aeroway": "terminal",
+    "building": "yes",
+    "internet_access": "wlan",
+    "layer": "1",
+    "name": "Terminal 3",
+    "name:fa": "ترمینال ۳",
+    "name:hi": "टर्मिनल 3"
+  }
+},
+{
+  "type": "way",
+  "id": 51419062,
+  "center": {
+    "lat": 28.5512056,
+    "lon": 77.0854457
+  },
+  "tags": {
+    "aeroway": "terminal",
+    "building": "yes",
+    "name": "Terminal 3 Domestic"
+  }
+},
+{
+  "type": "way",
+  "id": 51419112,
+  "center": {
+    "lat": 28.5580671,
+    "lon": 77.0812344
+  },
+  "tags": {
+    "aeroway": "terminal",
+    "building": "yes",
+    "name": "Terminal 3 (International)"
+  }
+},
+{
+  "type": "way",
+  "id": 61370308,
+  "center": {
+    "lat": 28.4327439,
+    "lon": 77.0931117
+  },
+  "tags": {
+    "leisure": "park",
+    "name": "Tau Devi Lal Bio-Diversity and Botonical Garden",
+    "name:etymology:wikidata": "Q1764533"
+  }
+},
+{
+  "type": "way",
+  "id": 81509337,
+  "center": {
+    "lat": 28.3538269,
+    "lon": 77.0032322
+  },
+  "tags": {
+    "leisure": "golf_course",
+    "name": "Golden Green Golf Course"
+  }
+},
+{
+  "type": "way",
+  "id": 122805600,
+  "center": {
+    "lat": 28.4672895,
+    "lon": 77.0816202
+  },
+  "tags": {
+    "landuse": "retail",
+    "name": "DLF Galleria Market"
+  }
+},
+{
+  "type": "way",
+  "id": 125775480,
+  "center": {
+    "lat": 28.4681147,
+    "lon": 77.0691251
+  },
+  "tags": {
+    "landuse": "recreation_ground",
+    "name": "Kingdom of Dreams"
+  }
+},
+{
+  "type": "way",
+  "id": 143009820,
+  "center": {
+    "lat": 28.4943859,
+    "lon": 77.0484579
+  },
+  "tags": {
+    "leisure": "golf_course"
+  }
+},
+{
+  "type": "way",
+  "id": 143048695,
+  "center": {
+    "lat": 28.4279201,
+    "lon": 77.1473218
+  },
+  "tags": {
+    "leisure": "golf_course"
+  }
+},
+{
+  "type": "way",
+  "id": 151989788,
+  "center": {
+    "lat": 28.4812292,
+    "lon": 77.0929905
+  },
+  "tags": {
+    "building": "train_station",
+    "layer": "1",
+    "name": "Sikanderpur",
+    "nohousenumber": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 170084068,
+  "center": {
+    "lat": 28.4024018,
+    "lon": 77.0333285
+  },
+  "tags": {
+    "name": "Badshahpur Substation",
+    "operator": "DHBVN",
+    "power": "substation",
+    "substation": "substation",
+    "voltage": "400000;220000;66000"
+  }
+},
+{
+  "type": "way",
+  "id": 188137582,
+  "center": {
+    "lat": 28.4714731,
+    "lon": 77.0888835
+  },
+  "tags": {
+    "name": "Chakkarpur Substation",
+    "note": "Contributors are requested to not edit the \"operator\" and \"operator:en\" tags. (2024/06/01)",
+    "operator": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+    "operator:en": "Dakshin Haryana Bijli Vitran Nigam Limited (DHBVN)",
+    "power": "substation",
+    "substation": "substation",
+    "voltage": "66000"
+  }
+},
+{
+  "type": "way",
+  "id": 189047499,
+  "center": {
+    "lat": 28.3686049,
+    "lon": 76.9208034
+  },
+  "tags": {
+    "leisure": "golf_course",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 209564708,
+  "center": {
+    "lat": 28.5689139,
+    "lon": 77.0335698
+  },
+  "tags": {
+    "barrier": "wall",
+    "leisure": "golf_course"
+  }
+},
+{
+  "type": "way",
+  "id": 231620369,
+  "center": {
+    "lat": 28.4250648,
+    "lon": 77.0990882
+  },
+  "tags": {
+    "amenity": "marketplace",
+    "check_date": "2025-02-23",
+    "name": "HUDA Market"
+  }
+},
+{
+  "type": "way",
+  "id": 256583527,
+  "center": {
+    "lat": 28.4809203,
+    "lon": 77.0943780
+  },
+  "tags": {
+    "building": "train_station",
+    "building:levels": "1",
+    "layer": "1",
+    "name": "Sikanderpur",
+    "nohousenumber": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 259943692,
+  "center": {
+    "lat": 28.5979934,
+    "lon": 77.1584943
+  },
+  "tags": {
+    "leisure": "golf_course",
+    "name": "Army Golf Course"
+  }
+},
+{
+  "type": "way",
+  "id": 267003261,
+  "center": {
+    "lat": 28.5008644,
+    "lon": 77.1035729
+  },
+  "tags": {
+    "leisure": "golf_course"
+  }
+},
+{
+  "type": "way",
+  "id": 267251480,
+  "center": {
+    "lat": 28.4605376,
+    "lon": 77.0950285
+  },
+  "tags": {
+    "barrier": "wall",
+    "landuse": "commercial",
+    "name": "Global Foyer Mall"
+  }
+},
+{
+  "type": "way",
+  "id": 267251481,
+  "center": {
+    "lat": 28.4515059,
+    "lon": 77.0972752
+  },
+  "tags": {
+    "barrier": "wall",
+    "landuse": "commercial",
+    "name": "One Horizon Center"
+  }
+},
+{
+  "type": "way",
+  "id": 269832537,
+  "center": {
+    "lat": 28.4059527,
+    "lon": 77.0446388
+  },
+  "tags": {
+    "barrier": "wall",
+    "landuse": "commercial",
+    "name": "Vatika Business Park"
+  }
+},
+{
+  "type": "way",
+  "id": 273911351,
+  "center": {
+    "lat": 28.3831468,
+    "lon": 77.0525970
+  },
+  "tags": {
+    "addr:city": "Gurgaon",
+    "addr:district": "Gurgaon",
+    "addr:postcode": "122101",
+    "addr:street": "Sohna Road",
+    "barrier": "wall",
+    "landuse": "commercial",
+    "name": "Reach Airia Mall"
+  }
+},
+{
+  "type": "way",
+  "id": 281594341,
+  "center": {
+    "lat": 28.4155723,
+    "lon": 77.1110881
+  },
+  "tags": {
+    "barrier": "retaining_wall",
+    "name": "Ghata Bundh",
+    "website": "http://www.tribuneindia.com/2010/20100730/harplus.htm#1"
+  }
+},
+{
+  "type": "way",
+  "id": 313544652,
+  "center": {
+    "lat": 28.5504619,
+    "lon": 77.1216919
+  },
+  "tags": {
+    "building": "office",
+    "layer": "1",
+    "name": "Bharti Worldmark 1"
+  }
+},
+{
+  "type": "way",
+  "id": 313544657,
+  "center": {
+    "lat": 28.5515116,
+    "lon": 77.1227067
+  },
+  "tags": {
+    "building": "yes",
+    "name": "Bharti Worldmark 2"
+  }
+},
+{
+  "type": "way",
+  "id": 313544658,
+  "center": {
+    "lat": 28.5517292,
+    "lon": 77.1216771
+  },
+  "tags": {
+    "addr:city": "New Delhi",
+    "addr:district": "New Delhi",
+    "addr:housenumber": "27",
+    "addr:postcode": "110037",
+    "addr:street": "Aerocity, Assent Area, Indira Gandhi International Airport",
+    "building": "yes",
+    "name": "Bharti Worldmark 3"
+  }
+},
+{
+  "type": "way",
+  "id": 349817879,
+  "center": {
+    "lat": 28.4253532,
+    "lon": 77.0575068
+  },
+  "tags": {
+    "amenity": "marketplace",
+    "building": "yes",
+    "name": "Baani Square"
+  }
+},
+{
+  "type": "way",
+  "id": 349818075,
+  "center": {
+    "lat": 28.4251392,
+    "lon": 77.0579510
+  },
+  "tags": {
+    "addr:street": "Mayfield Garden",
+    "amenity": "marketplace",
+    "building": "yes",
+    "name": "B-block Mayfield Garden"
+  }
+},
+{
+  "type": "way",
+  "id": 349818086,
+  "center": {
+    "lat": 28.4256176,
+    "lon": 77.0576875
+  },
+  "tags": {
+    "amenity": "marketplace",
+    "building": "yes",
+    "name": "Baani Square"
+  }
+},
+{
+  "type": "way",
+  "id": 349818137,
+  "center": {
+    "lat": 28.4254846,
+    "lon": 77.0568804
+  },
+  "tags": {
+    "amenity": "marketplace",
+    "building": "yes",
+    "name": "Baani Square"
+  }
+},
+{
+  "type": "way",
+  "id": 349818190,
+  "center": {
+    "lat": 28.4255176,
+    "lon": 77.0572520
+  },
+  "tags": {
+    "amenity": "marketplace",
+    "building": "yes",
+    "name": "Baani Square"
+  }
+},
+{
+  "type": "way",
+  "id": 349818221,
+  "center": {
+    "lat": 28.4258432,
+    "lon": 77.0571784
+  },
+  "tags": {
+    "addr:city": "Gurgaon",
+    "addr:district": "Sector 50",
+    "addr:place": "Baani Square",
+    "addr:postcode": "122002",
+    "brand": "DoubleTree",
+    "brand:wikidata": "Q2504643",
+    "building": "yes",
+    "contact:facebook": "https://www.facebook.com/DoubleTreeGurugram",
+    "contact:instagram": "https://www.instagram.com/doubletreegurugram/",
+    "email": "delgu.res@hilton.com",
+    "fax": "+91-124-4420010",
+    "internet_access": "yes",
+    "name": "DoubleTree by Hilton Gurugram Baani Square",
+    "official_name": "DoubleTree by Hilton",
+    "operator": "Hilton",
+    "phone": "+91 124 4420000",
+    "rooms": "201",
+    "smoking": "separated",
+    "stars": "5",
+    "tourism": "hotel",
+    "website": "https://www.hilton.com/en/hotels/delgudi-doubletree-gurugram-baani-square/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 349999888,
+  "center": {
+    "lat": 28.4173662,
+    "lon": 77.0603331
+  },
+  "tags": {
+    "addr:city": "Gurugram",
+    "addr:district": "Gurugram",
+    "addr:housenumber": "NS 7",
+    "addr:postcode": "122018",
+    "addr:street": "Nirvana Country Main Road",
+    "amenity": "kindergarten",
+    "branch": "Nirvana Country, Gurugram",
+    "education": "kindergarten",
+    "email": "contact.us@sportyze.com",
+    "mobile": "+91 72890 54088",
+    "name": "Sportyze Nirvana Country, Gurugram",
+    "opening_hours": "Mo-Fr 09:30-20:00; Sa 09:30-18:00; Su 09:30-17:00",
+    "website": "https://sportyze.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 351423681,
+  "center": {
+    "lat": 28.4337995,
+    "lon": 77.0884840
+  },
+  "tags": {
+    "building": "apartments",
+    "name": "Kanhaiya Complex"
+  }
+},
+{
+  "type": "way",
+  "id": 401253484,
+  "center": {
+    "lat": 28.4542678,
+    "lon": 77.0833727
+  },
+  "tags": {
+    "landuse": "residential",
+    "name": "C Block Sushant Lok 1"
+  }
+},
+{
+  "type": "way",
+  "id": 442958054,
+  "center": {
+    "lat": 28.4561234,
+    "lon": 77.0757823
+  },
+  "tags": {
+    "landuse": "residential",
+    "name": "Whispering Meadows, Block D, Sushant Lok 1"
+  }
+},
+{
+  "type": "way",
+  "id": 545152109,
+  "center": {
+    "lat": 28.4512339,
+    "lon": 77.0983286
+  },
+  "tags": {
+    "access": "private",
+    "highway": "service",
+    "lanes": "1",
+    "name": "One Horizon Center Driveway",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 546530094,
+  "center": {
+    "lat": 28.4555329,
+    "lon": 77.1070022
+  },
+  "tags": {
+    "addr:city": "Gurugram",
+    "addr:postcode": "122009",
+    "addr:unit": "DLF Phase 5",
+    "leisure": "golf_course",
+    "name": "DLF Golf and Country Club",
+    "opening_hours": "Mo-Su 10:00-19:00",
+    "website": "https://dlfgolfresort.com"
+  }
+},
+{
+  "type": "way",
+  "id": 563433017,
+  "center": {
+    "lat": 28.5524731,
+    "lon": 77.0429113
+  },
+  "tags": {
+    "alt_name": "India International Convention & Expo Centre",
+    "amenity": "convention_centre",
+    "barrier": "wall",
+    "name": "Yashobhoomi",
+    "short_name": "IICC",
+    "website": "https://www.iiccnewdelhi.com",
+    "wikidata": "Q85769277",
+    "wikipedia": "en:Yashobhoomi"
+  }
+},
+{
+  "type": "way",
+  "id": 632730233,
+  "center": {
+    "lat": 28.4273822,
+    "lon": 77.0361494
+  },
+  "tags": {
+    "addr:city": "Gurgaon",
+    "addr:district": "Gurgaon",
+    "building": "retail",
+    "name": "Omaxe Celebration Mall"
+  }
+},
+{
+  "type": "way",
+  "id": 632793833,
+  "center": {
+    "lat": 28.4253414,
+    "lon": 77.0312586
+  },
+  "tags": {
+    "landuse": "commercial",
+    "name": "Candor TechSpace",
+    "website": "https://candortechspace.com/our-properties/it-ites-sez-sec-48-gurugram/"
+  }
+},
+{
+  "type": "way",
+  "id": 642940950,
+  "center": {
+    "lat": 28.4456030,
+    "lon": 77.0335683
+  },
+  "tags": {
+    "alt_name": "Sohna Road",
+    "highway": "primary",
+    "layer": "-1",
+    "name": "Rajiv Chowk Underpass",
+    "oneway": "yes",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 642940951,
+  "center": {
+    "lat": 28.4456242,
+    "lon": 77.0337843
+  },
+  "tags": {
+    "alt_name": "Sohna Road",
+    "highway": "primary",
+    "layer": "-1",
+    "maxspeed": "50",
+    "name": "Rajiv Chowk Underpass",
+    "oneway": "yes",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 642941240,
+  "center": {
+    "lat": 28.4475444,
+    "lon": 77.0329691
+  },
+  "tags": {
+    "alt_name": "Sohna Road",
+    "highway": "primary",
+    "name": "Rajiv Chowk Underpass",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 646383149,
+  "center": {
+    "lat": 28.4698268,
+    "lon": 77.0573884
+  },
+  "tags": {
+    "highway": "secondary",
+    "layer": "-1",
+    "name": "Signature Tower Chowk Underpass",
+    "oneway": "yes",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 646383151,
+  "center": {
+    "lat": 28.4699161,
+    "lon": 77.0574977
+  },
+  "tags": {
+    "highway": "secondary",
+    "layer": "-1",
+    "name": "Signature Tower Chowk Underpass",
+    "oneway": "yes",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 999227746,
+  "center": {
+    "lat": 28.4275420,
+    "lon": 77.1595023
+  },
+  "tags": {
+    "barrier": "wall",
+    "name": "Gwal Pahari Solar Power Plant",
+    "plant:method": "thermal",
+    "plant:source": "solar",
+    "power": "plant"
+  }
+},
+{
+  "type": "way",
+  "id": 1079172890,
+  "center": {
+    "lat": 28.4435337,
+    "lon": 77.0338341
+  },
+  "tags": {
+    "alt_name": "Sohna Road",
+    "highway": "trunk",
+    "maxspeed": "50",
+    "name": "Rajiv Chowk Underpass",
+    "oneway": "yes",
+    "ref": "NH248A"
+  }
+},
+{
+  "type": "way",
+  "id": 1079172891,
+  "center": {
+    "lat": 28.4435487,
+    "lon": 77.0340037
+  },
+  "tags": {
+    "alt_name": "Sohna Road",
+    "highway": "trunk",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Rajiv Chowk Underpass",
+    "oneway": "yes",
+    "ref": "NH248A"
+  }
+},
+{
+  "type": "way",
+  "id": 1081361164,
+  "center": {
+    "lat": 28.4217790,
+    "lon": 77.0632562
+  },
+  "tags": {
+    "highway": "tertiary",
+    "lit": "yes",
+    "maxspeed": "25",
+    "name": "nirvana country main road",
+    "narrow": "yes",
+    "oneway": "yes",
+    "sidewalk": "left"
+  }
+},
+{
+  "type": "way",
+  "id": 1164729516,
+  "center": {
+    "lat": 28.4151166,
+    "lon": 77.0479640
+  },
+  "tags": {
+    "addr:city": "gurgaon",
+    "addr:district": "Gurugram",
+    "addr:housenumber": "C 154",
+    "addr:postcode": "122018",
+    "addr:street": "soutch city 2",
+    "architect": "Koncade Design Studio",
+    "building": "house",
+    "building:levels": "4",
+    "height": "16.5",
+    "name": "C-154 South city 2"
+  }
+},
+{
+  "type": "way",
+  "id": 1184944880,
+  "center": {
+    "lat": 28.4180869,
+    "lon": 77.0456261
+  },
+  "tags": {
+    "highway": "tertiary",
+    "maxspeed": "25",
+    "name": "Nirvana Country main road",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1323808714,
+  "center": {
+    "lat": 28.4669023,
+    "lon": 77.0600968
+  },
+  "tags": {
+    "highway": "secondary",
+    "highway_1": "footway",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Signature Tower Chowk Underpass",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1323808715,
+  "center": {
+    "lat": 28.4667071,
+    "lon": 77.0600608
+  },
+  "tags": {
+    "highway": "secondary",
+    "highway_1": "footpath",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Signature Tower Chowk Underpass",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1323808716,
+  "center": {
+    "lat": 28.4720973,
+    "lon": 77.0565336
+  },
+  "tags": {
+    "highway": "secondary",
+    "name": "Signature Tower Chowk Underpass",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1323808717,
+  "center": {
+    "lat": 28.4719118,
+    "lon": 77.0564102
+  },
+  "tags": {
+    "highway": "secondary",
+    "name": "Signature Tower Chowk Underpass",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1326194582,
+  "center": {
+    "lat": 28.6041807,
+    "lon": 77.1315220
+  },
+  "tags": {
+    "leisure": "mess",
+    "name": "Trident Officers' Mess"
+  }
+},
+{
+  "type": "way",
+  "id": 1368612439,
+  "center": {
+    "lat": 28.4326358,
+    "lon": 77.1485215
+  },
+  "tags": {
+    "landuse": "residential",
+    "name": "Gwal Pahari"
+  }
+},
+{
+  "type": "way",
+  "id": 1412981520,
+  "center": {
+    "lat": 28.4228399,
+    "lon": 77.0866075
+  },
+  "tags": {
+    "name": "Sushant Lok 2",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "way",
+  "id": 1413027394,
+  "center": {
+    "lat": 28.4260607,
+    "lon": 77.0795825
+  },
+  "tags": {
+    "name": "Sushant Lok 3 B1 Block",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "way",
+  "id": 1426774985,
+  "center": {
+    "lat": 28.4188194,
+    "lon": 77.0453107
+  },
+  "tags": {
+    "highway": "secondary",
+    "name": "South City II",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1429256812,
+  "center": {
+    "lat": 28.5639718,
+    "lon": 77.1176133
+  },
+  "tags": {
+    "aeroway": "terminal",
+    "building": "yes",
+    "layer": "2",
+    "name": "Terminal 1",
+    "name:fa": "ترمینال ۱",
+    "operator": "Airports Authority of India"
+  }
+},
+{
+  "type": "way",
+  "id": 1433587273,
+  "center": {
+    "lat": 28.4806583,
+    "lon": 77.0923728
+  },
+  "tags": {
+    "name": "Sikanderpur Fish Market",
+    "name:hi": "सिकंदरपुर मछली मार्केट",
+    "shop": "butcher"
+  }
+},
+{
+  "type": "way",
+  "id": 1449268449,
+  "center": {
+    "lat": 28.4948988,
+    "lon": 77.0887043
+  },
+  "tags": {
+    "landuse": "retail",
+    "name": "DLF Cyber Hub"
+  }
+},
+{
+  "type": "way",
+  "id": 1471998519,
+  "center": {
+    "lat": 28.4783831,
+    "lon": 77.0304722
+  },
+  "tags": {
+    "addr:city": "Gurugram",
+    "addr:country": "IN",
+    "addr:district": "Gurugram",
+    "addr:place": "Masani Village",
+    "addr:postcode": "122001",
+    "addr:state": "Haryana",
+    "addr:street": "Sheetla Mata Road",
+    "addr:suburb": "Sector 6",
+    "alt_name": "Mata Sheetla Devi Mandir;Shitala Mata Mandir",
+    "building": "construction",
+    "check_date": "2026-01-30",
+    "construction": "temple",
+    "construction:building:levels": "3",
+    "construction:building:pillars": "392",
+    "construction:deity": "Sheetla Mata",
+    "construction:religion": "hindu",
+    "email": "info@sheetlamatamandir.in",
+    "name": "Sheetla Mata Mandir (New Building)",
+    "name:hi": "शीतला माता मंदिर (नया भवन)",
+    "operator": "Shri Mata Sheetla Devi Shrine Board",
+    "phone": "+91 124 232 3122",
+    "religion": "hindu",
+    "website": "https://sheetlamatamandir.com"
+  }
+},
+{
+  "type": "way",
+  "id": 1471998520,
+  "center": {
+    "lat": 28.4782109,
+    "lon": 77.0308055
+  },
+  "tags": {
+    "addr:city": "Gurugram",
+    "addr:country": "IN",
+    "addr:district": "Gurugram",
+    "addr:postcode": "122001",
+    "addr:street": "Sheetla Mata Road",
+    "addr:suburb": "Sector 6",
+    "alt_name": "Mata Sheetla Devi Mandir;Shitala Mata Mandir",
+    "amenity": "place_of_worship",
+    "architecture:style": "Nagara;Rajput;Mughal;Vernacular Haryana",
+    "building": "temple",
+    "building:levels": "1-2",
+    "building:material": "brick;stone;marble;sandstone;plaster",
+    "dedicated_to": "Sheetla Devi",
+    "deity": "Sheetla Mata",
+    "description": "Original 18th-century Hindu temple (1763) preserved during modern redevelopment. Garbha griha (sanctum) + small mandapa. Historic brick-stone structure with North Indian temple architecture.",
+    "drinking_water": "yes",
+    "email": "info@sheetlamatamandir.in",
+    "fee": "no",
+    "festival": "Sheetla Ashtami;Navratri",
+    "founder": "Maharaja Jawahar Singh of Bharatpur",
+    "heritage": "3",
+    "historic": "temple",
+    "name": "Sheetla Mata Mandir",
+    "name:hi": "शीतला माता मंदिर",
+    "note": "Main worship structure maintained and operational. Auxiliary structures demolished for new complex development.",
+    "opening_hours": "Mo-Su 05:00-22:00",
+    "operator": "Shri Mata Sheetla Devi Shrine Board",
+    "parking": "yes",
+    "phone": "+91 124 232 3122;+91 88269 12890",
+    "photography": "yes",
+    "pilgrimage_importance": "high",
+    "religion": "hindu",
+    "start_date": "1763",
+    "toilets": "yes",
+    "website": "https://sheetlamatamandir.com",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1471998521,
+  "center": {
+    "lat": 28.4777097,
+    "lon": 77.0296948
+  },
+  "tags": {
+    "construction": "pond",
+    "deity": "Sheetla Mata",
+    "description": "Sacred pilgrimage pond at Sheetla Mata Mandir. Part of temple redevelopment project. Devotees traditionally bathe and offer prayers at the pond.",
+    "description:2": "Pond has been part of temple complex for centuries;reconstructed during current redevelopment",
+    "landuse": "religious",
+    "name": "Sheetla Mata Pilgrimage Pond",
+    "name:hi": "शीतला माता तीर्थ तलाब",
+    "natural": "water",
+    "pilgrimage": "yes",
+    "water": "pond"
+  }
+},
+{
+  "type": "relation",
+  "id": 2181194,
+  "center": {
+    "lat": 28.4614325,
+    "lon": 77.0504953
+  },
+  "tags": {
+    "from": "Rajiv Chowk",
+    "name": "Rajiv Chowk to Iffco Chowk",
+    "route": "autorickshaw",
+    "to": "Iffco Chowk",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 2181195,
+  "center": {
+    "lat": 28.4422364,
+    "lon": 77.0440630
+  },
+  "tags": {
+    "from": "Neta ji Subhash Chowk",
+    "name": "Subhash Chowk to Huda City Center",
+    "route": "autorickshaw",
+    "to": "Huda City Center",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3295870,
+  "center": {
+    "lat": 28.3505066,
+    "lon": 77.0558231
+  },
+  "tags": {
+    "name": "HUDA City Centre to Badshahpur Metro Feeder Bus",
+    "operator": "haryana roadways",
+    "public_transport:version": "2",
+    "ref": "HUDA",
+    "route": "bus",
+    "type": "route",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "relation",
+  "id": 3295892,
+  "center": {
+    "lat": 28.3527899,
+    "lon": 77.0501018
+  },
+  "tags": {
+    "from": "Fountain Chowk",
+    "name": "Fountain Chowk to Badshahpur",
+    "route": "autorickshaw",
+    "to": "Badshahpur",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 3379741,
+  "center": {
+    "lat": 28.4302050,
+    "lon": 76.9621560
+  },
+  "tags": {
+    "assembly_name": "76: Badshahpur",
+    "boundary": "political",
+    "name": "Badshahpur Assembly",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3580813,
+  "center": {
+    "lat": 28.4547289,
+    "lon": 77.0820123
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "C Block, Sushant Lok Phase 1",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3594659,
+  "center": {
+    "lat": 28.4634008,
+    "lon": 77.0784788
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Sushant Lok I",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3594707,
+  "center": {
+    "lat": 28.4735571,
+    "lon": 77.0765762
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Sushant Lok I",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3606525,
+  "center": {
+    "lat": 28.4194893,
+    "lon": 77.0436109
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "South City II",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3606526,
+  "center": {
+    "lat": 28.4165294,
+    "lon": 77.0488461
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "South City II",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3606566,
+  "center": {
+    "lat": 28.4184404,
+    "lon": 77.0563241
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "South City II",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3608888,
+  "center": {
+    "lat": 28.4159462,
+    "lon": 77.0367921
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Vipul World",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3609013,
+  "center": {
+    "lat": 28.4089042,
+    "lon": 77.0481248
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Uppal SouthEnd",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3609156,
+  "center": {
+    "lat": 28.4333277,
+    "lon": 77.0724792
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Mayfield Garden",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3609157,
+  "center": {
+    "lat": 28.4227828,
+    "lon": 77.0695071
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "fixme": "Need to be merged with https://www.openstreetmap.org/relation/3609160",
+    "landuse": "residential",
+    "name": "Mayfield Garden",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3609158,
+  "center": {
+    "lat": 28.4215246,
+    "lon": 77.0619445
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Mayfield Garden",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3609159,
+  "center": {
+    "lat": 28.4265093,
+    "lon": 77.0559838
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Mayfield Garden",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3609160,
+  "center": {
+    "lat": 28.4276047,
+    "lon": 77.0649751
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Mayfield Garden",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3609161,
+  "center": {
+    "lat": 28.4149887,
+    "lon": 77.0654283
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Nirvana Country",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3610994,
+  "center": {
+    "lat": 28.4504498,
+    "lon": 77.0608466
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "South City I",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3610995,
+  "center": {
+    "lat": 28.4569830,
+    "lon": 77.0649432
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "South City I",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3611037,
+  "center": {
+    "lat": 28.4650501,
+    "lon": 77.0606962
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "South City I",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3627441,
+  "center": {
+    "lat": 28.3635344,
+    "lon": 76.9562818
+  },
+  "tags": {
+    "leisure": "golf_course",
+    "type": "boundary",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "relation",
+  "id": 3637262,
+  "center": {
+    "lat": 28.4207996,
+    "lon": 77.0810510
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Sushant Lok III",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3643363,
+  "center": {
+    "lat": 28.4980768,
+    "lon": 77.0215953
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Palam Vihar",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3730384,
+  "center": {
+    "lat": 28.3942332,
+    "lon": 77.0483981
+  },
+  "tags": {
+    "admin_level": "10",
+    "alt_name": "Badshahpur Village",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Badshahpur",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3730592,
+  "center": {
+    "lat": 28.4333185,
+    "lon": 77.0374764
+  },
+  "tags": {
+    "admin_level": "10",
+    "alt_name": "Islampur Village",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Islampur",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3735840,
+  "center": {
+    "lat": 28.5114230,
+    "lon": 77.0428367
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Palam Vihar",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3735841,
+  "center": {
+    "lat": 28.5061531,
+    "lon": 77.0386708
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Palam Vihar",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3735986,
+  "center": {
+    "lat": 28.4873162,
+    "lon": 77.0706810
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Sirhaul",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3738358,
+  "center": {
+    "lat": 28.4015990,
+    "lon": 76.9838416
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "Islampur",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3738362,
+  "center": {
+    "lat": 28.4023748,
+    "lon": 76.9562962
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Sikanderpur",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3739424,
+  "center": {
+    "lat": 28.4481674,
+    "lon": 77.0854535
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Sushant Lok I",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3756467,
+  "center": {
+    "lat": 28.4884242,
+    "lon": 77.0997359
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Nathupur",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3756468,
+  "center": {
+    "lat": 28.4812387,
+    "lon": 77.0976311
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "landuse": "residential",
+    "name": "Sikanderpur",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 3807698,
+  "center": {
+    "lat": 28.3505066,
+    "lon": 77.0582628
+  },
+  "tags": {
+    "name": "HUDA City Centre via South City 2 to Badshahpur Metro Feeder Bus",
+    "operator": "haryana roadways",
+    "public_transport:version": "2",
+    "ref": "HUDA",
+    "route": "bus",
+    "type": "route",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "relation",
+  "id": 5238229,
+  "center": {
+    "lat": 28.5012077,
+    "lon": 77.0633624
+  },
+  "tags": {
+    "amenity": "police",
+    "building": "yes",
+    "name": "Palam Vihar Police Station",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 8076920,
+  "center": {
+    "lat": 28.4812736,
+    "lon": 77.0929903
+  },
+  "tags": {
+    "colour": "#FFDF00",
+    "name": "Sikanderpur (Yellow Line)",
+    "public_transport": "stop_area",
+    "public_transport:version": "2",
+    "type": "public_transport"
+  }
+},
+{
+  "type": "relation",
+  "id": 8076921,
+  "center": {
+    "lat": 28.4808046,
+    "lon": 77.0943612
+  },
+  "tags": {
+    "name": "Sikanderpur (Rapid MetroRail)",
+    "public_transport": "stop_area",
+    "public_transport:version": "2",
+    "type": "public_transport"
+  }
+},
+{
+  "type": "relation",
+  "id": 8632270,
+  "center": {
+    "lat": 28.5556566,
+    "lon": 77.0844188
+  },
+  "tags": {
+    "aeroway": "terminal",
+    "area": "no",
+    "name": "Terminal 3",
+    "type": "building",
+    "wikidata": "Q56045871"
+  }
+},
+{
+  "type": "relation",
+  "id": 14434368,
+  "center": {
+    "lat": 28.5650001,
+    "lon": 77.1216942
+  },
+  "tags": {
+    "colour": "#CC338B",
+    "name": "Terminal 1 IGI Airport",
+    "operator": "Delhi Metro Rail Corporation",
+    "public_transport": "stop_area",
+    "type": "public_transport"
+  }
+},
+{
+  "type": "relation",
+  "id": 16349970,
+  "center": {
+    "lat": 28.5509065,
+    "lon": 77.0451665
+  },
+  "tags": {
+    "name": "Yashobhoomi Dwarka Sector 25",
+    "public_transport": "stop_area",
+    "type": "public_transport"
+  }
+},
+{
+  "type": "relation",
+  "id": 19667909,
+  "center": {
+    "lat": 28.4518522,
+    "lon": 77.0912277
+  },
+  "tags": {
+    "leisure": "park",
+    "name": "Chakkarpur Wazirabad Bundh",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 19797903,
+  "center": {
+    "lat": 28.4629866,
+    "lon": 77.0988364
+  },
+  "tags": {
+    "fixme": "Survey on foot using GPS traces, seems some portions of this go all the way to Aravali Biodiversity Park and some portions are blocked off",
+    "leisure": "park",
+    "name": "Aravali Creek",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 20150571,
+  "center": {
+    "lat": 28.4780261,
+    "lon": 77.0306426
+  },
+  "tags": {
+    "alt_name": "Mata Sheetla Devi Mandir;Shitala Mata Mandir",
+    "landuse": "religious",
+    "name": "Sheetla Mata Mandir",
+    "name:hi": "शीतला माता मंदिर",
+    "operator": "Shri Mata Sheetla Devi Shrine Board",
+    "phone": "+91 124 232 3122",
+    "religion": "hindu",
+    "type": "multipolygon",
+    "website": "https://sheetlamatamandir.com"
+  }
+}
+
+  ]
+}

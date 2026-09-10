@@ -1,0 +1,1452 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-10T07:16:51Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 312920687,
+  "lat": 28.4737840,
+  "lon": 77.0471827,
+  "tags": {
+    "name": "Sector 14",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 312920689,
+  "lat": 28.4758035,
+  "lon": 77.0607773,
+  "tags": {
+    "name": "Sector 17",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 312920692,
+  "lat": 28.4251572,
+  "lon": 77.0475128,
+  "tags": {
+    "name": "Sector 47",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 312920693,
+  "lat": 28.4540044,
+  "lon": 77.0497179,
+  "tags": {
+    "name": "Sector 31",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 312920707,
+  "lat": 28.4287011,
+  "lon": 77.0666877,
+  "tags": {
+    "name": "Sector 51",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 312921203,
+  "lat": 28.4253232,
+  "lon": 77.0985157,
+  "tags": {
+    "name": "Sector 56",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 312921204,
+  "lat": 28.4274166,
+  "lon": 77.1097538,
+  "tags": {
+    "name": "Sector 55",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 313444880,
+  "lat": 28.4669197,
+  "lon": 77.0671306,
+  "tags": {
+    "name": "Sector 29",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 325428870,
+  "lat": 28.4618719,
+  "lon": 77.0568800,
+  "tags": {
+    "name": "Sector 30",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 448276344,
+  "lat": 28.4232478,
+  "lon": 77.0804487,
+  "tags": {
+    "name": "Sector 57",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 603560763,
+  "lat": 28.4500427,
+  "lon": 77.0577093,
+  "tags": {
+    "name": "Sector 40",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2207709091,
+  "lat": 28.5423769,
+  "lon": 77.0336164,
+  "tags": {
+    "name": "Sector 28",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 2207718039,
+  "lat": 28.5384372,
+  "lon": 77.0426287,
+  "tags": {
+    "name": "Sector 27",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 2207718866,
+  "lat": 28.5447896,
+  "lon": 77.0510830,
+  "tags": {
+    "name": "Sector 26",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 2690981735,
+  "lat": 28.5473559,
+  "lon": 77.0232621,
+  "tags": {
+    "name": "Sector 29",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 2717336068,
+  "lat": 28.4703865,
+  "lon": 77.0993053,
+  "tags": {
+    "name": "Sector 26A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2717359036,
+  "lat": 28.4779375,
+  "lon": 77.1032425,
+  "tags": {
+    "name": "Sector 26",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2718798288,
+  "lat": 28.3702173,
+  "lon": 76.9611159,
+  "tags": {
+    "name": "Sector 80",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2718798293,
+  "lat": 28.3725283,
+  "lon": 76.9702955,
+  "tags": {
+    "name": "Sector 78",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2718842434,
+  "lat": 28.4449004,
+  "lon": 77.0663545,
+  "tags": {
+    "name": "Sector 45",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2719341973,
+  "lat": 28.4741302,
+  "lon": 77.0825722,
+  "tags": {
+    "name": "Sector 28",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2720613381,
+  "lat": 28.4646566,
+  "lon": 77.0839505,
+  "tags": {
+    "name": "Sector 27",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2721312536,
+  "lat": 28.4860888,
+  "lon": 77.0842240,
+  "tags": {
+    "name": "Sector 25",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2721769300,
+  "lat": 28.4548735,
+  "lon": 77.0858864,
+  "tags": {
+    "name": "Sector 43",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2723958518,
+  "lat": 28.4944811,
+  "lon": 77.1013038,
+  "tags": {
+    "name": "Sector 24",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2723964210,
+  "lat": 28.4961217,
+  "lon": 77.0906503,
+  "tags": {
+    "name": "Sector 25A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2726779033,
+  "lat": 28.4558973,
+  "lon": 77.1084759,
+  "tags": {
+    "name": "Sector 42",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2726809111,
+  "lat": 28.4415191,
+  "lon": 77.0968050,
+  "tags": {
+    "name": "Sector 53",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2726809120,
+  "lat": 28.4421059,
+  "lon": 77.1112654,
+  "tags": {
+    "name": "Sector 54",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2726829170,
+  "lat": 28.4396186,
+  "lon": 77.0905891,
+  "tags": {
+    "name": "Sector 52A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2728145923,
+  "lat": 28.5357856,
+  "lon": 77.0062587,
+  "tags": {
+    "is_in": "South Dwarka",
+    "is_in:city": "Gurugram",
+    "is_in:country": "India",
+    "is_in:state": "Haryana",
+    "is_in:suburb": "South Dwarka",
+    "name": "Sector 115",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2728267868,
+  "lat": 28.5327129,
+  "lon": 77.0122454,
+  "tags": {
+    "is_in": "South Dwarka",
+    "is_in:city": "Gurugram",
+    "is_in:country": "India",
+    "is_in:state": "Haryana",
+    "is_in:suburb": "South Dwarka",
+    "name": "Sector 114",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2733135415,
+  "lat": 28.5203402,
+  "lon": 77.0188612,
+  "tags": {
+    "is_in:city": "Gurugram",
+    "is_in:country": "India",
+    "is_in:district": "Gurugram",
+    "is_in:state": "Haryana",
+    "is_in:suburb": "South Dwarka",
+    "name": "Sector 112",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2733182414,
+  "lat": 28.5286649,
+  "lon": 77.0250282,
+  "tags": {
+    "is_in:city": "Gurugram",
+    "is_in:country": "India",
+    "is_in:state": "Haryana",
+    "is_in:suburb": "South Dwarka",
+    "name": "Sector 113",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 2733184042,
+  "lat": 28.5222773,
+  "lon": 77.0336203,
+  "tags": {
+    "name": "Sector 111",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230711,
+  "lat": 28.4613898,
+  "lon": 76.9712708,
+  "tags": {
+    "name": "Sector 100",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230712,
+  "lat": 28.4684077,
+  "lon": 76.9803787,
+  "tags": {
+    "name": "Sector 101",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230713,
+  "lat": 28.4754872,
+  "lon": 76.9711747,
+  "tags": {
+    "name": "Sector 102",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230714,
+  "lat": 28.4830826,
+  "lon": 76.9779064,
+  "tags": {
+    "name": "Sector 102A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230715,
+  "lat": 28.4930870,
+  "lon": 76.9866453,
+  "tags": {
+    "name": "Sector 103",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230716,
+  "lat": 28.4795324,
+  "lon": 76.9937197,
+  "tags": {
+    "name": "Sector 104",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230717,
+  "lat": 28.4943133,
+  "lon": 77.0081378,
+  "tags": {
+    "name": "Sector 105",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230718,
+  "lat": 28.5060806,
+  "lon": 76.9967796,
+  "tags": {
+    "name": "Sector 106",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230719,
+  "lat": 28.5069410,
+  "lon": 76.9752137,
+  "tags": {
+    "name": "Sector 107",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230720,
+  "lat": 28.5128994,
+  "lon": 76.9823615,
+  "tags": {
+    "name": "Sector 108",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230721,
+  "lat": 28.5109205,
+  "lon": 77.0065956,
+  "tags": {
+    "name": "Sector 109",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230722,
+  "lat": 28.5069625,
+  "lon": 77.0183210,
+  "tags": {
+    "name": "Sector 110",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230723,
+  "lat": 28.5159108,
+  "lon": 77.0276475,
+  "tags": {
+    "name": "Sector 110A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230724,
+  "lat": 28.4645549,
+  "lon": 76.9628585,
+  "tags": {
+    "name": "Sector 99",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733230725,
+  "lat": 28.4554059,
+  "lon": 76.9510278,
+  "tags": {
+    "name": "Sector 99A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733334978,
+  "lat": 28.5175247,
+  "lon": 77.0425692,
+  "tags": {
+    "name": "Sector 1",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423560,
+  "lat": 28.4539921,
+  "lon": 77.0025297,
+  "tags": {
+    "name": "Sector 10",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423564,
+  "lat": 28.4445813,
+  "lon": 77.0060231,
+  "tags": {
+    "name": "Sector 10A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423566,
+  "lat": 28.4522331,
+  "lon": 77.0267159,
+  "tags": {
+    "name": "Sector 11",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423573,
+  "lat": 28.4574922,
+  "lon": 77.0325439,
+  "tags": {
+    "name": "Sector 11A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423577,
+  "lat": 28.4640660,
+  "lon": 77.0259664,
+  "tags": {
+    "name": "Sector 12",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423580,
+  "lat": 28.4701041,
+  "lon": 77.0315426,
+  "tags": {
+    "name": "Sector 12A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423583,
+  "lat": 28.4614487,
+  "lon": 77.0460104,
+  "tags": {
+    "name": "Sector 15-II",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423586,
+  "lat": 28.4529876,
+  "lon": 77.0376328,
+  "tags": {
+    "name": "Sector 15-I",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423589,
+  "lat": 28.4687344,
+  "lon": 77.0511794,
+  "tags": {
+    "name": "Sector 16",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423592,
+  "lat": 28.4913452,
+  "lon": 77.0710259,
+  "tags": {
+    "name": "Sector 18",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423595,
+  "lat": 28.5030913,
+  "lon": 77.0817477,
+  "tags": {
+    "name": "Sector 19",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423598,
+  "lat": 28.5090499,
+  "lon": 77.0342831,
+  "tags": {
+    "name": "Sector 2",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423600,
+  "lat": 28.5107707,
+  "lon": 77.0847586,
+  "tags": {
+    "name": "Sector 20",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423604,
+  "lat": 28.5143629,
+  "lon": 77.0730087,
+  "tags": {
+    "name": "Sector 21",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423606,
+  "lat": 28.5063180,
+  "lon": 77.0655182,
+  "tags": {
+    "name": "Sector 22",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423609,
+  "lat": 28.5103190,
+  "lon": 77.0530094,
+  "tags": {
+    "name": "Sector 23",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423613,
+  "lat": 28.5056942,
+  "lon": 77.0463022,
+  "tags": {
+    "name": "Sector 23A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423616,
+  "lat": 28.4973905,
+  "lon": 77.0205260,
+  "tags": {
+    "name": "Sector 3",
+    "name:en": "Block C-1 & C-2",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423619,
+  "lat": 28.4809525,
+  "lon": 77.0090778,
+  "tags": {
+    "name": "Sector 3A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423622,
+  "lat": 28.4750063,
+  "lon": 77.0103535,
+  "tags": {
+    "name": "Sector 4",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423625,
+  "lat": 28.4803924,
+  "lon": 77.0190946,
+  "tags": {
+    "name": "Sector 5",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423627,
+  "lat": 28.4753259,
+  "lon": 77.0258279,
+  "tags": {
+    "name": "Sector 6",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423634,
+  "lat": 28.4598966,
+  "lon": 77.0198043,
+  "tags": {
+    "name": "Sector 8",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423637,
+  "lat": 28.4621791,
+  "lon": 77.0000718,
+  "tags": {
+    "name": "Sector 9",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2733423639,
+  "lat": 28.4690266,
+  "lon": 76.9962811,
+  "tags": {
+    "name": "Sector 9A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735757133,
+  "lat": 28.4384785,
+  "lon": 77.0251655,
+  "tags": {
+    "name": "Sector 33",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835347,
+  "lat": 28.4092824,
+  "lon": 76.8805901,
+  "tags": {
+    "name": "Sector 97",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835350,
+  "lat": 28.3858766,
+  "lon": 76.9639317,
+  "tags": {
+    "name": "Sector 82A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835353,
+  "lat": 28.4082289,
+  "lon": 76.9630245,
+  "tags": {
+    "name": "Sector 84",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835358,
+  "lat": 28.3873647,
+  "lon": 76.9475835,
+  "tags": {
+    "name": "Sector 81",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835361,
+  "lat": 28.4219647,
+  "lon": 76.9297711,
+  "tags": {
+    "name": "Sector 94",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835364,
+  "lat": 28.3922194,
+  "lon": 76.9291703,
+  "tags": {
+    "name": "Sector 87",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835367,
+  "lat": 28.4036520,
+  "lon": 76.9531428,
+  "tags": {
+    "name": "Sector 85",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835372,
+  "lat": 28.4069974,
+  "lon": 76.9365562,
+  "tags": {
+    "name": "Sector 90",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835375,
+  "lat": 28.4184455,
+  "lon": 76.9457567,
+  "tags": {
+    "name": "Sector 89",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835378,
+  "lat": 28.4149443,
+  "lon": 76.9114892,
+  "tags": {
+    "name": "Sector 95",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835381,
+  "lat": 28.3981205,
+  "lon": 76.9411257,
+  "tags": {
+    "name": "Sector 86",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835388,
+  "lat": 28.4007588,
+  "lon": 76.9210802,
+  "tags": {
+    "name": "Sector 91",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835394,
+  "lat": 28.4219647,
+  "lon": 76.9568078,
+  "tags": {
+    "name": "Sector 88",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835397,
+  "lat": 28.3810438,
+  "lon": 76.9513146,
+  "tags": {
+    "name": "Sector 81A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835406,
+  "lat": 28.3981087,
+  "lon": 76.9732873,
+  "tags": {
+    "name": "Sector 83",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835409,
+  "lat": 28.3931076,
+  "lon": 76.9588762,
+  "tags": {
+    "name": "Sector 82",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735835411,
+  "lat": 28.4089049,
+  "lon": 76.9155232,
+  "tags": {
+    "name": "Sector 92",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856037,
+  "lat": 28.3832337,
+  "lon": 76.9825570,
+  "tags": {
+    "name": "Sector 77",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856041,
+  "lat": 28.4004545,
+  "lon": 76.9944537,
+  "tags": {
+    "name": "Sector 75A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856046,
+  "lat": 28.4064564,
+  "lon": 77.0233125,
+  "tags": {
+    "name": "Sector 71",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856049,
+  "lat": 28.3910112,
+  "lon": 76.9900243,
+  "tags": {
+    "name": "Sector 76",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856054,
+  "lat": 28.3947261,
+  "lon": 77.0223138,
+  "tags": {
+    "name": "Sector 70",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856059,
+  "lat": 28.4108506,
+  "lon": 76.9991194,
+  "tags": {
+    "name": "Sector 74A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856063,
+  "lat": 28.4088081,
+  "lon": 77.0161691,
+  "tags": {
+    "name": "Sector 73",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856066,
+  "lat": 28.4110081,
+  "lon": 77.0101209,
+  "tags": {
+    "name": "Sector 74",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856069,
+  "lat": 28.3846684,
+  "lon": 77.0220391,
+  "tags": {
+    "name": "Sector 70A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856073,
+  "lat": 28.4145669,
+  "lon": 77.0018689,
+  "tags": {
+    "name": "Sector 35",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856078,
+  "lat": 28.4193340,
+  "lon": 76.9889256,
+  "tags": {
+    "name": "Sector 36",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735856081,
+  "lat": 28.3964476,
+  "lon": 77.0065896,
+  "tags": {
+    "name": "Sector 75",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894390,
+  "lat": 28.4480039,
+  "lon": 76.9697682,
+  "tags": {
+    "name": "Sector 37D",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894398,
+  "lat": 28.4333189,
+  "lon": 76.9813419,
+  "tags": {
+    "name": "Sector 37B",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894405,
+  "lat": 28.4289846,
+  "lon": 76.9682233,
+  "tags": {
+    "name": "Sector 36B",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894412,
+  "lat": 28.4280033,
+  "lon": 77.0115678,
+  "tags": {
+    "name": "Sector 34",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894419,
+  "lat": 28.4342681,
+  "lon": 76.9992940,
+  "tags": {
+    "name": "Sector 37",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894427,
+  "lat": 28.4416645,
+  "lon": 76.9919125,
+  "tags": {
+    "name": "Sector 37A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894434,
+  "lat": 28.3888970,
+  "lon": 77.0459859,
+  "tags": {
+    "name": "Sector 68",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894442,
+  "lat": 28.4159257,
+  "lon": 77.0290772,
+  "tags": {
+    "name": "Sector 72",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894455,
+  "lat": 28.4489095,
+  "lon": 76.9880502,
+  "tags": {
+    "name": "Sector 37C",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894462,
+  "lat": 28.4563803,
+  "lon": 76.9810120,
+  "tags": {
+    "name": "Sector 9B",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894470,
+  "lat": 28.3960701,
+  "lon": 77.0372311,
+  "tags": {
+    "name": "Sector 69",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894476,
+  "lat": 28.4233234,
+  "lon": 77.0187775,
+  "tags": {
+    "name": "Sector 72A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894483,
+  "lat": 28.4104903,
+  "lon": 77.0394627,
+  "tags": {
+    "name": "Sector 48",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735894492,
+  "lat": 28.4202285,
+  "lon": 76.9719998,
+  "tags": {
+    "name": "Sector 36A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735931801,
+  "lat": 28.4351423,
+  "lon": 77.0403538,
+  "tags": {
+    "name": "Sector 38",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735951204,
+  "lat": 28.4128851,
+  "lon": 77.0498362,
+  "tags": {
+    "name": "Sector 49",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984416,
+  "lat": 28.4030162,
+  "lon": 77.0695893,
+  "tags": {
+    "name": "Sector 65",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984426,
+  "lat": 28.4110188,
+  "lon": 77.0963685,
+  "tags": {
+    "name": "Sector 61",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984435,
+  "lat": 28.3864052,
+  "lon": 77.0598046,
+  "tags": {
+    "name": "Sector 67",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984441,
+  "lat": 28.4030162,
+  "lon": 77.1066682,
+  "tags": {
+    "name": "Sector 59",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984448,
+  "lat": 28.3974292,
+  "lon": 77.0538823,
+  "tags": {
+    "name": "Sector 66",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984454,
+  "lat": 28.3914643,
+  "lon": 77.0761983,
+  "tags": {
+    "name": "Sector 64",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984459,
+  "lat": 28.3964476,
+  "lon": 77.0864980,
+  "tags": {
+    "name": "Sector 63",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984467,
+  "lat": 28.4160012,
+  "lon": 77.1085564,
+  "tags": {
+    "name": "Sector 58",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984472,
+  "lat": 28.3985617,
+  "lon": 77.0978276,
+  "tags": {
+    "name": "Sector 60",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2735984476,
+  "lat": 28.4076970,
+  "lon": 77.0823781,
+  "tags": {
+    "name": "Sector 62",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2736611167,
+  "lat": 28.4745997,
+  "lon": 77.0367190,
+  "tags": {
+    "name": "Sector 13",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2742247290,
+  "lat": 28.4569188,
+  "lon": 77.0646046,
+  "tags": {
+    "name": "Sector 41",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2742299746,
+  "lat": 28.4458035,
+  "lon": 77.0413169,
+  "tags": {
+    "name": "Sector 32",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2742306255,
+  "lat": 28.4423675,
+  "lon": 77.0504724,
+  "tags": {
+    "name": "Sector 39",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2742483294,
+  "lat": 28.4359133,
+  "lon": 77.0584045,
+  "tags": {
+    "name": "Sector 46",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2742541214,
+  "lat": 28.4507064,
+  "lon": 77.0738281,
+  "tags": {
+    "name": "Sector 44",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2742620469,
+  "lat": 28.4368166,
+  "lon": 77.0795276,
+  "tags": {
+    "name": "Sector 52",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2745391647,
+  "lat": 28.4166536,
+  "lon": 77.0611745,
+  "tags": {
+    "name": "Sector 50",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2860063424,
+  "lat": 28.4337898,
+  "lon": 76.9539433,
+  "tags": {
+    "name": "Sector 88A",
+    "place": "suburb"
+  }
+},
+{
+  "type": "node",
+  "id": 2860063425,
+  "lat": 28.4420223,
+  "lon": 76.9538495,
+  "tags": {
+    "name": "Sector 88B",
+    "place": "suburb"
+  }
+}
+
+  ]
+}
