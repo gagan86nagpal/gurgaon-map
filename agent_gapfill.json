@@ -13,7 +13,13 @@
   "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "Square Yards project page address: Sector 62, Rajesh Pilot Chowk, CRPF Rd, near Golf Course Extension Road"
+  "sector_verified_by": "Square Yards project page address: Sector 62, Rajesh Pilot Chowk, CRPF Rd, near Golf Course Extension Road",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "62",
@@ -29,7 +35,13 @@
   "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "Square Yards project page: Sector 62, Golf Course Ext. Road, Gurgaon; RERA 85 OF 2023"
+  "sector_verified_by": "Square Yards project page: Sector 62, Golf Course Ext. Road, Gurgaon; RERA 85 OF 2023",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "67",
@@ -45,7 +57,13 @@
   "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "Square Yards project page: Sector 67, Gurgaon; RERA HRERA 660/2017/307"
+  "sector_verified_by": "Square Yards project page: Sector 67, Gurgaon; RERA HRERA 660/2017/307",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "59",
@@ -61,7 +79,13 @@
   "as_of": "2026-07",
   "confidence": "C",
   "area_basis": "super",
-  "sector_verified_by": "multiple listings confirm Sector 59, Golf Course Extension Road (GCER), Gurgaon"
+  "sector_verified_by": "multiple listings confirm Sector 59, Golf Course Extension Road (GCER), Gurgaon",
+  "sot": {
+   "cls": "broker",
+   "label": "opulnzabode.com",
+   "domain": "opulnzabode.com",
+   "what": "broker/channel-partner quote — quoted unit price ÷ super area"
+  }
  },
  {
   "sector": "56",
@@ -77,7 +101,13 @@
   "as_of": "2026-08",
   "confidence": "A",
   "area_basis": "super",
-  "sector_verified_by": "Square Yards project page: Sector 56, Golf Course Road, Gurgaon"
+  "sector_verified_by": "Square Yards project page: Sector 56, Golf Course Road, Gurgaon",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "82A",
@@ -93,7 +123,13 @@
   "as_of": "2026-07",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "Square Yards project page: Sector 82A, Gurgaon, ~1.5km from Dwarka Expressway"
+  "sector_verified_by": "Square Yards project page: Sector 82A, Gurgaon, ~1.5km from Dwarka Expressway",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "89",
@@ -109,7 +145,13 @@
   "as_of": "2025-12",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "Square Yards/M3M pages confirm Sector 89, Gurgaon"
+  "sector_verified_by": "Square Yards/M3M pages confirm Sector 89, Gurgaon",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "91",
@@ -125,7 +167,13 @@
   "as_of": "2026-08",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "Square Yards project page: Sector 91, Gurgaon, Meoka, Haryana 122505; RERA 63 OF 2017"
+  "sector_verified_by": "Square Yards project page: Sector 91, Gurgaon, Meoka, Haryana 122505; RERA 63 OF 2017",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "85",
@@ -146,6 +194,12 @@
    "verdict": "keep",
    "reason": "Confirmed current; already priced close to sector avg (₹12,950), consistent with an established Godrej project rather than stale data.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -167,6 +221,12 @@
    "verdict": "adjust",
    "reason": "Price has risen since the Dec-2025 basis; still slightly below sector avg as Orris is a mid-premium (not top-tier) brand in this sector.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -183,7 +243,13 @@
   "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "Square Yards/99acres confirm Sector 110A, Dwarka Expressway, Gurgaon"
+  "sector_verified_by": "Square Yards/99acres confirm Sector 110A, Dwarka Expressway, Gurgaon",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "31",
@@ -199,6 +265,12 @@
   "as_of": "2026-01",
   "confidence": "B",
   "area_basis": "carpet",
-  "sector_verified_by": "Square Yards project page: Sector 31, Sohna Road, Gurgaon (Gurugram-proper Sector 31, not Sohna town)"
+  "sector_verified_by": "Square Yards project page: Sector 31, Sohna Road, Gurgaon (Gurugram-proper Sector 31, not Sohna town)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  }
 ]

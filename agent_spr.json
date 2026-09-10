@@ -1,41 +1,5 @@
 [
  {
-  "sector": "71",
-  "project": "Signature Global Titanium SPR",
-  "developer": "Signature Global",
-  "price_psf_min": 16000,
-  "price_psf_max": 18000,
-  "basis": "3.5BHK 2600 sqft @ ₹4.5 Cr",
-  "status": "under construction",
-  "source_url": "https://...",
-  "source_type": "portal",
-  "as_of": "2026-07"
- },
- {
-  "sector": "70A",
-  "project": "Project Name",
-  "developer": "Developer",
-  "price_psf_min": 16000,
-  "price_psf_max": 18000,
-  "basis": "description of what price this comes from",
-  "status": "under construction",
-  "source_url": "https://...",
-  "source_type": "portal",
-  "as_of": "2026-07"
- },
- {
-  "sector": "75A",
-  "project": "Project Name",
-  "developer": "Developer",
-  "price_psf_min": 16000,
-  "price_psf_max": 18000,
-  "basis": "description of what price this comes from",
-  "status": "under construction",
-  "source_url": "https://...",
-  "source_type": "portal",
-  "as_of": "2026-07"
- },
- {
   "sector": "69",
   "project": "Smartworld Sky Arc",
   "developer": "Smartworld",
@@ -45,7 +9,13 @@
   "status": "under construction",
   "source_url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-69-gurgaon-prffid",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "69",
@@ -57,7 +27,13 @@
   "status": "ready to move",
   "source_url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-69-gurgaon-prffid",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "69",
@@ -69,7 +45,13 @@
   "status": "ready to move",
   "source_url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-69-gurgaon-prffid",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "70",
@@ -87,6 +69,12 @@
    "verdict": "keep",
    "reason": "Arithmetic confirmed: 2BHK 514-540.89sqft@Rs57.45-79L=11,177-14,606/sqft; 3BHK 645-646sqft@Rs72.34-90L=11,215-13,932/sqft. Searched for a squareyards/housing.com project page for this specific Sector 70 project and none was found (only Sector 37D and other Signature Global projects surfaced), so the broker microsite is retained as the best available source.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "broker",
+   "label": "samagrarealty.in",
+   "domain": "samagrarealty.in",
+   "what": "broker/channel-partner quote — quoted unit price ÷ super area"
   }
  },
  {
@@ -99,7 +87,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-escala/384/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "72",
@@ -111,7 +105,13 @@
   "status": "under construction / ready to move (mixed phases)",
   "source_url": "https://www.magicbricks.com/tata-primanti-sector-72-gurgaon-pdpid-4d4235303030313431",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "MagicBricks",
+   "domain": "magicbricks.com",
+   "what": "listing-based project average asking price"
+  }
  },
  {
   "sector": "78",
@@ -123,7 +123,13 @@
   "status": "under construction, possession stated as Dec 2028",
   "source_url": "https://housing.com/in/buy/projects/page/348520-ganga-valley-floors-by-ganga-realty-in-sector-78",
   "source_type": "portal",
-  "as_of": "2026-09"
+  "as_of": "2026-09",
+  "sot": {
+   "cls": "portal",
+   "label": "Housing.com",
+   "domain": "housing.com",
+   "what": "listing-based project average asking price"
+  }
  },
  {
   "sector": "47",
@@ -135,7 +141,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/bestech-park-view-spa/295/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "48",
@@ -153,6 +165,12 @@
    "verdict": "keep",
    "reason": "Confirmed current and unchanged; below sector avg (₹17,750) due to a recent cooling trend in this specific sub-project. Two new stronger premium comps added below (Experion The Trillion, Central Park Resorts) resolve the sector median.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -165,7 +183,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-49-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "49",
@@ -177,7 +201,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-49-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "49",
@@ -189,7 +219,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-49-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "50",
@@ -201,7 +237,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-50-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "50",
@@ -213,7 +255,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-50-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "51",
@@ -225,7 +273,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-51-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "51",
@@ -237,7 +291,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-51-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "68",
@@ -249,7 +309,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-sierra/7396/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "69",
@@ -261,7 +327,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/property-rates/sector-69-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "71",
@@ -279,6 +351,12 @@
    "verdict": "keep",
    "reason": "Arithmetic confirmed exactly: 3.5BHK 2,400sqft@Rs4.5Cr=18,750/sqft; 4.5BHK 3,200sqft@Rs5.76Cr=18,000/sqft. No portal project page found for this specific project within budget; broker microsite retained.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "broker",
+   "label": "premiumrealtyinfra.com",
+   "domain": "premiumrealtyinfra.com",
+   "what": "broker/channel-partner quote — quoted unit price ÷ super area"
   }
  },
  {
@@ -291,7 +369,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/property-rates/sector-72-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "72",
@@ -303,7 +387,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/property-rates/sector-72-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "72A",
@@ -315,7 +405,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/sector-72a-in-gurgaon-overview-63959",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "73",
@@ -333,6 +429,12 @@
    "verdict": "keep",
    "reason": "Data is confirmed current and DLF Alameda is genuinely the top-priced named project found in Sector 73 (next highest: Today Callidora ₹13,400, Spire Orion ₹12,950). Could not find any project or combination that approaches the stated ₹36,100 portal avg — that figure looks inconsistent with all available project-level data and likely reflects a different segment (e.g., SCO/commercial plots or independent-floor land rates) folded into the 'sector-wide' portal average rather than genuine apartment pricing. Flagging sector 73's portal_avg itself as suspect; unresolved with apartment-level data alone.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -345,7 +447,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-skywalk/225841/project",
   "source_type": "portal",
-  "as_of": "2026-03"
+  "as_of": "2026-03",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "76",
@@ -357,7 +465,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/whiteland-blissville/171090/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "76",
@@ -369,7 +483,13 @@
   "status": "under construction",
   "source_url": "https://megarealtymax.com/residential-property/whiteland-the-aspen-sector-76-gurgaon",
   "source_type": "broker",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "broker",
+   "label": "megarealtymax.com",
+   "domain": "megarealtymax.com",
+   "what": "broker/channel-partner quote — quoted unit price ÷ super area"
+  }
  },
  {
   "sector": "77",
@@ -381,7 +501,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/emaar-palm-premier/9667/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "78",
@@ -393,7 +519,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-78-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "79",
@@ -405,7 +537,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-golf-hills/220071/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "79",
@@ -417,7 +555,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-antalya-hills/201749/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "79B",
@@ -429,7 +573,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/signature-global-city-79b/216718/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "80",
@@ -441,7 +591,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/sobha-aranya/247019/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "80",
@@ -453,7 +609,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/eldeco-fairway-reserve/324073/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "80",
@@ -471,6 +633,12 @@
    "verdict": "keep",
    "reason": "Confirmed via direct fetch: current asking price Rs10,400/sqft (Jun 2026), versus sector-80 average of Rs16,150/sqft. Legitimately lower because Godrej Frontier is an older (ready since 2015) project competing with much newer, pricier sector-80 launches - not a data error.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -489,6 +657,12 @@
    "verdict": "keep",
    "reason": "Confirmed current; well above the ₹12,150 sector avg, the correct premium anchor for Sector 81.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -507,6 +681,12 @@
    "verdict": "keep",
    "reason": "Confirmed current and above the sector avg (₹12,150).",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -519,7 +699,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/godrej-serenity-gurgaon/103189/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Sohna-33",
@@ -531,7 +717,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/central-park-flower-valley/8273/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Sohna-35",
@@ -543,7 +735,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/property-rates/sohna-sector-35-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Sohna-35",
@@ -555,7 +753,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sohna-sector-35-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Sohna-36",
@@ -567,7 +771,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/krisumi-waterfall-residences/10781/project",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Sohna-2",
@@ -579,7 +789,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sohna-sector-2-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Sohna-2",
@@ -591,7 +807,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sohna-sector-2-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Sohna-5",
@@ -603,7 +825,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/property-rates/sohna-sector-5-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "50",
@@ -615,6 +843,12 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-fresco/51/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  }
 ]

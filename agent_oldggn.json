@@ -9,7 +9,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/sector-3-gurgaon-overview-piffid",
   "source_type": "portal",
-  "as_of": "2026-01"
+  "as_of": "2026-01",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "3A",
@@ -27,6 +33,12 @@
    "verdict": "keep",
    "reason": "Confirmed directly: locality average ₹5,100/sqft; Maa Bhagwati Residency ₹5,500/sqft; SS Residency ₹5,500/sqft; Shree Ganesh Apartment ₹5,200/sqft. All within the stated 5,100-5,500 band.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -45,6 +57,12 @@
    "verdict": "keep",
    "reason": "99acres source returns 403 on direct re-fetch, but ₹6,650/sqft is consistent with neighboring old-Gurgaon sectors confirmed this session (3A: 5,100-5,500; 5: 11,450; 6: 5,000; 8: 3,700-4,750), and as_of 2026-01 meets the recency bar. 'Extreme value' flag reflects comparison to a much higher Gurgaon-wide median, not a data problem.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
   }
  },
  {
@@ -63,6 +81,12 @@
    "verdict": "keep",
    "reason": "Confirmed exact match via direct fetch: 'Property rates in Sector 5 average Rs11,450 per sq ft' (Jun 2026).",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -75,7 +99,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-5-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-09"
+  "as_of": "2026-09",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "6",
@@ -87,7 +117,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-6-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "6",
@@ -105,6 +141,12 @@
    "verdict": "keep",
    "reason": "Confirmed exact match via direct fetch: Sector 6 average asking price Rs5,000/sqft as of June 2026.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -117,7 +159,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/sector-7-gurgaon-overview-piffid",
   "source_type": "portal",
-  "as_of": "2026-01"
+  "as_of": "2026-01",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "8",
@@ -135,6 +183,12 @@
    "verdict": "keep",
    "reason": "Confirmed current and legitimately marquee-condo resale stock (Ansal is on the approved developer list). Below the ₹11,655 sector avg because it is an older (mid-2000s) low-rise villa project, not new premium supply — no comparable branded high-rise condo could be found elsewhere in Sector 8 within the research budget.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -147,7 +201,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-9-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "9",
@@ -159,7 +219,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/sector-9-gurgaon-overview-piffid",
   "source_type": "portal",
-  "as_of": "2026-01"
+  "as_of": "2026-01",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "9A",
@@ -177,6 +243,12 @@
    "verdict": "adjust",
    "reason": "More recent squareyards data shows Sector 9A averaging ~Rs7,450/sqft (vs Gurgaon average Rs14,900/sqft), and a specific resale listing (1,550sqft@Rs1.5Cr) computes to Rs9,677/sqft. Narrowed the original 99acres-sourced 10,000-17,500 band down to 7,450-9,700, which better matches current data; original range likely mixed in a pricier sub-pocket.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -195,6 +267,12 @@
    "verdict": "adjust",
    "reason": "Refreshed range from the stale 2025-08 figure. Confirmed via targeted search that Sector 10A genuinely has no branded premium condo — it is entirely 1980s-90s government/co-operative group-housing societies (IDPL Apartment, Haryana Apartments, etc.); a project called 'Central Park III' sometimes shows on this sector's aggregator page but is actually located in Sohna Sector 33, not 10A, and was excluded.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -207,7 +285,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/sector-12-gurgaon-overview-piffid",
   "source_type": "portal",
-  "as_of": "2026-01"
+  "as_of": "2026-01",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "12",
@@ -219,7 +303,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-12-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-09"
+  "as_of": "2026-09",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "12A",
@@ -237,6 +327,12 @@
    "verdict": "adjust",
    "reason": "The 2023 figure was over 3 years stale. This generic builder-floor segment remains below the current portal avg (₹6,500) by definition — it is unbranded resale stock, distinct from the new Stanford Amaara Residences quote added below.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -255,6 +351,12 @@
    "verdict": "adjust",
    "reason": "Original broker figure (moneytreerealty, Rs6,106, as_of 2025-01) was stale. Replaced with NoBroker locality page (2026), which cites Rs6,500-8,000/sqft; another source suggests up to Rs9,000-15,000 for better pockets, so narrowed the top end conservatively to Rs9,000 rather than accepting the higher unverified figure.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "NoBroker",
+   "domain": "nobroker.in",
+   "what": "listing-based locality average"
   }
  },
  {
@@ -273,6 +375,12 @@
    "verdict": "keep",
    "reason": "Confirmed current and essentially at the sector avg (₹22,325) — this is the correct premium anchor for old-Gurugram Sector 14.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -291,6 +399,12 @@
    "verdict": "keep",
    "reason": "Confirmed current; below sector avg because ODR Residency is a smaller/older resale building relative to the Old DLF Colony benchmark.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -303,7 +417,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-15-gurgaon-prffid",
   "source_type": "portal",
-  "as_of": "2025-08"
+  "as_of": "2025-08",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "15",
@@ -321,10 +441,16 @@
    "verdict": "keep",
    "reason": "Could not re-fetch directly (99acres 403), no contradicting evidence found. As_of meets recency bar. Wide spread is a legitimate locality-wide builder-floor range (old vs newer floors), not a single-project span, so retained as reported.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
   }
  },
  {
-  "sector": "15",
+  "sector": "15II",
   "project": "Anaheeta Homes Luxury Residential Apartments (Sector 15 Part 2, new launch)",
   "developer": "Ameya Group",
   "price_psf_min": 31500,
@@ -339,6 +465,12 @@
    "verdict": "keep",
    "reason": "'Sector 15 Part 2' is a distinct, newer sub-locality from the older 'Sector 15' builder-floor core used to compute the flagged median (14,850) - comparing them is apples-to-oranges, not a data error. No reassignment needed; both are within the Sector 15 designation.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
   }
  },
  {
@@ -351,7 +483,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-16-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "17",
@@ -363,7 +501,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-17-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "17",
@@ -381,6 +525,12 @@
    "verdict": "keep",
    "reason": "Confirmed exact match via direct fetch: Sector 17 average Rs5,450/sqft.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -399,6 +549,12 @@
    "verdict": "keep",
    "reason": "Confirmed current and genuinely below the sector avg because Sector 21 has no branded premium condominium — targeted research confirms it is an old-Gurugram sector (near Dundahera/Old Delhi Road) of independent floors and small co-op societies only. No premium-league project could be identified within the research budget; this sector remains unresolved for the median-above-avg goal.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -417,6 +573,12 @@
    "verdict": "keep",
    "reason": "Confirmed current and already above the ₹18,900 sector avg — this is the sector's genuine premium anchor.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -435,6 +597,12 @@
    "verdict": "keep",
    "reason": "Confirmed current; below sector avg as a mid-tier project relative to Ambience Creacions.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -453,6 +621,12 @@
    "verdict": "keep",
    "reason": "Confirmed current; below sector avg as an older/smaller-scale project. No additional premium-league project (beyond Ambience/Alphacorp/JMD) could be identified in Sector 22 within the research budget, so the three-project median (₹16,800) remains below the ₹18,900 avg — unresolved.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -465,7 +639,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-23-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "23",
@@ -483,6 +663,12 @@
    "verdict": "adjust",
    "reason": "Multiple current sources show sector-23 flats/builder-floor averages around Rs10,300/sqft with actual deals reaching up to ~Rs16,500/sqft. Dropped the original 18,700 top-end, which came from a single anecdotal listing (Rs2.99Cr/1,600sqft), per the standard of not letting one listing set the ceiling.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -495,7 +681,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/sale/builder-floors-for-sale-in-sector-23a-gurgaon",
   "source_type": "portal",
-  "as_of": "2025-08"
+  "as_of": "2025-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "39",
@@ -507,7 +699,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/sector-39-gurgaon-overview-piffid",
   "source_type": "portal",
-  "as_of": "2026-01"
+  "as_of": "2026-01",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "41",
@@ -519,7 +717,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-41-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-09"
+  "as_of": "2026-09",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "41",
@@ -537,6 +741,12 @@
    "verdict": "keep",
    "reason": "Confirmed exact match via direct fetch: Unitech Rakshak listed at Rs9,500/sqft (sector-41 overall average is higher, Rs15,400/sqft) - legitimately an older, cheaper project in a sector that has since seen pricier development, not an error.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -549,7 +759,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/sector-41-gurgaon-overview-piffid",
   "source_type": "portal",
-  "as_of": "2026-01"
+  "as_of": "2026-01",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "43",
@@ -561,7 +777,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-43-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "43",
@@ -573,7 +795,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-43-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "43",
@@ -591,6 +819,12 @@
    "verdict": "keep",
    "reason": "Could not re-fetch directly (403) but no contradicting evidence found; as_of meets recency bar. Sushant Lok 1 is an older established colony genuinely priced below the flagged median (26,125), which is inflated by newer luxury towers counted in that comparison set.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
   }
  },
  {
@@ -603,7 +837,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-45-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "45",
@@ -615,7 +855,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-45-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "45",
@@ -627,7 +873,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-45-gurgaon-prffid",
   "source_type": "portal",
-  "as_of": "2025-08"
+  "as_of": "2025-08",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "46",
@@ -645,6 +897,12 @@
    "verdict": "keep",
    "reason": "Could not re-fetch directly (403) or find an alternative source within budget. As_of meets recency bar; retained as reported. Wide spread reflects genuine variation across a locality-wide flat range.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
   }
  },
  {
@@ -657,7 +915,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-46-gurgaon-prffid",
   "source_type": "portal",
-  "as_of": "2025-08"
+  "as_of": "2025-08",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "55",
@@ -669,7 +933,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/sushant-lok-2-sector-55-gurgaon-overview-piffid",
   "source_type": "portal",
-  "as_of": "2026-01"
+  "as_of": "2026-01",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "57",
@@ -681,7 +951,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-57-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "57",
@@ -693,7 +969,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-57-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "57",
@@ -705,7 +987,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/sector-57-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "2",
@@ -717,7 +1005,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/property-rates/palam-vihar-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-07"
+  "as_of": "2026-07",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "2",
@@ -729,6 +1023,12 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/property-rates-and-price-trends-in-palam-vihar-gurgaon-prffid",
   "source_type": "portal",
-  "as_of": "2026-01"
+  "as_of": "2026-01",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  }
 ]

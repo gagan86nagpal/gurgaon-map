@@ -9,7 +9,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sohna-sector-33-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Sohna-33",
@@ -21,7 +27,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sohna-sector-33-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Sohna-33",
@@ -33,7 +45,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sohna-sector-33-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "36A",
@@ -45,7 +63,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/krisumi-waterfall-residences/10781/project",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "36A",
@@ -57,7 +81,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/krisumi-waterfall-suites/339846/project",
   "source_type": "portal",
-  "as_of": "2025-Q4"
+  "as_of": "2025-Q4",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "36A",
@@ -75,6 +105,12 @@
    "verdict": "adjust",
    "reason": "Original 46,221/sqft is roughly double the verified rate. Portal states current price ₹22,800/sqft, and every listed unit computes to a remarkably flat ~24,000/sqft: 2BHK 1,740sqft@4.18Cr=24,023; 1,964sqft@4.71Cr=23,981; 3BHK 2,260sqft@5.42Cr=23,982; 2,700sqft@6.48Cr=24,000; 4BHK penthouse 5,453sqft@13.09Cr=24,005; 5,867sqft@14.08Cr=23,999. Six independent unit types agree within 1%, replacing the original figure entirely.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -87,7 +123,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/signature-global-park/10718/project",
   "source_type": "portal",
-  "as_of": "2026-Q1"
+  "as_of": "2026-Q1",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "37D",
@@ -99,7 +141,13 @@
   "status": "new launch",
   "source_url": "https://www.squareyards.com/projects-in-sector-37d-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "37D",
@@ -111,7 +159,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/projects-in-sector-37d-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "37D",
@@ -129,6 +183,12 @@
    "verdict": "keep",
    "reason": "Confirmed on squareyards sector-37D listing at ₹10,000/sqft flat; entry price ₹1.85Cr for 1,695sqft implies ~10,900/sqft, reasonably close. Below the flagged sector median (16,238) because 37D also hosts pricier newer launches (Signature Global De Luxe DXP 16,500, BPTP Amaario 17,250) alongside older/cheaper stock like this one - not an error.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -141,7 +201,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/projects-in-sector-37d-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "76",
@@ -153,7 +219,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-privana-south/238058/project",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "76",
@@ -165,7 +237,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-privana-west/247372/project",
   "source_type": "portal",
-  "as_of": "2025-Q3"
+  "as_of": "2025-Q3",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "76",
@@ -177,7 +255,13 @@
   "status": "new launch",
   "source_url": "https://www.squareyards.com/projects-in-sector-76-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "76",
@@ -195,6 +279,12 @@
    "verdict": "adjust",
    "reason": "Replaced broker microsite with squareyards project page. Configuration-specific rates found: 2-3BHK ~16,250/sqft, 3-4BHK ~17,250/sqft, penthouses ~18,250/sqft; another tracker cites a 2026 resale/fresh-inventory range of 15,500-17,500/sqft. Narrowed away from the original 14,890 (cheapest entry 3BHK) to 24,780 (top penthouse) span, which spanned the extremes rather than the typical range.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -207,7 +297,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-77-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "77",
@@ -219,7 +315,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-77-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "77",
@@ -231,7 +333,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-77-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "78",
@@ -243,7 +351,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-78-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "78",
@@ -255,7 +369,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-78-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "79",
@@ -267,7 +387,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-golf-hills/220071/project",
   "source_type": "portal",
-  "as_of": "2025-Q3"
+  "as_of": "2025-Q3",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "79",
@@ -279,7 +405,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-79-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "79",
@@ -291,7 +423,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/projects-in-sector-79-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "79",
@@ -303,7 +441,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-79-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "82",
@@ -315,7 +459,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/vatika-india-next/5268/project",
   "source_type": "portal",
-  "as_of": "2026-Q1"
+  "as_of": "2026-Q1",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "82",
@@ -327,7 +477,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-82-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "82",
@@ -339,7 +495,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-82-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "83",
@@ -351,7 +513,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-83-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "83",
@@ -363,7 +531,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/vatika-boulevard-heights-and-residences/100111/project",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "83",
@@ -375,7 +549,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-83-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "84",
@@ -387,7 +567,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/sector-84-in-gurgaon-overview-103",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "84",
@@ -399,7 +585,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/sector-84-in-gurgaon-overview-103",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "86",
@@ -411,7 +603,13 @@
   "status": "new launch",
   "source_url": "https://www.squareyards.com/projects-in-sector-86-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "86",
@@ -423,7 +621,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-86-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "86",
@@ -435,7 +639,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-86-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "88A",
@@ -447,7 +657,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-88a-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "88A",
@@ -459,7 +675,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-88a-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "88A",
@@ -471,7 +693,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-88a-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "89A",
@@ -483,7 +711,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-89a-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "89A",
@@ -495,7 +729,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-89a-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "89A",
@@ -507,7 +747,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-89a-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "90",
@@ -519,7 +765,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-90-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "90",
@@ -537,6 +789,12 @@
    "verdict": "adjust",
    "reason": "Minor refresh only; sits just below the sector avg (₹10,975) because it is DLF's largest/oldest project in the sector (1,536 units), not its premium-priced newer stock.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -549,7 +807,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-92-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "93",
@@ -561,7 +825,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/projects-in-sector-93-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "93",
@@ -573,7 +843,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-93-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "93",
@@ -585,7 +861,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/projects-in-sector-93-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "95",
@@ -597,7 +879,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-95-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "95",
@@ -609,7 +897,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-95-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "95A",
@@ -621,7 +915,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-95a-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "95A",
@@ -633,7 +933,13 @@
   "status": "ready to move",
   "source_url": "https://www.squareyards.com/projects-in-sector-95a-gurgaon",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "Manesar",
@@ -645,6 +951,12 @@
   "status": "new launch",
   "source_url": "https://www.m3mproperties.com/residential/gurugram/m3m-manesar/",
   "source_type": "developer",
-  "as_of": "2025-11"
+  "as_of": "2025-11",
+  "sot": {
+   "cls": "developer",
+   "label": "M3M (developer site)",
+   "domain": "m3mproperties.com",
+   "what": "developer's own published price"
+  }
  }
 ]

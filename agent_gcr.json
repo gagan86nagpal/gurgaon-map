@@ -9,7 +9,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/ambience-caitriona/340/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "24",
@@ -21,7 +27,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/343/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "24",
@@ -33,7 +45,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/347/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "25",
@@ -45,7 +63,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/366/project",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "26",
@@ -57,7 +81,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-silver-oaks/361/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "27",
@@ -69,7 +99,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-regency-park-ii/354/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "28",
@@ -81,7 +117,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/330/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "28",
@@ -93,7 +135,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/348/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "42",
@@ -112,6 +160,12 @@
    "verdict": "adjust",
    "reason": "Squareyards' tracked 38,850/sqft is stale/matches only the smallest bare-shell unit's original booking price. Business Standard reports actual Sept-2025 registered resale transactions: 7,361sqft sold for Rs65Cr=88,314/sqft; 9,419sqft sold for Rs95Cr=100,860/sqft. Multiple independent trackers corroborate a current 80,000-1,00,000+/sqft range. Dropped the original max of 100,000 as the ceiling rather than mid-band; penthouses reportedly reach 1,10,000-1,20,000, noted as further outlier.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "news",
+   "label": "Business Standard",
+   "domain": "business-standard.com",
+   "what": "reported sale / developer-stated price"
   }
  },
  {
@@ -131,6 +185,12 @@
    "verdict": "keep",
    "reason": "Squareyards tracked resale ask of ₹70,200/sqft is independently corroborated by a market blog citing 'reported prices in the ₹70,000+ range... above historical resale lows'. Note: the same squareyards page's own unit price table (5,825-9,800sqft over ₹25.9-43.57Cr) computes to only ~44,460/sqft - that reflects older original booking prices, not the current tracked resale ask, so it was not used.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -150,6 +210,12 @@
    "verdict": "adjust",
    "reason": "Squareyards tracked ask is ₹57,550/sqft; an independent market source puts current resale 4BHKs at Rs25-35Cr over ~5,575-6,000sqft (44,800-58,300/sqft) and explicitly places Aralias below Magnolias in the price hierarchy. Dropped the original unverified 'broker estimates up to 65,000-70,000' anecdote (that would put it at/above Magnolias, contradicting independent evidence) and narrowed to 45,000-58,000.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -162,7 +228,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-icon/314/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "43",
@@ -174,7 +246,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/356/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "43",
@@ -186,7 +264,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/370/project",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "53",
@@ -198,7 +282,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/vipul-belmonte/401/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "53",
@@ -216,6 +306,12 @@
    "verdict": "adjust",
    "reason": "Original 53,544/sqft was computed as Rs8.31Cr / 1,552sqft, but multiple independent listings (rathiglobalrealty, megarealtymax, whitecollarrealty) describe that 1,552sqft figure as CARPET area for the same config, with no stated loading factor to convert. Squareyards' own project page instead lists 'Unit Type (Saleable)' sizes of 3,050-4,250sqft at an explicit ₹31,999/sqft on saleable-area basis - used that instead since the original figure is not comparable to SBA-basis sector comps.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -228,7 +324,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/325/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "54",
@@ -247,6 +349,12 @@
    "verdict": "adjust",
    "reason": "Business Standard (Aug 2026) reports DLF itself states prices across the development 'consistently exceed Rs1 lakh per sqft'; the record sale (17,200sqft super area for Rs271Cr) computes to Rs1,58,140/sqft. Squareyards' tracked 65,000/sqft (matching 9,500sqft@Rs61.75Cr exactly) reflects an earlier/base booking price list, not the current secondary-market reality. Shifted the whole band up to 100,000-160,000 based on the developer statement plus recent transactions (Kela Rs120.71Cr, Apr 2026; Sardana Rs271Cr, Aug 2026).",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "news",
+   "label": "Business Standard",
+   "domain": "business-standard.com",
+   "what": "reported sale / developer-stated price"
   }
  },
  {
@@ -259,7 +367,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-aralias/332/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "54",
@@ -271,7 +385,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/338/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "54",
@@ -283,7 +403,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-beverly-park-ii/312/project",
   "source_type": "portal",
-  "as_of": "2026-08"
+  "as_of": "2026-08",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "54",
@@ -295,7 +421,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/sale/resale-properties-in-dlf-park-place-gurgaon",
   "source_type": "portal",
-  "as_of": "2025-12"
+  "as_of": "2025-12",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "54",
@@ -307,7 +439,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/salcon-the-verandas/327/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "54",
@@ -319,7 +457,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/320/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "58",
@@ -331,7 +475,13 @@
   "status": "resale",
   "source_url": "https://www.99acres.com/ireo-the-grand-arch-resale-in-sector-58-gurgaon-12210-npffid",
   "source_type": "portal",
-  "as_of": "2025-12"
+  "as_of": "2025-12",
+  "sot": {
+   "cls": "portal",
+   "label": "99acres",
+   "domain": "99acres.com",
+   "what": "listing-based project/locality average asking price"
+  }
  },
  {
   "sector": "60",
@@ -343,7 +493,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/ireo-skyon/64/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "61",
@@ -355,7 +511,13 @@
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/smart-world-orchard/103238/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "63",
@@ -374,6 +536,12 @@
    "verdict": "adjust",
    "reason": "Price has appreciated further but remains below the ₹22,750 sector avg, since sector 63's average is now pulled up by newer ultra-luxury stock (see DLF The Arbour, added below).",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
   }
  },
  {
@@ -386,7 +554,13 @@
   "status": "new launch",
   "source_url": "https://superluxere.com/blogs/sobha-crescent-sector-63a-gurgaon-price-list-payment-plan",
   "source_type": "blog",
-  "as_of": "2026-03"
+  "as_of": "2026-03",
+  "sot": {
+   "cls": "broker",
+   "label": "superluxere.com",
+   "domain": "superluxere.com",
+   "what": "broker/channel-partner quote — quoted unit price ÷ super area"
+  }
  },
  {
   "sector": "65",
@@ -405,6 +579,12 @@
    "verdict": "adjust",
    "reason": "Original figure (32,000-33,000, computed from 2025 unit prices) was flagged stale (as_of 2025). Current 2026 market trackers put resale rates for this branded ultra-luxury tower at Rs33,000-40,000/sqft, versus a plain Sector 65 average of ~Rs20,000/sqft. 99acres project page returns 403 for direct fetch; relied on search-aggregated current listings.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "broker",
+   "label": "megarealtymax.com",
+   "domain": "megarealtymax.com",
+   "what": "broker/channel-partner quote — quoted unit price ÷ super area"
   }
  },
  {
@@ -417,7 +597,13 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-golf-estate/68/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "66",
@@ -429,6 +615,12 @@
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/emaar-mgf-the-palm-drive-villas/20901/project",
   "source_type": "portal",
-  "as_of": "2026-06"
+  "as_of": "2026-06",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  }
 ]

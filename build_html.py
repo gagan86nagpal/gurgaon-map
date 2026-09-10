@@ -473,6 +473,10 @@ for s, gs in generic_only.items():
     rng = f'₹{lo:,}' + (f'–{hi:,}' if hi != lo else '')
     nostock[s] = {'reason': f'no branded premium project found; locality-wide resale asking average is {rng}/sq ft ({g.get("as_of", "")})'.replace(' ()', ''),
                   'source_url': g.get('source_url', ''), 'locality_avg': [lo, hi]}
+if '15' in nostock:   # OSM splits Sector 15 into parts I and II; a whole-sector verdict applies to whichever part has no quote
+    for part in ('15I', '15II'):
+        if not any(q['sector'] == part for q in quotes): nostock[part] = nostock['15']
+    del nostock['15']
 
 data = {
     'bench': bench, 'nostock': nostock,
@@ -483,6 +487,16 @@ data = {
     'metro': metro, 'stations': stations, 'landmarks': landmarks, 'entries': entries, 'areas': areas, 'societies': societies,
 }
 n_sectors_with_data = len({q['sector'] for q in quotes})
+_src = {}
+for q in quotes: _src[q.get('sot', {}).get('label', q.get('source_type', 'other'))] = _src.get(q.get('sot', {}).get('label', q.get('source_type', 'other')), 0) + 1
+_cls = {}
+for q in quotes: c = q.get('sot', {}).get('cls', 'other'); _cls[c] = _cls.get(c, 0) + 1
+def _pct(n): return f'{100 * n / len(quotes):.0f}%' if 100 * n / len(quotes) >= 1 else f'{100 * n / len(quotes):.1f}%'
+SOURCE_NOTE = ('<div class="note"><h3>Where the numbers come from</h3>Of the ' + str(len(quotes)) + ' project quotes, ' +
+    ', '.join(f'<b>{_pct(n)}</b> {html.escape(k)}' for k, n in [kv for kv in sorted(_src.items(), key=lambda kv: -kv[1]) if kv[1] >= 3]) +
+    f'; the rest are broker microsites, developer/project sites and press reports ({_pct(_cls.get("broker", 0))} broker, {_pct(_cls.get("developer", 0) + _cls.get("project-site", 0))} developer or project site, {_pct(_cls.get("news", 0))} news). '
+    'Square Yards dominates because it is the one major portal whose project pages could be read programmatically; its "current asking price" blends listing asks with registered-transaction data, so it usually sits closer to achieved prices than a pure listing average — but it is one vendor\'s model, and 99acres figures are pure listing asks. Every quote shows its source label; hover it for what that number means on that site, and the full register is in '
+    '<a href="https://github.com/gagan86nagpal/gurgaon-map/blob/main/SOURCES.md" target="_blank" rel="noopener">SOURCES.md</a>.</div>')
 generated = '10 Sep 2026'
 
 PAGE = r'''<title>Gurugram Sector Price Map</title>
@@ -857,6 +871,7 @@ footer p{max-width:90ch;margin:0}
   <div class="note"><h3>How the range is built</h3>For each project we take the midpoint of its quoted ₹/sq ft. A sector's <b>range</b> is the lowest to highest project midpoint; its <b>colour</b> is the median. With 3–4 projects that is a ballpark, not a valuation — one ultra-luxury launch (Krisumi Waterside in 36A, DLF Dahlias in 54) can pull a sector's top end far above its typical stock.</div>
   <div class="note"><h3>Ticket sizes in ₹ crore</h3>Indicative only: the sector's ₹/sq ft range multiplied by a typical super area (2 BHK 1,350 · 3 BHK 1,900 · 4 BHK 2,800 sq ft by default — edit the boxes in the panel). Real units vary a lot in size, and PLC, parking, GST and club charges come on top.</div>
   <div class="note"><h3>What "same league" means here</h3>We kept quotes from established branded developers and their premium/luxury lines. In mature sectors with no new launch (Old Gurugram, Sushant Lok, Golf Course Road) the evidence is resale asking rates in well-known condominiums, flagged <i>resale</i>. Use the chips to include or exclude those.</div>
+  __SOURCE_NOTE__
   <div class="note"><h3>How the numbers were checked</h3>Every quote carries a confidence grade: <b>A</b> two independent sources agree within 15%; <b>B</b> one solid portal or developer page; <b>C</b> aggregator/broker only or not re-verified. Outliers, broker-sourced and wide-spread rows were re-audited in September 2026 and corrected or dropped. Separately, each sector shows the portal-published <i>sector-wide</i> average (99acres, MagicBricks, Square Yards, Housing) as an independent check — a premium median that falls below it is flagged in the panel.</div>
   <div class="note"><h3>Search</h3>The search box knows every quoted project plus every named residential society, condominium and neighbourhood OpenStreetMap has in Gurugram. A society resolves to the sector its footprint sits in and shows that sector's range; societies OSM only has near a point-mapped sector are marked "near". Sector prices are not resolved for societies with no quote — you get the location and the sector's ballpark.</div>
   <div class="note"><h3>Map data</h3>Sector polygons, roads, metro lines, the IGI footprint, the Delhi–Haryana line, parks, golf courses and landmarks are from OpenStreetMap (© OpenStreetMap contributors, ODbL). Sectors OSM has only as a point — including 99, 99A, 76, 77, 95 — are dashed circles at their mapped location. "Entry to Delhi" markers are where NH-48, Dwarka Expressway, Old Delhi Road and MG Road cross the state line.</div>
@@ -1218,7 +1233,7 @@ function renderInspector(){
       <div class="psf">${fmt(q.price_psf_min)}${q.price_psf_max!==q.price_psf_min?'–'+q.price_psf_max.toLocaleString('en-IN'):''}</div></div>
       <div class="tix" data-mid="${mid(q)}">${projTix(q)}</div>
       ${q.basis?`<div class="basis">${esc(q.basis)}</div>`:''}
-      <div class="meta"><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span><span class="pill src">${esc(q.source_type||'source')}</span>${confPill(q)}<span>${esc(q.as_of||'')}</span>${q.second_source_url?`<a href="${esc(q.second_source_url)}" target="_blank" rel="noopener" style="font-size:11px">2nd source</a>`:''}</div>
+      <div class="meta"><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span><span class="pill src" title="${esc(q.sot?q.sot.what:'')}">${esc(q.sot?q.sot.label:(q.source_type||'source'))}</span>${confPill(q)}<span>${esc(q.as_of||'')}</span>${q.second_source_url?`<a href="${esc(q.second_source_url)}" target="_blank" rel="noopener" style="font-size:11px">2nd source</a>`:''}</div>
       ${q.audit&&q.audit.reason?`<div class="basis" style="color:var(--muted)">Audit: ${esc(q.audit.reason)}</div>`:''}
     </li>`).join('');
   insp.innerHTML = `<div class="eyebrow">Sector</div><h2>${secName(k)}</h2>
@@ -1359,7 +1374,7 @@ function renderTable(){
     const a = AGG[k], b = bandOf(a.med);
     h += `<tr class="sec" tabindex="0" data-s="${k}"><td><span class="sw" style="background:var(${b.v})"></span>${secName(k)}<span class="cnt">${a.n} quote${a.n>1?'s':''}</span></td><td colspan="2">${D.sectors[k]?.boundary===false?'<span style="color:var(--muted);font-weight:400">location approximate</span>':''}</td><td class="num">${fmtK(a.lo)}${a.hi!==a.lo?' – '+fmtK(a.hi):''} <span style="color:var(--muted)">· med ${fmt(Math.round(a.med))}</span></td><td colspan="4" style="color:var(--muted);font-weight:400">${D.bench[k]&&D.bench[k].avg?`sector-wide portal avg ${fmt(D.bench[k].avg)}`:''}</td></tr>`;
     for(const q of a.rows){
-      h += `<tr class="q"><td>${k}</td><td>${esc(q.project)}</td><td>${esc(q.developer||'')}</td><td class="num">${q.price_psf_min.toLocaleString('en-IN')}${q.price_psf_max!==q.price_psf_min?'–'+q.price_psf_max.toLocaleString('en-IN'):''}</td><td><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span> ${confPill(q)}</td><td>${esc(q.basis||'')}</td><td>${esc(q.as_of||'')}</td><td><a href="${esc(q.source_url)}" target="_blank" rel="noopener">${esc(q.source_type||'link')}</a></td></tr>`;
+      h += `<tr class="q"><td>${k}</td><td>${esc(q.project)}</td><td>${esc(q.developer||'')}</td><td class="num">${q.price_psf_min.toLocaleString('en-IN')}${q.price_psf_max!==q.price_psf_min?'–'+q.price_psf_max.toLocaleString('en-IN'):''}</td><td><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span> ${confPill(q)}</td><td>${esc(q.basis||'')}</td><td>${esc(q.as_of||'')}</td><td><a href="${esc(q.source_url)}" target="_blank" rel="noopener" title="${esc(q.sot?q.sot.what:'')}">${esc(q.sot?q.sot.label:(q.source_type||'link'))}</a></td></tr>`;
     }
   }
   tb.innerHTML = h;
@@ -1377,7 +1392,7 @@ renderTable();
 </script>
 '''
 
-out = PAGE.replace('__DATA__', json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__GENERATED__', generated)
+out = PAGE.replace('__DATA__', json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')).replace('__GENERATED__', generated).replace('__SOURCE_NOTE__', SOURCE_NOTE)
 open(f'{BASE}/gurgaon-price-map.html', 'w').write(out)
 GA = '''<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQT0Z05NDL"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BQT0Z05NDL');</script>'''

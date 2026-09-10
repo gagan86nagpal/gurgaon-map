@@ -15,6 +15,12 @@
    "verdict": "keep",
    "reason": "Confirmed directly via the source page: 3.5BHK 2,125sqft@Rs3.15Cr=14,824/sqft; 4.5BHK 3,000sqft@Rs4.49Cr=14,967/sqft. Searched squareyards/99acres/housing.com and other portals - only the earlier Phase 1 'ATS Grandstand' project (not Phase 2) is indexed there yet. Given HRERA registration is only from 17.08.2026, the broker-microsite exception (standard 5, brand-new launch with no portal coverage yet) applies.",
    "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "project-site",
+   "label": "ATS Grandstand project site",
+   "domain": "atsgrandstandgurgaon.in",
+   "what": "quoted unit price ÷ super area (project marketing site; not the atshomekraft.com corporate domain)"
   }
  }
 ]

@@ -12,7 +12,13 @@
   "second_source_url": "https://www.squareyards.com/projects-in-sector-90-gurgaon",
   "as_of": "2026-09",
   "confidence": "B",
-  "sector_verified_by": "Square Yards 'projects-in-sector-90-gurgaon' page explicitly confirms: 'a pioneering residential project located in Sector 90, Gurgaon'"
+  "sector_verified_by": "Square Yards 'projects-in-sector-90-gurgaon' page explicitly confirms: 'a pioneering residential project located in Sector 90, Gurgaon'",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "85",
@@ -27,7 +33,13 @@
   "second_source_url": "https://www.squareyards.com/projects-in-sector-85-gurgaon",
   "as_of": "2026-09",
   "confidence": "B",
-  "sector_verified_by": "Square Yards 'projects-in-sector-85-gurgaon' page explicitly confirms Ganga Anantam is 'located in Sector 85, Gurgaon'"
+  "sector_verified_by": "Square Yards 'projects-in-sector-85-gurgaon' page explicitly confirms Ganga Anantam is 'located in Sector 85, Gurgaon'",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "63",
@@ -42,7 +54,13 @@
   "second_source_url": "https://www.squareyards.com/projects-in-sector-63-gurgaon",
   "as_of": "2026-09",
   "confidence": "B",
-  "sector_verified_by": "Square Yards 'projects-in-sector-63-gurgaon' page explicitly lists: 'DLF The Arbour in Sector 63, Gurgaon'"
+  "sector_verified_by": "Square Yards 'projects-in-sector-63-gurgaon' page explicitly lists: 'DLF The Arbour in Sector 63, Gurgaon'",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "81",
@@ -57,7 +75,13 @@
   "second_source_url": "",
   "as_of": "2026-09",
   "confidence": "B",
-  "sector_verified_by": "Listed on the same Sector 81 property-rates page alongside DLF The Ultima, as a distinct phase of the same DLF sector-81 development"
+  "sector_verified_by": "Listed on the same Sector 81 property-rates page alongside DLF The Ultima, as a distinct phase of the same DLF sector-81 development",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "12A",
@@ -72,7 +96,13 @@
   "second_source_url": "https://www.squareyards.com/gurgaon-residential-property/stanford-amaara-residences/111222/project/location-map",
   "as_of": "2026-09",
   "confidence": "B",
-  "sector_verified_by": "Multiple independent listings (CommonFloor, 360Realtors, RathiGlobalRealty, Square Yards) all confirm Sector 12A/Sector 12 Gurgaon location"
+  "sector_verified_by": "Multiple independent listings (CommonFloor, 360Realtors, RathiGlobalRealty, Square Yards) all confirm Sector 12A/Sector 12 Gurgaon location",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "48",
@@ -87,7 +117,13 @@
   "second_source_url": "https://www.experionrealty.com/experion-trillion/",
   "as_of": "2026-09",
   "confidence": "A",
-  "sector_verified_by": "Square Yards 'projects-in-sector-48-gurgaon' page and developer's own site (experionrealty.com) and multiple broker sites all confirm Sector 48, Gurgaon location. NOTE: this project was previously mis-cited under a Sector 38 row in the existing dataset — it is corrected here and belongs to Sector 48."
+  "sector_verified_by": "Square Yards 'projects-in-sector-48-gurgaon' page and developer's own site (experionrealty.com) and multiple broker sites all confirm Sector 48, Gurgaon location. NOTE: this project was previously mis-cited under a Sector 38 row in the existing dataset — it is corrected here and belongs to Sector 48.",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "48",
@@ -102,6 +138,12 @@
   "second_source_url": "https://www.squareyards.com/projects-in-sector-48-gurgaon",
   "as_of": "2026-09",
   "confidence": "B",
-  "sector_verified_by": "Square Yards project page explicitly states 'Sector 48, Gurgaon'; confirmed again on the sector-48 project listing page"
+  "sector_verified_by": "Square Yards project page explicitly states 'Sector 48, Gurgaon'; confirmed again on the sector-48 project listing page",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  }
 ]

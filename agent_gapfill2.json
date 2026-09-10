@@ -13,7 +13,13 @@
   "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "Square Yards project page states location as Sector 40, Gurgaon (NH 8)"
+  "sector_verified_by": "Square Yards project page states location as Sector 40, Gurgaon (NH 8)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "87",
@@ -29,7 +35,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)"
+  "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "87",
@@ -45,7 +57,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)"
+  "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "87",
@@ -61,7 +79,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)"
+  "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "94",
@@ -77,7 +101,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-94 project listing page (URL keyed to Sector 94)"
+  "sector_verified_by": "squareyards sector-94 project listing page (URL keyed to Sector 94)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "94",
@@ -93,7 +123,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-94 project listing page (URL keyed to Sector 94)"
+  "sector_verified_by": "squareyards sector-94 project listing page (URL keyed to Sector 94)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "88B",
@@ -109,7 +145,13 @@
   "as_of": "2026-09",
   "confidence": "A",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-88b overview page and sector-88 listing page (both independently tag it Sector 88B)"
+  "sector_verified_by": "squareyards sector-88b overview page and sector-88 listing page (both independently tag it Sector 88B)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "88B",
@@ -125,7 +167,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "project's own squareyards page states Sector 88B; note: page also states Anhad Realty is acquiring 100% shareholding to revive this stalled project, so treat as distressed-asking, not a fully liquid market rate"
+  "sector_verified_by": "project's own squareyards page states Sector 88B; note: page also states Anhad Realty is acquiring 100% shareholding to revive this stalled project, so treat as distressed-asking, not a fully liquid market rate",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "100",
@@ -141,7 +189,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)"
+  "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "100",
@@ -157,7 +211,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)"
+  "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "100",
@@ -173,7 +233,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)"
+  "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "105",
@@ -189,7 +255,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-105 project listing page states location as Sector 105, Gurgaon; other nearby premium projects on the same page (MRG Crown, Satya Levante, Paras Dews, Zara Aavaas) are explicitly separated as Sector 104/106, confirming the page distinguishes sectors carefully"
+  "sector_verified_by": "squareyards sector-105 project listing page states location as Sector 105, Gurgaon; other nearby premium projects on the same page (MRG Crown, Satya Levante, Paras Dews, Zara Aavaas) are explicitly separated as Sector 104/106, confirming the page distinguishes sectors carefully",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "110",
@@ -205,7 +277,13 @@
   "as_of": "2026-09",
   "confidence": "B",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-110 project listing page, header explicitly 'Main Projects (In Sector 110)'"
+  "sector_verified_by": "squareyards sector-110 project listing page, header explicitly 'Main Projects (In Sector 110)'",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  },
  {
   "sector": "30",
@@ -221,6 +299,12 @@
   "as_of": "2026-09",
   "confidence": "A",
   "area_basis": "super",
-  "sector_verified_by": "squareyards sector-30 project listing page (URL keyed to Sector 30) shows it as a direct Sector 30 project, distinct from the separately-listed nearby-sector section"
+  "sector_verified_by": "squareyards sector-30 project listing page (URL keyed to Sector 30) shows it as a direct Sector 30 project, distinct from the separately-listed nearby-sector section",
+  "sot": {
+   "cls": "portal",
+   "label": "Square Yards",
+   "domain": "squareyards.com",
+   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  }
  }
 ]
