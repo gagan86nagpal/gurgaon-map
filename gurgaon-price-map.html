@@ -393,6 +393,7 @@ const bandIdx = v => BANDS.findIndex(b=>v<b.max);
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const mid = q => (q.price_psf_min+q.price_psf_max)/2;
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const track = (name, params) => { try { if(typeof gtag === 'function') gtag('event', name, params||{}); } catch(e){} };
 
 // typical super areas, editable; persisted locally
 let SIZES = {2:1350, 3:1900, 4:2800};
@@ -608,7 +609,7 @@ svg.addEventListener('keydown', ev=>{
 const LAYER = {metro:['g-metro','g-stations'], landmarks:['g-landmarks','g-entries','g-areas'], minor:['g-roads-minor'], societies:['g-soc'], placenames:[]};
 for(const c of document.querySelectorAll('.chip.layer')){
   if(c.getAttribute('aria-pressed')!=='true'){ for(const id of LAYER[c.dataset.l]) G(id).classList.add('hide'); if(c.dataset.l==='placenames') svg.classList.add('nonames'); }
-  c.addEventListener('click', ()=>{ const on = c.getAttribute('aria-pressed')==='true'; c.setAttribute('aria-pressed', on?'false':'true'); for(const id of LAYER[c.dataset.l]) G(id).classList.toggle('hide', on); if(c.dataset.l==='placenames') svg.classList.toggle('nonames', on); });
+  c.addEventListener('click', ()=>{ const on = c.getAttribute('aria-pressed')==='true'; c.setAttribute('aria-pressed', on?'false':'true'); for(const id of LAYER[c.dataset.l]) G(id).classList.toggle('hide', on); if(c.dataset.l==='placenames') svg.classList.toggle('nonames', on); track('layer_toggle', {layer: c.dataset.l, on: !on}); });
 }
 
 // ---- tooltip -----------------------------------------------------------
@@ -651,6 +652,7 @@ function pin(k, project){
   if(pinnedRoad){ for(const e of roadEls[pinnedRoad]||[]) e.classList.remove('sel'); pinnedRoad = null; }
   if(pinned && sectorEls[pinned]) sectorEls[pinned].classList.remove('pinned');
   pinned = k; hlProject = project||null; if(sectorEls[k]) sectorEls[k].classList.add('pinned');
+  track('sector_pinned', {sector: secName(k), median: AGG[k] ? Math.round(AGG[k].med) : 0, has_quotes: !!AGG[k]});
   renderInspector();
 }
 function sectorCentre(k){
@@ -668,6 +670,7 @@ function pinRoad(k){
   if(pinnedRoad) for(const e of roadEls[pinnedRoad]||[]) e.classList.remove('sel');
   if(pinned && sectorEls[pinned]) sectorEls[pinned].classList.remove('pinned');
   pinned = null; pinnedRoad = k; for(const e of roadEls[k]||[]) e.classList.add('sel');
+  track('road_pinned', {road: k});
   renderRoad();
 }
 function renderRoad(){
@@ -684,6 +687,7 @@ function renderRoad(){
     <div class="how">Sectors are listed richest first. Click one to open its evidence. A sector counts as "along" the road if the drawn centreline passes through its boundary (or within ~600 m of a point-mapped sector).</div>`;
 }
 insp.addEventListener('click', ev=>{
+  const a = ev.target.closest('a[href^="http"]'); if(a){ track('source_click', {url: a.href.slice(0,150), sector: pinned ? secName(pinned) : ''}); }
   const li = ev.target.closest('li.secrow'); if(li){ pin(li.dataset.s); const c = sectorCentre(li.dataset.s); if(c) flyTo(c.x,c.y,c.w); return; }
   const b = ev.target.closest('[data-road]'); if(b){ const bb = D.roadInfo[b.dataset.road].bb; flyTo((bb[0]+bb[2])/2,(bb[1]+bb[3])/2, Math.max(bb[2]-bb[0], (bb[3]-bb[1])*1.4)*1.25); }
 });
@@ -740,6 +744,7 @@ document.getElementById('legend').addEventListener('click', ev=>{
   else return;
   for(const x of document.querySelectorAll('.legend .sw[data-i]')) x.setAttribute('aria-pressed', String(bandSel.has(+x.dataset.i)));
   document.getElementById('legend').classList.toggle('filtering', bandSel.size>0);
+  track('band_filter', {bands: [...bandSel].sort().map(i=>BANDS[i].l).join(',') || '(cleared)'});
   paint(); renderTable();
 });
 
@@ -795,7 +800,9 @@ function renderResults(){
   resEl.classList.add('on'); qEl.setAttribute('aria-expanded','true');
 }
 function choose(i){
-  resEl.classList.remove('on'); qEl.setAttribute('aria-expanded','false'); qEl.value = i.n;
+  resEl.classList.remove('on'); qEl.setAttribute('aria-expanded','false');
+  track('search_select', {query: qEl.value.trim().slice(0,100), result: i.n.slice(0,100), result_type: i.t, sector: i.k ? secName(i.k) : '(none)'});
+  qEl.value = i.n;
   if(i.t==='sector'){ pin(i.k); const c = sectorCentre(i.k); if(c) flyTo(c.x,c.y,c.w); setMarker(null); return; }
   if(i.t==='road'){ pinRoad(i.road); const bb = D.roadInfo[i.road].bb; flyTo((bb[0]+bb[2])/2,(bb[1]+bb[3])/2, Math.max(bb[2]-bb[0], (bb[3]-bb[1])*1.4)*1.25); setMarker(null); return; }
   if(i.k) pin(i.k, i.t==='project' ? i.q.project : null);
