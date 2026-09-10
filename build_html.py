@@ -133,7 +133,31 @@ for fname, tol in (('roads_ext.json', 0.6), ('roads_minor.json', 1.0)):
 ORDER = {'tt': 0, 'sc': 1, 'pr': 2, 'tr': 3, 'mw': 4, 'gc': 5}
 roads.sort(key=lambda r: ORDER[r['c']])
 
+# clickable corridors: merge OSM segment names into the names people use
+DISPLAY = {
+    'Delhi-Gurugram Expressway': 'NH-48 · Delhi–Gurugram Expressway', 'Mahipalpur Flyover': 'NH-48 · Delhi–Gurugram Expressway',
+    'Dwarka Expressway': 'Dwarka Expressway', 'Golf Course Road': 'Golf Course Road', 'Golf Course Road Underpass': 'Golf Course Road',
+    'Golf Course Extension Road': 'Golf Course Extension Road / SPR', 'Urban Extension Road-II': 'Urban Extension Road-II (Delhi, NH-344M)',
+    'Sohna Road': 'Sohna Road (NH-248A)', 'Shubhash Chowk Underpass': 'Sohna Road (NH-248A)', 'Vatika Flyover': 'NH-48 · Delhi–Gurugram Expressway',
+    'Gurgaon Rewari Narnaul Singhana Road': 'Pataudi Road (Gurgaon–Rewari)', 'Mehrauli Gurgaon Road': 'MG Road (Mehrauli–Gurgaon)',
+    'Mehrauli-Gurgaon Road': 'MG Road (Mehrauli–Gurgaon)', 'Acharya Shri Tulsi Marg': 'MG Road (Mehrauli–Gurgaon)',
+    'Faridabad-Gurgaon Road': 'Faridabad Road', 'Link to Faridabad Road': 'Faridabad Road', 'Old Delhi Gurgaon Road': 'Old Delhi–Gurgaon Road',
+    'Rajiv Chowk Underpass': 'NH-48 · Delhi–Gurugram Expressway', 'Rao Tula Ram Flyover': 'NH-48 · Delhi–Gurugram Expressway',
+    'Gurugram New Sector Road Flyover': 'Dwarka Expressway', 'Najafgarh Daurala Road': 'Najafgarh Road', 'Nelson Mandela Marg': 'Nelson Mandela Marg',
+    'Palam Marg': 'Palam Marg', 'Dwarka-Palam Road': 'Dwarka–Palam Road', 'Bajghera Road': 'Bajghera Road', 'Carterpuri Road': 'Carterpuri Road',
+    'Basai Road': 'Basai Road', 'Hero Honda Chowk': 'NH-48 · Delhi–Gurugram Expressway',
+}
+for r in roads:
+    if r['c'] in ('mw', 'tr', 'pr', 'gc') or r['n'] in DISPLAY:
+        dn = DISPLAY.get(r['n'])
+        if not dn and r['n'] and not re.search(r'flyover|underpass|^road\b|link', r['n'], re.I): dn = r['n']
+        r['k'] = dn or ''
+    else:
+        r['k'] = ''
+
+
 ROAD_LABELS = [
+    ('Faridabad Rd', 77.128, 28.448, 62),
     ('Dwarka Expressway', 76.975, 28.500, -52),
     ('Dwarka Expressway', 77.035, 28.532, -30),
     ('NH-48 · Delhi–Jaipur', 77.045, 28.462, -38),
@@ -141,7 +165,7 @@ ROAD_LABELS = [
     ('Sohna Road', 77.045, 28.418, 48),
     ('Golf Course Rd', 77.098, 28.455, 62),
     ('Golf Course Ext. Rd', 77.085, 28.405, 40),
-    ('SPR', 77.030, 28.395, 0),
+    ('Southern Peripheral Rd', 77.020, 28.3935, 8),
     ('Pataudi Road', 76.960, 28.440, 20),
     ('Old Delhi Rd', 77.052, 28.495, -30),
     ('MG Road', 77.093, 28.478, 24),
@@ -398,7 +422,33 @@ for q in quotes:
     if s and (s['k'] == q['sector'] or s['k'] is None):
         q['x'], q['y'] = s['x'], s['y']
 
+# what each corridor passes through: sample the drawn geometry every ~250 m and look up the sector
+UNIT_KM = 0.0278  # 1 map unit = 1/4000 degree of latitude
+road_info = {}
+for r in roads:
+    if not r.get('k'): continue
+    pts = [tuple(map(float, xy.split(','))) for xy in r['d'][1:].split('L')]
+    info = road_info.setdefault(r['k'], {'c': r['c'], 'km': 0.0, 'secs': set(), 'bb': [1e9, 1e9, -1e9, -1e9]})
+    if ORDER[r['c']] > ORDER[info['c']]: info['c'] = r['c']
+    for (x1, y1), (x2, y2) in zip(pts, pts[1:]):
+        L = math.hypot(x2 - x1, y2 - y1); info['km'] += L * UNIT_KM
+        n = max(1, int(L / 9))
+        for i in range(n + 1):
+            x, y = x1 + (x2 - x1) * i / n, y1 + (y2 - y1) * i / n
+            k, how = sector_at(x, y)
+            if k and (how == 'in' or math.hypot(sectors[k]['cx'] - x, sectors[k]['cy'] - y) < 22): info['secs'].add(k)
+        for x, y in ((x1, y1), (x2, y2)):
+            bb = info['bb']; bb[0] = min(bb[0], x); bb[1] = min(bb[1], y); bb[2] = max(bb[2], x); bb[3] = max(bb[3], y)
+for k, v in road_info.items():
+    v['km'] = round(v['km'] / 2 if v['c'] in ('mw', 'tr') else v['km'], 1)  # dual carriageways are mapped as two ways
+    v['secs'] = sorted(v['secs'], key=lambda s: (int(re.match(r'\d+', s).group()) if re.match(r'\d+', s) else 999, s))
+    v['bb'] = [round(x) for x in v['bb']]
+road_info = {k: v for k, v in road_info.items() if v['km'] >= 0.8 or v['secs']}
+for r in roads:
+    if r.get('k') and r['k'] not in road_info: r['k'] = ''
+
 data = {
+    'roadInfo': road_info,
     'bbox': bbox, 'canvas': CANVAS, 'sectors': sectors, 'sohnaStrip': {'x': x0 - 60, 'y': strip_y},
     'quotes': quotes, 'roads': roads, 'roadLabels': road_labels,
     'border': [{'d': b['d']} for b in border], 'airport': airport, 'green': green,
@@ -415,7 +465,7 @@ PAGE = r'''<title>Gurugram Sector Price Map</title>
   --bg:#eef0f2; --panel:#ffffff; --panel-2:#f6f7f8; --ink:#1a222c; --ink-2:#4b5563; --muted:#7a8590;
   --line:#d5dade; --line-2:#e6e9ec; --accent:#8a1c1f; --accent-ink:#fff; --focus:#2563eb;
   --nodata:#dfe3e7; --nodata-hatch:#c6ccd2; --delhi:#e4e6e9;
-  --road:#ffffff; --road-edge:#b3bac2; --road-minor:#f7f8f9; --road-minor-edge:#d3d8dd; --gc:#c99a2e; --gc-edge:#8a6a1a;
+  --road:#ffffff; --road-edge:#9ea7b1; --road-edge-mw:#7e8894; --road-minor:#f7f8f9; --road-minor-edge:#d3d8dd; --gc:#c99a2e; --gc-edge:#8a6a1a;
   --green:#cfe3cf; --green-edge:#9fbf9f; --golf:#bfdcb9; --golf-edge:#79a872; --air:#d8dce6; --air-edge:#9aa3b8; --runway:#8b93a8;
   --border:#6b5b95; --metro-case:#ffffff; --lm:#1a222c; --lm-ink:#ffffff;
   --b1:#f9e0da; --b2:#f2bdb2; --b3:#e89787; --b4:#da6e5f; --b5:#c2463f; --b6:#96262a; --b7:#5b0f14;
@@ -426,7 +476,7 @@ PAGE = r'''<title>Gurugram Sector Price Map</title>
     --bg:#15191e; --panel:#1d2229; --panel-2:#232930; --ink:#eef1f4; --ink-2:#c3cad2; --muted:#8e98a3;
     --line:#333b45; --line-2:#2a313a; --accent:#f08a7c; --accent-ink:#1a0a0a; --focus:#7db1ff;
     --nodata:#262c33; --nodata-hatch:#343c45; --delhi:#1b2026;
-    --road:#0f1216; --road-edge:#4a535e; --road-minor:#1a1f25; --road-minor-edge:#2e353d; --gc:#d9a93a; --gc-edge:#3a2c08;
+    --road:#0f1216; --road-edge:#5a6470; --road-edge-mw:#7c8894; --road-minor:#1a1f25; --road-minor-edge:#2e353d; --gc:#d9a93a; --gc-edge:#3a2c08;
     --green:#1f2f22; --green-edge:#33503a; --golf:#22392a; --golf-edge:#3f6a48; --air:#1e232d; --air-edge:#3b445a; --runway:#6a7390;
     --border:#a493d6; --metro-case:#0f1216; --lm:#eef1f4; --lm-ink:#15191e;
     --b1:#f6d3cb; --b2:#eea698; --b3:#e17c6a; --b4:#c95445; --b5:#a83530; --b6:#7f1f20; --b7:#561014;
@@ -437,7 +487,7 @@ PAGE = r'''<title>Gurugram Sector Price Map</title>
   --bg:#15191e; --panel:#1d2229; --panel-2:#232930; --ink:#eef1f4; --ink-2:#c3cad2; --muted:#8e98a3;
   --line:#333b45; --line-2:#2a313a; --accent:#f08a7c; --accent-ink:#1a0a0a; --focus:#7db1ff;
   --nodata:#262c33; --nodata-hatch:#343c45; --delhi:#1b2026;
-  --road:#0f1216; --road-edge:#4a535e; --road-minor:#1a1f25; --road-minor-edge:#2e353d; --gc:#d9a93a; --gc-edge:#3a2c08;
+  --road:#0f1216; --road-edge:#5a6470; --road-edge-mw:#7c8894; --road-minor:#1a1f25; --road-minor-edge:#2e353d; --gc:#d9a93a; --gc-edge:#3a2c08;
   --green:#1f2f22; --green-edge:#33503a; --golf:#22392a; --golf-edge:#3f6a48; --air:#1e232d; --air-edge:#3b445a; --runway:#6a7390;
   --border:#a493d6; --metro-case:#0f1216; --lm:#eef1f4; --lm-ink:#15191e;
   --b1:#f6d3cb; --b2:#eea698; --b3:#e17c6a; --b4:#c95445; --b5:#a83530; --b6:#7f1f20; --b7:#561014;
@@ -451,7 +501,7 @@ h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;
 .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
 button{font:inherit;color:inherit}
 
-header{padding:18px clamp(16px,3vw,40px) 14px;display:grid;grid-template-columns:1fr auto;gap:12px 32px;align-items:end;border-bottom:1px solid var(--line-2)}
+header{padding:14px clamp(16px,3vw,40px) 12px;border-bottom:1px solid var(--line-2)}
 header h1{font-size:clamp(24px,3vw,34px);font-weight:700;letter-spacing:-.02em;line-height:1.05;font-variation-settings:"opsz" 96,"wdth" 92}
 header p{margin:6px 0 0;color:var(--ink-2);max-width:70ch;font-size:14px}
 .stats{display:flex;gap:24px;flex-wrap:wrap}
@@ -460,7 +510,13 @@ header p{margin:6px 0 0;color:var(--ink-2);max-width:70ch;font-size:14px}
 
 .toolbar{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;padding:10px clamp(16px,3vw,40px);border-bottom:1px solid var(--line-2);background:var(--panel);position:relative;z-index:6}
 .legend{display:flex;align-items:center;gap:0;flex-wrap:wrap}
-.legend .sw{display:flex;flex-direction:column;align-items:flex-start;min-width:52px}
+.legend .sw{display:flex;flex-direction:column;align-items:flex-start;min-width:52px;border:0;background:none;padding:2px 0;cursor:pointer;border-radius:4px}
+.legend .sw:hover i{outline:2px solid var(--ink-2);outline-offset:1px}
+.legend .sw[aria-pressed="true"] i{outline:2px solid var(--ink);outline-offset:1px}
+.legend .sw[aria-pressed="true"] small{color:var(--ink);font-weight:600}
+.legend.filtering .sw[aria-pressed="false"] i{opacity:.3}
+.legend .clear{border:0;background:none;color:var(--accent);font:600 11px "IBM Plex Sans",sans-serif;cursor:pointer;margin-left:6px;text-decoration:underline;display:none}
+.legend.filtering .clear{display:inline}
 .legend .sw i{display:block;width:100%;height:11px;border-radius:2px}
 .legend .sw:first-child i{border-radius:6px 2px 2px 6px}
 .legend .sw:nth-last-child(2) i{border-radius:2px 6px 6px 2px}
@@ -524,6 +580,7 @@ svg.map.dragging{cursor:grabbing}
 /* svg layers — widths and type scale with zoom via --z (constant on screen) and --zf (grows gently when zoomed in) */
 .sector{stroke:var(--bg);stroke-width:calc(1.6px*var(--z));stroke-linejoin:round;cursor:pointer;transition:filter .12s}
 .sector.nodata{fill:url(#hatch)}
+.sector.dim{fill-opacity:.12}.pt.dim circle{fill-opacity:.12;stroke-opacity:.3}.lbl.dim{opacity:.25}
 .sector:hover,.sector.pinned{filter:brightness(.92);stroke:var(--ink);stroke-width:calc(2.2px*var(--z))}
 :root[data-theme="dark"] .sector:hover,:root[data-theme="dark"] .sector.pinned{filter:brightness(1.15)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sector:hover,:root:not([data-theme="light"]) .sector.pinned{filter:brightness(1.15)}}
@@ -534,9 +591,12 @@ svg.map.dragging{cursor:grabbing}
 .lbl.small{font-size:calc(10.5px*var(--zf))}
 .road{fill:none;stroke:var(--road);stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
 .roadedge{fill:none;stroke:var(--road-edge);stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
-.road.mw{stroke-width:calc(5px*var(--z))}.roadedge.mw{stroke-width:calc(7.4px*var(--z))}
-.road.tr{stroke-width:calc(3.6px*var(--z))}.roadedge.tr{stroke-width:calc(5.4px*var(--z))}
-.road.pr{stroke-width:calc(2.4px*var(--z))}.roadedge.pr{stroke-width:calc(3.8px*var(--z))}
+.road.mw{stroke-width:calc(6.2px*var(--z))}.roadedge.mw{stroke-width:calc(9px*var(--z));stroke:var(--road-edge-mw)}
+.road.tr{stroke-width:calc(4.6px*var(--z))}.roadedge.tr{stroke-width:calc(6.8px*var(--z))}
+.road.pr{stroke-width:calc(3px*var(--z))}.roadedge.pr{stroke-width:calc(4.6px*var(--z))}
+.roadhit{fill:none;stroke:transparent;stroke-width:calc(12px*var(--z));stroke-linecap:round;cursor:pointer;pointer-events:stroke}
+.road.sel,.road.hov{stroke:var(--focus)!important}
+.roadedge.sel{stroke:var(--bg)!important}
 .road.sc{stroke:var(--road-minor);stroke-width:calc(1.3px*var(--z))}.roadedge.sc{stroke:var(--road-minor-edge);stroke-width:calc(2.1px*var(--z))}
 .road.tt{stroke:var(--road-minor);stroke-width:calc(.8px*var(--z))}.roadedge.tt{stroke:var(--road-minor-edge);stroke-width:calc(1.4px*var(--z));opacity:.8}
 .road.gc{stroke:var(--gc);stroke-width:calc(4.6px*var(--z))}.roadedge.gc{stroke:var(--gc-edge);stroke-width:calc(6.8px*var(--z))}
@@ -550,7 +610,7 @@ svg.map:not(.z2) .road.tt,svg.map:not(.z2) .roadedge.tt{display:none}
 .runway{fill:none;stroke:var(--runway);stroke-width:calc(4px*var(--z));stroke-linecap:butt}
 .terminal{fill:var(--air-edge);stroke:none;opacity:.8}
 .green{fill:var(--green);stroke:var(--green-edge);stroke-width:calc(.8px*var(--z));fill-opacity:.75;pointer-events:none}
-.green.golf{fill:var(--golf);stroke:var(--golf-edge)}
+.green.golf{fill:var(--golf);stroke:var(--golf-edge);fill-opacity:.9}
 .metro{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:calc(3px*var(--z));pointer-events:none}
 .metrocase{fill:none;stroke:var(--metro-case);stroke-linecap:round;stroke-linejoin:round;stroke-width:calc(5px*var(--z));pointer-events:none;opacity:.9}
 .st circle{fill:var(--metro-case);stroke:var(--ink-2);stroke-width:calc(1.4px*var(--z));r:calc(2.8px*var(--z))}
@@ -604,6 +664,13 @@ svg.map.nonames .lm .t,svg.map.nonames .st text,svg.map.nonames .entry text,svg.
 .bhk small{display:block;margin-top:6px;font-size:11px;color:var(--muted);line-height:1.4}
 .projects{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
 .proj{border:1px solid var(--line-2);background:var(--panel-2);border-radius:8px;padding:10px 12px}
+li.secrow{display:flex;justify-content:space-between;gap:10px;align-items:center;cursor:pointer}
+li.secrow>span:first-child{white-space:nowrap;font-weight:600}
+li.secrow:hover{border-color:var(--ink-2)}
+li.secrow .sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:8px;vertical-align:-1px;border:1px solid var(--line)}
+li.secrow .num{font-family:"IBM Plex Mono",monospace;font-size:13px;white-space:nowrap;text-align:right}
+li.secrow .num small{display:block;font:11px "IBM Plex Sans",sans-serif;color:var(--muted)}
+li.secrow.nod{color:var(--muted)}
 .proj.hl{border-color:var(--focus);box-shadow:0 0 0 2px color-mix(in srgb,var(--focus) 30%,transparent)}
 .proj .row{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
 .proj .name{font-weight:600;line-height:1.3}
@@ -644,21 +711,16 @@ table.tbl{border-collapse:collapse;width:100%;min-width:900px;font-size:13px}
 .notes{padding:0 clamp(16px,3vw,40px) 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;max-width:1500px}
 .note{border-top:2px solid var(--line);padding-top:10px;font-size:13px;color:var(--ink-2)}
 .note h3{font-size:14px;font-weight:700;margin-bottom:4px;color:var(--ink)}
-footer{padding:0 clamp(16px,3vw,40px) 36px;font-size:12px;color:var(--muted)}
+footer{padding:18px clamp(16px,3vw,40px) 36px;font-size:12px;color:var(--muted);border-top:1px solid var(--line-2)}
+footer .stats{margin-bottom:12px}
+footer p{max-width:90ch;margin:0}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
 <header>
   <div>
     <div class="eyebrow">Gurugram · premium-segment asking prices · ₹ per sq ft (super area)</div>
-    <h1>What does a sector of Gurugram cost?</h1>
-    <p>Sectors are coloured light-to-dark red as the <b>median</b> premium-developer quote rises. Hover for the range and the projects behind it; click to pin the evidence. Search any society or sector, drag to pan, scroll to zoom.</p>
-  </div>
-  <div class="stats">
-    <div class="stat"><b id="st-sectors">–</b><span>sectors with price evidence</span></div>
-    <div class="stat"><b id="st-quotes">–</b><span>project quotes</span></div>
-    <div class="stat"><b id="st-soc">–</b><span>societies searchable</span></div>
-    <div class="stat"><b>__GENERATED__</b><span>compiled</span></div>
+    <h1>Your introduction to Gurgaon real estate, sector-wise</h1>
   </div>
 </header>
 
@@ -702,6 +764,7 @@ footer{padding:0 clamp(16px,3vw,40px) 36px;font-size:12px;color:var(--muted)}
       <g id="g-air"></g>
       <g id="g-roads-minor"></g>
       <g id="g-roads"></g>
+      <g id="g-roadhit"></g>
       <g id="g-border"></g>
       <g id="g-metro"></g>
       <g id="g-points"></g>
@@ -715,6 +778,7 @@ footer{padding:0 clamp(16px,3vw,40px) 36px;font-size:12px;color:var(--muted)}
       <g id="g-marker"></g>
     </svg>
     <div class="mlegend" aria-label="Map symbols">
+      <div style="grid-column:1/-1;color:var(--muted)">Click a major road for the sectors along it</div>
       <div><i class="gc"></i>Golf Course Rd / Ext.</div><div><i class="metro"></i>Yellow Line</div>
       <div><i class="mw"></i>Expressway · NH</div><div><i class="metro bl"></i>Blue Line (Dwarka)</div>
       <div><i></i>Main road</div><div><i class="metro ae"></i>Airport Express</div>
@@ -754,7 +818,15 @@ footer{padding:0 clamp(16px,3vw,40px) 36px;font-size:12px;color:var(--muted)}
   <div class="note"><h3>Search</h3>The search box knows every quoted project plus every named residential society, condominium and neighbourhood OpenStreetMap has in Gurugram. A society resolves to the sector its footprint sits in and shows that sector's range; societies OSM only has near a point-mapped sector are marked "near". Sector prices are not resolved for societies with no quote — you get the location and the sector's ballpark.</div>
   <div class="note"><h3>Map data</h3>Sector polygons, roads, metro lines, the IGI footprint, the Delhi–Haryana line, parks, golf courses and landmarks are from OpenStreetMap (© OpenStreetMap contributors, ODbL). Sectors OSM has only as a point — including 99, 99A, 76, 77, 95 — are dashed circles at their mapped location. "Entry to Delhi" markers are where NH-48, Dwarka Expressway, Old Delhi Road and MG Road cross the state line.</div>
 </div>
-<footer>Compiled __GENERATED__ from public listings. Not investment advice; verify any quote against the project's RERA registration before relying on it.</footer>
+<footer>
+  <div class="stats">
+    <div class="stat"><b id="st-sectors">–</b><span>sectors with price evidence</span></div>
+    <div class="stat"><b id="st-quotes">–</b><span>project quotes</span></div>
+    <div class="stat"><b id="st-soc">–</b><span>societies searchable</span></div>
+    <div class="stat"><b>__GENERATED__</b><span>compiled</span></div>
+  </div>
+  <p>Sectors are coloured light-to-dark red as the median premium-developer quote rises. Hover a sector for its range and the projects behind it; click to pin the evidence. Search any society, project, road or sector; drag to pan, scroll to zoom. Compiled __GENERATED__ from public listings. Not investment advice; verify any quote against the project's RERA registration before relying on it.</p>
+</footer>
 
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -797,12 +869,14 @@ function aggregate(){
   return agg;
 }
 let AGG = aggregate();
+const bandSel = new Set();
+const inBand = idx => !bandSel.size || bandSel.has(idx);
 
 // ---- legend ------------------------------------------------------------
 (function(){
   const L = document.getElementById('legend');
-  L.innerHTML = `<span class="dir">cheaper →</span>` + BANDS.map(b=>`<div class="sw"><i style="background:var(${b.v})"></i><small>${b.l}</small></div>`).join('')
-    + `<span class="dir" style="margin-left:8px">→ pricier</span>`
+  L.innerHTML = `<span class="dir">cheaper →</span>` + BANDS.map((b,i)=>`<button class="sw" data-i="${i}" aria-pressed="false" title="Show only sectors in this band"><i style="background:var(${b.v})"></i><small>${b.l}</small></button>`).join('')
+    + `<span class="dir" style="margin-left:8px">→ pricier</span><button class="clear" id="bandclear">clear filter</button>`
     + `<div class="key"><i style="background:repeating-linear-gradient(45deg,var(--nodata) 0 4px,var(--nodata-hatch) 4px 6px)"></i>no premium quotes</div>`
     + `<div class="key"><i style="border:1.5px dashed var(--muted);background:transparent"></i>approx. location</div>`;
 })();
@@ -837,7 +911,9 @@ for(const d of D.airport.terminals) G('g-air').appendChild(el('path',{d, class:'
 for(const r of D.roads){ if(r.c==='sc'||r.c==='tt') G('g-roads-minor').appendChild(el('path',{d:r.d, class:'roadedge '+r.c})); }
 for(const r of D.roads){ if(r.c==='sc'||r.c==='tt') G('g-roads-minor').appendChild(el('path',{d:r.d, class:'road '+r.c})); }
 for(const r of D.roads){ if(r.c!=='sc'&&r.c!=='tt') G('g-roads').appendChild(el('path',{d:r.d, class:'roadedge '+r.c})); }
-for(const r of D.roads){ if(r.c!=='sc'&&r.c!=='tt') G('g-roads').appendChild(el('path',{d:r.d, class:'road '+r.c})); }
+const roadEls = {};
+for(const r of D.roads){ if(r.c!=='sc'&&r.c!=='tt'){ const p = el('path',{d:r.d, class:'road '+r.c}); if(r.k){ p.dataset.r = r.k; (roadEls[r.k] ||= []).push(p);} G('g-roads').appendChild(p);} }
+for(const r of D.roads){ if(r.k) G('g-roadhit').appendChild(el('path',{d:r.d, class:'roadhit', 'data-r':r.k})); }
 for(const b of D.border) G('g-border').appendChild(el('path',{d:b.d, class:'border'}));
 for(const m of D.metro) G('g-metro').appendChild(el('path',{d:m.d, class:'metrocase'}));
 for(const m of D.metro) G('g-metro').appendChild(el('path',{d:m.d, class:'metro', style:`stroke:${m.c}`}));
@@ -897,7 +973,9 @@ function paint(){
       const fillIsDark = idx>=4;
       s._lbl.style.fill = fillIsDark ? '#ffffff' : '#1a222c';
       s._lbl.style.stroke = fillIsDark ? 'rgba(0,0,0,.35)' : 'rgba(255,255,255,.55)';
+      const dim = !inBand(idx); e.classList.toggle('dim', dim); s._lbl.classList.toggle('dim', dim);
     } else {
+      e.classList.toggle('dim', bandSel.size>0); s._lbl.classList.toggle('dim', bandSel.size>0);
       if(isPath){ e.classList.add('nodata'); e.style.fill=''; }
       else { e.firstChild.style.fill='var(--nodata)'; e.firstChild.style.stroke='var(--nodata-hatch)'; }
       s._lbl.style.fill='var(--muted)'; s._lbl.style.stroke='var(--bg)';
@@ -1007,10 +1085,20 @@ function showTip(k, ev){
   if(y + tip.offsetHeight + 10 > r.height) y = ev.clientY - r.top - tip.offsetHeight - 14;
   tip.style.left = x+'px'; tip.style.top = Math.max(4,y)+'px';
 }
+const ROAD_CLASS = {mw:'Expressway / national highway', gc:'Golf Course corridor', tr:'Trunk road', pr:'Main road', sc:'Secondary road', tt:'Local road'};
+let hovRoad = null;
+function setHovRoad(k){ if(hovRoad===k) return; if(hovRoad) for(const e of roadEls[hovRoad]||[]) e.classList.remove('hov'); hovRoad = k; if(k) for(const e of roadEls[k]||[]) e.classList.add('hov'); }
 svg.addEventListener('mousemove', ev=>{
   if(dragged || ptrs.size) return;
   const t = ev.target.closest('[data-s]');
-  if(t) showTip(t.dataset.s, ev); else tip.classList.remove('on');
+  if(t){ setHovRoad(null); showTip(t.dataset.s, ev); return; }
+  const rh = ev.target.closest('.roadhit');
+  if(rh){ const k = rh.dataset.r, i = D.roadInfo[k]; setHovRoad(k);
+    const secs = i.secs.filter(s=>AGG[s]), meds = secs.map(s=>AGG[s].med);
+    tip.innerHTML = `<div class="t">${esc(k)}</div><div class="m">${ROAD_CLASS[i.c]} · ${i.km} km on this map · ${i.secs.length} sector${i.secs.length!==1?'s':''}</div>${meds.length?`<div class="r">${fmtK(Math.min(...meds))}${meds.length>1?' – '+fmtK(Math.max(...meds)):''} <span class="m">/ sq ft · sector medians along it</span></div>`:''}<div class="hint2">Click to list the sectors along it →</div>`;
+    tip.classList.add('on'); const r = wrap.getBoundingClientRect(); let x = ev.clientX-r.left+14, y = ev.clientY-r.top+14; if(x+270>r.width) x = ev.clientX-r.left-280; if(y+tip.offsetHeight+10>r.height) y = ev.clientY-r.top-tip.offsetHeight-14; tip.style.left=x+'px'; tip.style.top=Math.max(4,y)+'px';
+    return; }
+  setHovRoad(null); tip.classList.remove('on');
 });
 svg.addEventListener('mouseleave', ()=>tip.classList.remove('on'));
 
@@ -1018,6 +1106,7 @@ svg.addEventListener('mouseleave', ()=>tip.classList.remove('on'));
 let pinned = null, hlProject = null;
 const insp = document.getElementById('inspector');
 function pin(k, project){
+  if(pinnedRoad){ for(const e of roadEls[pinnedRoad]||[]) e.classList.remove('sel'); pinnedRoad = null; }
   if(pinned && sectorEls[pinned]) sectorEls[pinned].classList.remove('pinned');
   pinned = k; hlProject = project||null; if(sectorEls[k]) sectorEls[k].classList.add('pinned');
   renderInspector();
@@ -1032,6 +1121,30 @@ function bhkRows(lo, hi){
 }
 const tixText = (lo,hi,a) => '₹'+cr(lo*a)+(hi!==lo?' – '+cr(hi*a):'')+' cr';
 const projTix = q => `${[2,3,4].map(b=>'₹'+cr(mid(q)*SIZES[b])).join(' · ')} <span>cr for 2 · 3 · 4 BHK</span>`;
+let pinnedRoad = null;
+function pinRoad(k){
+  if(pinnedRoad) for(const e of roadEls[pinnedRoad]||[]) e.classList.remove('sel');
+  if(pinned && sectorEls[pinned]) sectorEls[pinned].classList.remove('pinned');
+  pinned = null; pinnedRoad = k; for(const e of roadEls[k]||[]) e.classList.add('sel');
+  renderRoad();
+}
+function renderRoad(){
+  const k = pinnedRoad; if(!k) return; const i = D.roadInfo[k];
+  const secs = i.secs.slice().sort((a,b)=>((AGG[b]?.med??-1)-(AGG[a]?.med??-1)) || numOf(a)-numOf(b));
+  const meds = secs.filter(s=>AGG[s]).map(s=>AGG[s].med);
+  const rows = secs.map(s=>{ const a = AGG[s]; if(!a) return `<li class="proj secrow nod" data-s="${s}"><span><span class="sw" style="background:repeating-linear-gradient(45deg,var(--nodata) 0 4px,var(--nodata-hatch) 4px 6px)"></span>${secName(s)}</span><span class="num none" style="font:12px 'IBM Plex Sans',sans-serif;color:var(--muted)">no premium quote</span></li>`;
+    return `<li class="proj secrow" data-s="${s}"><span><span class="sw" style="background:var(${bandOf(a.med).v})"></span>${secName(s)}</span><span class="num">${fmtK(a.lo)}${a.hi!==a.lo?' – '+fmtK(a.hi):''}<small>median ${fmt(Math.round(a.med))} · ${a.n} quote${a.n>1?'s':''} · 3 BHK ≈ ₹${cr(a.med*SIZES[3])} cr</small></span></li>`; }).join('');
+  insp.innerHTML = `<div class="eyebrow">Road</div><h2>${esc(k)}</h2>
+    <div class="sub">${ROAD_CLASS[i.c]} · ${i.km} km on this map · passes ${i.secs.length} sector${i.secs.length!==1?'s':''}</div>
+    ${meds.length?`<div class="range">${fmtK(Math.min(...meds))}${meds.length>1?' – '+fmtK(Math.max(...meds)):''} <span style="font-size:13px;color:var(--muted)">₹ / sq ft</span></div><div class="sub">sector medians along it, lowest to highest · ${meds.length} of ${i.secs.length} sectors have quotes</div>`:'<div class="sub">No priced sectors along this stretch.</div>'}
+    <button class="locate" data-road="${esc(k)}">Show whole road</button>
+    <ul class="projects">${rows}</ul>
+    <div class="how">Sectors are listed richest first. Click one to open its evidence. A sector counts as "along" the road if the drawn centreline passes through its boundary (or within ~600 m of a point-mapped sector).</div>`;
+}
+insp.addEventListener('click', ev=>{
+  const li = ev.target.closest('li.secrow'); if(li){ pin(li.dataset.s); const c = sectorCentre(li.dataset.s); if(c) flyTo(c.x,c.y,c.w); return; }
+  const b = ev.target.closest('[data-road]'); if(b){ const bb = D.roadInfo[b.dataset.road].bb; flyTo((bb[0]+bb[2])/2,(bb[1]+bb[3])/2, Math.max(bb[2]-bb[0], (bb[3]-bb[1])*1.4)*1.25); }
+});
 function renderInspector(){
   const k = pinned; if(!k) return;
   const a = AGG[k], s = D.sectors[k];
@@ -1063,7 +1176,7 @@ insp.addEventListener('input', ev=>{
   for(const d of insp.querySelectorAll('.tix')) d.innerHTML = projTix({price_psf_min:+d.dataset.mid, price_psf_max:+d.dataset.mid});
 });
 insp.addEventListener('click', ev=>{ const b = ev.target.closest('[data-loc]'); if(b){ const c = sectorCentre(b.dataset.loc); if(c){ flyTo(c.x,c.y,c.w); setMarker(null); } } });
-svg.addEventListener('click', ev=>{ if(dragged) return; const t = ev.target.closest('[data-s]'); if(t){ pin(t.dataset.s); } });
+svg.addEventListener('click', ev=>{ if(dragged) return; const t = ev.target.closest('[data-s]'); if(t){ pin(t.dataset.s); return; } const rh = ev.target.closest('.roadhit'); if(rh) pinRoad(rh.dataset.r); });
 svg.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ const t = ev.target.closest('[data-s]'); if(t){ ev.preventDefault(); pin(t.dataset.s);} } });
 
 // ---- chips -------------------------------------------------------------
@@ -1073,9 +1186,20 @@ for(const c of document.querySelectorAll('.chip[data-b]')){
     if(on && active.size===1) return;
     c.setAttribute('aria-pressed', on?'false':'true');
     on ? active.delete(b) : active.add(b);
-    AGG = aggregate(); paint(); renderInspector(); renderTable();
+    AGG = aggregate(); paint(); renderInspector(); renderRoad(); renderTable();
   });
 }
+
+// ---- price-band filter -------------------------------------------------
+document.getElementById('legend').addEventListener('click', ev=>{
+  const b = ev.target.closest('.sw[data-i]');
+  if(b){ const i = +b.dataset.i; bandSel.has(i) ? bandSel.delete(i) : bandSel.add(i); }
+  else if(ev.target.closest('#bandclear')) bandSel.clear();
+  else return;
+  for(const x of document.querySelectorAll('.legend .sw[data-i]')) x.setAttribute('aria-pressed', String(bandSel.has(+x.dataset.i)));
+  document.getElementById('legend').classList.toggle('filtering', bandSel.size>0);
+  paint(); renderTable();
+});
 
 // ---- search ------------------------------------------------------------
 const norm = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -1085,6 +1209,7 @@ const projNames = new Set(IDX.map(i=>norm(i.n)));
 for(const s of D.societies){ if(projNames.has(norm(s.n))) continue; IDX.push({t:'society', n:s.n, k:s.k, h:s.h, x:s.x, y:s.y, kind:s.kind}); }
 for(const k of order){ const s = D.sectors[k]; IDX.push({t:'sector', n:secName(k), k, alias: k.toLowerCase()}); }
 for(const l of D.landmarks){ IDX.push({t:'landmark', n:l.n, x:l.x, y:l.y, k:null}); }
+for(const r of Object.keys(D.roadInfo)){ IDX.push({t:'road', n:r, k:null, road:r}); }
 for(const s of D.stations){ IDX.push({t:'station', n:s.n+' metro', x:s.x, y:s.y, k:null}); }
 for(const i of IDX) i._n = norm(i.n);
 function search(qs){
@@ -1115,13 +1240,14 @@ function priceCell(i){
   if(i.t==='project'){ const q=i.q; return `<span class="price">${fmt(q.price_psf_min)}${q.price_psf_max!==q.price_psf_min?'–'+q.price_psf_max.toLocaleString('en-IN'):''}<small>/ sq ft · this project · 3 BHK ≈ ₹${cr(mid(q)*SIZES[3])} cr</small></span>`; }
   if(i.k && AGG[i.k]){ const a=AGG[i.k]; return `<span class="price">${fmtK(a.lo)}${a.hi!==a.lo?'–'+fmtK(a.hi):''}<small>/ sq ft · ${secName(i.k)} range · ${a.n} quote${a.n>1?'s':''}</small></span>`; }
   if(i.k) return `<span class="price none">no premium quote yet<small>resolves to ${secName(i.k)}</small></span>`;
+  if(i.t==='road'){ const inf = D.roadInfo[i.road], meds = inf.secs.filter(s=>AGG[s]).map(s=>AGG[s].med); return meds.length?`<span class="price">${fmtK(Math.min(...meds))}${meds.length>1?'–'+fmtK(Math.max(...meds)):''}<small>/ sq ft · sector medians along it · ${inf.secs.length} sectors</small></span>`:`<span class="price none">road</span>`; }
   return `<span class="price none">${i.t==='landmark'||i.t==='station'?'landmark':'sector unknown'}</span>`;
 }
 function hl(n, q){ const i = norm(n).indexOf(norm(q)); if(i<0||!q) return esc(n); return esc(n.slice(0,i))+'<mark>'+esc(n.slice(i,i+q.trim().length))+'</mark>'+esc(n.slice(i+q.trim().length)); }
 function renderResults(){
   if(!results.length){ resEl.innerHTML = qEl.value.trim() ? `<div class="empty">Nothing matched. Try part of the name (e.g. "Camellias") or a sector number.</div>` : ''; resEl.classList.toggle('on', !!qEl.value.trim()); qEl.setAttribute('aria-expanded', String(!!qEl.value.trim())); return; }
   resEl.innerHTML = results.map((i,n)=>{
-    const where = i.t==='sector' ? 'Sector' : i.t==='project' ? `Priced project · ${secName(i.k)}${i.q.developer?' · '+esc(i.q.developer):''}` : i.t==='society' ? `${i.kind.replace('neighbourhood','Neighbourhood').replace('condominium','Condominium').replace('residential area','Residential area').replace('quarter','Locality')}${i.k?' · '+(i.h==='near'?'near ':'')+secName(i.k):' · sector not mapped'}` : i.t==='station' ? 'Metro station' : 'Landmark';
+    const where = i.t==='sector' ? 'Sector' : i.t==='project' ? `Priced project · ${secName(i.k)}${i.q.developer?' · '+esc(i.q.developer):''}` : i.t==='society' ? `${i.kind.replace('neighbourhood','Neighbourhood').replace('condominium','Condominium').replace('residential area','Residential area').replace('quarter','Locality')}${i.k?' · '+(i.h==='near'?'near ':'')+secName(i.k):' · sector not mapped'}` : i.t==='station' ? 'Metro station' : i.t==='road' ? 'Road · '+ROAD_CLASS[D.roadInfo[i.road].c] : 'Landmark';
     return `<button class="res${n===sel?' sel':''}" role="option" data-i="${n}"><b>${hl(i.n, qEl.value)}</b><span class="kind">${where}</span>${priceCell(i)}</button>`;
   }).join('');
   resEl.classList.add('on'); qEl.setAttribute('aria-expanded','true');
@@ -1129,6 +1255,7 @@ function renderResults(){
 function choose(i){
   resEl.classList.remove('on'); qEl.setAttribute('aria-expanded','false'); qEl.value = i.n;
   if(i.t==='sector'){ pin(i.k); const c = sectorCentre(i.k); if(c) flyTo(c.x,c.y,c.w); setMarker(null); return; }
+  if(i.t==='road'){ pinRoad(i.road); const bb = D.roadInfo[i.road].bb; flyTo((bb[0]+bb[2])/2,(bb[1]+bb[3])/2, Math.max(bb[2]-bb[0], (bb[3]-bb[1])*1.4)*1.25); setMarker(null); return; }
   if(i.k) pin(i.k, i.t==='project' ? i.q.project : null);
   if(i.x!=null){ flyTo(i.x, i.y, BASEW/6); setMarker(i.x, i.y, i.n); }
   else if(i.k){ const c = sectorCentre(i.k); if(c) flyTo(c.x,c.y,c.w); setMarker(null); }
@@ -1155,7 +1282,7 @@ document.addEventListener('click', ev=>{ if(!ev.target.closest('.search')) resEl
 let sortK = 'med', sortDir = -1;
 function renderTable(){
   const tb = document.querySelector('#tbl tbody');
-  const secs = Object.keys(AGG).sort((a,b)=>{
+  const secs = Object.keys(AGG).filter(k=>inBand(bandIdx(AGG[k].med))).sort((a,b)=>{
     if(sortK==='sector') return (numOf(a)-numOf(b)||a.localeCompare(b))*sortDir;
     return (AGG[a].med-AGG[b].med)*sortDir;
   });
