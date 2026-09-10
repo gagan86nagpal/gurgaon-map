@@ -36,6 +36,14 @@ def simplify(pts, tol):
         return simplify(pts[:idx + 1], tol)[:-1] + simplify(pts[idx:], tol)
     return [pts[0], pts[-1]]
 
+def simplify_ring(ring, tol):
+    # closed ring: split at the vertex farthest from the start so neither half is degenerate
+    if len(ring) < 5:
+        return ring
+    x0, y0 = ring[0]
+    far = max(range(1, len(ring) - 1), key=lambda i: math.hypot(ring[i][0] - x0, ring[i][1] - y0))
+    return simplify(ring[:far + 1], tol)[:-1] + simplify(ring[far:], tol)
+
 def path_of(pts, close=False):
     return 'M' + 'L'.join(f'{x:.0f},{y:.0f}' for x, y in pts) + ('Z' if close else '')
 
@@ -156,7 +164,7 @@ for e in ctx:
     t = e['tags']
     if t.get('aeroway') == 'aerodrome' and 'Indira' in (t.get('name') or ''):
         for r in rings_of(e):
-            pr = simplify([proj(*p) for p in r], 1.0)
+            pr = simplify_ring([proj(*p) for p in r], 1.0)
             if len(pr) >= 4: airport['rings'].append(path_of(pr, True))
     elif t.get('aeroway') == 'runway':
         pts = [proj(p['lon'], p['lat']) for p in e.get('geometry', [])]
@@ -168,7 +176,7 @@ green = []
 for e in load('green.json'):
     kind = 'golf' if e['tags'].get('leisure') == 'golf_course' else 'park'
     for r in rings_of(e):
-        pr = simplify([proj(*p) for p in r], 0.8)
+        pr = simplify_ring([proj(*p) for p in r], 0.8)
         if len(pr) >= 4 and any(inside(*p) for p in pr):
             green.append({'k': kind, 'n': e['tags'].get('name') or '', 'd': path_of(pr, True)})
 
