@@ -1,0 +1,2347 @@
+{
+ "1": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "2": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 11300,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-palam-vihar-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 12650,
+    "min": null,
+    "max": null,
+    "as_of": "2026-07",
+    "url": "https://www.squareyards.com/property-rates/palam-vihar-gurgaon"
+   }
+  ],
+  "flag": "our median 11,400 < squareyards avg 12,650 — slightly low, possibly a slightly stale resale comp",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11975
+ },
+ "3": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "3A": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "4": {
+  "portals": [
+   {
+    "portal": "nobroker/moneytree",
+    "avg": 12193,
+    "min": 8201,
+    "max": 16186,
+    "as_of": "2026-09",
+    "url": "https://moneytreerealty.com/gurgaon-real-estate/sector-4-gurgaon"
+   }
+  ],
+  "flag": "our median 6,650 is below even the lower reported figure (~8,201); portal data itself is low-confidence for this sector",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12193
+ },
+ "5": {
+  "portals": [
+   {
+    "portal": "squareyards",
+    "avg": 11450,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/property-rates/sector-5-gurgaon"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11450
+ },
+ "6": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "7": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 16950,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-7-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 5100,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-7-in-gurgaon-overview-7"
+   }
+  ],
+  "flag": "our median 16,950 is >2.5x squareyards' Sector 7 avg (5,100) — likely a squareyards outlier/different segment, not a genuine mismatch; needs manual check",
+  "no_market": false,
+  "disputed": true,
+  "avg": null
+ },
+ "8": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 11655,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-8-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "our median 7,825 < 99acres avg 11,655 — our quotes look stale/low for Sector 8",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11655
+ },
+ "9": {
+  "portals": [
+   {
+    "portal": "squareyards/nobroker",
+    "avg": 8100,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-9-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 8100
+ },
+ "9A": {
+  "portals": [
+   {
+    "portal": "squareyards/nobroker",
+    "avg": 7450,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-9-in-gurgaon-overview-9"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 7450
+ },
+ "9B": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "10": {
+  "portals": [],
+  "flag": "",
+  "no_market": true,
+  "note": "Sector 10 is largely an institutional/government area (hospital, offices) with minimal organized apartment market; no portal price-trend page found",
+  "disputed": false,
+  "avg": null
+ },
+ "10A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 9600,
+    "min": 5750,
+    "max": 10050,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-10a-gurgaon-prffid"
+   }
+  ],
+  "flag": "our median 7,900 < 99acres/NoBroker avg ~9,600 for Sector 10A — may be slightly stale/low",
+  "no_market": false,
+  "disputed": false,
+  "avg": 9600
+ },
+ "11": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 7050,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-11-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 9500,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-11-in-gurgaon-overview-14"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 8275
+ },
+ "11A": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "12": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 8150,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-12-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 8150
+ },
+ "12A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 6500,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-in-sector-12-a-gurgaon-ffid"
+   }
+  ],
+  "flag": "our median 4,700 < 99acres avg 6,500 for Sector 12A — likely stale/low (single builder-floor resale comp)",
+  "no_market": false,
+  "disputed": false,
+  "avg": 6500
+ },
+ "13": {
+  "portals": [
+   {
+    "portal": "99acres/nobroker",
+    "avg": 12000,
+    "min": 9000,
+    "max": 15000,
+    "as_of": "2026-09",
+    "url": "https://www.nobroker.in/locality-iq/rajiv-nagar-sector-13-gurgaon-liqlt"
+   }
+  ],
+  "flag": "our median 6,106 is below the entire portal range (₹9,000-15,000) for Sector 13/Rajiv Nagar — looks stale/low",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12000
+ },
+ "14": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 12950,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-14-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 31700,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-14-in-gurgaon-overview-18"
+   }
+  ],
+  "flag": "our median 15,550 < squareyards figure 31,700, but this squareyards number looks anomalous vs other portals (~12,950-13,578) for the same sector — low confidence",
+  "no_market": false,
+  "disputed": true,
+  "avg": null
+ },
+ "15": {
+  "portals": [
+   {
+    "portal": "99acres/squareyards",
+    "avg": 14850,
+    "min": 11150,
+    "max": 16000,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-15-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 14850
+ },
+ "16": {
+  "portals": [
+   {
+    "portal": "nobroker",
+    "avg": 20550,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.nobroker.in/locality-iq/sector-16-gurgaon-liqlt"
+   }
+  ],
+  "flag": "our median 15,250 < NoBroker avg 20,550 for Sector 16 — possibly stale, though portal figures for this sector disagree strongly",
+  "no_market": false,
+  "disputed": false,
+  "avg": 20550
+ },
+ "17": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "18": {
+  "portals": [],
+  "flag": "",
+  "no_market": true,
+  "note": "Sector 18 = Udyog Vihar Phase IV, primarily commercial/industrial (IT, manufacturing); only rental data found (~₹20/sqft/month), no organized apartment sales market on portals",
+  "disputed": false,
+  "avg": null
+ },
+ "19": {
+  "portals": [],
+  "flag": "",
+  "no_market": true,
+  "note": "No Sector 19-specific portal data found; sits within the Udyog Vihar industrial/commercial belt alongside Sectors 18/20",
+  "disputed": false,
+  "avg": null
+ },
+ "20": {
+  "portals": [
+   {
+    "portal": "nobroker",
+    "avg": 18888,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.nobroker.in/locality-iq/udyog-vihar-phase-1-sector-20-gurgaon-liqlt"
+   }
+  ],
+  "flag": "",
+  "no_market": true,
+  "note": "Figure reflects Udyog Vihar Phase 1 (Sector 20) commercial/mixed-use pricing, not a residential apartment sector average; Sector 20 is primarily an industrial estate",
+  "disputed": false,
+  "avg": 18888
+ },
+ "21": {
+  "portals": [
+   {
+    "portal": "nobroker",
+    "avg": 10750,
+    "min": 8000,
+    "max": 20000,
+    "as_of": "2026-09",
+    "url": "https://www.nobroker.in/locality-iq/sector-21-gurgaon-liqlt"
+   }
+  ],
+  "flag": "our median 10,150 < portal avg 10,750 for Sector 21 — close, only a minor possible staleness",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10750
+ },
+ "22": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 18900,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-22-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "our median 16,800 < 99acres avg 18,900 for Sector 22 — quotes may be slightly stale/low",
+  "no_market": false,
+  "disputed": false,
+  "avg": 18900
+ },
+ "23": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13350,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-23-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13350
+ },
+ "23A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 6690,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-23a-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 6690
+ },
+ "24": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 17100,
+    "min": 18050,
+    "max": 25750,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-24-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 17100
+ },
+ "25": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 19150,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-25-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 19150
+ },
+ "25A": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "26": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 17800,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-26-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 17800
+ },
+ "26A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 17050,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-26-a-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 17050
+ },
+ "27": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 12500,
+    "min": 11000,
+    "max": 22000,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-27-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12500
+ },
+ "28": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 18200,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-28-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 18200
+ },
+ "29": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "30": {
+  "portals": [
+   {
+    "portal": "squareyards",
+    "avg": 22100,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-30-in-gurgaon-overview-36"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 22100
+ },
+ "31": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 18650,
+    "min": 19350,
+    "max": 23650,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-31-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 18650
+ },
+ "32": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "34": {
+  "portals": [
+   {
+    "portal": "nobroker",
+    "avg": 10025,
+    "min": 5450,
+    "max": 14600,
+    "as_of": "2026-09",
+    "url": "https://www.nobroker.in/locality-iq/sector-34-gurgaon-liqlt"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10025
+ },
+ "33": {
+  "portals": [
+   {
+    "portal": "squareyards/nobroker",
+    "avg": 13235,
+    "min": 11000,
+    "max": 20000,
+    "as_of": "2026-07",
+    "url": "https://www.squareyards.com/sector-33-in-gurgaon-overview-39"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13235
+ },
+ "35": {
+  "portals": [
+   {
+    "portal": "nobroker",
+    "avg": 10800,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.nobroker.in/locality-iq/sector-35-gurgaon-liqlt"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10800
+ },
+ "36": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 9700,
+    "min": 3650,
+    "max": 9100,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-36-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 9700
+ },
+ "36A": {
+  "portals": [
+   {
+    "portal": "squareyards",
+    "avg": 19300,
+    "min": null,
+    "max": null,
+    "as_of": "2026-06",
+    "url": "https://www.squareyards.com/gurgaon-residential-property/krisumi-waterfall-residences/10781/project"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 19300
+ },
+ "36B": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "37": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 7950,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-37-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 7950
+ },
+ "37A": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "37B": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "37C": {
+  "portals": [
+   {
+    "portal": "nobroker",
+    "avg": 8500,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.nobroker.in/locality-iq/sector-37c-gurgaon-liqlt"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 8500
+ },
+ "37D": {
+  "portals": [
+   {
+    "portal": "squareyards",
+    "avg": 13250,
+    "min": 8550,
+    "max": 13300,
+    "as_of": "2026-06",
+    "url": "https://www.squareyards.com/property-rates/sector-37d-gurgaon"
+   },
+   {
+    "portal": "99acres",
+    "avg": 11650,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-37d-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12450
+ },
+ "38": {
+  "portals": [
+   {
+    "portal": "nobroker",
+    "avg": 12000,
+    "min": 9000,
+    "max": 12000,
+    "as_of": "2026-08",
+    "url": "https://www.nobroker.in/locality-iq/sector-38-gurgaon-liqlt"
+   },
+   {
+    "portal": "99acres",
+    "avg": 31000,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-38-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "our median 21,500 < 99acres figure 31,000 for Sector 38, but this 99acres number looks anomalous vs NoBroker (~12,000) for the same sector — low confidence in the portal figure itself",
+  "no_market": false,
+  "disputed": true,
+  "avg": null
+ },
+ "39": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 10300,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-39-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10300
+ },
+ "40": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 11900,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-40-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11900
+ },
+ "41": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "42": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 66100,
+    "min": 52850,
+    "max": 93750,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-42-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 40500,
+    "min": null,
+    "max": null,
+    "as_of": "2026-03",
+    "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-camellias/358/project"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": true,
+  "avg": null
+ },
+ "43": {
+  "portals": [
+   {
+    "portal": "squareyards",
+    "avg": 15550,
+    "min": null,
+    "max": null,
+    "as_of": "2026-07",
+    "url": "https://www.squareyards.com/property-rates/sector-43-gurgaon"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 15550
+ },
+ "44": {
+  "portals": [
+   {
+    "portal": "nobroker",
+    "avg": 13500,
+    "min": 12000,
+    "max": 15000,
+    "as_of": "2026-04",
+    "url": "https://www.99acres.com/sector-44-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13500
+ },
+ "45": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 14700,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-45-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 14700
+ },
+ "46": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13850,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-46-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13850
+ },
+ "47": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 15150,
+    "min": 13550,
+    "max": 21400,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-47-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 15150
+ },
+ "48": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 17750,
+    "min": 14700,
+    "max": 29200,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-48-gurgaon-prffid"
+   }
+  ],
+  "flag": "our median 16,750 < 99acres avg 17,750 for Sector 48 — minor gap, possibly slightly stale",
+  "no_market": false,
+  "disputed": false,
+  "avg": 17750
+ },
+ "49": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 18975,
+    "min": 17150,
+    "max": 20800,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-49-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 18975
+ },
+ "50": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "51": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13500,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-51-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13500
+ },
+ "52": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13700,
+    "min": 10700,
+    "max": 17400,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-52-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13700
+ },
+ "52A": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "53": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 27900,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-53-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 27900
+ },
+ "54": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 33800,
+    "min": 24750,
+    "max": 38350,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-54-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 33800
+ },
+ "55": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13450,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-55-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13450
+ },
+ "56": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13500,
+    "min": 12000,
+    "max": 16650,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-56-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13500
+ },
+ "57": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 14600,
+    "min": 13150,
+    "max": 16000,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-57-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 14600
+ },
+ "58": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 23200,
+    "min": 21000,
+    "max": 45000,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-58-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 23200
+ },
+ "59": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "60": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 19800,
+    "min": 8200,
+    "max": 12500,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-60-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 19900,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-60-in-gurgaon-overview-72"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 19850
+ },
+ "61": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 17450,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-61-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 16500,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-61-in-gurgaon-overview-73"
+   }
+  ],
+  "flag": "our median 16,225 (Smartworld Orchard) < 99acres avg 17,450 -- modest gap, check quote freshness (n=1)",
+  "no_market": false,
+  "disputed": false,
+  "avg": 16975
+ },
+ "62": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 20750,
+    "min": 18350,
+    "max": 23550,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-62-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 21100,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-62-in-gurgaon-overview-74"
+   },
+   {
+    "portal": "magicbricks",
+    "avg": 18887,
+    "min": null,
+    "max": 22821,
+    "as_of": "2026-Q1",
+    "url": ""
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 20246
+ },
+ "63": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "63A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 15200,
+    "min": 13400,
+    "max": 27800,
+    "as_of": "2025",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-63a-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 15200
+ },
+ "64": {
+  "portals": [
+   {
+    "portal": "nobroker",
+    "avg": 14286,
+    "min": 7062,
+    "max": 21511,
+    "as_of": "2026-09",
+    "url": "https://www.nobroker.in/locality-iq/sector-64-gurgaon-liqlt"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 14286
+ },
+ "65": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 20000,
+    "min": 18500,
+    "max": 26000,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-65-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 20000,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-65-in-gurgaon-overview-77"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 20000
+ },
+ "66": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 18650,
+    "min": 16400,
+    "max": 20450,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-66-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 19900,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-66-in-gurgaon-overview-78"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 19275
+ },
+ "67": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 16300,
+    "min": 15150,
+    "max": 18500,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-67-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 15900,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-67-in-gurgaon-overview-79"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 16100
+ },
+ "68": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 12450,
+    "min": 11650,
+    "max": 13100,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-68-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12450
+ },
+ "69": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13300,
+    "min": 11650,
+    "max": 14900,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-69-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 14300,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-69-in-gurgaon-overview-82"
+   },
+   {
+    "portal": "nobroker",
+    "avg": 12100,
+    "min": 9600,
+    "max": 14600,
+    "as_of": "2026-09",
+    "url": "https://www.nobroker.in/locality-iq/sector-69-gurgaon-liqlt"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13233
+ },
+ "70": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 12950,
+    "min": 12200,
+    "max": 16000,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-70-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12950
+ },
+ "70A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 14550,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-70a-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 14550
+ },
+ "71": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "72": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 18350,
+    "min": 13400,
+    "max": 19950,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-72-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 17003,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/property-rates/sector-72-gurgaon"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 17676
+ },
+ "72A": {
+  "portals": [
+   {
+    "portal": "squareyards",
+    "avg": 16375,
+    "min": 15150,
+    "max": 17600,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-72a-in-gurgaon-overview-63959"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 16375
+ },
+ "73": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "74": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 17100,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-74-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 17100
+ },
+ "74A": {
+  "portals": [
+   {
+    "portal": "squareyards",
+    "avg": 17450,
+    "min": 9000,
+    "max": 19800,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-74a-in-gurgaon-overview-89"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 17450
+ },
+ "75": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "75A": {
+  "portals": [
+   {
+    "portal": "squareyards",
+    "avg": 9850,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-75a-in-gurgaon-overview-91"
+   }
+  ],
+  "flag": "our median 17,000 is 1.73x squareyards avg 9,850 -- also our internal record's project name is literally 'Project Name' (likely a data-extraction bug), worth re-verifying the source quote for Sector 75A entirely",
+  "no_market": false,
+  "disputed": false,
+  "avg": 9850
+ },
+ "76": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13850,
+    "min": 13200,
+    "max": 14500,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-76-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 13667,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-76-in-gurgaon-overview-92"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13758
+ },
+ "77": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13500,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-77-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13500
+ },
+ "78": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 10200,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-78-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 12400,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-78-in-gurgaon-overview-94"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11300
+ },
+ "79": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 12750,
+    "min": 12950,
+    "max": 15550,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-79-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 12650,
+    "min": 10600,
+    "max": 14900,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-79-in-gurgaon-overview-95"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12700
+ },
+ "79B": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "80": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 16000,
+    "min": 15500,
+    "max": 24550,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-80-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 16000
+ },
+ "81": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 12150,
+    "min": 10750,
+    "max": 16900,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-81-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "our median 11,000 is modestly below 99acres avg 12,150 (n=5, mix of affordable Signature Global + premium DLF Ultima/Bestech) -- plausible segment mix, low-severity flag",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12150
+ },
+ "81A": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "82": {
+  "portals": [
+   {
+    "portal": "squareyards",
+    "avg": 11100,
+    "min": null,
+    "max": null,
+    "as_of": "2026-07",
+    "url": "https://www.squareyards.com/property-rates/sector-82-gurgaon"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11100
+ },
+ "82A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 15750,
+    "min": 15000,
+    "max": 17200,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-82a-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 16750,
+    "min": null,
+    "max": null,
+    "as_of": "2026-07",
+    "url": "https://www.99acres.com/sector-82a-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 16250
+ },
+ "83": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 11400,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-83-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11400
+ },
+ "84": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 10050,
+    "min": 8500,
+    "max": 11100,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-84-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 10750,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-84-in-gurgaon-overview-103"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10400
+ },
+ "85": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 12900,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-85-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 13000,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-85-in-gurgaon-overview-104"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12950
+ },
+ "86": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "87": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "88": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "88A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13100,
+    "min": 11450,
+    "max": 13850,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-88a-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13100
+ },
+ "88B": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 12600,
+    "min": 9350,
+    "max": 13400,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-88b-gurgaon-prffid"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12600
+ },
+ "89": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 11050,
+    "min": 9800,
+    "max": 13200,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-89-gurgaon-prffid"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11050
+ },
+ "89A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 11250,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-89-a-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11250
+ },
+ "90": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 10800,
+    "min": 9850,
+    "max": 11900,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-90-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 11150,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-90-in-gurgaon-overview-113"
+   }
+  ],
+  "flag": "our median 8,950 (DLF Regal Gardens/Select Homes/New Town Heights I) < 99acres avg 10,800 and squareyards avg 11,150 (~17-20% below) -- likely older resale quotes lagging the portal trend, check freshness",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10975
+ },
+ "91": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 10650,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-91-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 10450,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-91-in-gurgaon-overview-114"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10550
+ },
+ "92": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 9550,
+    "min": 8850,
+    "max": 12150,
+    "as_of": "2025-12",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-92-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 11000,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-92-in-gurgaon-overview-115"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10275
+ },
+ "93": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 10650,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-93-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 10200,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-93-in-gurgaon-overview-116"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10425
+ },
+ "94": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "95": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 7850,
+    "min": 6000,
+    "max": 9700,
+    "as_of": "2025",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-95-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 7850
+ },
+ "95A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 8550,
+    "min": 6550,
+    "max": 10300,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-95a-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 8800,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-95a-in-gurgaon-overview-119"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 8675
+ },
+ "99": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 11150,
+    "min": 9800,
+    "max": 12500,
+    "as_of": "2025",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-99-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11150
+ },
+ "99A": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 10000,
+    "min": 5866,
+    "max": 10000,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-99a-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10000
+ },
+ "100": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 9250,
+    "min": null,
+    "max": null,
+    "as_of": "2025",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-100-gurgaon-prffid"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 9250
+ },
+ "101": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "102": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 13400,
+    "min": 11800,
+    "max": 15400,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-102-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13400
+ },
+ "102A": {
+  "portals": [
+   {
+    "portal": "99acres-proxy",
+    "avg": 13400,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-102a-in-gurgaon-overview-63885"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 13400
+ },
+ "103": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 10050,
+    "min": 8600,
+    "max": 12000,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-103-gurgaon-prffid"
+   }
+  ],
+  "flag": "our median 20,352 (Godrej Vrikshya/Whiteland Urban Resort, premium new launches) is ~2.0x 99acres all-segment avg 10,050 -- under the 2.5x hard threshold but worth watching",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10050
+ },
+ "104": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 14300,
+    "min": 13200,
+    "max": 15350,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-104-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 14300
+ },
+ "105": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 11650,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-105-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11650
+ },
+ "106": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 15800,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-106-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 16450,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sector-106-in-gurgaon-overview-133"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 16125
+ },
+ "107": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 9300,
+    "min": 8800,
+    "max": 9900,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-107-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 9300
+ },
+ "108": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 19700,
+    "min": 10150,
+    "max": 21450,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-108-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 17300,
+    "min": null,
+    "max": null,
+    "as_of": "2026-06",
+    "url": "https://www.squareyards.com/property-rates/sector-108-gurgaon"
+   }
+  ],
+  "flag": "our median 13,000 is ~34% BELOW 99acres avg 19,700 for Sector 108 -- Sobha City is common to both our set and 99acres' premium list at 20,950, suggesting our quote for at least one project is stale or mis-recorded; recommend re-verifying all 4 project prices",
+  "no_market": false,
+  "disputed": false,
+  "avg": 18500
+ },
+ "109": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "110": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 14100,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-110-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "no internal median to compare",
+  "no_market": false,
+  "disputed": false,
+  "avg": 14100
+ },
+ "110A": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "111": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 16100,
+    "min": 13650,
+    "max": 18700,
+    "as_of": "2026-05",
+    "url": "https://www.99acres.com/sector-111-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 16100
+ },
+ "112": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 15700,
+    "min": 14600,
+    "max": 15950,
+    "as_of": "2026-01",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-112-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 15700
+ },
+ "113": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 16050,
+    "min": 13000,
+    "max": 18700,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-113-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 16050
+ },
+ "114": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "115": {
+  "portals": [],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": null
+ },
+ "SOHNA-2": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 9850,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-in-sector-2-sohna-gurgaon-ffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 10600,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sohna-sector-2-in-gurgaon-overview-478"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 10225
+ },
+ "SOHNA-5": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 12200,
+    "min": 4500,
+    "max": 6000,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-5-sohna-gurgaon-overview-piffid"
+   }
+  ],
+  "flag": "our median 8,125 < 99acres headline avg 12,200 (only ~67%) -- also one of our two entries has placeholder project name 'Project Name' (likely a data-extraction bug, same issue as Sector 75A); verify both Sohna Sector 5 entries",
+  "no_market": false,
+  "disputed": false,
+  "avg": 12200
+ },
+ "SOHNA-33": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 11600,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-33-sohna-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 10950,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sohna-sector-33-in-gurgaon-overview-471"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 11275
+ },
+ "SOHNA-35": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 8950,
+    "min": 8000,
+    "max": 10400,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-35-sohna-gurgaon-prffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 9000,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sohna-sector-35-in-gurgaon-overview-481"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 8975
+ },
+ "SOHNA-36": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 9200,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/sector-36-sohna-gurgaon-overview-piffid"
+   },
+   {
+    "portal": "squareyards",
+    "avg": 10000,
+    "min": null,
+    "max": null,
+    "as_of": "2026-09",
+    "url": "https://www.squareyards.com/sohna-sector-36-in-gurgaon-overview-2762"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 9600
+ },
+ "MANESAR": {
+  "portals": [
+   {
+    "portal": "99acres",
+    "avg": 7700,
+    "min": 6150,
+    "max": 7150,
+    "as_of": "2026-09",
+    "url": "https://www.99acres.com/property-rates-and-price-trends-in-sector-1-imt-manesar-gurgaon-prffid"
+   }
+  ],
+  "flag": "",
+  "no_market": false,
+  "disputed": false,
+  "avg": 7700
+ }
+}

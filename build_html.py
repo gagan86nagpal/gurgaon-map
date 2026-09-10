@@ -114,6 +114,18 @@ def bucket(status):
 for q in quotes:
     q['bucket'] = bucket(q.get('status'))
 
+# Locality-wide "Sector N apartments avg / builder floors" rows are not premium projects. They are kept only as
+# context for sectors that have no branded project, where the sector is shown as no-premium-stock instead.
+GENERIC = re.compile(r'\b(avg|average|builder floors?|apartments?/floors|flats avg|apartments avg|floors / apartments|price band|mixed apartments)\b', re.I)
+for q in quotes:
+    q['generic'] = bool((q.get('developer') or '').strip().lower() in ('', 'various', 'multiple', 'n/a') and GENERIC.search(q.get('project', '')))
+generic_only = {}
+for q in quotes:
+    if q['generic']: generic_only.setdefault(q['sector'], []).append(q)
+for s in list(generic_only):
+    if any(not q['generic'] for q in quotes if q['sector'] == s): del generic_only[s]
+quotes = [q for q in quotes if not q['generic']]
+
 # ---- roads --------------------------------------------------------------
 GOLF = re.compile(r'golf course', re.I)
 roads = []
@@ -447,7 +459,23 @@ road_info = {k: v for k, v in road_info.items() if v['km'] >= 0.8 or v['secs']}
 for r in roads:
     if r.get('k') and r['k'] not in road_info: r['k'] = ''
 
+def load_opt(name, default):
+    try: return json.load(open(f'{BASE}/{name}'))
+    except Exception: return default
+bench = load_opt('benchmarks.json', {})
+nostock = load_opt('nostock.json', {})
+for k in list(nostock):
+    if any(q['sector'] == k for q in quotes): del nostock[k]   # a real quote beats a no-stock verdict
+for s, gs in generic_only.items():
+    if s in nostock: continue
+    g = min(gs, key=lambda q: q['price_psf_min'])
+    lo = min(q['price_psf_min'] for q in gs); hi = max(q['price_psf_max'] for q in gs)
+    rng = f'₹{lo:,}' + (f'–{hi:,}' if hi != lo else '')
+    nostock[s] = {'reason': f'no branded premium project found; locality-wide resale asking average is {rng}/sq ft ({g.get("as_of", "")})'.replace(' ()', ''),
+                  'source_url': g.get('source_url', ''), 'locality_avg': [lo, hi]}
+
 data = {
+    'bench': bench, 'nostock': nostock,
     'roadInfo': road_info,
     'bbox': bbox, 'canvas': CANVAS, 'sectors': sectors, 'sohnaStrip': {'x': x0 - 60, 'y': strip_y},
     'quotes': quotes, 'roads': roads, 'roadLabels': road_labels,
@@ -580,6 +608,16 @@ svg.map.dragging{cursor:grabbing}
 /* svg layers — widths and type scale with zoom via --z (constant on screen) and --zf (grows gently when zoomed in) */
 .sector{stroke:var(--bg);stroke-width:calc(1.6px*var(--z));stroke-linejoin:round;cursor:pointer;transition:filter .12s}
 .sector.nodata{fill:url(#hatch)}
+.sector.nostock{fill:url(#dots)}
+.pill.conf{font-family:"IBM Plex Mono",monospace;padding:1px 6px}
+.pill.conf.A{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pill.conf.B{color:var(--ink)}
+.pill.conf.C{color:var(--muted);border-style:dashed}
+.bench{margin-top:12px;font-size:12px;color:var(--ink-2);border:1px solid var(--line-2);border-radius:8px;padding:8px 12px;background:var(--panel-2)}
+.bench b{font-family:"IBM Plex Mono",monospace;color:var(--ink)}
+.bench .ok{color:var(--ink-2)}
+.bench .warn{color:var(--accent);font-weight:600}
+.bench a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
 .sector.dim{fill-opacity:.12}.pt.dim circle{fill-opacity:.12;stroke-opacity:.3}.lbl.dim{opacity:.25}
 .sector:hover,.sector.pinned{filter:brightness(.92);stroke:var(--ink);stroke-width:calc(2.2px*var(--z))}
 :root[data-theme="dark"] .sector:hover,:root[data-theme="dark"] .sector.pinned{filter:brightness(1.15)}
@@ -757,6 +795,10 @@ footer p{max-width:90ch;margin:0}
           <rect width="7" height="7" fill="var(--nodata)"/>
           <line x1="0" y1="0" x2="0" y2="7" stroke="var(--nodata-hatch)" stroke-width="2"/>
         </pattern>
+        <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+          <rect width="8" height="8" fill="var(--nodata)"/>
+          <circle cx="4" cy="4" r="1.3" fill="var(--nodata-hatch)"/>
+        </pattern>
       </defs>
       <g id="g-base"></g>
       <g id="g-sectors"></g>
@@ -815,6 +857,7 @@ footer p{max-width:90ch;margin:0}
   <div class="note"><h3>How the range is built</h3>For each project we take the midpoint of its quoted ₹/sq ft. A sector's <b>range</b> is the lowest to highest project midpoint; its <b>colour</b> is the median. With 3–4 projects that is a ballpark, not a valuation — one ultra-luxury launch (Krisumi Waterside in 36A, DLF Dahlias in 54) can pull a sector's top end far above its typical stock.</div>
   <div class="note"><h3>Ticket sizes in ₹ crore</h3>Indicative only: the sector's ₹/sq ft range multiplied by a typical super area (2 BHK 1,350 · 3 BHK 1,900 · 4 BHK 2,800 sq ft by default — edit the boxes in the panel). Real units vary a lot in size, and PLC, parking, GST and club charges come on top.</div>
   <div class="note"><h3>What "same league" means here</h3>We kept quotes from established branded developers and their premium/luxury lines. In mature sectors with no new launch (Old Gurugram, Sushant Lok, Golf Course Road) the evidence is resale asking rates in well-known condominiums, flagged <i>resale</i>. Use the chips to include or exclude those.</div>
+  <div class="note"><h3>How the numbers were checked</h3>Every quote carries a confidence grade: <b>A</b> two independent sources agree within 15%; <b>B</b> one solid portal or developer page; <b>C</b> aggregator/broker only or not re-verified. Outliers, broker-sourced and wide-spread rows were re-audited in September 2026 and corrected or dropped. Separately, each sector shows the portal-published <i>sector-wide</i> average (99acres, MagicBricks, Square Yards, Housing) as an independent check — a premium median that falls below it is flagged in the panel.</div>
   <div class="note"><h3>Search</h3>The search box knows every quoted project plus every named residential society, condominium and neighbourhood OpenStreetMap has in Gurugram. A society resolves to the sector its footprint sits in and shows that sector's range; societies OSM only has near a point-mapped sector are marked "near". Sector prices are not resolved for societies with no quote — you get the location and the sector's ballpark.</div>
   <div class="note"><h3>Map data</h3>Sector polygons, roads, metro lines, the IGI footprint, the Delhi–Haryana line, parks, golf courses and landmarks are from OpenStreetMap (© OpenStreetMap contributors, ODbL). Sectors OSM has only as a point — including 99, 99A, 76, 77, 95 — are dashed circles at their mapped location. "Entry to Delhi" markers are where NH-48, Dwarka Expressway, Old Delhi Road and MG Road cross the state line.</div>
 </div>
@@ -879,6 +922,7 @@ const inBand = idx => !bandSel.size || bandSel.has(idx);
   L.innerHTML = `<span class="dir">cheaper →</span>` + BANDS.map((b,i)=>`<button class="sw" data-i="${i}" aria-pressed="false" title="Show only sectors in this band"><i style="background:var(${b.v})"></i><small>${b.l}</small></button>`).join('')
     + `<span class="dir" style="margin-left:8px">→ pricier</span><button class="clear" id="bandclear">clear filter</button>`
     + `<div class="key"><i style="background:repeating-linear-gradient(45deg,var(--nodata) 0 4px,var(--nodata-hatch) 4px 6px)"></i>no premium quotes</div>`
+    + `<div class="key"><i style="background:radial-gradient(circle,var(--nodata-hatch) 1.2px,var(--nodata) 1.4px) 0 0/6px 6px"></i>no premium apartment stock</div>`
     + `<div class="key"><i style="border:1.5px dashed var(--muted);background:transparent"></i>approx. location</div>`;
 })();
 
@@ -968,7 +1012,7 @@ function paint(){
     if(a){
       const b = bandOf(a.med), idx = bandIdx(a.med);
       const fill = `var(${b.v})`;
-      if(isPath){ e.classList.remove('nodata'); e.style.fill = fill; }
+      if(isPath){ e.classList.remove('nodata','nostock'); e.style.fill = fill; }
       else { e.firstChild.style.fill = fill; e.firstChild.style.stroke = 'var(--muted)'; }
       // the ramp runs light→dark in both themes, so label ink depends only on the step
       const fillIsDark = idx>=4;
@@ -977,8 +1021,9 @@ function paint(){
       const dim = !inBand(idx); e.classList.toggle('dim', dim); s._lbl.classList.toggle('dim', dim);
     } else {
       e.classList.toggle('dim', bandSel.size>0); s._lbl.classList.toggle('dim', bandSel.size>0);
-      if(isPath){ e.classList.add('nodata'); e.style.fill=''; }
-      else { e.firstChild.style.fill='var(--nodata)'; e.firstChild.style.stroke='var(--nodata-hatch)'; }
+      const ns = !!D.nostock[k];
+      if(isPath){ e.classList.toggle('nodata', !ns); e.classList.toggle('nostock', ns); e.style.fill=''; }
+      else { e.firstChild.style.fill='var(--nodata)'; e.firstChild.style.stroke='var(--nodata-hatch)'; e.firstChild.style.strokeDasharray = ns ? '1 2' : ''; }
       s._lbl.style.fill='var(--muted)'; s._lbl.style.stroke='var(--bg)';
     }
     if(!isPath){ s._lbl.style.fill = a ? 'var(--ink)' : 'var(--muted)'; s._lbl.style.stroke='var(--panel)'; }
@@ -1075,9 +1120,10 @@ for(const c of document.querySelectorAll('.chip.layer')){
 const tip = document.getElementById('tip');
 function tipHTML(k){
   const a = AGG[k];
-  if(!a) return `<div class="t">${secName(k)}</div><div class="m">No premium-developer quotes found${D.sectors[k].boundary?'':' · location approximate'}.</div>`;
+  const bch = D.bench[k] && D.bench[k].avg ? `<div class="m">Sector-wide portal avg ${fmt(D.bench[k].avg)} / sq ft</div>` : '';
+  if(!a) return `<div class="t">${secName(k)}</div><div class="m">${D.nostock[k] ? 'No premium apartment stock — '+esc(D.nostock[k].reason) : 'No premium-developer quotes found'}${D.sectors[k].boundary?'':' · location approximate'}.</div>${bch}`;
   const rows = a.rows.slice(0,4).map(q=>`<li><span>${esc(q.project.replace(/\s*\(resale\)/i,''))}</span><span>${fmtK(q.price_psf_min)}${q.price_psf_max!==q.price_psf_min?'–'+fmtK(q.price_psf_max):''}</span></li>`).join('');
-  return `<div class="t">${secName(k)}</div><div class="r">${fmtK(a.lo)}${a.hi!==a.lo?' – '+fmtK(a.hi):''} <span class="m">/ sq ft</span></div><div class="m">median ${fmt(Math.round(a.med))} · ${a.n} project${a.n>1?'s':''} · 3 BHK ≈ ₹${cr(a.lo*SIZES[3])}–${cr(a.hi*SIZES[3])} cr${D.sectors[k].boundary?'':' · location approximate'}</div><ul>${rows}${a.n>4?`<li><span class="m">+${a.n-4} more</span><span></span></li>`:''}</ul><div class="hint2">Click to pin the full evidence →</div>`;
+  return `<div class="t">${secName(k)}</div><div class="r">${fmtK(a.lo)}${a.hi!==a.lo?' – '+fmtK(a.hi):''} <span class="m">/ sq ft</span></div><div class="m">median ${fmt(Math.round(a.med))} · ${a.n} project${a.n>1?'s':''} · 3 BHK ≈ ₹${cr(a.lo*SIZES[3])}–${cr(a.hi*SIZES[3])} cr${D.sectors[k].boundary?'':' · location approximate'}</div>${bch}<ul>${rows}${a.n>4?`<li><span class="m">+${a.n-4} more</span><span></span></li>`:''}</ul><div class="hint2">Click to pin the full evidence →</div>`;
 }
 function showTip(k, ev){
   tip.innerHTML = tipHTML(k); tip.classList.add('on');
@@ -1122,6 +1168,18 @@ function sectorCentre(k){
 function bhkRows(lo, hi){
   return [2,3,4].map(b=>`<tr><td>${b} BHK</td><td><input type="number" min="300" max="20000" step="50" value="${SIZES[b]}" data-b="${b}" aria-label="${b} BHK super area in sq ft"> <span style="color:var(--muted);font-size:12px">sq ft</span></td><td class="num" data-lo="${lo}" data-hi="${hi}" data-bb="${b}">${tixText(lo,hi,SIZES[b])}</td></tr>`).join('');
 }
+function benchHTML(k, a){
+  const b = D.bench[k]; if(!b || !b.portals || !b.portals.length) return '';
+  const ps = b.portals.map(p=>`<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.portal)}</a> ${fmt(p.avg)}`).join(' · ');
+  if(!b.avg) return `<div class="bench"><div class="eyebrow">Independent check · sector-wide average</div><div>Portals disagree too much for a single figure: ${ps}. No stale-check applied.</div></div>`;
+  let check = '';
+  if(a){ const r = a.med/b.avg;
+    check = r < 0.95 ? `<div class="warn">⚠ Our premium median (${fmt(Math.round(a.med))}) is below the sector-wide average. Either these quotes are stale/mis-tagged, or the portal average is pulled up by one luxury project in the sector — read the rows before trusting the colour.</div>`
+          : r > 2.5 ? `<div class="ok">Premium median is ${r.toFixed(1)}× the sector-wide average — this sector's colour reflects a few luxury projects, not typical stock.</div>`
+          : `<div class="ok">Premium median is ${r.toFixed(1)}× the sector-wide average, as expected for branded stock.</div>`; }
+  return `<div class="bench"><div class="eyebrow">Independent check · sector-wide average, all segments</div><div><b>${fmt(b.avg)}</b> / sq ft · ${ps}${b.disputed?' <span style="color:var(--muted)">(portals disagree on this sector; figure anchored on the more conservative source)</span>':''}</div>${check}</div>`;
+}
+const confPill = q => q.confidence ? `<span class="pill conf ${esc(q.confidence)}" title="${q.confidence==='A'?'Two independent sources agree within 15%':q.confidence==='B'?'One solid portal or developer page':'Aggregator, broker or unverified'}">${esc(q.confidence)}</span>` : '';
 const tixText = (lo,hi,a) => '₹'+cr(lo*a)+(hi!==lo?' – '+cr(hi*a):'')+' cr';
 const projTix = q => `${[2,3,4].map(b=>'₹'+cr(mid(q)*SIZES[b])).join(' · ')} <span>cr for 2 · 3 · 4 BHK</span>`;
 let pinnedRoad = null;
@@ -1154,13 +1212,14 @@ function renderInspector(){
   const k = pinned; if(!k) return;
   const a = AGG[k], s = D.sectors[k];
   const locate = `<button class="locate" data-loc="${k}">Show on map</button>`;
-  if(!a){ insp.innerHTML = `<div class="eyebrow">Sector</div><h2>${secName(k)}</h2><p class="empty" style="margin-top:10px">No quotes from premium developers matched the current filters.${s.boundary?'':' Its position on the map is approximate — OpenStreetMap has this sector only as a point.'}</p>${locate}`; return; }
+  if(!a){ const ns = D.nostock[k]; insp.innerHTML = `<div class="eyebrow">Sector</div><h2>${secName(k)}</h2><p class="empty" style="margin-top:10px">${ns?`No premium apartment stock: ${esc(ns.reason)}${ns.source_url?` (<a href="${esc(ns.source_url)}" target="_blank" rel="noopener">source</a>)`:''}.`:'No quotes from premium developers matched the current filters.'}${s.boundary?'':' Its position on the map is approximate — OpenStreetMap has this sector only as a point.'}</p>${benchHTML(k,null)}${locate}`; return; }
   const list = a.rows.map(q=>`<li class="proj${hlProject && q.project===hlProject?' hl':''}" data-p="${esc(q.project)}">
       <div class="row"><div><div class="name"><a href="${esc(q.source_url)}" target="_blank" rel="noopener">${esc(q.project)}</a></div><div class="dev">${esc(q.developer||'')}</div></div>
       <div class="psf">${fmt(q.price_psf_min)}${q.price_psf_max!==q.price_psf_min?'–'+q.price_psf_max.toLocaleString('en-IN'):''}</div></div>
       <div class="tix" data-mid="${mid(q)}">${projTix(q)}</div>
       ${q.basis?`<div class="basis">${esc(q.basis)}</div>`:''}
-      <div class="meta"><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span><span class="pill src">${esc(q.source_type||'source')}</span><span>${esc(q.as_of||'')}</span></div>
+      <div class="meta"><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span><span class="pill src">${esc(q.source_type||'source')}</span>${confPill(q)}<span>${esc(q.as_of||'')}</span>${q.second_source_url?`<a href="${esc(q.second_source_url)}" target="_blank" rel="noopener" style="font-size:11px">2nd source</a>`:''}</div>
+      ${q.audit&&q.audit.reason?`<div class="basis" style="color:var(--muted)">Audit: ${esc(q.audit.reason)}</div>`:''}
     </li>`).join('');
   insp.innerHTML = `<div class="eyebrow">Sector</div><h2>${secName(k)}</h2>
     <div class="range">${fmtK(a.lo)}${a.hi!==a.lo?' – '+fmtK(a.hi):''} <span style="font-size:13px;color:var(--muted)">₹ / sq ft</span></div>
@@ -1169,6 +1228,7 @@ function renderInspector(){
     <div class="bhk"><div class="eyebrow">Indicative ticket size · ₹ crore</div>
       <table>${bhkRows(a.lo,a.hi)}</table>
       <small>Sector ₹/sq ft range × super area. Edit the areas to match a unit you are looking at. Excludes PLC, parking, GST and club charges.</small></div>
+    ${benchHTML(k,a)}
     <ul class="projects">${list}</ul>
     <div class="how"><b>How this range was built:</b> each project's quoted ₹/sq ft is reduced to a midpoint; the range runs from the lowest to the highest midpoint and the sector is coloured by the median (${fmt(Math.round(a.med))}). Quotes are asking prices as seen on the linked page.</div>`;
   if(hlProject){ const h = insp.querySelector('.proj.hl'); if(h) h.scrollIntoView({block:'center', behavior: reduceMotion?'auto':'smooth'}); }
@@ -1297,9 +1357,9 @@ function renderTable(){
   let h = '';
   for(const k of secs){
     const a = AGG[k], b = bandOf(a.med);
-    h += `<tr class="sec" tabindex="0" data-s="${k}"><td><span class="sw" style="background:var(${b.v})"></span>${secName(k)}<span class="cnt">${a.n} quote${a.n>1?'s':''}</span></td><td colspan="2">${D.sectors[k]?.boundary===false?'<span style="color:var(--muted);font-weight:400">location approximate</span>':''}</td><td class="num">${fmtK(a.lo)}${a.hi!==a.lo?' – '+fmtK(a.hi):''} <span style="color:var(--muted)">· med ${fmt(Math.round(a.med))}</span></td><td colspan="4"></td></tr>`;
+    h += `<tr class="sec" tabindex="0" data-s="${k}"><td><span class="sw" style="background:var(${b.v})"></span>${secName(k)}<span class="cnt">${a.n} quote${a.n>1?'s':''}</span></td><td colspan="2">${D.sectors[k]?.boundary===false?'<span style="color:var(--muted);font-weight:400">location approximate</span>':''}</td><td class="num">${fmtK(a.lo)}${a.hi!==a.lo?' – '+fmtK(a.hi):''} <span style="color:var(--muted)">· med ${fmt(Math.round(a.med))}</span></td><td colspan="4" style="color:var(--muted);font-weight:400">${D.bench[k]&&D.bench[k].avg?`sector-wide portal avg ${fmt(D.bench[k].avg)}`:''}</td></tr>`;
     for(const q of a.rows){
-      h += `<tr class="q"><td>${k}</td><td>${esc(q.project)}</td><td>${esc(q.developer||'')}</td><td class="num">${q.price_psf_min.toLocaleString('en-IN')}${q.price_psf_max!==q.price_psf_min?'–'+q.price_psf_max.toLocaleString('en-IN'):''}</td><td><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span></td><td>${esc(q.basis||'')}</td><td>${esc(q.as_of||'')}</td><td><a href="${esc(q.source_url)}" target="_blank" rel="noopener">${esc(q.source_type||'link')}</a></td></tr>`;
+      h += `<tr class="q"><td>${k}</td><td>${esc(q.project)}</td><td>${esc(q.developer||'')}</td><td class="num">${q.price_psf_min.toLocaleString('en-IN')}${q.price_psf_max!==q.price_psf_min?'–'+q.price_psf_max.toLocaleString('en-IN'):''}</td><td><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span> ${confPill(q)}</td><td>${esc(q.basis||'')}</td><td>${esc(q.as_of||'')}</td><td><a href="${esc(q.source_url)}" target="_blank" rel="noopener">${esc(q.source_type||'link')}</a></td></tr>`;
     }
   }
   tb.innerHTML = h;

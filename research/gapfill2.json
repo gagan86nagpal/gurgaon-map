@@ -1,0 +1,376 @@
+[
+  {
+    "sector": "64",
+    "no_premium_stock": true,
+    "reason": "No project with a confirmed Sector 64 address on Square Yards. Its 'top projects' and 'projects in sector' listing pages surface only neighboring-sector projects (Sector 65: M3M Route 65, M3M Trump Tower, M3M Golf Estate; Sector 63/63A: Adani Samsara Vilasa, Birla Navya Avik, DLF The Arbour; Sector 66: Smart World The Edition, BPTP Downtown 66; Sector 49: Godrej Aristocrat; Sector 67: M3M Urbana Business Park (commercial)) — each verified individually via its own project page and none actually sits in Sector 64.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-64-gurgaon"
+  },
+  {
+    "sector": "52",
+    "no_premium_stock": true,
+    "reason": "Sector 52 stock is entirely older resale/plotted societies (Ardee City & Ardee City Palm Grove Heights/The Residency, Ansal Sushant Estate, Omaxe Executive Floors builder floors, Emerald Green, Adhunik Society, Axiom Palm Floors 2, Satguru Apartments, Aviation Heights) — no premium-league developer has a project verified in Sector 52; portal itself notes no new-launch/under-construction activity.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-52-gurgaon"
+  },
+  {
+    "sector": "52A",
+    "no_premium_stock": true,
+    "reason": "Square Yards has no project with a confirmed Sector 52A address; its 'projects in Sector 52A' page returns only Sector 52/53 resale societies (Aviation Heights, Emerald Green, Ardee City The Residency, Adhunik Society), and its sector-overview 'top projects' (M3M Route 65, DLF The Camellias, M3M Trump Tower, M3M Golf Estate, DLF The Icon, Godrej Miraya, M3M Altitude, DLF The Arbour) were each individually verified to actually be in Sector 65, 42, 63A/DLF Phase V, or 63 — none in 52A.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-52a-gurgaon"
+  },
+  {
+    "sector": "44",
+    "no_premium_stock": true,
+    "reason": "Only one project with a confirmed Sector 44 address on Square Yards: Minarch Tower, developer unnamed, described as budget/value-for-money, price on request — no premium-league developer stock in this central-Gurgaon sector.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-44-gurgaon"
+  },
+  {
+    "sector": "40",
+    "project": "Unitech Ivory Towers",
+    "developer": "Unitech",
+    "price_psf_min": 19100,
+    "price_psf_max": 19100,
+    "basis": "Square Yards project page asking price per sq ft, super built-up basis",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-ivory-towers/369/project",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-06",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "Square Yards project page states location as Sector 40, Gurgaon (NH 8)"
+  },
+  {
+    "sector": "74A",
+    "no_premium_stock": true,
+    "reason": "Square Yards 'projects in Sector 74A' search returns 'No results matching your search' — no residential project (premium or otherwise) has a confirmed Sector 74A address; nearby stock is in Sector 74 (Vigneshwara Aquarius Cyber Park) and Sector 76 (M3M Skywalk, Whiteland Blissville/Aspen).",
+    "source_url": "https://www.squareyards.com/projects-in-sector-74a-gurgaon"
+  },
+  {
+    "sector": "75",
+    "no_premium_stock": true,
+    "reason": "Square Yards 'projects in Sector 75' listing page returns only neighboring-sector projects (Sector 70: Shree Vardhman, Tulip, Pyramid, Unitech projects; Sector 74: M3M Skywalk; Sector 73: DLF Alameda; Sector 78/60/70A/1 others) — none of the 17 listed projects has a confirmed Sector 75 address.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-75-gurgaon"
+  },
+  {
+    "sector": "81A",
+    "no_premium_stock": true,
+    "reason": "Square Yards 'projects in Sector 81A' search returns 'No results matching your search'; the only nearby suggested projects (Vipul Lavanya, Zenext Heights) were verified on their own project pages to be in Sector 81 and Sector 112 respectively, not 81A.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-81a-gurgaon"
+  },
+  {
+    "sector": "87",
+    "project": "DLF New Town Heights II",
+    "developer": "DLF",
+    "price_psf_min": 11000,
+    "price_psf_max": 11000,
+    "basis": "portal-stated psf on ₹1.84-4.51 Cr price range",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/projects-in-sector-87-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)"
+  },
+  {
+    "sector": "87",
+    "project": "DLF The Skycourt",
+    "developer": "DLF",
+    "price_psf_min": 12400,
+    "price_psf_max": 12400,
+    "basis": "portal-stated psf on ₹2.30-2.34 Cr price range",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/projects-in-sector-87-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)"
+  },
+  {
+    "sector": "87",
+    "project": "Anant Raj Maceo",
+    "developer": "Anant Raj",
+    "price_psf_min": 10850,
+    "price_psf_max": 10850,
+    "basis": "portal-stated psf on ₹1.34-2.78 Cr price range",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/projects-in-sector-87-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)"
+  },
+  {
+    "sector": "94",
+    "project": "DLF Gardencity Enclave",
+    "developer": "DLF",
+    "price_psf_min": 12450,
+    "price_psf_max": 12450,
+    "basis": "portal-stated psf on ₹2.22-3.48 Cr price range",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/projects-in-sector-94-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-94 project listing page (URL keyed to Sector 94)"
+  },
+  {
+    "sector": "94",
+    "project": "Orris Aanandam Ora",
+    "developer": "Orris",
+    "price_psf_min": 13550,
+    "price_psf_max": 13550,
+    "basis": "portal-stated psf on ₹1.78-2.75 Cr price range",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/projects-in-sector-94-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-94 project listing page (URL keyed to Sector 94)"
+  },
+  {
+    "sector": "88",
+    "no_premium_stock": true,
+    "reason": "Squareyards' own sector-88 listing page explicitly separates 'Sector 88 Direct Projects' from nearby-sector projects. The only two direct-Sector-88 entries are Silverglades Merchant Plaza (affordable housing, price on request) and a small local 'Chauhan Complex' (price on request). Every premium tower commonly associated with 'Sector 88' area (Center Court, Godrej Oasis/Icon, Signature Global Imperial, ROF Pravasa, Max Estate 360/361, Krisumi Waterside) is separately tagged by the same page as actually sitting in Sector 88A, 88B, 89, 36A, or 84.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-88-gurgaon"
+  },
+  {
+    "sector": "88B",
+    "project": "Vatika One Express City",
+    "developer": "Vatika",
+    "price_psf_min": 12900,
+    "price_psf_max": 12900,
+    "basis": "portal-stated psf on ₹2.00-3.35 Cr price range, 1550-2600 sqft units",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/sector-88b-in-gurgaon-overview-109",
+    "source_type": "portal",
+    "second_source_url": "https://www.squareyards.com/projects-in-sector-88-gurgaon",
+    "as_of": "2026-09",
+    "confidence": "A",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-88b overview page and sector-88 listing page (both independently tag it Sector 88B)"
+  },
+  {
+    "sector": "88B",
+    "project": "Trinity Sky Palazzo",
+    "developer": "Trinity Infratech",
+    "price_psf_min": 17500,
+    "price_psf_max": 17500,
+    "basis": "project's own squareyards page states ₹17,500/sqft; ticket prices ₹5.16-8.30 Cr on 2950-4150 sqft units",
+    "status": "under construction",
+    "source_url": "https://www.squareyards.com/gurgaon-residential-property/trinity-sky-palazzo/325651/project",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "project's own squareyards page states Sector 88B; note: page also states Anhad Realty is acquiring 100% shareholding to revive this stalled project, so treat as distressed-asking, not a fully liquid market rate"
+  },
+  {
+    "sector": "100",
+    "project": "Vatika Sovereign Park",
+    "developer": "Vatika",
+    "price_psf_min": 13900,
+    "price_psf_max": 13900,
+    "basis": "portal-stated psf on ₹3.48-5.46 Cr price range",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/projects-in-sector-100-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)"
+  },
+  {
+    "sector": "100",
+    "project": "Conscient Heritage Max",
+    "developer": "Conscient",
+    "price_psf_min": 13850,
+    "price_psf_max": 13850,
+    "basis": "portal-stated psf on ₹2.25-3.34 Cr price range",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/projects-in-sector-100-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)"
+  },
+  {
+    "sector": "100",
+    "project": "BPTP The Amaario",
+    "developer": "BPTP",
+    "price_psf_min": 17250,
+    "price_psf_max": 17250,
+    "basis": "portal-stated psf, ticket price from ₹6.28 Cr",
+    "status": "under construction",
+    "source_url": "https://www.squareyards.com/projects-in-sector-100-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)"
+  },
+  {
+    "sector": "105",
+    "project": "ATS Homekraft Sanctuary",
+    "developer": "ATS Homekraft",
+    "price_psf_min": 14000,
+    "price_psf_max": 14000,
+    "basis": "computed from unit ticket prices/sizes on the project's own squareyards page: ₹2.59Cr/1850sqft=₹14,000; ₹2.66Cr/1900sqft=₹14,000; ₹3.92Cr/2800sqft=₹14,000; ₹4.06Cr/2900sqft=₹14,000 — all four unit types agree exactly",
+    "status": "under construction",
+    "source_url": "https://www.squareyards.com/projects-in-sector-105-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-105 project listing page states location as Sector 105, Gurgaon; other nearby premium projects on the same page (MRG Crown, Satya Levante, Paras Dews, Zara Aavaas) are explicitly separated as Sector 104/106, confirming the page distinguishes sectors carefully"
+  },
+  {
+    "sector": "110",
+    "project": "Indiabulls Enigma",
+    "developer": "Indiabulls",
+    "price_psf_min": 14200,
+    "price_psf_max": 14200,
+    "basis": "portal-stated psf, starting price ₹5.25 Cr onwards, 472 units on 19.85 acres",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/projects-in-sector-110-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "",
+    "as_of": "2026-09",
+    "confidence": "B",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-110 project listing page, header explicitly 'Main Projects (In Sector 110)'"
+  },
+  {
+    "sector": "114",
+    "no_premium_stock": true,
+    "reason": "Square Yards' 'projects in Sector 114' page confirms only ONE project with a direct Sector 114 address — KST Infrastructure Urban Universe (₹16,200/sqft, ready) — and KST Infrastructure is not a premium-league developer (small local builder, 1-2 BHK budget configs from ₹47-72.5 Lac). All other listed projects (Nimai Place, Tata Gurgaon Gateway, Emaar MGF Marvel, M3M Capital, Smart World 113, etc.) are explicitly tagged Sector 112/113/109/110A/111, not 114.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-114-gurgaon"
+  },
+  {
+    "sector": "115",
+    "no_premium_stock": true,
+    "reason": "No project has a confirmed Sector 115 address. Both the 'projects in Sector 115' and 'property for sale in Sector 115' Square Yards pages return only nearby-sector projects explicitly tagged elsewhere (Adani The Marq in 102A, M3M Elie Saab in 111, Sobha Strada in 106, Tata La Vida/Emaar MGF Marvel/Emaar The 88/Experion Windchants in 112/113, Max Estate 361 in 36A, Smart World 113 in 113). Sector 115 itself appears to have no delivered or launched residential project yet.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-115-gurgaon"
+  },
+  {
+    "sector": "36B",
+    "no_premium_stock": true,
+    "reason": "No project on Square Yards' Sector 36B listing page carries an actual Sector 36B tag. The page's own per-project sector tags place every listed project in 36A (Max Estate 360/361, Krisumi Waterside/Waterfall towers), 88/88A/88B (Silverglades Merchant Plaza, Center Court towers, Vatika One Express City, Ansal Amantre), or 37D (MVN Aero One) — none in 36B itself.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-36b-gurgaon"
+  },
+  {
+    "sector": "25A",
+    "no_premium_stock": true,
+    "reason": "Square Yards' Sector 25A listing page shows 14 projects but every one carries an explicit sector tag of 18, 19, 24, 25, or DLF Phase II/III — none tagged Sector 25A. This is an older DLF-Phase-adjacent sector with no distinct project inventory of its own on the portal.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-25a-gurgaon"
+  },
+  {
+    "sector": "26A",
+    "no_premium_stock": true,
+    "reason": "Square Yards' 'projects in Sector 26A' page explicitly returns 'No results matching your search' for Sector 26A directly; the 'Similar Projects near Sector 26A' fallback list (DLF Silver Oaks, DLF Aralias/Dahlias, Experion One 42, etc.) is entirely tagged to Sectors 26, 27, 28, 42, 54 or DLF Phase I, confirming no project sits in 26A itself.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-26a-gurgaon"
+  },
+  {
+    "sector": "30",
+    "project": "Unitech Uniworld City",
+    "developer": "Unitech",
+    "price_psf_min": 21200,
+    "price_psf_max": 21200,
+    "basis": "portal-stated psf on ₹2.15 Cr+ starting price, ready to move; corroborated by the sector's own separately-published average asking price of ₹22,100/sqft (4% higher, well within 15%)",
+    "status": "ready",
+    "source_url": "https://www.squareyards.com/projects-in-sector-30-gurgaon",
+    "source_type": "portal",
+    "second_source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-30-gurgaon",
+    "as_of": "2026-09",
+    "confidence": "A",
+    "area_basis": "super",
+    "sector_verified_by": "squareyards sector-30 project listing page (URL keyed to Sector 30) shows it as a direct Sector 30 project, distinct from the separately-listed nearby-sector section"
+  },
+  {
+    "sector": "9B",
+    "no_premium_stock": true,
+    "reason": "The only project with a confirmed Sector 9B address, 'Basai Enclave Sector 9B' (M3M), is a small resettlement-style development of 350 sq.ft. 1BHK units with price on request — not premium apartment stock, and no psf could be verified. All other nearby listings are tagged Sector 9, 9A, 37C, or 37D, not 9B.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-9b-gurgaon"
+  },
+  {
+    "sector": "1",
+    "no_premium_stock": true,
+    "reason": "Old established HUDA sector (adjacent to Old Delhi Road/Sector 4-5 market) — Square Yards' sector listing page shows only resale builder floors, independent houses, plots and one bank-auction house; no developer-branded condo/apartment project is listed for the sector, average asking price ₹7,200/sqft is a builder-floor/resale blend, not a named premium project.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-1-gurgaon"
+  },
+  {
+    "sector": "10",
+    "no_premium_stock": true,
+    "reason": "Old HUDA residential sector — Square Yards' sector listing page carries no Sector 10–specific project; it back-fills with unrelated projects located in Sectors 46, 39, 57, 31 and 3, and its own resale summary is builder floors only (avg ~₹3.1 Cr). No premium condo stock in the sector itself.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-10-gurgaon"
+  },
+  {
+    "sector": "11",
+    "no_premium_stock": true,
+    "reason": "Old HUDA residential sector — the only Sector 11–specific listing is a resale 3BHK flat (~₹16,500/sqft, individual owner listing, not a developer project); all named projects on the page (Sectors 46, 39, 31, 3) are explicitly located elsewhere. No premium condo development in the sector.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-11-gurgaon"
+  },
+  {
+    "sector": "11A",
+    "no_premium_stock": true,
+    "reason": "Old HUDA residential sector — Square Yards' sector page returns zero Sector 11A–specific listings and only shows nearby-sector filler projects (Sectors 46, 39, 31, 3, 57). No premium condo stock in the sector.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-11a-gurgaon"
+  },
+  {
+    "sector": "20",
+    "no_premium_stock": true,
+    "reason": "Old HUDA industrial/residential sector — Square Yards' sector page shows no Sector 20–specific residential project, only nearby-sector filler (Sectors 46, 39, 31, 3, 57); the only sector-specific price stat given (₹18,850/sqft) is explicitly for office/commercial space, not residential.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-20-gurgaon"
+  },
+  {
+    "sector": "29",
+    "no_premium_stock": true,
+    "reason": "Sector 29 is Gurgaon's established restaurant/nightlife (Leisure Valley-adjacent) commercial hub, not a condo corridor — Square Yards' sector page shows no residential apartment project sited in Sector 29 itself; the only sector-specific listing is a commercial showroom for sale, with all named apartment projects (Sectors 46, 39, 31, 3, 57) located elsewhere.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-29-gurgaon"
+  },
+  {
+    "sector": "34",
+    "no_premium_stock": true,
+    "reason": "Sector 34 (Old Gurgaon/IMT-adjacent) has no developer condo stock — every project on Square Yards' sector page is explicitly located in Sectors 71, 69 or 70A, not Sector 34; the sector's own average asking price is ₹5,450/sqft with a low #270 locality rank, consistent with older/industrial-adjacent stock rather than premium apartments.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-34-gurgaon"
+  },
+  {
+    "sector": "37",
+    "no_premium_stock": true,
+    "reason": "Sector 37 (Pataudi Road/Kherki Daula corridor) — Square Yards' sector page shows only a resale independent house and a plot listed directly in Sector 37 (₹4,050 and ₹3,510/sqft respectively, non-premium); the premium new launches referenced (Signature Global Sarvam, Adani The Marq) are explicitly sited in adjacent Sectors 37D and 102A, not Sector 37 itself.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-37-gurgaon"
+  },
+  {
+    "sector": "37A",
+    "no_premium_stock": true,
+    "reason": "Sector 37A (Pataudi Road corridor) has no project actually sited in it — every new-launch/under-construction project on Square Yards' sector page (Adani The Marq, M3M Elie Saab, Signature Global Sarvam, BPTP Eden Estate/GAIA, Sobha Strada, Max Estate 361, Smart World 113) is explicitly located in other sectors (102A, 111, 37D, 102, 106, 36A, 113).",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-37a-gurgaon"
+  },
+  {
+    "sector": "37B",
+    "no_premium_stock": true,
+    "reason": "Sector 37B (Pataudi Road corridor, near IMT Manesar) — Square Yards' sector page returns zero Sector 37B–specific listings, only nearby-sector filler projects (Sectors 46, 39, 31, 3, 57). No premium condo stock in the sector.",
+    "source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-37b-gurgaon"
+  },
+  {
+    "sector": "101",
+    "no_premium_stock": true,
+    "reason": "Both Square Yards Sector 101 pages (projects-in-sector-101 and sale/property-for-sale-in-sector-101) return zero projects actually addressed to Sector 101 itself; every listed project is explicitly tagged to a different sector (102, 102A, 104, 99, 9A, 49, 111, 37D, 106, 36A, 113, 82). Sector 101 appears to be a small connector sector with no premium condo stock of its own.",
+    "source_url": "https://www.squareyards.com/projects-in-sector-101-gurgaon"
+  }
+]

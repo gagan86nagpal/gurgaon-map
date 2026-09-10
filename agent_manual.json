@@ -1,3 +1,20 @@
 [
-{"sector":"99A","project":"ATS HomeKraft Grandstand Phase 2","developer":"ATS HomeKraft","price_psf_min":14824,"price_psf_max":14967,"basis":"3.5BHK 2,125 sqft @ ₹3.15 Cr; 4.5BHK 3,000 sqft @ ₹4.49 Cr (channel-partner site; HRERA 54 of 2026 dated 17.08.2026)","status":"new launch","source_url":"https://atsgrandstandgurgaon.in/index.html","source_type":"broker microsite","as_of":"2026-09"}
+ {
+  "sector": "99A",
+  "project": "ATS HomeKraft Grandstand Phase 2",
+  "developer": "ATS HomeKraft",
+  "price_psf_min": 14824,
+  "price_psf_max": 14967,
+  "basis": "super built-up",
+  "status": "new launch",
+  "source_url": "https://atsgrandstandgurgaon.in/index.html",
+  "source_type": "broker microsite",
+  "as_of": "2026-09",
+  "confidence": "B",
+  "audit": {
+   "verdict": "keep",
+   "reason": "Confirmed directly via the source page: 3.5BHK 2,125sqft@Rs3.15Cr=14,824/sqft; 4.5BHK 3,000sqft@Rs4.49Cr=14,967/sqft. Searched squareyards/99acres/housing.com and other portals - only the earlier Phase 1 'ATS Grandstand' project (not Phase 2) is indexed there yet. Given HRERA registration is only from 17.08.2026, the broker-microsite exception (standard 5, brand-new launch with no portal coverage yet) applies.",
+   "checked": "2026-09"
+  }
+ }
 ]
