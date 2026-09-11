@@ -557,7 +557,10 @@ h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;
 .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
 button{font:inherit;color:inherit}
 
-header{padding:14px clamp(16px,3vw,40px) 12px;border-bottom:1px solid var(--line-2)}
+header{padding:14px clamp(16px,3vw,40px) 12px;border-bottom:1px solid var(--line-2);display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+#theme{width:38px;height:38px;flex:none;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;display:grid;place-items:center;margin-top:2px}
+#theme:hover{background:var(--panel-2)}
+#theme svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
 header h1{font-size:clamp(24px,3vw,34px);font-weight:700;letter-spacing:-.02em;line-height:1.05;font-variation-settings:"opsz" 96,"wdth" 92}
 header p{margin:6px 0 0;color:var(--ink-2);max-width:70ch;font-size:14px}
 .stats{display:flex;gap:24px;flex-wrap:wrap}
@@ -617,7 +620,6 @@ header p{margin:6px 0 0;color:var(--ink-2);max-width:70ch;font-size:14px}
 @media (max-width:980px){.stage{grid-template-columns:1fr}.inspector{border-left:0;border-top:1px solid var(--line-2);max-height:none;position:static}.mapwrap{height:78vh}}
 .mapwrap{position:relative;height:calc(100vh - 60px);min-height:560px;overflow:hidden;background:var(--bg)}
 svg.map{width:100%;height:100%;display:block;touch-action:none;cursor:grab;--z:1;--zf:1;user-select:none}
-#theme{margin-top:6px}
 #theme .sun{display:none}
 :root[data-theme="dark"] #theme .sun{display:block} :root[data-theme="dark"] #theme .moon{display:none}
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) #theme .sun{display:block} :root:not([data-theme="light"]) #theme .moon{display:none} }
@@ -805,6 +807,7 @@ footer p{max-width:90ch;margin:0}
     <div class="eyebrow">Gurugram · premium-segment asking prices · ₹ per sq ft (super area)</div>
     <h1>Your introduction to Gurgaon real estate, sector-wise</h1>
   </div>
+  <button id="theme" title="Switch light / dark" aria-label="Switch between light and dark mode"><svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
 </header>
 
 <div class="toolbar">
@@ -880,7 +883,6 @@ footer p{max-width:90ch;margin:0}
       <button id="zin" title="Zoom in" aria-label="Zoom in">+</button>
       <button id="zout" title="Zoom out" aria-label="Zoom out">−</button>
       <button id="zfit" title="Reset view" aria-label="Reset view"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
-      <button id="theme" title="Switch light / dark" aria-label="Switch between light and dark mode"><svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
     </div>
     <div class="hint">Drag to pan · scroll or pinch to zoom · zoom in for minor roads, stations and society names</div>
     <div class="attrib">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</div>
