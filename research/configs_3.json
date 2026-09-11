@@ -1,0 +1,258 @@
+[
+{"sector": "102", "project": "BPTP Amstoria Verti Greens", "url": "https://www.squareyards.com/gurgaon-residential-property/bptp-amstoria-verti-greens/325205/project", "psf": 17450, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "2", "area": 1451, "price_cr": 3.05},
+  {"bhk": "2", "area": 1751, "price_cr": 3.68},
+  {"bhk": "3", "area": 1828, "price_cr": 3.84},
+  {"bhk": "3", "area": 1941, "price_cr": 4.08}
+]},
+{"sector": "102A", "project": "Adani The Marq", "url": "https://www.squareyards.com/gurgaon-residential-property/adani-the-marq/343450/project", "psf": 16400, "as_of": "2026-06", "status": "new launch", "configs": [
+  {"bhk": "3", "area": 2375, "price_cr": 4.04},
+  {"bhk": "3", "area": 2490, "price_cr": 4.23},
+  {"bhk": "4", "area": 3295, "price_cr": 5.60}
+]},
+{"sector": "104", "project": "Godrej Premia Tower / Signature Homes", "url": "https://www.squareyards.com/gurgaon-residential-property/godrej-premia-tower/5348/project", "psf": 16100, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "3", "area": 1712, "price_cr": 1.30},
+  {"bhk": "3", "area": 1816, "price_cr": 1.38},
+  {"bhk": "3", "area": 1844, "price_cr": 1.40},
+  {"bhk": "4", "area": 2324, "price_cr": 1.76}
+], "note": "input listed as 'Godrej Premia Tower / Signature Homes'; used Godrej Premia Tower page (5348) since it matched exactly; Godrej Signature Homes is a separate project in same sector"},
+{"sector": "106", "project": "Sobha Altus", "url": "https://www.squareyards.com/gurgaon-residential-property/sobha-altus/249540/project", "psf": 21050, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "3", "area": 3045, "price_cr": 7.16},
+  {"bhk": "3", "area": 3231, "price_cr": 7.59},
+  {"bhk": "4", "area": 3914, "price_cr": 9.20}
+]},
+{"sector": "108", "project": "Experion The Westerlies", "url": "https://www.squareyards.com/gurgaon-residential-property/experion-the-westerlies/352/project", "psf": 13450, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "villa", "area": 4486, "price_cr": 8.99},
+  {"bhk": "villa", "area": 5260, "price_cr": 10.54},
+  {"bhk": "villa", "area": 6824, "price_cr": 13.68},
+  {"bhk": "villa", "area": 8397, "price_cr": 16.83},
+  {"bhk": "villa", "area": 8998, "price_cr": 18.03}
+], "note": "project is a villa/plot community (4/5/6 BHK villas), not apartment 2/3/4 BHK; also has a plot config (2259 sqft, 5.52cr) not included"},
+{"sector": "109", "project": "ATS Kocoon", "url": "https://www.squareyards.com/gurgaon-residential-property/ats-kocoon/221/project", "psf": 13300, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "3", "area": 1745, "price_cr": 2.36},
+  {"bhk": "3", "area": 2095, "price_cr": 2.83},
+  {"bhk": "4", "area": 3045, "price_cr": 4.11}
+]},
+{"sector": "111", "project": "Puri Diplomatic Residences", "url": "https://www.squareyards.com/gurgaon-residential-property/puri-diplomatic-residences/245971/project", "psf": 19000, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "3", "area": 2282, "price_cr": 5.11},
+  {"bhk": "3", "area": 2440, "price_cr": 5.46},
+  {"bhk": "4", "area": 3475, "price_cr": 8.68}
+]},
+{"sector": "112", "project": "Experion Windchants", "url": "https://www.squareyards.com/gurgaon-residential-property/experion-windchants/256/project", "psf": 16750, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "2", "area": 2441, "price_cr": 3.54},
+  {"bhk": "3", "area": 2802, "price_cr": 4.06},
+  {"bhk": "3", "area": 3700, "price_cr": 5.37},
+  {"bhk": "4", "area": 4848, "price_cr": 7.03},
+  {"bhk": "penthouse", "area": 6325, "price_cr": 9.17},
+  {"bhk": "penthouse", "area": 6471, "price_cr": 9.38},
+  {"bhk": "penthouse", "area": 6525, "price_cr": 9.46},
+  {"bhk": "villa", "area": 6350, "price_cr": 11.58},
+  {"bhk": "penthouse", "area": 8515, "price_cr": 12.35},
+  {"bhk": "villa", "area": 7400, "price_cr": 13.50}
+], "note": "status reported as 'Partially Ready To Move'"},
+{"sector": "113", "project": "Smartworld One DXP", "url": "https://www.squareyards.com/gurgaon-residential-property/smart-world-one-dxp/210648/project", "psf": 16450, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "2", "area": 1377, "price_cr": 2.80},
+  {"bhk": "3", "area": 1806, "price_cr": 3.67},
+  {"bhk": "3", "area": 2450, "price_cr": 4.97},
+  {"bhk": "4", "area": 2597, "price_cr": 5.27},
+  {"bhk": "4", "area": 3055, "price_cr": 6.20}
+]},
+{"sector": "93", "project": "Ashiana Amarah (Phase 4 sales data)", "url": "https://www.squareyards.com/gurgaon-residential-property/ashiana-amarah/167185/project", "psf": 14350, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "3", "area": 1000, "price_cr": 2.70},
+  {"bhk": "3", "area": 1205, "price_cr": 3.29},
+  {"bhk": "4", "area": 1444, "price_cr": 3.86}
+], "note": "input source was a news article; found matching project directly on Square Yards under sector 93"},
+{"sector": "59", "project": "Max Estate 59", "url": "", "psf": null, "as_of": "", "status": "", "configs": [], "note": "not found on Square Yards sector-59 listing page (10 other projects listed, no Max Estates project)"},
+{"sector": "91", "project": "Anant Raj Maceo (now marketed as TARC Maceo)", "url": "https://www.squareyards.com/gurgaon-residential-property/anant-raj-maceo/153/project", "psf": 10750, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "2", "area": 1310, "price_cr": 1.34},
+  {"bhk": "2", "area": 1404, "price_cr": 1.43},
+  {"bhk": "3", "area": 1862, "price_cr": 1.90},
+  {"bhk": "3", "area": 2320, "price_cr": 2.37},
+  {"bhk": "4", "area": 2724, "price_cr": 2.78}
+]},
+{"sector": "31", "project": "Birla Arika", "url": "https://www.squareyards.com/gurgaon-residential-property/birla-arika/325363/project", "psf": 23050, "as_of": "2025-12", "status": "under construction", "configs": [
+  {"bhk": "4", "area": 4300, "price_cr": 11.18},
+  {"bhk": "4", "area": 4750, "price_cr": 12.35}
+], "note": "project offers only 4 BHK apartments, no other configs available"},
+{"sector": "87", "project": "Anant Raj Maceo", "url": "https://www.squareyards.com/gurgaon-residential-property/anant-raj-maceo/153/project", "psf": null, "as_of": "", "status": "", "configs": [], "note": "SECTOR MISMATCH: input lists this project under sector 87, but on Square Yards Anant Raj Maceo is located in Sector 91 (same project already recorded above under sector 91). No separate project found in Sector 87 itself; sector-87 listing page mostly shows projects from neighboring sectors 81/86/90/91/92."},
+{"sector": "88B", "project": "Trinity Sky Palazzo", "url": "https://www.squareyards.com/gurgaon-residential-property/trinity-sky-palazzo/325651/project", "psf": 9950, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "3", "area": 2950, "price_cr": 5.16},
+  {"bhk": "3", "area": 3150, "price_cr": 6.30},
+  {"bhk": "4", "area": 3800, "price_cr": 7.60},
+  {"bhk": "4", "area": 4150, "price_cr": 8.30}
+]},
+{"sector": "105", "project": "ATS Homekraft Sanctuary", "url": "https://www.squareyards.com/gurgaon-residential-property/ats-homekraft-sanctuary/308290/project", "psf": 13250, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "3", "area": 1850, "price_cr": 2.59},
+  {"bhk": "3", "area": 1900, "price_cr": 2.66},
+  {"bhk": "4", "area": 2800, "price_cr": 3.92},
+  {"bhk": "4", "area": 2900, "price_cr": 4.06}
+]},
+{"sector": "24", "project": "Ambience Island Lagoon", "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/343/project", "psf": 18800, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "2", "area": 1496, "price_cr": 1.72},
+  {"bhk": "3", "area": 2416, "price_cr": 2.78},
+  {"bhk": "4", "area": 4368, "price_cr": 5.02},
+  {"bhk": "5", "area": 5100, "price_cr": 5.86}
+], "note": "URL slug says 'dlf-the-crest' but page content correctly resolves to Ambience Island Lagoon in Sector 24 (matches input) - stale slug, not a mismatch"},
+{"sector": "27", "project": "DLF Regency Park II", "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-regency-park-ii/354/project", "psf": 22150, "as_of": "2026-06", "status": "ready", "configs": [], "note": "config table only shows 'Price on Request' for 3 BHK (1550 sqft) and 4 BHK (1777 sqft); resale listings mention Rs2.30-5.00 Cr range for 3-5 BHK but without a per-unit-type breakdown, so skipped per no-price rule"},
+{"sector": "42", "project": "DLF The Magnolias", "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-magnolias/333/project", "psf": 70200, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "5", "area": 5825, "price_cr": 25.90},
+  {"bhk": "5", "area": 5875, "price_cr": 26.12},
+  {"bhk": "5", "area": 9175, "price_cr": 40.80},
+  {"bhk": "penthouse", "area": 9800, "price_cr": 43.57}
+]},
+{"sector": "43", "project": "DLF The Pinnacle", "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/370/project", "psf": 32000, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "4", "area": 3868, "price_cr": 4.30},
+  {"bhk": "4", "area": 3950, "price_cr": 4.39}
+], "note": "URL slug says 'dlf-the-crest' but page content correctly resolves to DLF The Pinnacle in Sector 43 (matches input) - stale slug, not a mismatch"},
+{"sector": "54", "project": "DLF The Dahlias", "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-dahlias/181205/project", "psf": 65000, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "4", "area": 9500, "price_cr": 61.75},
+  {"bhk": "5", "area": 11000, "price_cr": 71.50}
+]},
+{"sector": "54", "project": "DLF Park Place", "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-park-place/336/project", "psf": 35000, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "3", "area": 1975, "price_cr": 3.94},
+  {"bhk": "3", "area": 2329, "price_cr": 4.65},
+  {"bhk": "4", "area": 2550, "price_cr": 5.09},
+  {"bhk": "4", "area": 2677, "price_cr": 5.34}
+]},
+{"sector": "60", "project": "Ireo Skyon", "url": "https://www.squareyards.com/gurgaon-residential-property/ireo-skyon/64/project", "psf": 20250, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "2", "area": 1365, "price_cr": 2.47},
+  {"bhk": "2", "area": 1374, "price_cr": 2.49},
+  {"bhk": "2", "area": 1524, "price_cr": 2.76},
+  {"bhk": "3", "area": 2045, "price_cr": 3.70},
+  {"bhk": "4", "area": 2768, "price_cr": 5.01},
+  {"bhk": "4", "area": 2791, "price_cr": 5.05}
+]},
+{"sector": "65", "project": "Trump Towers Delhi NCR (Tribeca)", "url": "https://www.squareyards.com/gurgaon-residential-property/m3m-trump-tower/9666/project", "psf": 34950, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "3", "area": 3525, "price_cr": 17.63},
+  {"bhk": "4", "area": 4550, "price_cr": 22.75},
+  {"bhk": "4", "area": 6050, "price_cr": 30.25}
+], "note": "input project called 'Trump Towers Delhi NCR (Tribeca)'; on Square Yards this is listed as 'M3M Trump Tower', same project/sector 65"},
+{"sector": "Sohna-33", "project": "Central Park Flower Valley", "url": "https://www.squareyards.com/gurgaon-residential-property/central-park-flower-valley/8273/project", "psf": 13600, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "floor", "area": 1521, "price_cr": 2.43},
+  {"bhk": "villa", "area": 2919, "price_cr": 5.02},
+  {"bhk": "villa", "area": 3750, "price_cr": 6.45},
+  {"bhk": "villa", "area": 4502, "price_cr": 7.74}
+]},
+{"sector": "36A", "project": "Krisumi Waterfall Suites", "url": "https://www.squareyards.com/gurgaon-residential-property/krisumi-waterfall-suites/339846/project", "psf": 19000, "as_of": "2026-06", "status": "under construction", "configs": [], "note": "project only offers 1 BHK units (940/1172 sqft, 2.54/3.16 cr) - no 2/3/4 BHK configs available, and 1 BHK is outside requested schema"},
+{"sector": "37D", "project": "Signature Global De Luxe DXP", "url": "https://www.squareyards.com/gurgaon-residential-property/signature-global-de-luxe-dxp/244108/project", "psf": 15350, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "3", "area": 2469, "price_cr": 4.07},
+  {"bhk": "3", "area": 2623, "price_cr": 4.33},
+  {"bhk": "4", "area": 3253, "price_cr": 5.37}
+]},
+{"sector": "76", "project": "DLF Privana West", "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-privana-west/247372/project", "psf": 24500, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "4", "area": 3577, "price_cr": 8.76}
+]},
+{"sector": "77", "project": "Emaar Palm Premier", "url": "https://www.squareyards.com/gurgaon-residential-property/emaar-palm-premier/9667/project", "psf": 16500, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "3", "area": 2000, "price_cr": 2.47},
+  {"bhk": "3", "area": 2025, "price_cr": 2.50}
+]},
+{"sector": "79", "project": "M3M Golf Hills", "url": "https://www.squareyards.com/gurgaon-residential-property/m3m-golf-hills/220071/project", "psf": 13750, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "3", "area": 2260, "price_cr": 4.24},
+  {"bhk": "3", "area": 2365, "price_cr": 4.43},
+  {"bhk": "4", "area": 2685, "price_cr": 5.03},
+  {"bhk": "penthouse", "area": 8120, "price_cr": 15.83}
+]},
+{"sector": "82", "project": "Vatika India Next", "url": "https://www.squareyards.com/gurgaon-residential-property/vatika-india-next/5268/project", "psf": 12500, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "3", "area": 1698, "price_cr": 1.83},
+  {"bhk": "4", "area": 1792, "price_cr": 1.94}
+], "note": "status reported as 'Partially Ready To Move'; page also lists a Plot config (2160 sqft, 3.07cr) not included"},
+{"sector": "83", "project": "Vatika Boulevard Heights and Residences", "url": "https://www.squareyards.com/gurgaon-residential-property/vatika-boulevard-heights-and-residences/100111/project", "psf": 13000, "as_of": "2025-12", "status": "ready", "configs": [
+  {"bhk": "3", "area": 1800, "price_cr": 1.51},
+  {"bhk": "3", "area": 2150, "price_cr": 1.81}
+]},
+{"sector": "86", "project": "Emaar Serenity Hills", "url": "https://www.squareyards.com/gurgaon-residential-property/emaar-serenity-hills/341603/project", "psf": 13400, "as_of": "2026-06", "status": "new launch", "configs": [
+  {"bhk": "3", "area": 1700, "price_cr": 2.93},
+  {"bhk": "3", "area": 2200, "price_cr": 3.79},
+  {"bhk": "4", "area": 2800, "price_cr": 4.83}
+]},
+{"sector": "88A", "project": "Godrej Icon", "url": "https://www.squareyards.com/gurgaon-residential-property/godrej-icon/4034/project", "psf": 11650, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "2", "area": 1490, "price_cr": 2.01},
+  {"bhk": "2", "area": 1630, "price_cr": 2.20},
+  {"bhk": "3", "area": 1779, "price_cr": 2.40},
+  {"bhk": "3", "area": 2142, "price_cr": 2.89},
+  {"bhk": "4", "area": 2317, "price_cr": 3.13},
+  {"bhk": "4", "area": 3008, "price_cr": 4.06}
+], "note": "status reported as 'Partially Ready To Move'; page listed many sub-variants per BHK, condensed to min/max area+price per BHK type"},
+{"sector": "89A", "project": "Adani Aangan", "url": "https://www.squareyards.com/gurgaon-residential-property/adani-aangan/8537/project", "psf": 11450, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "2", "area": 610, "price_cr": 0.8325},
+  {"bhk": "2", "area": 657, "price_cr": 0.8966}
+], "note": "project only offers 1 BHK and 2 BHK units; no 3/4 BHK available (1 BHK entries excluded as outside schema)"},
+{"sector": "93", "project": "DLF Gardencity Enclave", "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-gardencity-enclave/155501/project", "psf": 12400, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "floor", "area": 1496, "price_cr": 2.22},
+  {"bhk": "floor", "area": 1614, "price_cr": 2.40},
+  {"bhk": "floor", "area": 2340, "price_cr": 3.48}
+], "note": "status reported as 'Partially Ready To Move'; configs are independent-floor (Ind Floor) units, marked as 'floor'"},
+{"sector": "95A", "project": "Signature Roselia Phase 2", "url": "https://www.squareyards.com/gurgaon-residential-property/signature-roselia-phase-2/10691/project", "psf": 10150, "as_of": "2026-08", "status": "ready", "configs": [
+  {"bhk": "2", "area": 594, "price_cr": 0.4158},
+  {"bhk": "2", "area": 671, "price_cr": 0.4697}
+], "note": "project offers only 2 BHK configurations, no 3/4 BHK"},
+{"sector": "3A", "project": "Maa Bhagwati Residency, SS Residency Sector 3A, Shree Ganesh Apartment (resale)", "url": "https://www.squareyards.com/gurgaon-residential-property/maa-bhagwati-residency/121236/project", "psf": 9950, "as_of": "2026-06", "status": "ready", "configs": [], "note": "found Maa Bhagwati Residency on Square Yards (sector 3A matches) but configs are 'Price on Request' (2 BHK/750sqft, 3 BHK/900sqft) - no priced entries; SS Residency Sector 3A and Shree Ganesh Apartment are separate listings on the sector's property-rates page not individually fetched"},
+{"sector": "9", "project": "R Infra Apartment / Huda HBC Society (resale)", "url": "https://www.squareyards.com/gurgaon-residential-property/r-infra-apartment/87934/project", "psf": 9200, "as_of": "2026-03", "status": "ready", "configs": [], "note": "R Infra Apartment page has no priced sale configuration table (only rental data for 3 BHK); Huda HBC Society not separately fetched"},
+{"sector": "14", "project": "Old DLF Colony / Riddhi Siddhi Apartments (resale)", "url": "https://www.squareyards.com/gurgaon-residential-property/old-dlf-colony/143620/project", "psf": 22200, "as_of": "2026-03", "status": "ready", "configs": [], "note": "Old DLF Colony page shows only a Plot unit marked 'Price on Request'; no priced 2/3/4 BHK configs; Riddhi Siddhi Apartments not separately fetched"},
+{"sector": "17", "project": "Sukh Residency (resale)", "url": "https://www.squareyards.com/gurgaon-residential-property/sukh-residency/87828/project", "psf": 13800, "as_of": "2026-06", "status": "ready", "configs": [], "note": "no priced sale configuration table found; only rental data (1 BHK from ~17K/month) shown"},
+{"sector": "23", "project": "Ansal Plaza Sector-23 (resale)", "url": "https://www.squareyards.com/gurgaon-residential-property/ansal-plaza-sector-23/145646/project", "psf": 14200, "as_of": "2026-06", "status": "ready", "configs": [], "note": "no priced sale configuration table with area+price found; only rental rates by BHK shown; resale listings mention 2.25-6.25cr range but without per-unit-type area/price breakdown"},
+{"sector": "43", "project": "Craft Destination 43 (resale)", "url": "https://www.squareyards.com/gurgaon-residential-property/craft-destination-43/218292/project", "psf": 22150, "as_of": "2026-06", "status": "under construction", "configs": [], "note": "only a Plot unit (942 sqft) listed, marked 'Price on Request'; no priced 2/3/4 BHK configs"},
+{"sector": "57", "project": "BPTP Freedom Park Life (resale)", "url": "https://www.squareyards.com/gurgaon-residential-property/bptp-freedom-park-life/65/project", "psf": 14900, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "2", "area": 1446, "price_cr": 1.27},
+  {"bhk": "2", "area": 1697, "price_cr": 1.49},
+  {"bhk": "3", "area": 2293, "price_cr": 2.01},
+  {"bhk": "3", "area": 2762, "price_cr": 2.43},
+  {"bhk": "penthouse", "area": 4780, "price_cr": 4.20},
+  {"bhk": "penthouse", "area": 5361, "price_cr": 4.71}
+]},
+{"sector": "63", "project": "DLF The Arbour", "url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-arbour/214735/project", "psf": 27250, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "4", "area": 3900, "price_cr": 9.44}
+], "note": "project offers only a single 4 BHK configuration"},
+{"sector": "48", "project": "Central Park Resorts", "url": "https://www.squareyards.com/gurgaon-residential-property/central-park-resorts/106940/project", "psf": 29050, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "2", "area": 1255, "price_cr": 3.00}
+], "note": "project offers only 1 BHK and 2 BHK flats; 1 BHK (935 sqft, 2.23cr) excluded as outside schema"},
+{"sector": "70", "project": "Signature Global City (Sector 70)", "url": "", "psf": null, "as_of": "", "status": "", "configs": [], "note": "not found on Square Yards sector-70 listing page (30+ projects listed by Tulip, Pyramid, Shree Vardhman, Unitech etc.; no Signature Global project appears)"},
+{"sector": "47", "project": "Bestech Park View Spa", "url": "https://www.squareyards.com/gurgaon-residential-property/bestech-park-view-spa/295/project", "psf": 18750, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "3", "area": 2470, "price_cr": 3.50},
+  {"bhk": "4", "area": 3125, "price_cr": 4.43},
+  {"bhk": "4", "area": 3715, "price_cr": 5.26},
+  {"bhk": "penthouse", "area": 4645, "price_cr": 6.58},
+  {"bhk": "penthouse", "area": 6553, "price_cr": 9.29},
+  {"bhk": "penthouse", "area": 6585, "price_cr": 9.33}
+]},
+{"sector": "49", "project": "Vatika City", "url": "https://www.squareyards.com/gurgaon-residential-property/vatika-city/95/project", "psf": 19950, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "2", "area": 1357, "price_cr": 1.16},
+  {"bhk": "2", "area": 1491, "price_cr": 1.27},
+  {"bhk": "3", "area": 1498, "price_cr": 1.28},
+  {"bhk": "3", "area": 2423, "price_cr": 2.07},
+  {"bhk": "4", "area": 2660, "price_cr": 2.27},
+  {"bhk": "4", "area": 2999, "price_cr": 2.56},
+  {"bhk": "penthouse", "area": 2907, "price_cr": 2.48},
+  {"bhk": "penthouse", "area": 3759, "price_cr": 3.21}
+], "note": "page listed many sub-variants per BHK, condensed to min/max area+price per BHK/penthouse type"},
+{"sector": "51", "project": "SS Mayfield Gardens", "url": "https://www.squareyards.com/gurgaon-residential-property/ss-mayfield-gardens/21205/project", "psf": 14550, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "3", "area": 1550, "price_cr": 2.91}
+], "note": "project shows only a single 3 BHK configuration listed"},
+{"sector": "72", "project": "Tata Primanti Phase 2", "url": "https://www.squareyards.com/gurgaon-residential-property/tata-primanti-phase-2/21024/project", "psf": 18150, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "3", "area": 2550, "price_cr": 4.10},
+  {"bhk": "4", "area": 3320, "price_cr": 5.34}
+]},
+{"sector": "74", "project": "M3M Skywalk", "url": "https://www.squareyards.com/gurgaon-residential-property/m3m-skywalk/225841/project", "psf": 17200, "as_of": "2026-06", "status": "ready", "configs": [
+  {"bhk": "2", "area": 1406, "price_cr": 2.45},
+  {"bhk": "2", "area": 1682, "price_cr": 2.93},
+  {"bhk": "3", "area": 2018, "price_cr": 3.52},
+  {"bhk": "3", "area": 2032, "price_cr": 3.54}
+]},
+{"sector": "80", "project": "Eldeco Fairway Reserve", "url": "https://www.squareyards.com/gurgaon-residential-property/eldeco-fairway-reserve/324073/project", "psf": 16600, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "3", "area": 2200, "price_cr": 3.85},
+  {"bhk": "4", "area": 2875, "price_cr": 5.03},
+  {"bhk": "4", "area": 3600, "price_cr": 6.30}
+]},
+{"sector": "Sohna-33", "project": "Godrej Serenity", "url": "https://www.squareyards.com/gurgaon-residential-property/godrej-serenity-gurgaon/103189/project", "psf": 12700, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "2", "area": 930, "price_cr": 1.12},
+  {"bhk": "2", "area": 987, "price_cr": 1.18},
+  {"bhk": "3", "area": 1163, "price_cr": 1.40},
+  {"bhk": "3", "area": 1169, "price_cr": 1.40}
+]},
+{"sector": "Sohna-2", "project": "Ashiana Mulberry", "url": "https://www.squareyards.com/gurgaon-residential-property/ashiana-mulberry/8392/project", "psf": 10250, "as_of": "2026-06", "status": "under construction", "configs": [
+  {"bhk": "2", "area": 1210, "price_cr": 1.33},
+  {"bhk": "2", "area": 1465, "price_cr": 1.61},
+  {"bhk": "3", "area": 1730, "price_cr": 1.90},
+  {"bhk": "3", "area": 2300, "price_cr": 2.53}
+], "note": "status reported as 'Partially Ready To Move'"}
+]

@@ -5,7 +5,7 @@
   "developer": "Unitech",
   "price_psf_min": 19100,
   "price_psf_max": 19100,
-  "basis": "Square Yards project page asking price per sq ft, super built-up basis",
+  "basis": "Square Yards project page: current asking ₹19,100/sq ft; unit table ₹10,350–19,100/sq ft",
   "status": "ready",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-ivory-towers/369/project",
   "source_type": "portal",
@@ -19,20 +19,41 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1688,
+    "price_cr": 1.75
+   },
+   {
+    "bhk": "3",
+    "area": 1734,
+    "price_cr": 1.8
+   },
+   {
+    "bhk": "3",
+    "area": 2112,
+    "price_cr": 2.2
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-ivory-towers/369/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 19100,
+  "configs_stale": true
  },
  {
-  "sector": "87",
+  "sector": "86",
   "project": "DLF New Town Heights II",
   "developer": "DLF",
-  "price_psf_min": 11000,
-  "price_psf_max": 11000,
-  "basis": "portal-stated psf on ₹1.84-4.51 Cr price range",
+  "price_psf_min": 11050,
+  "price_psf_max": 12000,
+  "basis": "Square Yards project page: current asking ₹11,050/sq ft; priced units ₹11,050–12,000/sq ft",
   "status": "ready",
-  "source_url": "https://www.squareyards.com/projects-in-sector-87-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-new-town-heights-ii/156/project",
   "source_type": "portal",
   "second_source_url": "",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
   "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)",
@@ -41,20 +62,66 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1535,
+    "price_cr": 1.84
+   },
+   {
+    "bhk": "3",
+    "area": 1845,
+    "price_cr": 2.21
+   },
+   {
+    "bhk": "4",
+    "area": 2230,
+    "price_cr": 2.68
+   },
+   {
+    "bhk": "4",
+    "area": 2530,
+    "price_cr": 3.04
+   },
+   {
+    "bhk": "villa",
+    "area": 3090,
+    "price_cr": 4.33
+   },
+   {
+    "bhk": "villa",
+    "area": 3220,
+    "price_cr": 4.51
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-new-town-heights-ii/156/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 11050,
+  "configs_note": "SECTOR MISMATCH: input claims sector 87, but Square Yards' own project page places DLF New Town Heights II in Sector 86. The sector-87 listing page did not contain this project at all. Data recorded as found (project name matches, sector does not).",
+  "audit": {
+   "verdict": "reassign",
+   "reason": "Square Yards project page places it in Sector 86 (was 87)",
+   "checked": "2026-09"
+  },
+  "prev_psf": [
+   11000,
+   11000
+  ],
+  "configs_stale": false
  },
  {
-  "sector": "87",
+  "sector": "86",
   "project": "DLF The Skycourt",
   "developer": "DLF",
-  "price_psf_min": 12400,
+  "price_psf_min": 12100,
   "price_psf_max": 12400,
-  "basis": "portal-stated psf on ₹2.30-2.34 Cr price range",
+  "basis": "Square Yards project page: current asking ₹12,400/sq ft; priced units ₹12,100–12,400/sq ft",
   "status": "ready",
-  "source_url": "https://www.squareyards.com/projects-in-sector-87-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-skycourt/114/project",
   "source_type": "portal",
   "second_source_url": "",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
   "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)",
@@ -63,42 +130,46 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 1900,
+    "price_cr": 2.3
+   },
+   {
+    "bhk": "3",
+    "area": 1931,
+    "price_cr": 2.34
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-skycourt/114/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 12400,
+  "configs_note": "MISMATCH: Square Yards lists this project under Sector 86, not Sector 87 as in input.",
+  "prev_psf": [
+   12400,
+   12400
+  ],
+  "configs_stale": false,
+  "audit": {
+   "verdict": "reassign",
+   "reason": "Square Yards project page places it in Sector 86 (was 87)",
+   "checked": "2026-09"
   }
  },
  {
-  "sector": "87",
-  "project": "Anant Raj Maceo",
-  "developer": "Anant Raj",
-  "price_psf_min": 10850,
-  "price_psf_max": 10850,
-  "basis": "portal-stated psf on ₹1.34-2.78 Cr price range",
-  "status": "ready",
-  "source_url": "https://www.squareyards.com/projects-in-sector-87-gurgaon",
-  "source_type": "portal",
-  "second_source_url": "",
-  "as_of": "2026-09",
-  "confidence": "B",
-  "area_basis": "super",
-  "sector_verified_by": "squareyards sector-87 project listing page (URL keyed to Sector 87)",
-  "sot": {
-   "cls": "portal",
-   "label": "Square Yards",
-   "domain": "squareyards.com",
-   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
- },
- {
-  "sector": "94",
+  "sector": "93",
   "project": "DLF Gardencity Enclave",
   "developer": "DLF",
-  "price_psf_min": 12450,
-  "price_psf_max": 12450,
-  "basis": "portal-stated psf on ₹2.22-3.48 Cr price range",
+  "price_psf_min": 12400,
+  "price_psf_max": 14850,
+  "basis": "Square Yards project page: current asking ₹12,400/sq ft; priced units ₹12,400–14,850/sq ft",
   "status": "ready",
-  "source_url": "https://www.squareyards.com/projects-in-sector-94-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-gardencity-enclave/155501/project",
   "source_type": "portal",
   "second_source_url": "",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
   "sector_verified_by": "squareyards sector-94 project listing page (URL keyed to Sector 94)",
@@ -107,20 +178,51 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "floor",
+    "area": 1496,
+    "price_cr": 2.22
+   },
+   {
+    "bhk": "floor",
+    "area": 1614,
+    "price_cr": 2.4
+   },
+   {
+    "bhk": "floor",
+    "area": 2340,
+    "price_cr": 3.48
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-gardencity-enclave/155501/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 12400,
+  "configs_note": "status reported as 'Partially Ready To Move'; configs are independent-floor (Ind Floor) units, marked as 'floor'",
+  "audit": {
+   "verdict": "reassign",
+   "reason": "Square Yards project page places it in Sector 93 (was 94)",
+   "checked": "2026-09"
+  },
+  "prev_psf": [
+   12450,
+   12450
+  ],
+  "configs_stale": false
  },
  {
-  "sector": "94",
+  "sector": "93",
   "project": "Orris Aanandam Ora",
   "developer": "Orris",
   "price_psf_min": 13550,
-  "price_psf_max": 13550,
-  "basis": "portal-stated psf on ₹1.78-2.75 Cr price range",
+  "price_psf_max": 18000,
+  "basis": "Square Yards project page: current asking ₹13,550/sq ft; unit table ₹13,550–18,000/sq ft",
   "status": "ready",
-  "source_url": "https://www.squareyards.com/projects-in-sector-94-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/orris-aanandam-ora/225265/project",
   "source_type": "portal",
   "second_source_url": "",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
   "sector_verified_by": "squareyards sector-94 project listing page (URL keyed to Sector 94)",
@@ -129,7 +231,32 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "villa",
+    "area": 990,
+    "price_cr": 1.78
+   },
+   {
+    "bhk": "villa",
+    "area": 1530,
+    "price_cr": 2.75
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/orris-aanandam-ora/225265/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 13550,
+  "configs_note": "SECTOR MISMATCH: input row lists sector 94, but the project is actually listed under Sector 93 on Square Yards (found via sector-94 listing page fallback, no Sector-94 match, project appeared as a related/nearby result). Project is plot-based (no BHK apartments); plot entries recorded with bhk='villa' per plot convention.",
+  "audit": {
+   "verdict": "reassign",
+   "reason": "Square Yards project page places it in Sector 93 (was 94)",
+   "checked": "2026-09"
+  },
+  "prev_psf": [
+   13550,
+   13550
+  ]
  },
  {
   "sector": "88B",
@@ -139,7 +266,7 @@
   "price_psf_max": 12900,
   "basis": "portal-stated psf on ₹2.00-3.35 Cr price range, 1550-2600 sqft units",
   "status": "ready",
-  "source_url": "https://www.squareyards.com/sector-88b-in-gurgaon-overview-109",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/vatika-one-express-city/727/project",
   "source_type": "portal",
   "second_source_url": "https://www.squareyards.com/projects-in-sector-88-gurgaon",
   "as_of": "2026-09",
@@ -151,20 +278,41 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1550,
+    "price_cr": 2.0
+   },
+   {
+    "bhk": "3",
+    "area": 2200,
+    "price_cr": 2.84
+   },
+   {
+    "bhk": "4",
+    "area": 2600,
+    "price_cr": 3.35
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/vatika-one-express-city/727/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 12900,
+  "configs_stale": false
  },
  {
   "sector": "88B",
   "project": "Trinity Sky Palazzo",
   "developer": "Trinity Infratech",
-  "price_psf_min": 17500,
-  "price_psf_max": 17500,
-  "basis": "project's own squareyards page states ₹17,500/sqft; ticket prices ₹5.16-8.30 Cr on 2950-4150 sqft units",
+  "price_psf_min": 9950,
+  "price_psf_max": 9950,
+  "basis": "Square Yards project page: current asking ₹9,950/sq ft; the page's unit table still shows launch-era list prices",
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/trinity-sky-palazzo/325651/project",
   "source_type": "portal",
   "second_source_url": "",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
   "sector_verified_by": "project's own squareyards page states Sector 88B; note: page also states Anhad Realty is acquiring 100% shareholding to revive this stalled project, so treat as distressed-asking, not a fully liquid market rate",
@@ -173,42 +321,50 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2950,
+    "price_cr": 5.16
+   },
+   {
+    "bhk": "3",
+    "area": 3150,
+    "price_cr": 6.3
+   },
+   {
+    "bhk": "4",
+    "area": 3800,
+    "price_cr": 7.6
+   },
+   {
+    "bhk": "4",
+    "area": 4150,
+    "price_cr": 8.3
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/trinity-sky-palazzo/325651/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 9950,
+  "prev_psf": [
+   17500,
+   17500
+  ],
+  "configs_stale": true
  },
  {
-  "sector": "100",
-  "project": "Vatika Sovereign Park",
-  "developer": "Vatika",
-  "price_psf_min": 13900,
-  "price_psf_max": 13900,
-  "basis": "portal-stated psf on ₹3.48-5.46 Cr price range",
-  "status": "ready",
-  "source_url": "https://www.squareyards.com/projects-in-sector-100-gurgaon",
-  "source_type": "portal",
-  "second_source_url": "",
-  "as_of": "2026-09",
-  "confidence": "B",
-  "area_basis": "super",
-  "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)",
-  "sot": {
-   "cls": "portal",
-   "label": "Square Yards",
-   "domain": "squareyards.com",
-   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
- },
- {
-  "sector": "100",
+  "sector": "102",
   "project": "Conscient Heritage Max",
   "developer": "Conscient",
-  "price_psf_min": 13850,
+  "price_psf_min": 12050,
   "price_psf_max": 13850,
-  "basis": "portal-stated psf on ₹2.25-3.34 Cr price range",
+  "basis": "Square Yards project page: current asking ₹13,850/sq ft; unit table ₹12,050–13,850/sq ft",
   "status": "ready",
-  "source_url": "https://www.squareyards.com/projects-in-sector-100-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/conscient-heritage-max/229/project",
   "source_type": "portal",
   "second_source_url": "",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
   "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)",
@@ -217,42 +373,60 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
- },
- {
-  "sector": "100",
-  "project": "BPTP The Amaario",
-  "developer": "BPTP",
-  "price_psf_min": 17250,
-  "price_psf_max": 17250,
-  "basis": "portal-stated psf, ticket price from ₹6.28 Cr",
-  "status": "under construction",
-  "source_url": "https://www.squareyards.com/projects-in-sector-100-gurgaon",
-  "source_type": "portal",
-  "second_source_url": "",
-  "as_of": "2026-09",
-  "confidence": "B",
-  "area_basis": "super",
-  "sector_verified_by": "squareyards sector-100 project listing page (URL keyed to Sector 100)",
-  "sot": {
-   "cls": "portal",
-   "label": "Square Yards",
-   "domain": "squareyards.com",
-   "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 1870,
+    "price_cr": 2.25
+   },
+   {
+    "bhk": "3",
+    "area": 1880,
+    "price_cr": 2.27
+   },
+   {
+    "bhk": "3",
+    "area": 2075,
+    "price_cr": 2.5
+   },
+   {
+    "bhk": "4",
+    "area": 2475,
+    "price_cr": 2.98
+   },
+   {
+    "bhk": "4",
+    "area": 2775,
+    "price_cr": 3.34
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/conscient-heritage-max/229/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 13850,
+  "configs_note": "SECTOR MISMATCH: input row lists sector 100, but the project is actually listed under Sector 102 on Square Yards (found via sector-100 listing page fallback).",
+  "audit": {
+   "verdict": "reassign",
+   "reason": "Square Yards project page places it in Sector 102 (was 100)",
+   "checked": "2026-09"
+  },
+  "prev_psf": [
+   13850,
+   13850
+  ]
  },
  {
   "sector": "105",
   "project": "ATS Homekraft Sanctuary",
   "developer": "ATS Homekraft",
-  "price_psf_min": 14000,
+  "price_psf_min": 13250,
   "price_psf_max": 14000,
-  "basis": "computed from unit ticket prices/sizes on the project's own squareyards page: ₹2.59Cr/1850sqft=₹14,000; ₹2.66Cr/1900sqft=₹14,000; ₹3.92Cr/2800sqft=₹14,000; ₹4.06Cr/2900sqft=₹14,000 — all four unit types agree exactly",
+  "basis": "Square Yards project page: current asking ₹13,250/sq ft; priced units ₹13,250–14,000/sq ft",
   "status": "under construction",
-  "source_url": "https://www.squareyards.com/projects-in-sector-105-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/ats-homekraft-sanctuary/308290/project",
   "source_type": "portal",
   "second_source_url": "",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
   "sector_verified_by": "squareyards sector-105 project listing page states location as Sector 105, Gurgaon; other nearby premium projects on the same page (MRG Crown, Satya Levante, Paras Dews, Zara Aavaas) are explicitly separated as Sector 104/106, confirming the page distinguishes sectors carefully",
@@ -261,20 +435,50 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 1850,
+    "price_cr": 2.59
+   },
+   {
+    "bhk": "3",
+    "area": 1900,
+    "price_cr": 2.66
+   },
+   {
+    "bhk": "4",
+    "area": 2800,
+    "price_cr": 3.92
+   },
+   {
+    "bhk": "4",
+    "area": 2900,
+    "price_cr": 4.06
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/ats-homekraft-sanctuary/308290/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 13250,
+  "prev_psf": [
+   14000,
+   14000
+  ],
+  "configs_stale": false
  },
  {
   "sector": "110",
   "project": "Indiabulls Enigma",
   "developer": "Indiabulls",
   "price_psf_min": 14200,
-  "price_psf_max": 14200,
-  "basis": "portal-stated psf, starting price ₹5.25 Cr onwards, 472 units on 19.85 acres",
+  "price_psf_max": 15700,
+  "basis": "Square Yards project page: current asking ₹14,200/sq ft; priced units ₹14,200–15,700/sq ft",
   "status": "ready",
-  "source_url": "https://www.squareyards.com/projects-in-sector-110-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/indiabulls-enigma/254/project",
   "source_type": "portal",
   "second_source_url": "",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "area_basis": "super",
   "sector_verified_by": "squareyards sector-110 project listing page, header explicitly 'Main Projects (In Sector 110)'",
@@ -283,7 +487,37 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 3350,
+    "price_cr": 5.25
+   },
+   {
+    "bhk": "4",
+    "area": 3400,
+    "price_cr": 5.33
+   },
+   {
+    "bhk": "5",
+    "area": 3830,
+    "price_cr": 6.0
+   },
+   {
+    "bhk": "5",
+    "area": 7500,
+    "price_cr": 11.75
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/indiabulls-enigma/254/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 14200,
+  "prev_psf": [
+   14200,
+   14200
+  ],
+  "configs_stale": false
  },
  {
   "sector": "30",
@@ -293,7 +527,7 @@
   "price_psf_max": 21200,
   "basis": "portal-stated psf on ₹2.15 Cr+ starting price, ready to move; corroborated by the sector's own separately-published average asking price of ₹22,100/sqft (4% higher, well within 15%)",
   "status": "ready",
-  "source_url": "https://www.squareyards.com/projects-in-sector-30-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-uniworld-city/357/project",
   "source_type": "portal",
   "second_source_url": "https://www.squareyards.com/sale/property-for-sale-in-sector-30-gurgaon",
   "as_of": "2026-09",
@@ -305,6 +539,33 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2368,
+    "price_cr": 2.15
+   },
+   {
+    "bhk": "3",
+    "area": 2700,
+    "price_cr": 2.45
+   },
+   {
+    "bhk": "4",
+    "area": 2815,
+    "price_cr": 2.56
+   },
+   {
+    "bhk": "4",
+    "area": 3750,
+    "price_cr": 3.4
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-uniworld-city/357/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 21200,
+  "configs_note": "Last entry (3750 sq ft / 3.40 Cr) is a 4 BHK penthouse variant.",
+  "configs_stale": true
  }
 ]

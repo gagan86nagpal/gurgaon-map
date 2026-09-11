@@ -15,7 +15,29 @@
    "label": "99acres",
    "domain": "99acres.com",
    "what": "listing-based project/locality average asking price"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1056,
+    "price_cr": 1.1
+   },
+   {
+    "bhk": "3",
+    "area": 1497,
+    "price_cr": 1.55
+   },
+   {
+    "bhk": "4",
+    "area": 1917,
+    "price_cr": 1.99
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/godrej-habitat/10472/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 10600,
+  "configs_note": "Input row is a sector-wide resale bucket; used Godrej Habitat (the named project) from the Sector 3 listing, which SY shows as under-construction primary sale, not resale. Other sector-3 projects (Bestech Park View Residency, Santur Aspira, MRD Apartment) not included.",
+  "configs_stale": false
  },
  {
   "sector": "3A",
@@ -25,7 +47,7 @@
   "price_psf_max": 5500,
   "basis": "super built-up",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-3a-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/maa-bhagwati-residency/121236/project",
   "source_type": "portal",
   "as_of": "2026-09",
   "confidence": "A",
@@ -39,7 +61,12 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/maa-bhagwati-residency/121236/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 9950,
+  "configs_note": "found Maa Bhagwati Residency on Square Yards (sector 3A matches) but configs are 'Price on Request' (2 BHK/750sqft, 3 BHK/900sqft) - no priced entries; SS Residency Sector 3A and Shree Ganesh Apartment are separate listings on the sector's property-rates page not individually fetched"
  },
  {
   "sector": "4",
@@ -105,17 +132,21 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_as_of": "2026-06",
+  "source_psf": 26800,
+  "configs_note": "generic sector price-trends page; villas segment average ₹26,800/sq ft cited, no project-level config table (page mentions 'White Pearl Residency' as featured project but without unit specs)"
  },
  {
   "sector": "6",
   "project": "WMG Tower Apartments (resale)",
   "developer": "various",
-  "price_psf_min": 8350,
-  "price_psf_max": 8350,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 8850,
+  "price_psf_max": 8850,
+  "basis": "Square Yards project page: current asking ₹8,850/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-6-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/wmg-tower-apartments/120937/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -123,7 +154,23 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1200,
+    "price_cr": 0.5
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/wmg-tower-apartments/120937/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 8850,
+  "configs_note": "Only a single resale listing (2 BHK, built-up area) was visible on the project page; other listings show 'Price on Request' and were skipped. Not a developer configuration table.",
+  "prev_psf": [
+   8350,
+   8350
+  ],
+  "configs_stale": true
  },
  {
   "sector": "6",
@@ -171,13 +218,13 @@
   "sector": "8",
   "project": "Ansal Eden Villa (resale)",
   "developer": "Ansal",
-  "price_psf_min": 10900,
-  "price_psf_max": 10900,
-  "basis": "Square Yards sector-8 overview confirms current ₹10,900/sqft (Jun 2026, +4.49% QoQ), unchanged from the existing figure",
+  "price_psf_min": 11600,
+  "price_psf_max": 11600,
+  "basis": "Square Yards project page: current asking ₹11,600/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-8-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/ansal-eden-villa/21276/project",
   "source_type": "portal",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "audit": {
    "verdict": "keep",
@@ -189,25 +236,43 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/ansal-eden-villa/21276/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 11600,
+  "configs_note": "Only configuration listed (3 BHK, 2552 sqft) is priced 'Price on Request' with no rupee figure, so no entry recorded.",
+  "prev_psf": [
+   10900,
+   10900
+  ]
  },
  {
   "sector": "9",
   "project": "R Infra Apartment / Huda HBC Society (resale)",
   "developer": "various",
-  "price_psf_min": 8050,
+  "price_psf_min": 9200,
   "price_psf_max": 9200,
-  "basis": "Square Yards project listings",
+  "basis": "Square Yards project page: current asking ₹9,200/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-9-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/r-infra-apartment/87934/project",
   "source_type": "portal",
-  "as_of": "2026-06",
+  "as_of": "2026-03",
   "sot": {
    "cls": "portal",
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/r-infra-apartment/87934/project",
+  "configs_as_of": "2026-03",
+  "source_psf": 9200,
+  "configs_note": "R Infra Apartment page has no priced sale configuration table (only rental data for 3 BHK); Huda HBC Society not separately fetched",
+  "prev_psf": [
+   8050,
+   9200
+  ]
  },
  {
   "sector": "9",
@@ -232,8 +297,8 @@
   "project": "Sector 9A apartments (resale)",
   "developer": "various",
   "price_psf_min": 7450,
-  "price_psf_max": 9700,
-  "basis": "super built-up",
+  "price_psf_max": 7450,
+  "basis": "Square Yards project page: current asking ₹7,450/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/sector-9a-in-gurgaon-overview-10",
   "source_type": "portal",
@@ -249,7 +314,14 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "source_psf": 7450,
+  "configs_note": "generic sector overview page; lists 9 ready-to-move projects by name but all show 'Price On Request', no config table",
+  "prev_psf": [
+   7450,
+   9700
+  ]
  },
  {
   "sector": "10A",
@@ -273,7 +345,9 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_note": "This is a generic resale/property-rates aggregate for Sector 10A, not a single named project. The Square Yards sector page lists 15 unrelated individual buildings (The Palicon Nest, Sanskriti Apartments, Karamyogi Apartments, Central Park III, Pratham Meghdoot Apartment, etc.) but none is a project literally named 'Sector 10A flats' - no single project page to fetch."
  },
  {
   "sector": "12",
@@ -297,19 +371,35 @@
   "sector": "12",
   "project": "Raheja Qutab Farms / Platinum Greens (resale)",
   "developer": "Raheja / various",
-  "price_psf_min": 11100,
-  "price_psf_max": 11200,
-  "basis": "Square Yards project listings",
+  "price_psf_min": 12200,
+  "price_psf_max": 12200,
+  "basis": "Square Yards project page: current asking ₹12,200/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-12-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/raheja-qutab-farms/87938/project",
   "source_type": "portal",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "sot": {
    "cls": "portal",
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 999,
+    "price_cr": 0.8
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/raheja-qutab-farms/87938/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 12200,
+  "configs_note": "Platinum Greens (3 BHK, 1325 sqft) is also in Sector 12 but priced 'Price on Request', so omitted.",
+  "configs_stale": true,
+  "prev_psf": [
+   11100,
+   11200
+  ]
  },
  {
   "sector": "12A",
@@ -367,7 +457,7 @@
   "price_psf_max": 22200,
   "basis": "Square Yards sector-14 overview confirms current ₹22,200/sqft (Jun 2026, stable), unchanged from the existing figure",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-14-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/old-dlf-colony/143620/project",
   "source_type": "portal",
   "as_of": "2026-09",
   "confidence": "B",
@@ -381,7 +471,12 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/old-dlf-colony/143620/project",
+  "configs_as_of": "2026-03",
+  "source_psf": 22200,
+  "configs_note": "Old DLF Colony page shows only a Plot unit marked 'Price on Request'; no priced 2/3/4 BHK configs; Riddhi Siddhi Apartments not separately fetched"
  },
  {
   "sector": "14",
@@ -391,7 +486,7 @@
   "price_psf_max": 15550,
   "basis": "Square Yards sector-14 overview confirms current ₹15,550/sqft (Jun 2026, stable), unchanged",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-14-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/odr-residency/88107/project",
   "source_type": "portal",
   "as_of": "2026-09",
   "confidence": "B",
@@ -405,7 +500,12 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/odr-residency/88107/project",
+  "configs_as_of": "2026-03",
+  "source_psf": 15550,
+  "configs_note": "project page verified (ODR Residency, Sector 14) but only price-per-sqft and rental figures shown; no per-unit configuration/area table found"
  },
  {
   "sector": "15",
@@ -471,17 +571,19 @@
    "label": "99acres",
    "domain": "99acres.com",
    "what": "listing-based project/locality average asking price"
-  }
+  },
+  "configs": [],
+  "configs_note": "Not found on Square Yards. Checked https://www.squareyards.com/projects-in-sector-15-gurgaon (16 unrelated projects listed, e.g. Milestone Experion Centre, Alphacorp Sky1, Ameya Sapphire Residences - no match) and https://www.squareyards.com/projects-in-sector-15-part-2-gurgaon (404 Not Found). Source row was from a 99acres new-launch overview page; project appears too new / not yet indexed on Square Yards."
  },
  {
   "sector": "16",
   "project": "TDI Palm Court (resale)",
   "developer": "TDI",
-  "price_psf_min": 15250,
-  "price_psf_max": 15250,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 16100,
+  "price_psf_max": 16100,
+  "basis": "Square Yards project page: current asking ₹16,100/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-16-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/tdi-palm-court/87851/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -489,17 +591,26 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/tdi-palm-court/87851/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 16100,
+  "configs_note": "No configuration table with rupee prices on Square Yards; page states 'Price on Request' throughout.",
+  "prev_psf": [
+   15250,
+   15250
+  ]
  },
  {
   "sector": "17",
   "project": "Sukh Residency (resale)",
   "developer": "various",
-  "price_psf_min": 15600,
-  "price_psf_max": 15600,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 13800,
+  "price_psf_max": 13800,
+  "basis": "Square Yards project page: current asking ₹13,800/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-17-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/sukh-residency/87828/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -507,7 +618,16 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/sukh-residency/87828/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 13800,
+  "configs_note": "no priced sale configuration table found; only rental data (1 BHK from ~17K/month) shown",
+  "prev_psf": [
+   15600,
+   15600
+  ]
  },
  {
   "sector": "17",
@@ -561,13 +681,13 @@
   "sector": "22",
   "project": "Ambience Creacions (resale)",
   "developer": "Ambience Group",
-  "price_psf_min": 21400,
-  "price_psf_max": 21400,
-  "basis": "Square Yards sector-22 overview confirms current ₹21,400/sqft (Jun 2026, +2.85% QoQ), unchanged",
+  "price_psf_min": 20950,
+  "price_psf_max": 21500,
+  "basis": "Square Yards project page: current asking ₹20,950/sq ft; priced units ₹20,950–21,500/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-22-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/ambience-creacions/768/project",
   "source_type": "portal",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "audit": {
    "verdict": "keep",
@@ -579,19 +699,80 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1380,
+    "price_cr": 2.97
+   },
+   {
+    "bhk": "3",
+    "area": 2781,
+    "price_cr": 5.95
+   },
+   {
+    "bhk": "3",
+    "area": 3090,
+    "price_cr": 6.61
+   },
+   {
+    "bhk": "3",
+    "area": 3121,
+    "price_cr": 6.68
+   },
+   {
+    "bhk": "3",
+    "area": 3482,
+    "price_cr": 7.45
+   },
+   {
+    "bhk": "3",
+    "area": 4800,
+    "price_cr": 10.32
+   },
+   {
+    "bhk": "4",
+    "area": 3975,
+    "price_cr": 8.55
+   },
+   {
+    "bhk": "4",
+    "area": 4422,
+    "price_cr": 9.51
+   },
+   {
+    "bhk": "4",
+    "area": 7700,
+    "price_cr": 16.55
+   },
+   {
+    "bhk": "5",
+    "area": 10105,
+    "price_cr": 21.73
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/ambience-creacions/768/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 20950,
+  "configs_note": "page psf ₹20,950 vs input estimate ₹21,400; includes 3BHK/4BHK/5BHK penthouse units alongside apartments",
+  "prev_psf": [
+   21400,
+   21400
+  ],
+  "configs_stale": false
  },
  {
   "sector": "22",
   "project": "Alphacorp Gurgaon One 22 (resale)",
   "developer": "Alphacorp",
-  "price_psf_min": 16800,
-  "price_psf_max": 16800,
-  "basis": "Square Yards sector-22 overview confirms current ₹16,800/sqft (Jun 2026, +2.72% QoQ), unchanged",
+  "price_psf_min": 18150,
+  "price_psf_max": 18150,
+  "basis": "Square Yards project page: current asking ₹18,150/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-22-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/alphacorp-gurgaon-one-22/339/project",
   "source_type": "portal",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "audit": {
    "verdict": "keep",
@@ -603,19 +784,69 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2195,
+    "price_cr": 2.15
+   },
+   {
+    "bhk": "3",
+    "area": 2303,
+    "price_cr": 2.26
+   },
+   {
+    "bhk": "4",
+    "area": 2982,
+    "price_cr": 2.92
+   },
+   {
+    "bhk": "4",
+    "area": 3632,
+    "price_cr": 3.56
+   },
+   {
+    "bhk": "penthouse",
+    "area": 3943,
+    "price_cr": 3.86
+   },
+   {
+    "bhk": "penthouse",
+    "area": 3974,
+    "price_cr": 3.89
+   },
+   {
+    "bhk": "villa",
+    "area": 4367,
+    "price_cr": 4.28
+   },
+   {
+    "bhk": "penthouse",
+    "area": 5460,
+    "price_cr": 5.35
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/alphacorp-gurgaon-one-22/339/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 18150,
+  "prev_psf": [
+   16800,
+   16800
+  ],
+  "configs_stale": true
  },
  {
   "sector": "22",
   "project": "JMD The Park Way (resale)",
   "developer": "JMD",
-  "price_psf_min": 13050,
-  "price_psf_max": 13050,
-  "basis": "Square Yards sector-22 overview confirms current ₹13,050/sqft (Jun 2026, +13.87% QoQ), unchanged",
+  "price_psf_min": 12950,
+  "price_psf_max": 12950,
+  "basis": "Square Yards project page: current asking ₹12,950/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-22-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/jmd-the-park-way/21005/project",
   "source_type": "portal",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "audit": {
    "verdict": "keep",
@@ -627,17 +858,26 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/jmd-the-park-way/21005/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 12950,
+  "configs_note": "1 BHK (881 sqft) and 2 BHK (1744 sqft) listed but both 'Price on Request', no rupee figures given.",
+  "prev_psf": [
+   13050,
+   13050
+  ]
  },
  {
   "sector": "23",
   "project": "Ansal Plaza Sector-23 (resale)",
   "developer": "Ansal",
-  "price_psf_min": 15500,
-  "price_psf_max": 15500,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 14200,
+  "price_psf_max": 14200,
+  "basis": "Square Yards project page: current asking ₹14,200/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-23-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/ansal-plaza-sector-23/145646/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -645,7 +885,16 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/ansal-plaza-sector-23/145646/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 14200,
+  "configs_note": "no priced sale configuration table with area+price found; only rental rates by BHK shown; resale listings mention 2.25-6.25cr range but without per-unit-type area/price breakdown",
+  "prev_psf": [
+   15500,
+   15500
+  ]
  },
  {
   "sector": "23",
@@ -711,19 +960,28 @@
   "sector": "41",
   "project": "South City 1 / South City Arcade (resale)",
   "developer": "various",
-  "price_psf_min": 16650,
-  "price_psf_max": 16650,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 16200,
+  "price_psf_max": 16200,
+  "basis": "Square Yards project page: current asking ₹16,200/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-41-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/south-city-arcade/161672/project",
   "source_type": "portal",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "sot": {
    "cls": "portal",
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/south-city-arcade/161672/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 16200,
+  "configs_note": "matched South City Arcade (South City 1 appeared only as a nearby/similar project on the listing); page gives rental rates and a 3BHK resale price range (₹2.1-3.5 Cr) but no area figures, so no config entries recorded",
+  "prev_psf": [
+   16650,
+   16650
+  ]
  },
  {
   "sector": "41",
@@ -733,7 +991,7 @@
   "price_psf_max": 9500,
   "basis": "super built-up",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-41-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-rakshak/371/project",
   "source_type": "portal",
   "as_of": "2026-09",
   "confidence": "A",
@@ -747,7 +1005,23 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1100,
+    "price_cr": 1.04
+   },
+   {
+    "bhk": "3",
+    "area": 1400,
+    "price_cr": 1.33
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-rakshak/371/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 9500,
+  "configs_stale": false
  },
  {
   "sector": "41",
@@ -775,7 +1049,7 @@
   "price_psf_max": 26150,
   "basis": "Square Yards project listing",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-43-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-richmond-park/356/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -783,7 +1057,11 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-richmond-park/356/project",
+  "source_psf": 26150,
+  "configs_note": "Same project as the earlier Sector-43 row (via dlf-the-crest/356 slug alias); confirmed via sector-43 listing page too. All configs (2 BHK 1420, 3 BHK 2040, 5 BHK 6045 sqft) are 'Price on Request'."
  },
  {
   "sector": "43",
@@ -793,7 +1071,7 @@
   "price_psf_max": 22150,
   "basis": "Square Yards project listing",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-43-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/craft-destination-43/218292/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -801,7 +1079,12 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/craft-destination-43/218292/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 22150,
+  "configs_note": "only a Plot unit (942 sqft) listed, marked 'Price on Request'; no priced 2/3/4 BHK configs"
  },
  {
   "sector": "43",
@@ -831,11 +1114,11 @@
   "sector": "45",
   "project": "Unitech Greenwood City Apartment (resale)",
   "developer": "Unitech",
-  "price_psf_min": 16550,
-  "price_psf_max": 16550,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 16600,
+  "price_psf_max": 16600,
+  "basis": "Square Yards project page: current asking ₹16,600/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-45-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-greenwood-city-apartment/20944/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -843,17 +1126,37 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2152,
+    "price_cr": 2.19
+   },
+   {
+    "bhk": "4",
+    "area": 3240,
+    "price_cr": 3.3
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/unitech-greenwood-city-apartment/20944/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 16600,
+  "prev_psf": [
+   16550,
+   16550
+  ],
+  "configs_stale": true
  },
  {
   "sector": "45",
   "project": "Ardee Platinum Greens (resale)",
   "developer": "Ardee",
-  "price_psf_min": 13400,
-  "price_psf_max": 13400,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 13250,
+  "price_psf_max": 13250,
+  "basis": "Square Yards project page: current asking ₹13,250/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-45-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/ardee-platinum-greens/88027/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -861,7 +1164,16 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/ardee-platinum-greens/88027/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 13250,
+  "configs_note": "Page gives asking price and status but no purchase configuration table (only monthly rental ranges by BHK were listed); no unit-wise area/price data available.",
+  "prev_psf": [
+   13400,
+   13400
+  ]
  },
  {
   "sector": "45",
@@ -945,11 +1257,11 @@
   "sector": "57",
   "project": "The Legend One (resale)",
   "developer": "various",
-  "price_psf_min": 15900,
-  "price_psf_max": 15900,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 15200,
+  "price_psf_max": 15200,
+  "basis": "Square Yards project page: current asking ₹15,200/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-57-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/the-legend-one/87776/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -957,17 +1269,26 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/the-legend-one/87776/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 15200,
+  "configs_note": "3 BHK (2200 sqft) and 4 BHK (4810 sqft) listed but both 'Price on Request'; page mentions unverified secondary-market 3BHK resale range of ~3.25-3.75 Cr with no matching area, so not recorded as an entry.",
+  "prev_psf": [
+   15900,
+   15900
+  ]
  },
  {
   "sector": "57",
   "project": "BPTP Freedom Park Life (resale)",
   "developer": "BPTP",
-  "price_psf_min": 14500,
-  "price_psf_max": 14500,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 14900,
+  "price_psf_max": 14900,
+  "basis": "Square Yards project page: current asking ₹14,900/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-57-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/bptp-freedom-park-life/65/project",
   "source_type": "portal",
   "as_of": "2026-06",
   "sot": {
@@ -975,25 +1296,74 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1446,
+    "price_cr": 1.27
+   },
+   {
+    "bhk": "2",
+    "area": 1697,
+    "price_cr": 1.49
+   },
+   {
+    "bhk": "3",
+    "area": 2293,
+    "price_cr": 2.01
+   },
+   {
+    "bhk": "3",
+    "area": 2762,
+    "price_cr": 2.43
+   },
+   {
+    "bhk": "penthouse",
+    "area": 4780,
+    "price_cr": 4.2
+   },
+   {
+    "bhk": "penthouse",
+    "area": 5361,
+    "price_cr": 4.71
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/bptp-freedom-park-life/65/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 14900,
+  "configs_stale": true,
+  "prev_psf": [
+   14500,
+   14500
+  ]
  },
  {
   "sector": "57",
   "project": "Suncity Sukriti CGHS Ltd (resale)",
   "developer": "Suncity",
-  "price_psf_min": 15000,
-  "price_psf_max": 15000,
-  "basis": "Square Yards project listing",
+  "price_psf_min": 14900,
+  "price_psf_max": 14900,
+  "basis": "Square Yards project page: current asking ₹14,900/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-57-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/suncity-sukriti-cghs-ltd/21251/project",
   "source_type": "portal",
-  "as_of": "2026-06",
+  "as_of": "2026-08",
   "sot": {
    "cls": "portal",
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/suncity-sukriti-cghs-ltd/21251/project",
+  "configs_as_of": "2026-08",
+  "source_psf": 14900,
+  "configs_note": "only 3 BHK (1850 sq ft) listed; price shown as 'Price on Request' so no priced config entry recorded",
+  "prev_psf": [
+   15000,
+   15000
+  ]
  },
  {
   "sector": "2",

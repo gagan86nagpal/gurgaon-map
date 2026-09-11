@@ -97,9 +97,22 @@ for f in sorted(glob.glob(f'{BASE}/agent_*.json')):
         if q['price_psf_min'] <= 0:
             continue
         quotes.append(q)
+# data-source class, in order of directness (rank 0 = closest to the developer's own price)
+SRC = [('developer', 'Developer & project sites'), ('news', 'Press reports'), ('squareyards', 'Square Yards'),
+       ('acres99', '99acres'), ('mbh', 'MagicBricks / Housing / NoBroker'), ('broker', 'Broker microsites'), ('other', 'Other')]
+def src_class(q):
+    sot = q.get('sot') or {}; cls, dom = sot.get('cls', ''), sot.get('domain', '')
+    if cls in ('developer', 'project-site') or q.get('source_type') in ('developer', 'project-site'): return 'developer'
+    if cls == 'news' or q.get('source_type') == 'news': return 'news'
+    if 'squareyards' in dom: return 'squareyards'
+    if '99acres' in dom: return 'acres99'
+    if any(d in dom for d in ('magicbricks', 'housing.com', 'nobroker')): return 'mbh'
+    if cls == 'broker': return 'broker'
+    return 'other'
 seen = set(); dedup = []
 for q in quotes:
-    k = (q['sector'], q['project'].lower())
+    q['src'] = src_class(q)
+    k = (q['sector'], q['project'].lower(), q['src'])   # one quote per project per source class; classes stack in the panel
     if k in seen: continue
     seen.add(k); dedup.append(q)
 quotes = dedup
@@ -479,7 +492,7 @@ if '15' in nostock:   # OSM splits Sector 15 into parts I and II; a whole-sector
     del nostock['15']
 
 data = {
-    'bench': bench, 'nostock': nostock,
+    'bench': bench, 'nostock': nostock, 'src': SRC, 'sectorNews': load_opt('sector_news.json', {}),
     'roadInfo': road_info,
     'bbox': bbox, 'canvas': CANVAS, 'sectors': sectors, 'sohnaStrip': {'x': x0 - 60, 'y': strip_y},
     'quotes': quotes, 'roads': roads, 'roadLabels': road_labels,
@@ -572,6 +585,11 @@ header p{margin:6px 0 0;color:var(--ink-2);max-width:70ch;font-size:14px}
 .chip.layer[aria-pressed="true"]{background:var(--panel-2);color:var(--ink);border-color:var(--ink-2)}
 .chip:focus-visible,button:focus-visible,a:focus-visible,tr[tabindex]:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .chip .n{font-family:"IBM Plex Mono",monospace;font-size:11px;opacity:.75}
+.srchint{font-size:11px;color:var(--muted);margin-top:4px;max-width:720px;line-height:1.4}
+.chip.src[data-rank="0"],.chip.src[data-rank="1"]{border-style:solid;font-weight:600}
+.proj .alts{font-size:12px;color:var(--ink-2);margin-top:6px}
+.proj .alts a{color:var(--ink);border-bottom:1px solid var(--line);text-decoration:none}
+.proj .alts b{font-family:"IBM Plex Mono",monospace;font-weight:500}
 .grp{display:flex;align-items:center;gap:8px}
 .grp .eyebrow{font-size:10px}
 
@@ -715,7 +733,15 @@ svg.map.nonames .lm .t,svg.map.nonames .st text,svg.map.nonames .entry text,svg.
 .bhk input{width:5.2em;border:1px solid var(--line);border-radius:5px;background:var(--panel);color:var(--ink);font:13px "IBM Plex Mono",monospace;padding:2px 6px;text-align:right}
 .bhk small{display:block;margin-top:6px;font-size:11px;color:var(--muted);line-height:1.4}
 .projects{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
-.proj{border:1px solid var(--line-2);background:var(--panel-2);border-radius:8px;padding:10px 12px}
+.proj{border:1px solid var(--line-2);background:var(--panel-2);border-radius:8px;padding:10px 12px;cursor:pointer}
+.proj:hover{border-color:var(--accent)}
+.proj .go{display:block;text-align:right;font-size:11px;color:var(--muted);margin-top:6px}
+.proj .cfgwrap{overflow-x:auto;max-width:100%}
+.proj:hover .go{color:var(--accent)}
+.proj .cfg{margin-top:6px;font-size:11.5px;border-collapse:collapse}
+.proj .cfg td{padding:1px 10px 1px 0;color:var(--ink-2);white-space:nowrap}
+.proj .cfg td.n{font-family:"IBM Plex Mono",monospace}
+.proj .cfg th{font-weight:600;text-align:left;padding:0 10px 2px 0;color:var(--muted);font-size:11px;letter-spacing:.02em}
 li.secrow{display:flex;justify-content:space-between;gap:10px;align-items:center;cursor:pointer}
 li.secrow>span:first-child{white-space:nowrap;font-weight:600}
 li.secrow:hover{border-color:var(--ink-2)}
@@ -785,6 +811,9 @@ footer p{max-width:90ch;margin:0}
     <button class="chip" data-b="ready" aria-pressed="true">Ready <span class="n"></span></button>
     <button class="chip" data-b="resale" aria-pressed="true">Resale <span class="n"></span></button>
   </div></div>
+  <div class="grp"><span class="eyebrow">Data source</span>
+  <div class="chips" role="group" aria-label="Include quotes from these sources" id="srcchips"></div>
+  <div class="srchint">← more direct (the developer's own price, or a reporter's figure) … less direct (portal listing averages, broker pages) →. When a project has several sources, the most direct one enabled sets its price; the others are shown on its card.</div></div>
   <div class="grp"><span class="eyebrow">Layers</span>
   <div class="chips" role="group" aria-label="Map layers">
     <button class="chip layer" data-l="metro" aria-pressed="true">Metro</button>
@@ -872,6 +901,7 @@ footer p{max-width:90ch;margin:0}
   <div class="note"><h3>Ticket sizes in ₹ crore</h3>Indicative only: the sector's ₹/sq ft range multiplied by a typical super area (2 BHK 1,350 · 3 BHK 1,900 · 4 BHK 2,800 sq ft by default — edit the boxes in the panel). Real units vary a lot in size, and PLC, parking, GST and club charges come on top.</div>
   <div class="note"><h3>What "same league" means here</h3>We kept quotes from established branded developers and their premium/luxury lines. In mature sectors with no new launch (Old Gurugram, Sushant Lok, Golf Course Road) the evidence is resale asking rates in well-known condominiums, flagged <i>resale</i>. Use the chips to include or exclude those.</div>
   __SOURCE_NOTE__
+  <div class="note"><h3>Which source wins</h3>Sources are ranked by how close they are to the actual price: the developer's own site or the project's site, then a reporter's figure in the press, then Square Yards (listing asks blended with registered transactions), then 99acres, MagicBricks/Housing/NoBroker listing averages, and finally broker microsites. Each project can carry a quote from several classes; the most direct class you have enabled sets the project's price, the rest are listed on its card so you can compare them. Use the "Data source" chips to see the map through only the sources you trust.</div>
   <div class="note"><h3>How the numbers were checked</h3>Every quote carries a confidence grade: <b>A</b> two independent sources agree within 15%; <b>B</b> one solid portal or developer page; <b>C</b> aggregator/broker only or not re-verified. Outliers, broker-sourced and wide-spread rows were re-audited in September 2026 and corrected or dropped. Separately, each sector shows the portal-published <i>sector-wide</i> average (99acres, MagicBricks, Square Yards, Housing) as an independent check — a premium median that falls below it is flagged in the panel.</div>
   <div class="note"><h3>Search</h3>The search box knows every quoted project plus every named residential society, condominium and neighbourhood OpenStreetMap has in Gurugram. A society resolves to the sector its footprint sits in and shows that sector's range; societies OSM only has near a point-mapped sector are marked "near". Sector prices are not resolved for societies with no quote — you get the location and the sector's ballpark.</div>
   <div class="note"><h3>Map data</h3>Sector polygons, roads, metro lines, the IGI footprint, the Delhi–Haryana line, parks, golf courses and landmarks are from OpenStreetMap (© OpenStreetMap contributors, ODbL). Sectors OSM has only as a point — including 99, 99A, 76, 77, 95 — are dashed circles at their mapped location. "Entry to Delhi" markers are where NH-48, Dwarka Expressway, Old Delhi Road and MG Road cross the state line.</div>
@@ -917,16 +947,33 @@ let SIZES = {2:1350, 3:1900, 4:2800};
 try { const s = JSON.parse(localStorage.getItem('ggn-bhk-sizes')||'null'); if(s && s[2] && s[3] && s[4]) SIZES = s; } catch(e){}
 
 // ---- aggregate ---------------------------------------------------------
+const SRC_RANK = Object.fromEntries(D.src.map(([id],i)=>[id,i]));
+const SRC_LABEL = Object.fromEntries(D.src);
+const srcSel = new Set(D.src.map(([id])=>id));
 function aggregate(){
   const by = {};
-  for(const q of D.quotes){ if(!active.has(q.bucket)) continue; (by[q.sector] ||= []).push(q); }
+  for(const q of D.quotes){ if(!active.has(q.bucket) || !srcSel.has(q.src)) continue; (by[q.sector] ||= []).push(q); }
   const agg = {};
-  for(const [s, rows] of Object.entries(by)){
+  for(const [s, all] of Object.entries(by)){
+    // one row per project: the most direct enabled source is primary, the rest ride along as alternatives
+    const byP = {};
+    for(const q of all){ const k = q.project.toLowerCase().replace(/\s*\(resale\)$/,''); (byP[k] ||= []).push(q); }
+    const rows = Object.values(byP).map(qs=>{ qs.sort((a,b)=>SRC_RANK[a.src]-SRC_RANK[b.src]); const p = Object.assign({}, qs[0]); p.alts = qs.slice(1); return p; });
     const mids = rows.map(mid);
-    agg[s] = {rows: rows.slice().sort((a,b)=>mid(b)-mid(a)), lo:Math.min(...mids), hi:Math.max(...mids), med:median(mids), n:rows.length};
+    agg[s] = {rows: rows.sort((a,b)=>mid(b)-mid(a)), lo:Math.min(...mids), hi:Math.max(...mids), med:median(mids), n:rows.length};
   }
   return agg;
 }
+const srcChips = document.getElementById('srcchips');
+srcChips.innerHTML = D.src.filter(([id])=>D.quotes.some(q=>q.src===id)).map(([id,label],i)=>`<button class="chip src" data-src="${id}" data-rank="${SRC_RANK[id]}" aria-pressed="true">${label} <span class="n">${D.quotes.filter(q=>q.src===id).length}</span></button>`).join('');
+srcChips.addEventListener('click', ev=>{
+  const c = ev.target.closest('.chip[data-src]'); if(!c) return;
+  const id = c.dataset.src, on = c.getAttribute('aria-pressed')==='true';
+  if(on && srcSel.size===1) return;
+  c.setAttribute('aria-pressed', on?'false':'true'); on ? srcSel.delete(id) : srcSel.add(id);
+  track('source_filter', {source: id, on: !on});
+  AGG = aggregate(); paint(); renderInspector(); renderRoad(); renderTable();
+});
 let AGG = aggregate();
 const bandSel = new Set();
 const inBand = idx => !bandSel.size || bandSel.has(idx);
@@ -1183,8 +1230,12 @@ function sectorCentre(k){
 function bhkRows(lo, hi){
   return [2,3,4].map(b=>`<tr><td>${b} BHK</td><td><input type="number" min="300" max="20000" step="50" value="${SIZES[b]}" data-b="${b}" aria-label="${b} BHK super area in sq ft"> <span style="color:var(--muted);font-size:12px">sq ft</span></td><td class="num" data-lo="${lo}" data-hi="${hi}" data-bb="${b}">${tixText(lo,hi,SIZES[b])}</td></tr>`).join('');
 }
+function newsHTML(k){
+  const ns = D.sectorNews[k]; if(!ns || !ns.length) return '';
+  return `<div class="bench"><div class="eyebrow">In the press · sector / corridor</div>${ns.slice(0,3).map(n=>`<div><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.publisher||'article')}</a> <span style="color:var(--muted)">${esc(n.as_of)}</span> — ${esc(n.figure||n.headline)}</div>`).join('')}</div>`;
+}
 function benchHTML(k, a){
-  const b = D.bench[k]; if(!b || !b.portals || !b.portals.length) return '';
+  const b = D.bench[k]; if(!b || !b.portals || !b.portals.length) return newsHTML(k);
   const ps = b.portals.map(p=>`<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.portal)}</a> ${fmt(p.avg)}`).join(' · ');
   if(!b.avg) return `<div class="bench"><div class="eyebrow">Independent check · sector-wide average</div><div>Portals disagree too much for a single figure: ${ps}. No stale-check applied.</div></div>`;
   let check = '';
@@ -1192,11 +1243,24 @@ function benchHTML(k, a){
     check = r < 0.95 ? `<div class="warn">⚠ Our premium median (${fmt(Math.round(a.med))}) is below the sector-wide average. Either these quotes are stale/mis-tagged, or the portal average is pulled up by one luxury project in the sector — read the rows before trusting the colour.</div>`
           : r > 2.5 ? `<div class="ok">Premium median is ${r.toFixed(1)}× the sector-wide average — this sector's colour reflects a few luxury projects, not typical stock.</div>`
           : `<div class="ok">Premium median is ${r.toFixed(1)}× the sector-wide average, as expected for branded stock.</div>`; }
-  return `<div class="bench"><div class="eyebrow">Independent check · sector-wide average, all segments</div><div><b>${fmt(b.avg)}</b> / sq ft · ${ps}${b.disputed?' <span style="color:var(--muted)">(portals disagree on this sector; figure anchored on the more conservative source)</span>':''}</div>${check}</div>`;
+  return `<div class="bench"><div class="eyebrow">Independent check · sector-wide average, all segments</div><div><b>${fmt(b.avg)}</b> / sq ft · ${ps}${b.disputed?' <span style="color:var(--muted)">(portals disagree on this sector; figure anchored on the more conservative source)</span>':''}</div>${check}</div>${newsHTML(k)}`;
 }
 const confPill = q => q.confidence ? `<span class="pill conf ${esc(q.confidence)}" title="${q.confidence==='A'?'Two independent sources agree within 15%':q.confidence==='B'?'One solid portal or developer page':'Aggregator, broker or unverified'}">${esc(q.confidence)}</span>` : '';
 const tixText = (lo,hi,a) => '₹'+cr(lo*a)+(hi!==lo?' – '+cr(hi*a):'')+' cr';
-const projTix = q => `${[2,3,4].map(b=>'₹'+cr(mid(q)*SIZES[b])).join(' · ')} <span>cr for 2 · 3 · 4 BHK</span>`;
+const bhkName = b => b==='floor' ? 'Floor' : b==='villa' ? 'Villa/plot' : b==='penthouse' ? 'Penthouse' : b+' BHK';
+const cfgTable = q => {
+  const by = {}; for(const c of q.configs){ if(!(c.area>0 && c.price_cr>0)) continue; (by[c.bhk] = by[c.bhk]||[]).push(c); }
+  const keys = Object.keys(by).sort((a,b)=>(parseFloat(a)||9)-(parseFloat(b)||9)); if(!keys.length) return '';
+  const rows = keys.map(b=>{ const cs = by[b].sort((x,y)=>x.area-y.area), lo=cs[0], hi=cs[cs.length-1];
+    const area = lo.area===hi.area ? lo.area.toLocaleString('en-IN') : lo.area.toLocaleString('en-IN')+'–'+hi.area.toLocaleString('en-IN');
+    const pr = lo.price_cr===hi.price_cr ? '₹'+lo.price_cr+' cr' : '₹'+lo.price_cr+' – '+hi.price_cr+' cr';
+    const psf = Math.round(cs.reduce((t,c)=>t+c.price_cr*1e7/c.area,0)/cs.length);
+    return `<tr><td>${bhkName(b)}</td><td class="n">${area} sq ft</td><td class="n">${pr}</td><td class="n" style="color:var(--muted)">${psf.toLocaleString('en-IN')}/sq ft</td></tr>`; }).join('');
+  const head = q.configs_stale ? `Unit sizes on ${esc(q.sot?q.sot.label:'source')} — its listed prices are launch-era; current asking is ₹${(q.source_psf||mid(q)).toLocaleString('en-IN')}/sq ft` : `Quoted on ${esc(q.sot?q.sot.label:'source')}${q.configs_as_of?' · '+esc(q.configs_as_of):''}`;
+  const tail = q.configs_stale ? `<div style="margin-top:4px">${keys.map(b=>{ const cs=by[b], lo=Math.min(...cs.map(c=>c.area)), hi=Math.max(...cs.map(c=>c.area)), p=(q.source_psf||mid(q)); return `${bhkName(b)} ≈ ₹${cr(p*lo)}${hi!==lo?'–'+cr(p*hi):''} cr`; }).join(' · ')} <span>at current asking</span></div>` : '';
+  return `<div class="cfgwrap"><table class="cfg"><tr><th colspan="4">${head}</th></tr>${rows}</table></div>${tail}`;
+};
+const projTix = q => (q.configs && q.configs.length) ? cfgTable(q) : `${[2,3,4].map(b=>'₹'+cr(mid(q)*SIZES[b])).join(' · ')} <span>cr for 2 · 3 · 4 BHK — indicative, ₹/sq ft × your areas above; no unit table on the source</span>`;
 let pinnedRoad = null;
 function pinRoad(k){
   if(pinnedRoad) for(const e of roadEls[pinnedRoad]||[]) e.classList.remove('sel');
@@ -1228,13 +1292,16 @@ function renderInspector(){
   const a = AGG[k], s = D.sectors[k];
   const locate = `<button class="locate" data-loc="${k}">Show on map</button>`;
   if(!a){ const ns = D.nostock[k]; insp.innerHTML = `<div class="eyebrow">Sector</div><h2>${secName(k)}</h2><p class="empty" style="margin-top:10px">${ns?`No premium apartment stock: ${esc(ns.reason)}${ns.source_url?` (<a href="${esc(ns.source_url)}" target="_blank" rel="noopener">source</a>)`:''}.`:'No quotes from premium developers matched the current filters.'}${s.boundary?'':' Its position on the map is approximate — OpenStreetMap has this sector only as a point.'}</p>${benchHTML(k,null)}${locate}`; return; }
-  const list = a.rows.map(q=>`<li class="proj${hlProject && q.project===hlProject?' hl':''}" data-p="${esc(q.project)}">
+  const list = a.rows.map(q=>`<li class="proj${hlProject && q.project===hlProject?' hl':''}" data-p="${esc(q.project)}" data-url="${esc(q.source_url)}" title="Open the source page for this quote">
       <div class="row"><div><div class="name"><a href="${esc(q.source_url)}" target="_blank" rel="noopener">${esc(q.project)}</a></div><div class="dev">${esc(q.developer||'')}</div></div>
       <div class="psf">${fmt(q.price_psf_min)}${q.price_psf_max!==q.price_psf_min?'–'+q.price_psf_max.toLocaleString('en-IN'):''}</div></div>
       <div class="tix" data-mid="${mid(q)}">${projTix(q)}</div>
       ${q.basis?`<div class="basis">${esc(q.basis)}</div>`:''}
+      ${q.source_psf && (q.source_psf < q.price_psf_min*0.85 || q.source_psf > q.price_psf_max*1.15) ? `<div class="basis" style="color:var(--muted)">Square Yards' tracked price is ₹${q.source_psf.toLocaleString('en-IN')}/sq ft${q.configs_as_of?' ('+esc(q.configs_as_of)+')':''}; this row keeps its stronger source.</div>` : ''}
       <div class="meta"><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span><span class="pill src" title="${esc(q.sot?q.sot.what:'')}">${esc(q.sot?q.sot.label:(q.source_type||'source'))}</span>${confPill(q)}<span>${esc(q.as_of||'')}</span>${q.second_source_url?`<a href="${esc(q.second_source_url)}" target="_blank" rel="noopener" style="font-size:11px">2nd source</a>`:''}</div>
       ${q.audit&&q.audit.reason?`<div class="basis" style="color:var(--muted)">Audit: ${esc(q.audit.reason)}</div>`:''}
+      ${q.alts && q.alts.length ? `<div class="alts">Also reported: ${q.alts.map(a=>`<a href="${esc(a.source_url)}" target="_blank" rel="noopener" title="${esc(a.basis||'')}">${esc(a.sot?a.sot.label:SRC_LABEL[a.src])}</a> <b>${fmt(a.price_psf_min)}${a.price_psf_max!==a.price_psf_min?'–'+a.price_psf_max.toLocaleString('en-IN'):''}</b>${a.as_of?' <span style="color:var(--muted)">'+esc(a.as_of)+'</span>':''}`).join(' · ')}</div>` : ''}
+      <span class="go">open source ↗</span>
     </li>`).join('');
   insp.innerHTML = `<div class="eyebrow">Sector</div><h2>${secName(k)}</h2>
     <div class="range">${fmtK(a.lo)}${a.hi!==a.lo?' – '+fmtK(a.hi):''} <span style="font-size:13px;color:var(--muted)">₹ / sq ft</span></div>
@@ -1253,9 +1320,14 @@ insp.addEventListener('input', ev=>{
   const v = parseInt(i.value); if(!(v>=300)) return;
   SIZES[i.dataset.b] = v; try{ localStorage.setItem('ggn-bhk-sizes', JSON.stringify(SIZES)); }catch(e){}
   for(const td of insp.querySelectorAll('td[data-bb]')) td.textContent = tixText(+td.dataset.lo, +td.dataset.hi, SIZES[td.dataset.bb]);
-  for(const d of insp.querySelectorAll('.tix')) d.innerHTML = projTix({price_psf_min:+d.dataset.mid, price_psf_max:+d.dataset.mid});
+  for(const d of insp.querySelectorAll('.tix')) if(!d.querySelector('.cfg')) d.innerHTML = projTix({price_psf_min:+d.dataset.mid, price_psf_max:+d.dataset.mid});
 });
-insp.addEventListener('click', ev=>{ const b = ev.target.closest('[data-loc]'); if(b){ const c = sectorCentre(b.dataset.loc); if(c){ flyTo(c.x,c.y,c.w); setMarker(null); } } });
+insp.addEventListener('click', ev=>{
+  const b = ev.target.closest('[data-loc]'); if(b){ const c = sectorCentre(b.dataset.loc); if(c){ flyTo(c.x,c.y,c.w); setMarker(null); } return; }
+  if(ev.target.closest('a, input, button')) return;
+  const card = ev.target.closest('.proj[data-url]');
+  if(card){ track('source_open', {project: card.dataset.p.slice(0,100), sector: secName(pinned)}); window.open(card.dataset.url, '_blank', 'noopener'); }
+});
 svg.addEventListener('click', ev=>{ if(dragged) return; const t = ev.target.closest('[data-s]'); if(t){ pin(t.dataset.s); return; } const rh = ev.target.closest('.roadhit'); if(rh) pinRoad(rh.dataset.r); });
 svg.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ const t = ev.target.closest('[data-s]'); if(t){ ev.preventDefault(); pin(t.dataset.s);} } });
 

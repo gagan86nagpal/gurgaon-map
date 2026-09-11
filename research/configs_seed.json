@@ -1,0 +1,77 @@
+[
+ {
+  "sector": "102",
+  "project": "Shapoorji Pallonji Joyville Phase 3",
+  "url": "https://www.squareyards.com/gurgaon-residential-property/shapoorji-pallonji-joyville-phase-3/102367/project",
+  "psf": 17050,
+  "as_of": "2026-06",
+  "status": "ready",
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 915,
+    "price_cr": 1.42
+   },
+   {
+    "bhk": "2",
+    "area": 1215,
+    "price_cr": 1.89
+   },
+   {
+    "bhk": "3",
+    "area": 1692,
+    "price_cr": 2.63
+   },
+   {
+    "bhk": "3",
+    "area": 1852,
+    "price_cr": 2.87
+   }
+  ]
+ },
+ {
+  "sector": "37D",
+  "project": "Signature Global Sarvam",
+  "url": "https://www.squareyards.com/gurgaon-residential-property/signature-global-sarvam/342187/project",
+  "psf": 16000,
+  "as_of": "2026-06",
+  "status": "new launch",
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 1800,
+    "price_cr": 2.87
+   },
+   {
+    "bhk": "3",
+    "area": 2200,
+    "price_cr": 3.51
+   }
+  ]
+ },
+ {
+  "sector": "37D",
+  "project": "Signature Global De Luxe DXP",
+  "url": "https://www.squareyards.com/gurgaon-residential-property/signature-global-de-luxe-dxp/244108/project",
+  "psf": 15550,
+  "as_of": "2026-06",
+  "status": "under construction",
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2469,
+    "price_cr": 4.07
+   },
+   {
+    "bhk": "3",
+    "area": 2623,
+    "price_cr": 4.33
+   },
+   {
+    "bhk": "4",
+    "area": 3253,
+    "price_cr": 5.37
+   }
+  ]
+ }
+]

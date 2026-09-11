@@ -15,7 +15,33 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 7000,
+    "price_cr": 14.41
+   },
+   {
+    "bhk": "5",
+    "area": 7750,
+    "price_cr": 15.96
+   },
+   {
+    "bhk": "penthouse",
+    "area": 9700,
+    "price_cr": 19.97
+   },
+   {
+    "bhk": "penthouse",
+    "area": 11500,
+    "price_cr": 23.68
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/ambience-caitriona/340/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 20600,
+  "configs_stale": false
  },
  {
   "sector": "24",
@@ -23,7 +49,7 @@
   "developer": "Ambience",
   "price_psf_min": 18800,
   "price_psf_max": 18800,
-  "basis": "squareyards tracked avg asking price, 2-5BHK 1496-5100 sqft",
+  "basis": "Square Yards project page: current asking ₹18,800/sq ft; unit table ₹11,500–18,800/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/343/project",
   "source_type": "portal",
@@ -33,7 +59,34 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1496,
+    "price_cr": 1.72
+   },
+   {
+    "bhk": "3",
+    "area": 2416,
+    "price_cr": 2.78
+   },
+   {
+    "bhk": "4",
+    "area": 4368,
+    "price_cr": 5.02
+   },
+   {
+    "bhk": "5",
+    "area": 5100,
+    "price_cr": 5.86
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/343/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 18800,
+  "configs_note": "URL slug says 'dlf-the-crest' but page content correctly resolves to Ambience Island Lagoon in Sector 24 (matches input) - stale slug, not a mismatch",
+  "configs_stale": true
  },
  {
   "sector": "24",
@@ -51,7 +104,12 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/347/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 19200,
+  "configs_note": "Page correctly resolves to DLF Belvedere Towers, Sector 24 (URL slug 'dlf-the-crest' is a stale/mismatched slug but the numeric ID 347 resolves to the right project). All unit prices on the config table are listed as 'Price on Request', so no config entries could be extracted."
  },
  {
   "sector": "25",
@@ -69,7 +127,12 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/366/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 22000,
+  "configs_note": "Only 4 BHK configurations found (2527 & 2750 sq ft), both listed as 'Price on Request' — no priced configs available. source_url slug literally reads 'dlf-the-crest' but numeric ID 366 correctly resolves to Unitech Heritage City, Sector 25 (double-checked with a neutral re-fetch prompt not naming the project) — not a mismatch despite the misleading slug."
  },
  {
   "sector": "26",
@@ -77,7 +140,7 @@
   "developer": "DLF",
   "price_psf_min": 19450,
   "price_psf_max": 19450,
-  "basis": "squareyards tracked avg asking price, Q2'26 +1.57% QoQ",
+  "basis": "Square Yards project page: current asking ₹19,450/sq ft; unit table ₹9,850–19,450/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-silver-oaks/361/project",
   "source_type": "portal",
@@ -87,15 +150,36 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1150,
+    "price_cr": 1.14
+   },
+   {
+    "bhk": "3",
+    "area": 1600,
+    "price_cr": 1.58
+   },
+   {
+    "bhk": "4",
+    "area": 2100,
+    "price_cr": 2.07
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-silver-oaks/361/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 19450,
+  "configs_stale": true
  },
  {
   "sector": "27",
   "project": "DLF Regency Park II",
   "developer": "DLF",
-  "price_psf_min": 21500,
+  "price_psf_min": 22150,
   "price_psf_max": 22150,
-  "basis": "squareyards tracked avg asking price, Mar26 to Jun26 +3.0% QoQ",
+  "basis": "Square Yards project page: current asking ₹22,150/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-regency-park-ii/354/project",
   "source_type": "portal",
@@ -105,15 +189,24 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-regency-park-ii/354/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 22150,
+  "configs_note": "config table only shows 'Price on Request' for 3 BHK (1550 sqft) and 4 BHK (1777 sqft); resale listings mention Rs2.30-5.00 Cr range for 3-5 BHK but without a per-unit-type breakdown, so skipped per no-price rule",
+  "prev_psf": [
+   21500,
+   22150
+  ]
  },
  {
   "sector": "28",
   "project": "Silverglades The Ivy",
   "developer": "Silverglades",
   "price_psf_min": 24700,
-  "price_psf_max": 25100,
-  "basis": "squareyards tracked avg asking price, cooling QoQ from Mar26 25,100 to Jun26 24,700",
+  "price_psf_max": 24700,
+  "basis": "Square Yards project page: current asking ₹24,700/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/330/project",
   "source_type": "portal",
@@ -123,7 +216,38 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 3100,
+    "price_cr": 3.63
+   },
+   {
+    "bhk": "4",
+    "area": 3400,
+    "price_cr": 3.98
+   },
+   {
+    "bhk": "5",
+    "area": 7400,
+    "price_cr": 8.66
+   },
+   {
+    "bhk": "5",
+    "area": 7800,
+    "price_cr": 9.13
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/330/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 24700,
+  "configs_note": "Page correctly resolves to Silverglades The Ivy, Sector 28 (URL slug 'dlf-the-crest' is a stale/mismatched slug but numeric ID 330 resolves to the right project).",
+  "prev_psf": [
+   24700,
+   25100
+  ],
+  "configs_stale": true
  },
  {
   "sector": "28",
@@ -141,7 +265,12 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/348/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 25000,
+  "configs_note": "Only 4 BHK configurations found (1696 & 1718 sq ft), both 'Price on Request' — no priced configs available. source_url slug reads 'dlf-the-crest' but numeric ID 348 correctly resolves to DLF Beverly Park I, Sector 28 (verified via neutral re-fetch) — not a mismatch."
  },
  {
   "sector": "42",
@@ -166,7 +295,44 @@
    "label": "Business Standard",
    "domain": "business-standard.com",
    "what": "reported sale / developer-stated price"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 7196,
+    "price_cr": 27.95
+   },
+   {
+    "bhk": "4",
+    "area": 7361,
+    "price_cr": 28.6
+   },
+   {
+    "bhk": "4",
+    "area": 7400,
+    "price_cr": 28.75
+   },
+   {
+    "bhk": "4",
+    "area": 7685,
+    "price_cr": 29.85
+   },
+   {
+    "bhk": "5",
+    "area": 9419,
+    "price_cr": 36.59
+   },
+   {
+    "bhk": "penthouse",
+    "area": 16290,
+    "price_cr": 195.48
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-camellias/358/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 38850,
+  "configs_note": "Input psf [80000,100000] came from a resale news article (record deal); Square Yards' own listing average asking psf is 38850, much lower.",
+  "configs_stale": false
  },
  {
   "sector": "42",
@@ -191,19 +357,45 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "5",
+    "area": 5825,
+    "price_cr": 25.9
+   },
+   {
+    "bhk": "5",
+    "area": 5875,
+    "price_cr": 26.12
+   },
+   {
+    "bhk": "5",
+    "area": 9175,
+    "price_cr": 40.8
+   },
+   {
+    "bhk": "penthouse",
+    "area": 9800,
+    "price_cr": 43.57
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-magnolias/333/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 70200,
+  "configs_stale": true
  },
  {
   "sector": "42",
   "project": "DLF The Aralias",
   "developer": "DLF",
-  "price_psf_min": 45000,
-  "price_psf_max": 58000,
-  "basis": "super built-up",
+  "price_psf_min": 57550,
+  "price_psf_max": 57550,
+  "basis": "Square Yards project page: current asking ₹57,550/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/328/project",
   "source_type": "portal",
-  "as_of": "2026-07",
+  "as_of": "2026-06",
   "confidence": "B",
   "second_source_url": "https://www.zricks.com/QnA/DLF-The-Aralias/196",
   "audit": {
@@ -216,15 +408,36 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 5575,
+    "price_cr": 22.2
+   },
+   {
+    "bhk": "4",
+    "area": 6000,
+    "price_cr": 23.89
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/328/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 57550,
+  "configs_note": "Page correctly resolves to DLF The Aralias, Sector 42 (URL slug 'dlf-the-crest' is a stale/mismatched slug but numeric ID 328 resolves to the right project).",
+  "prev_psf": [
+   45000,
+   58000
+  ],
+  "configs_stale": true
  },
  {
   "sector": "43",
   "project": "DLF The Icon",
   "developer": "DLF",
-  "price_psf_min": 33050,
+  "price_psf_min": 30650,
   "price_psf_max": 33050,
-  "basis": "squareyards tracked avg asking price, 3-4BHK 2277-2750 sqft",
+  "basis": "Square Yards project page: current asking ₹33,050/sq ft; priced units ₹30,650–33,050/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-icon/314/project",
   "source_type": "portal",
@@ -234,7 +447,32 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2277,
+    "price_cr": 6.98
+   },
+   {
+    "bhk": "4",
+    "area": 2575,
+    "price_cr": 7.89
+   },
+   {
+    "bhk": "4",
+    "area": 2750,
+    "price_cr": 8.43
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-icon/314/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 33050,
+  "prev_psf": [
+   33050,
+   33050
+  ],
+  "configs_stale": false
  },
  {
   "sector": "43",
@@ -252,7 +490,12 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/356/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 26100,
+  "configs_note": "URL slug is 'dlf-the-crest' but page content confirms it is DLF Richmond Park, Sector 43. All configuration prices shown as 'On Request' (2 BHK 1420 sqft, 3 BHK 2040 sqft, 5 BHK 6045 sqft) so no price entries recorded."
  },
  {
   "sector": "43",
@@ -260,17 +503,34 @@
   "developer": "DLF",
   "price_psf_min": 32000,
   "price_psf_max": 32000,
-  "basis": "squareyards tracked avg asking price, 4BHK 3868-3950 sqft from 4.3 Cr",
+  "basis": "Square Yards project page: current asking ₹32,000/sq ft; unit table ₹11,100–32,000/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/370/project",
   "source_type": "portal",
-  "as_of": "2026-08",
+  "as_of": "2026-06",
   "sot": {
    "cls": "portal",
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 3868,
+    "price_cr": 4.3
+   },
+   {
+    "bhk": "4",
+    "area": 3950,
+    "price_cr": 4.39
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/370/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 32000,
+  "configs_note": "URL slug says 'dlf-the-crest' but page content correctly resolves to DLF The Pinnacle in Sector 43 (matches input) - stale slug, not a mismatch",
+  "configs_stale": true
  },
  {
   "sector": "53",
@@ -278,7 +538,7 @@
   "developer": "Vipul",
   "price_psf_min": 27300,
   "price_psf_max": 27300,
-  "basis": "squareyards tracked avg asking price, cooling -4.2% QoQ vs sector 53",
+  "basis": "Square Yards project page: current asking ₹27,300/sq ft; unit table ₹12,700–27,300/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/vipul-belmonte/401/project",
   "source_type": "portal",
@@ -288,19 +548,40 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2450,
+    "price_cr": 3.11
+   },
+   {
+    "bhk": "4",
+    "area": 3110,
+    "price_cr": 3.95
+   },
+   {
+    "bhk": "5",
+    "area": 3925,
+    "price_cr": 4.98
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/vipul-belmonte/401/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 27300,
+  "configs_stale": true
  },
  {
   "sector": "53",
   "project": "Godrej Sora",
   "developer": "Godrej",
-  "price_psf_min": 31999,
-  "price_psf_max": 31999,
-  "basis": "carpet-area figures conflict with SBA quote; using confirmed super built-up (saleable) basis",
+  "price_psf_min": 32000,
+  "price_psf_max": 32000,
+  "basis": "Square Yards project page: current asking ₹32,000/sq ft; priced units ₹32,000–32,000/sq ft",
   "status": "new launch",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/godrej-sora/340423/project",
   "source_type": "portal",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "audit": {
    "verdict": "adjust",
@@ -312,7 +593,32 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 3050,
+    "price_cr": 9.76
+   },
+   {
+    "bhk": "4",
+    "area": 3750,
+    "price_cr": 12.0
+   },
+   {
+    "bhk": "4",
+    "area": 4250,
+    "price_cr": 13.6
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/godrej-sora/340423/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 32000,
+  "prev_psf": [
+   31999,
+   31999
+  ],
+  "configs_stale": false
  },
  {
   "sector": "53",
@@ -320,7 +626,7 @@
   "developer": "DLF",
   "price_psf_min": 28400,
   "price_psf_max": 28400,
-  "basis": "squareyards tracked avg asking price, 4BHK 2500-2700 sqft, Rs3.14-3.39 Cr",
+  "basis": "Square Yards project page: current asking ₹28,400/sq ft; unit table ₹12,550–28,400/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/325/project",
   "source_type": "portal",
@@ -330,7 +636,24 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 2500,
+    "price_cr": 3.14
+   },
+   {
+    "bhk": "4",
+    "area": 2700,
+    "price_cr": 3.39
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/325/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 28400,
+  "configs_note": "URL slug is 'dlf-the-crest' but page content confirms it is DLF Westend Heights, Sector 53.",
+  "configs_stale": true
  },
  {
   "sector": "54",
@@ -355,15 +678,31 @@
    "label": "Business Standard",
    "domain": "business-standard.com",
    "what": "reported sale / developer-stated price"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 9500,
+    "price_cr": 61.75
+   },
+   {
+    "bhk": "5",
+    "area": 11000,
+    "price_cr": 71.5
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-dahlias/181205/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 65000,
+  "configs_stale": false
  },
  {
   "sector": "54",
   "project": "DLF The Crest",
   "developer": "DLF",
   "price_psf_min": 54100,
-  "price_psf_max": 60000,
-  "basis": "comparable-project price cited on a squareyards listing page (Rs54,100); separate 2025 broker estimate of Rs55,000-60,000 resale",
+  "price_psf_max": 54100,
+  "basis": "Square Yards project page: current asking ₹54,100/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-aralias/332/project",
   "source_type": "portal",
@@ -373,15 +712,91 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 2349,
+    "price_cr": 3.72
+   },
+   {
+    "bhk": "2",
+    "area": 2400,
+    "price_cr": 3.8
+   },
+   {
+    "bhk": "3",
+    "area": 2644,
+    "price_cr": 4.19
+   },
+   {
+    "bhk": "3",
+    "area": 2662,
+    "price_cr": 4.21
+   },
+   {
+    "bhk": "3",
+    "area": 3087,
+    "price_cr": 4.89
+   },
+   {
+    "bhk": "3",
+    "area": 3511,
+    "price_cr": 5.56
+   },
+   {
+    "bhk": "4",
+    "area": 3081,
+    "price_cr": 4.88
+   },
+   {
+    "bhk": "4",
+    "area": 3497,
+    "price_cr": 5.54
+   },
+   {
+    "bhk": "4",
+    "area": 3898,
+    "price_cr": 6.17
+   },
+   {
+    "bhk": "4",
+    "area": 3907,
+    "price_cr": 6.19
+   },
+   {
+    "bhk": "4",
+    "area": 4498,
+    "price_cr": 7.12
+   },
+   {
+    "bhk": "4",
+    "area": 4953,
+    "price_cr": 7.84
+   },
+   {
+    "bhk": "5",
+    "area": 6221,
+    "price_cr": 9.85
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/342/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 54100,
+  "configs_note": "Input row's URL (.../dlf-the-aralias/332/project) actually resolved to a different, unrelated project (Krrish Monde De Provence, Faridabad Road) and was discarded. Correct project page found via the Sector 54 listing page instead (ID 342).",
+  "prev_psf": [
+   54100,
+   60000
+  ],
+  "configs_stale": true
  },
  {
   "sector": "54",
   "project": "DLF The Belaire",
   "developer": "DLF",
   "price_psf_min": 36800,
-  "price_psf_max": 42000,
-  "basis": "squareyards tracked avg asking price Rs36,800 (Jun26); separate 2025 broker estimate ~Rs42,000",
+  "price_psf_max": 36800,
+  "basis": "Square Yards project page: current asking ₹36,800/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/338/project",
   "source_type": "portal",
@@ -391,43 +806,145 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 2858,
+    "price_cr": 3.43
+   },
+   {
+    "bhk": "4",
+    "area": 2867,
+    "price_cr": 3.44
+   },
+   {
+    "bhk": "4",
+    "area": 3000,
+    "price_cr": 3.6
+   },
+   {
+    "bhk": "4",
+    "area": 3430,
+    "price_cr": 4.12
+   },
+   {
+    "bhk": "4",
+    "area": 4072,
+    "price_cr": 4.89
+   },
+   {
+    "bhk": "4",
+    "area": 4089,
+    "price_cr": 4.91
+   },
+   {
+    "bhk": "4",
+    "area": 4098,
+    "price_cr": 4.92
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/338/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 36800,
+  "configs_note": "source_url slug reads 'dlf-the-crest' but numeric ID 338 correctly resolves to DLF The Belaire, Sector 54 (verified via neutral re-fetch) — not a mismatch despite the misleading slug.",
+  "prev_psf": [
+   36800,
+   42000
+  ],
+  "configs_stale": true
  },
  {
   "sector": "54",
   "project": "DLF The Summit",
   "developer": "DLF",
   "price_psf_min": 35400,
-  "price_psf_max": 35400,
-  "basis": "squareyards tracked avg asking price, Rs10.91-12.95 Cr range",
+  "price_psf_max": 37000,
+  "basis": "Square Yards project page: current asking ₹35,400/sq ft; priced units ₹35,400–37,000/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-beverly-park-ii/312/project",
   "source_type": "portal",
-  "as_of": "2026-08",
+  "as_of": "2026-06",
   "sot": {
    "cls": "portal",
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 2950,
+    "price_cr": 10.91
+   },
+   {
+    "bhk": "4",
+    "area": 3300,
+    "price_cr": 12.21
+   },
+   {
+    "bhk": "4",
+    "area": 3500,
+    "price_cr": 12.95
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-beverly-park-ii/312/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 35400,
+  "configs_note": "URL slug is 'dlf-beverly-park-ii' but page content confirms it is DLF The Summit, Sector 54 (DLF Phase V).",
+  "prev_psf": [
+   35400,
+   35400
+  ],
+  "configs_stale": false
  },
  {
   "sector": "54",
   "project": "DLF Park Place",
   "developer": "DLF",
-  "price_psf_min": 34500,
-  "price_psf_max": 37000,
-  "basis": "portal search snippets: median ~Rs34,500/sqft; separate broker estimate up to Rs37,000-40,000",
+  "price_psf_min": 35000,
+  "price_psf_max": 35000,
+  "basis": "Square Yards project page: current asking ₹35,000/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/sale/resale-properties-in-dlf-park-place-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-park-place/336/project",
   "source_type": "portal",
-  "as_of": "2025-12",
+  "as_of": "2026-06",
   "sot": {
    "cls": "portal",
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 1975,
+    "price_cr": 3.94
+   },
+   {
+    "bhk": "3",
+    "area": 2329,
+    "price_cr": 4.65
+   },
+   {
+    "bhk": "4",
+    "area": 2550,
+    "price_cr": 5.09
+   },
+   {
+    "bhk": "4",
+    "area": 2677,
+    "price_cr": 5.34
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-park-place/336/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 35000,
+  "prev_psf": [
+   34500,
+   37000
+  ],
+  "configs_stale": true
  },
  {
   "sector": "54",
@@ -435,7 +952,7 @@
   "developer": "Salcon",
   "price_psf_min": 36100,
   "price_psf_max": 36100,
-  "basis": "squareyards tracked avg asking price",
+  "basis": "Square Yards project page: current asking ₹36,100/sq ft; unit table ₹16,000–36,100/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/salcon-the-verandas/327/project",
   "source_type": "portal",
@@ -445,7 +962,29 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 4495,
+    "price_cr": 7.19
+   },
+   {
+    "bhk": "5",
+    "area": 5330,
+    "price_cr": 8.52
+   },
+   {
+    "bhk": "5",
+    "area": 6425,
+    "price_cr": 10.27
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/salcon-the-verandas/327/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 36100,
+  "configs_note": "no 2/3 BHK configurations listed on Square Yards; only 4/5/6 BHK; the 6425 sqft/10.27 Cr row was labeled 5 BHK on the page but appears to be the 6 BHK unit",
+  "configs_stale": true
  },
  {
   "sector": "54",
@@ -453,7 +992,7 @@
   "developer": "Emaar",
   "price_psf_min": 36650,
   "price_psf_max": 36650,
-  "basis": "squareyards tracked avg asking price, 3-5BHK 800-4800 sqft, Rs4.17-8.66 Cr",
+  "basis": "Square Yards project page: current asking ₹36,650/sq ft; unit table ₹14,500–36,650/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/320/project",
   "source_type": "portal",
@@ -463,7 +1002,34 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2875,
+    "price_cr": 4.17
+   },
+   {
+    "bhk": "4",
+    "area": 3650,
+    "price_cr": 5.29
+   },
+   {
+    "bhk": "4",
+    "area": 3800,
+    "price_cr": 5.51
+   },
+   {
+    "bhk": "5",
+    "area": 4800,
+    "price_cr": 8.66
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/320/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 36650,
+  "configs_note": "Last entry (4800 sq ft / 8.66 Cr) is a 5 BHK penthouse variant; an 'Office Space' unit (800 sq ft, Price on Request) was excluded. source_url slug reads 'dlf-the-crest' but numeric ID 320 correctly resolves to Emaar The Palm Springs, Sector 54 (verified via neutral re-fetch) — not a mismatch.",
+  "configs_stale": true
  },
  {
   "sector": "58",
@@ -481,15 +1047,101 @@
    "label": "99acres",
    "domain": "99acres.com",
    "what": "listing-based project/locality average asking price"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1375,
+    "price_cr": 3.3
+   },
+   {
+    "bhk": "2",
+    "area": 1591,
+    "price_cr": 3.82
+   },
+   {
+    "bhk": "2",
+    "area": 1595,
+    "price_cr": 3.83
+   },
+   {
+    "bhk": "2",
+    "area": 1600,
+    "price_cr": 3.84
+   },
+   {
+    "bhk": "2",
+    "area": 1629,
+    "price_cr": 3.91
+   },
+   {
+    "bhk": "2",
+    "area": 1630,
+    "price_cr": 3.91
+   },
+   {
+    "bhk": "2",
+    "area": 1631,
+    "price_cr": 3.91
+   },
+   {
+    "bhk": "2",
+    "area": 1632,
+    "price_cr": 3.92
+   },
+   {
+    "bhk": "3",
+    "area": 2156,
+    "price_cr": 5.17
+   },
+   {
+    "bhk": "3",
+    "area": 2163,
+    "price_cr": 5.19
+   },
+   {
+    "bhk": "3",
+    "area": 2164,
+    "price_cr": 5.19
+   },
+   {
+    "bhk": "3",
+    "area": 2427,
+    "price_cr": 5.82
+   },
+   {
+    "bhk": "3",
+    "area": 2882,
+    "price_cr": 6.92
+   },
+   {
+    "bhk": "3",
+    "area": 2896,
+    "price_cr": 6.95
+   },
+   {
+    "bhk": "4",
+    "area": 2857,
+    "price_cr": 6.86
+   },
+   {
+    "bhk": "4",
+    "area": 2865,
+    "price_cr": 6.88
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/ireo-the-grand-arch/66/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 24300,
+  "configs_stale": false
  },
  {
   "sector": "60",
   "project": "Ireo Skyon",
   "developer": "Ireo",
-  "price_psf_min": 20250,
-  "price_psf_max": 20300,
-  "basis": "squareyards tracked avg asking price, stable QoQ, Rs2.47-5.05 Cr range",
+  "price_psf_min": 18100,
+  "price_psf_max": 20250,
+  "basis": "Square Yards project page: current asking ₹20,250/sq ft; priced units ₹18,100–20,250/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/ireo-skyon/64/project",
   "source_type": "portal",
@@ -499,15 +1151,55 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1365,
+    "price_cr": 2.47
+   },
+   {
+    "bhk": "2",
+    "area": 1374,
+    "price_cr": 2.49
+   },
+   {
+    "bhk": "2",
+    "area": 1524,
+    "price_cr": 2.76
+   },
+   {
+    "bhk": "3",
+    "area": 2045,
+    "price_cr": 3.7
+   },
+   {
+    "bhk": "4",
+    "area": 2768,
+    "price_cr": 5.01
+   },
+   {
+    "bhk": "4",
+    "area": 2791,
+    "price_cr": 5.05
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/ireo-skyon/64/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 20250,
+  "prev_psf": [
+   20250,
+   20300
+  ],
+  "configs_stale": false
  },
  {
   "sector": "61",
   "project": "Smartworld Orchard",
   "developer": "Smartworld",
   "price_psf_min": 15900,
-  "price_psf_max": 16550,
-  "basis": "squareyards tracked avg asking Rs15,900 (Jun26, cooling -2.5% QoQ); earlier Q3'25 rate Rs16,450-16,550",
+  "price_psf_max": 17500,
+  "basis": "Square Yards project page: current asking ₹15,900/sq ft; priced units ₹15,900–17,500/sq ft",
   "status": "under construction",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/smart-world-orchard/103238/project",
   "source_type": "portal",
@@ -517,19 +1209,40 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1150,
+    "price_cr": 2.01
+   },
+   {
+    "bhk": "3",
+    "area": 1630,
+    "price_cr": 2.85
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/smart-world-orchard/103238/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 15900,
+  "configs_note": "units are independent-floor (Ind Floor) configurations; a Retail Shop entry was excluded as non-residential",
+  "prev_psf": [
+   15900,
+   16550
+  ],
+  "configs_stale": false
  },
  {
   "sector": "63",
   "project": "Adani Samsara Vilasa",
   "developer": "Adani",
-  "price_psf_min": 18800,
-  "price_psf_max": 19500,
-  "basis": "Square Yards sector-63 overview: current asking ₹19,150/sqft (Jun 2026, +9.71% QoQ), up from the ₹17,500-18,600 figure",
+  "price_psf_min": 18600,
+  "price_psf_max": 23250,
+  "basis": "Square Yards project page: current asking ₹18,600/sq ft; priced units ₹18,600–23,250/sq ft",
   "status": "resale",
-  "source_url": "https://www.squareyards.com/property-rates/sector-63-gurgaon",
+  "source_url": "https://www.squareyards.com/gurgaon-residential-property/adani-samsara-vilasa/14119/project",
   "source_type": "portal",
-  "as_of": "2026-09",
+  "as_of": "2026-06",
   "confidence": "B",
   "second_source_url": "https://www.squareyards.com/gurgaon-residential-property/adani-samsara-vilasa/14119/project",
   "audit": {
@@ -542,7 +1255,53 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 1800,
+    "price_cr": 4.18
+   },
+   {
+    "bhk": "3",
+    "area": 1870,
+    "price_cr": 4.34
+   },
+   {
+    "bhk": "3",
+    "area": 2033,
+    "price_cr": 4.72
+   },
+   {
+    "bhk": "3",
+    "area": 2059,
+    "price_cr": 4.78
+   },
+   {
+    "bhk": "4",
+    "area": 2321,
+    "price_cr": 5.39
+   },
+   {
+    "bhk": "4",
+    "area": 2733,
+    "price_cr": 6.35
+   },
+   {
+    "bhk": "4",
+    "area": 2750,
+    "price_cr": 6.39
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/adani-samsara-vilasa/14119/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 18600,
+  "configs_note": "source_url was a property-rates aggregate page (not a project or sector-listing page); found the project via the sector-63 listing page fallback. Units are 'Independent Floor' (Ind Floor) configurations, recorded by BHK count.",
+  "prev_psf": [
+   18800,
+   19500
+  ],
+  "configs_stale": false
  },
  {
   "sector": "63A",
@@ -560,7 +1319,37 @@
    "label": "superluxere.com",
    "domain": "superluxere.com",
    "what": "broker/channel-partner quote — quoted unit price ÷ super area"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1940,
+    "price_cr": 4.66
+   },
+   {
+    "bhk": "3",
+    "area": 2277,
+    "price_cr": 5.46
+   },
+   {
+    "bhk": "3",
+    "area": 2634,
+    "price_cr": 6.32
+   },
+   {
+    "bhk": "4",
+    "area": 2669,
+    "price_cr": 6.41
+   },
+   {
+    "bhk": "4",
+    "area": 2967,
+    "price_cr": 7.12
+   }
+  ],
+  "configs_as_of": "2026-06",
+  "source_psf": 24250,
+  "configs_stale": false
  },
  {
   "sector": "65",
@@ -585,7 +1374,29 @@
    "label": "megarealtymax.com",
    "domain": "megarealtymax.com",
    "what": "broker/channel-partner quote — quoted unit price ÷ super area"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 3525,
+    "price_cr": 17.63
+   },
+   {
+    "bhk": "4",
+    "area": 4550,
+    "price_cr": 22.75
+   },
+   {
+    "bhk": "4",
+    "area": 6050,
+    "price_cr": 30.25
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-trump-tower/9666/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 34950,
+  "configs_note": "input project called 'Trump Towers Delhi NCR (Tribeca)'; on Square Yards this is listed as 'M3M Trump Tower', same project/sector 65",
+  "configs_stale": true
  },
  {
   "sector": "65",
@@ -593,7 +1404,7 @@
   "developer": "M3M",
   "price_psf_min": 25000,
   "price_psf_max": 25000,
-  "basis": "squareyards tracked avg asking price, rising QoQ +1.6%",
+  "basis": "Square Yards project page: current asking ₹25,000/sq ft; unit table ₹13,950–25,000/sq ft",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-golf-estate/68/project",
   "source_type": "portal",
@@ -603,15 +1414,67 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 3005,
+    "price_cr": 4.19
+   },
+   {
+    "bhk": "3",
+    "area": 3705,
+    "price_cr": 5.17
+   },
+   {
+    "bhk": "3",
+    "area": 3799,
+    "price_cr": 5.3
+   },
+   {
+    "bhk": "4",
+    "area": 4785,
+    "price_cr": 6.68
+   },
+   {
+    "bhk": "5",
+    "area": 5685,
+    "price_cr": 7.93
+   },
+   {
+    "bhk": "5",
+    "area": 5760,
+    "price_cr": 8.04
+   },
+   {
+    "bhk": "5",
+    "area": 5860,
+    "price_cr": 8.17
+   },
+   {
+    "bhk": "5",
+    "area": 5870,
+    "price_cr": 8.19
+   },
+   {
+    "bhk": "5",
+    "area": 5900,
+    "price_cr": 8.23
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/m3m-golf-estate/68/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 25000,
+  "configs_note": "no 2 BHK configuration listed on Square Yards",
+  "configs_stale": true
  },
  {
   "sector": "66",
   "project": "Emaar MGF The Palm Drive Villas",
   "developer": "Emaar",
-  "price_psf_min": 20450,
+  "price_psf_min": 21850,
   "price_psf_max": 21850,
-  "basis": "squareyards tracked avg asking price, Q2'26 rose from Rs20,450 to Rs21,850 (+6.85%)",
+  "basis": "Square Yards project page: current asking ₹21,850/sq ft; the page's unit table still shows launch-era list prices",
   "status": "resale",
   "source_url": "https://www.squareyards.com/gurgaon-residential-property/emaar-mgf-the-palm-drive-villas/20901/project",
   "source_type": "portal",
@@ -621,6 +1484,32 @@
    "label": "Square Yards",
    "domain": "squareyards.com",
    "what": "project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly"
-  }
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 3850,
+    "price_cr": 4.5
+   },
+   {
+    "bhk": "4",
+    "area": 4100,
+    "price_cr": 4.79
+   },
+   {
+    "bhk": "5",
+    "area": 5250,
+    "price_cr": 6.13
+   }
+  ],
+  "configs_url": "https://www.squareyards.com/gurgaon-residential-property/emaar-mgf-the-palm-drive-villas/20901/project",
+  "configs_as_of": "2026-06",
+  "source_psf": 21850,
+  "configs_note": "Units are villas, recorded by BHK count.",
+  "prev_psf": [
+   20450,
+   21850
+  ],
+  "configs_stale": true
  }
 ]
