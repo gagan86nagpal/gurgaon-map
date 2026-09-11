@@ -1,0 +1,181 @@
+{
+  "quotes": [
+    {
+      "sector": "59",
+      "project": "Max Estate 59",
+      "developer": "Max Estates",
+      "price_psf_min": 23077,
+      "price_psf_max": 23077,
+      "basis": "Article states: development potential ~1.3 mn sq ft, gross development value (GDV) >₹3,000 crore for the Sector 59 land parcel acquired for ₹534 crore. Computed ₹3,000,00,00,000 / 1,300,000 sq ft => ₹23,077/sq ft implied average realisation (a company-stated GDV/area projection, NOT a per-unit launch price — project had not formally launched as of Sep 2025/Apr 2026 filings; company targets launches 'from Q3 FY26 onwards').",
+      "status": "new launch",
+      "source_url": "https://www.hindustantimes.com/real-estate/max-estates-acquires-7-25-acre-land-in-gurugram-for-premium-housing-project-worth-3-000-crore-101757143583325.html",
+      "source_type": "news",
+      "publisher": "Hindustan Times",
+      "as_of": "2025-09",
+      "snippet": "The project has a development potential of ~1.3 mn sq. ft. with an expected outlay of ₹534 crore and is expected to generate a booking value of more than ₹3,000 crore",
+      "configs": []
+    },
+    {
+      "sector": "65",
+      "project": "Trump Towers Delhi NCR (Tribeca)",
+      "developer": "Tribeca/M3M",
+      "price_psf_min": 40000,
+      "price_psf_max": 40000,
+      "basis": "Article states current resale rate directly: 'The first Trump Tower, in Sector 65, which was launched in 2018 at Rs 13,500 per square feet, is now trading at Rs 40,000 per sq. ft.' Matches the top of the input's current_psf range (33,000-40,000) almost exactly, corroborating it independently.",
+      "status": "resale",
+      "source_url": "https://www.moneycontrol.com/news/business/real-estate/area-watch-dlf-to-trump-towers-spr-is-new-hotspot-in-gurugram-real-estate-13445936.html",
+      "source_type": "news",
+      "publisher": "Moneycontrol",
+      "as_of": "2025-08",
+      "snippet": "The first Trump Tower, in Sector 65, which was launched in 2018 at Rs 13,500 per square feet, is now trading at Rs 40,000 per sq. ft.",
+      "configs": []
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "65",
+      "headline": "Golf Course Extension Road property prices double in 5 years",
+      "publisher": "Hindustan Times",
+      "as_of": "2025-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/golf-course-extension-road-property-prices-double-in-5-years-101757557402455.html",
+      "figure": "GCER (Golf Course Extension Road) corridor: new-launch rates rose from ~₹8,800/sq ft (2019) to ~₹20,267/sq ft (2024); resale values up ~79% over the same period, pushing many multistorey apartments into the ₹17,000+/sq ft bracket. Corridor-level, not sector-63/65/66/67-specific.",
+      "psf": 20267
+    },
+    {
+      "sector": "69",
+      "headline": "Area watch | DLF to Trump Towers: SPR is new hotspot in Gurugram real estate",
+      "publisher": "Moneycontrol",
+      "as_of": "2025-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/area-watch-dlf-to-trump-towers-spr-is-new-hotspot-in-gurugram-real-estate-13445936.html",
+      "figure": "Per Magicbricks data for Jan-Mar 2025, Sector 69 along SPR commands an average rate of ₹13,892/sq ft.",
+      "psf": 13892
+    },
+    {
+      "sector": "70",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "Per Magicbricks data: SPR corridor average residential price ~₹16,249/sq ft in 2026 (+18.4% YoY), up 165% over 5 years from ~₹9,800/sq ft. Corridor-level (SPR runs through sector 70 and neighbouring sectors), not sector-70-specific.",
+      "psf": 16249
+    },
+    {
+      "sector": "70",
+      "headline": "Gurugram's SPR to become key realty hub in Delhi-NCR",
+      "publisher": "Hindustan Times",
+      "as_of": "2025-04",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/gurugrams-spr-to-become-key-realty-hub-in-delhincr-101745865547908.html",
+      "figure": "Weighted average new-launch price on SPR rose from ₹7,693/sq ft (2020) to ₹17,123/sq ft (end 2024), a 125% increase; residential launches on SPR up 584% over 5 years. Corridor-level.",
+      "psf": 17123
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "60",
+      "project": "Ireo Skyon",
+      "tried": "news (Bing RSS, 2 queries: '\"Ireo Skyon\" Gurugram price'; developer+resale variants) found zero 2025-26 items on Skyon pricing. developer: ireoworld.com no longer belongs to Ireo (domain now hosts an unrelated architecture firm) — no authoritative Ireo source reachable at all."
+    },
+    {
+      "sector": "61",
+      "project": "Smartworld Orchard",
+      "tried": "news (2 queries) found zero 2025-26 items specifically about Orchard pricing (only unrelated Smartworld fraud-allegation and Trump-Residences-construction-contract stories). developer: smartworlddevelopers.com/projects/orchard (found via homepage) confirms Sector 61, Golf Course Extn Rd, status 'Possessions Started' (effectively sold out) but states no price."
+    },
+    {
+      "sector": "62",
+      "project": "Pioneer Araya",
+      "tried": "news (2 queries) returned only an unrelated 2025 senior-living investment story and old 2021 items; nothing on Araya pricing. developer: pioneerurban.in/araya.php page loaded but had only brochure/contact info, no price, configs or area stated."
+    },
+    {
+      "sector": "62",
+      "project": "Emaar Urban Oasis",
+      "tried": "news (3 queries) surfaced only Emaar's unrelated new Sector 112 'Serenity Hills' project (₹1,600 cr investment, ₹3.52-5.47 cr units — confirmed NOT Urban Oasis, different sector, excluded per rules) — no Urban Oasis (Sector 62) pricing news found. developer: in.emaar.com/en/our-communities/urban-oasis-gurugram/ loaded, confirms 3/4 BHK luxury apartments, states no price."
+    },
+    {
+      "sector": "63",
+      "project": "Adani Samsara Vilasa",
+      "tried": "news: found and read full real article (Trade Brains, 7 Sep 2026, 'Adani Realty's 10 Residential Projects in Gurugram') — confirms Sector 63, Golf Course Extension Road, 75-acre low-density independent-floor project, 21 plots/84 units, 3/4 BHK, RERA carpet area 1,628-2,242 sq ft, completion expected Dec 2026 — but the article gives NO price for this specific project (its ₹4.25-20 Cr headline range spans across all 10 listed Adani projects, not attributable to Samsara Vilasa). developer: adanirealty.com/residential-projects/gurugram/samsara-vilasa confirms status 'Sold Out', no price stated."
+    },
+    {
+      "sector": "63",
+      "project": "DLF The Arbour",
+      "tried": "news (3 queries) surfaced only DLF's other Gurugram projects ('The Dahlias' record ₹150-271 cr penthouse deals, 'The Camellias' ₹270 cr registrations) — confirmed different projects, excluded per rules — plus a Mar 2025 unrelated office/retail investment story. No Arbour-specific 2025-26 pricing news found. developer: dlf.in has no dedicated reachable Arbour price page (guessed URL 404, corporate site has no per-project pricing)."
+    },
+    {
+      "sector": "65",
+      "project": "M3M Golf Estate",
+      "tried": "news (2 queries) returned only unrelated M3M items (Noida land auction, Noida Jacob & Co launch, GCER corridor investment roundups not naming this project). No M3M Golf Estate-specific 2025-26 pricing article found. developer: m3mindia.com/m3m-golfestate loaded, states no price/sq ft or price list."
+    },
+    {
+      "sector": "66",
+      "project": "Emaar MGF The Palm Drive Villas",
+      "tried": "news (2 queries) returned only unrelated items (EMAAR MGF tag page with no Palm Drive content; old ED/fraud litigation re: MGF Developments, a different legal entity/story). No Palm Drive Villas 2025-26 pricing news found. developer: emaar-india.com had a persistent SSL handshake failure; no alternate India project URL located."
+    },
+    {
+      "sector": "67",
+      "project": "M3M Merlin",
+      "tried": "news (2 queries) returned zero 2025-26 items specific to Merlin (only 2022 litigation/retail-launch coverage). developer: m3mindia.com/residential/m3m-merlin loaded, project listed as 'Delivered', states no price/sq ft or price list."
+    },
+    {
+      "sector": "68",
+      "project": "M3M Sierra",
+      "tried": "news (2 queries) returned only an unrelated M3M-Jacob & Co Noida launch story (different project, different city, excluded). Sector-68 sector-level search dominated by an unrelated Sector 68, Mohali (Punjab) plot-sale story. developer: m3mindia.com/residential/m3m-sierra68 loaded, listed under 'Delivered', states no price."
+    },
+    {
+      "sector": "69",
+      "project": "Smartworld Sky Arc",
+      "tried": "news (2 queries) found only construction-contract news (₹532 cr contract to Varindera Constructions) and a brand-profile piece, neither with a pricing angle. developer: smartworlddevelopers.com/projects/skyarc loaded, states configs (3/3.5/4.5 BHK) but no price, directs to 'Enquire Now'."
+    },
+    {
+      "sector": "69",
+      "project": "Tulip Purple",
+      "tried": "news (2 queries) found zero project-specific 2025-26 items; a Jun 2026 HT story on a new Tulip Infratech 40-storey/5BHK project (avg ~₹4 cr/unit, ~3,250 sq ft => ~₹12,300/sq ft implied) is confirmed to be a DIFFERENT, unnamed new project (alongside named Tulip Monsella and Tulip Crimson), not Tulip Purple — excluded per rules. developer: tulipinfratech.com/tulip-purple/ guessed URL 404."
+    },
+    {
+      "sector": "69",
+      "project": "Unitech Sunbreeze",
+      "tried": "news (2 queries) returned only old 2017-2024 buyer-grievance/construction-restart items, nothing 2025-26 or pricing-related. developer: unitechgroup.com lists Sunbreeze under a Gurgaon 'Sold Out Projects' section with no dedicated page or price."
+    },
+    {
+      "sector": "69",
+      "project": "Tulip Leaf",
+      "tried": "news (2 queries) returned a 2019 launch piece (too old) and unrelated Sector 69 civic-infra stories; no Tulip Leaf 2025-26 pricing news found. developer: tulipinfratech.com/tulip-leaf/ guessed URL 404."
+    },
+    {
+      "sector": "70",
+      "project": "Signature Global City (Sector 70)",
+      "tried": "news (2 queries, 8+ results) found extensive 2025-26 Signature Global company-wide news (₹2,891 cr Tonino Lamborghini tie-up, ₹3,500 cr FY27 investment, ₹920 cr construction contracts, ₹12,000 cr pipeline) but NONE names 'Signature Global City' or Sector 70 specifically. developer: signatureglobal.in homepage no longer lists a 'Signature Global City Sector 70' project — current listed Gurugram projects are Sarvam (37D), Cloverdale SPR (71), Titanium SPR (71), De Luxe DXP (37D), Daxin Vistas, City of Colours — suggesting this project may be delisted/rebranded/sold out. current_source (samagrarealty.in) is a portal-style aggregator, not re-collected per instructions."
+    },
+    {
+      "sector": "59",
+      "tried": "sector news: '\"Sector 59\" Gurugram property price' returned zero 2025-26 items beyond the Max Estates project-level land-acquisition coverage already used above."
+    },
+    {
+      "sector": "60",
+      "tried": "sector news: '\"Sector 60\" Gurugram property price' returned zero 2025-26 items."
+    },
+    {
+      "sector": "61",
+      "tried": "sector news: '\"Sector 61\" Gurugram property price' returned zero 2025-26 items."
+    },
+    {
+      "sector": "62",
+      "tried": "sector news: '\"Sector 62\" Gurugram property price' returned zero 2025-26 items (an earlier search hit was confirmed to be about Mohali, Punjab's GMADA, a false positive from the generic sector-number search, and was excluded)."
+    },
+    {
+      "sector": "63",
+      "tried": "sector news: '\"Sector 63\" Gurugram property price' returned only a Mar 2025 DLF office/retail investment story (₹6,000 cr, 75 lakh sq ft) with no residential ₹/sq ft or appreciation figure."
+    },
+    {
+      "sector": "66",
+      "tried": "sector news: '\"Sector 66\" Gurugram property price' returned only a May 2026 BPTP ₹1,200 cr investment-announcement story with no stated ₹/sq ft or appreciation figure for Sector 66."
+    },
+    {
+      "sector": "67",
+      "tried": "sector news: '\"Sector 67\" Gurugram property price' surfaced only the same SPR-corridor Hindustan Times article used for sector 70 (SPR does not clearly include Sector 67; article makes no Sector-67-specific claim), so not separately recorded here."
+    },
+    {
+      "sector": "68",
+      "tried": "sector news: '\"Sector 68\" Gurugram property price' returned zero relevant items (results dominated by an unrelated Sector 68, Mohali plot-sale story)."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "quotes": [],
+  "sector_news": [
+    {
+      "sector": "78",
+      "headline": "Dwarka E-way area sees 135% rise in home prices in 5 years: Report",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/dwarka-e-way-area-sees-135-rise-in-home-prices-in-5-yearsreport-101788926097677.html",
+      "figure": "Anarock data: Dwarka Expressway avg residential price rose from Rs 6,032/sq ft (2021) to Rs 14,180/sq ft (H1 2026), vs Gurugram's overall average of Rs 13,350/sq ft",
+      "psf": 14180
+    },
+    {
+      "sector": "78",
+      "headline": "Dwarka Expressway challenges Gurugram's old luxury addresses after 135% price surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-09",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/dwarka-expressway-challenges-gurugram-s-old-luxury-addresses-after-135-price-surge-14025123.html",
+      "figure": "ANAROCK estimates average residential prices in the Dwarka Expressway micro-market at around Rs 21,700-24,000 per sq ft, after a 135% rise over 5 years; homes above Rs 2.5 Cr now the dominant budget segment",
+      "psf": 22850
+    },
+    {
+      "sector": "79",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "Magicbricks data: SPR average residential prices reached ~Rs 16,249/sq ft, up 18.4% YoY in 2026 (up from ~Rs 9,800/sq ft five years ago, a 165% five-year rise)",
+      "psf": 16249
+    },
+    {
+      "sector": "79",
+      "headline": "'Gurugram property jumps Rs 1.4 crore if you blink': Real estate advisor drops hard truth",
+      "publisher": "Business Today",
+      "as_of": "2025-07",
+      "url": "https://www.businesstoday.in/personal-finance/real-estate/story/gurugram-property-jumps-rs14-crore-if-you-blink-real-estate-advisor-drops-hard-truth-485998-2025-07-24",
+      "figure": "Article states a 200 sq yd plot in Sector 79's SPR belt went from Rs 72,000/sq yd (Oct 2023) to Rs 1,25,000/sq yd (June 2024); converted 1 sq yd = 9 sq ft => Rs 8,000/sq ft to Rs 13,889/sq ft",
+      "psf": 13889
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "78",
+      "project": "Ganga Green Valley",
+      "tried": "newsq: 2 query variants ('\"Ganga Green Valley\" Gurugram price', 'Ganga Realty \"Green Valley\" Sector 78') both returned NO 2025-26 ITEMS via Bing News RSS; developer site (prior WebFetch pass): gangarealty.com only lists 'Ganga Valley' and 'Ganga Valley Floors' -- no 'Green Valley' project page exists on the developer's own site, and 'Ganga Valley' (a different, confirmed-distinct project) states no price"
+    },
+    {
+      "sector": "78",
+      "project": "Mapsko Aspr Hills",
+      "tried": "newsq: 3 query variants ('\"Mapsko Aspr Hills\" Gurugram price', 'Mapsko Sector 78 Gurugram launch price', 'Mapsko Group Gurugram 2025') all returned NO 2025-26 ITEMS or only unrelated general-market articles (no Mapsko mention) -- confirms Mapsko has essentially no 2025-26 press coverage found via Bing News; developer site: mapsko.com is a parked/for-sale domain (dead site), so no developer-stated price exists either. This project currently has no reachable direct source of any kind."
+    },
+    {
+      "sector": "78",
+      "project": "Ganga Valley Floors",
+      "tried": "newsq: 2 query variants ('\"Ganga Valley Floors\" Gurugram price', 'Ganga Realty \"Valley Floors\" Sector 78 price') both NO 2025-26 ITEMS; developer site (prior WebFetch pass): gangarealty.com/gangavalley-floors loads and confirms the project but states no price at all"
+    },
+    {
+      "sector": "79",
+      "project": "M3M Golf Hills",
+      "tried": "newsq: 2 query variants ('\"M3M Golf Hills\" Gurugram price', 'M3M \"Golf Hills\" Sector 79 launch price') both NO 2025-26 ITEMS specific to this project (only generic SPR-corridor coverage, captured under sector_news); developer site (prior WebFetch pass): m3mindia.com/residential/m3m-golf-hills confirms Sector 79, 2.5-4.5 BHK configs, but states no price"
+    },
+    {
+      "sector": "79",
+      "project": "M3M Antalya Hills",
+      "tried": "newsq: found a real, working article -- Tribune India, 24 Mar 2026, 'M3M India Commences Possession at M3M Antalya Hills in Sector 79, Gurugram' (https://www.tribuneindia.com/news/business/m3m-india-commences-possession-at-m3m-antalya-hills-in-sector-79-gurugram/). It states: project spans 33 acres, 2,540 low-rise residences across 35.1 lac sq ft total, development cost Rs 1,520 Cr, projected revenue Rs 4,000 Cr, and 'current ticket size of Rs 1.8 crore onwards'. NOT converted to a psf quote: dividing total area by total units gives only an average unit size (~1,382 sq ft), which is not verified to be the size of the specific 'Rs 1.8 Cr onwards' entry-level unit (likely smaller than average), so a computed psf here would be an estimate, not a stated/derivable figure per the no-invention rule. Manual note: naive average-based math implies roughly Rs 13,000/sq ft, but this is NOT verified and should not be treated as a quote. Developer site states no price."
+    },
+    {
+      "sector": "79",
+      "project": "Godrej Arista",
+      "tried": "newsq: 2 query variants ('\"Godrej Arista\" Gurugram price', 'Godrej \"Arista\" Sector 79 launch price') both NO 2025-26 ITEMS; developer site (prior WebFetch pass): godrejproperties.com no longer lists this project under any guessed URL (404s), and it does not appear in the homepage project list -- no live developer page located"
+    },
+    {
+      "sector": "79",
+      "project": "Godrej Aria",
+      "tried": "newsq: 2 query variants ('\"Godrej Aria\" Gurugram price', 'Godrej Aria Sector 79 sq ft price') found only tangential items (Livemint, 1 Aug 2025, 'Housing sector entering a phase of steady price, sales: Pirojsha Godrej' -- fetched via artq, contained zero price-bearing sentences relevant to Aria); developer site (prior WebFetch pass) DOES state 'INR 3.17 Cr. onwards' for a 3 BHK at godrejproperties.com/gurugram/residential/godrej-aria, but no unit area/sq ft is given anywhere, so PSF cannot be computed without inventing a size. Manual note: at the current_psf band (11,550-12,450), 3.17 Cr implies ~2,550-2,745 sq ft, a plausible large 3BHK size, but this is inference, not a stated figure, so it is not recorded as a quote."
+    }
+  ]
+}

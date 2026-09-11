@@ -13,6 +13,10 @@ OK_TYPES = {'news', 'developer', 'project-site'}
 GOOGLE = re.compile(r'news\.google\.com')
 
 quotes, news, tried = {}, {}, []
+# rows whose arithmetic the reviewer rejected: a "from" price divided by a size other than the smallest unit
+REJECT = {('112', 'experion windchants')}
+# a single "starting from" price divided by a size range yields a fake range; keep only price ÷ smallest unit
+FROM_PRICE = {('106', 'sobha altus')}
 for f in sorted(glob.glob(f'{RESEARCH}/swarm_out_*.json')):
     try: d = json.load(open(f))
     except Exception as e: print('!! skip', f, e); continue
@@ -24,10 +28,12 @@ for f in sorted(glob.glob(f'{RESEARCH}/swarm_out_*.json')):
         if st not in OK_TYPES or not url.startswith('http') or GOOGLE.search(url): continue
         if not (2000 <= lo <= hi <= 300000): continue
         if not re.match(r'20(25|26)', str(q.get('as_of', ''))): continue      # only current material colours the map
+        if re.search(r'\b(gdv|implied|estimated|assum|developable area|land deal|circle rate|collector rate)\b', (q.get('basis', '') + ' ' + (q.get('snippet') or '')).lower()): continue   # inferred, not stated
         s = normsec(q.get('sector'))
         cls = 'developer' if st in ('developer', 'project-site') else 'news'
         k = (s, str(q.get('project', '')).strip().lower(), cls)
-        if k in quotes: continue
+        if k in quotes or k[:2] in REJECT: continue
+        if k[:2] in FROM_PRICE: lo = hi = max(lo, hi)
         cfgs = []
         for c in q.get('configs') or []:
             try:
@@ -39,6 +45,10 @@ for f in sorted(glob.glob(f'{RESEARCH}/swarm_out_*.json')):
                'publisher': q.get('publisher', ''), 'as_of': q['as_of'], 'snippet': (q.get('snippet') or '')[:220],
                'confidence': 'B', 'audit': {'verdict': 'direct', 'reason': f"{st}: {q.get('publisher', '')} — \"{(q.get('snippet') or '')[:160]}\"", 'checked': '2026-09'}}
         if cfgs: row['configs'] = cfgs; row['configs_as_of'] = q['as_of']
+        # a single reported transaction (record deal, one buyer's unit) is evidence of the top end, not the project's price
+        txt = (q.get('basis', '') + ' ' + (q.get('snippet') or '')).lower()
+        if lo == hi and re.search(r"\b(bought|buys|purchased|acquired|record deal|record sale|sold for|penthouse sold|one unit|a unit|'s flat|'s apartment|resale deal|transaction)\b", txt):
+            row['deal'] = True
         quotes[k] = row
     for n in d.get('sector_news') or []:
         url = n.get('url') or ''

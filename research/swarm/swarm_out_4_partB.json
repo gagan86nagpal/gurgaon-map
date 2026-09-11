@@ -1,0 +1,122 @@
+{
+  "quotes": [
+    {
+      "sector": "76",
+      "project": "DLF Privana South",
+      "developer": "DLF",
+      "price_psf_min": 18000,
+      "price_psf_max": 18000,
+      "basis": "article states avg ₹18,000/sq ft (industry-expert quote, Aakash Ohri context) for Privana South's Jan-2024 sellout, cited in a June-2025 comparison of DLF Privana North vs South pricing",
+      "status": "under construction",
+      "source_url": "https://www.livemint.com/companies/news/dlf-clocks-11-000-crore-in-bookings-as-privana-north-project-sells-out-in-a-week-11750184557739.html",
+      "source_type": "news",
+      "publisher": "Livemint",
+      "as_of": "2025-06",
+      "snippet": "Prices in this project have gone up to ₹23,000 per sq ft compared to Privana South that was sold at around ₹18,000 per sq ft early last year",
+      "configs": []
+    },
+    {
+      "sector": "76",
+      "project": "DLF Privana North",
+      "developer": "DLF",
+      "price_psf_min": 23000,
+      "price_psf_max": 23000,
+      "basis": "article states current prices have gone up to ₹23,000/sq ft (quote attributed to Ohri context)",
+      "status": "new launch",
+      "source_url": "https://www.livemint.com/companies/news/dlf-clocks-11-000-crore-in-bookings-as-privana-north-project-sells-out-in-a-week-11750184557739.html",
+      "source_type": "news",
+      "publisher": "Livemint",
+      "as_of": "2025-06",
+      "snippet": "Prices in this project have gone up to ₹23,000 per sq ft compared to Privana South that was sold at around ₹18,000 per sq ft early last year",
+      "configs": []
+    },
+    {
+      "sector": "76",
+      "project": "DLF Privana North",
+      "developer": "DLF",
+      "price_psf_min": 42486,
+      "price_psf_max": 42486,
+      "basis": "computed (secondary/caution): HT/Livemint state avg apartment price ₹9.5 Cr and separately state the 4BHK unit's CARPET area as 2,236 sq ft (207 sqm) => ₹9.5Cr / 2,236 sqft = ₹42,486/sq ft on CARPET area. This is not directly comparable to the ₹23,000/sq ft figure (likely super-area basis) or to portal current_psf (also likely super-area) — flagged as a carpet-vs-super-area mismatch, not a contradiction of the ₹23,000/sq ft figure",
+      "status": "new launch",
+      "source_url": "https://www.hindustantimes.com/real-estate/dlf-sells-1-164-luxury-flats-worth-11-000-crore-within-a-week-at-gurugram-project-privana-north-101750208569509.html",
+      "source_type": "news",
+      "publisher": "Hindustan Times",
+      "as_of": "2025-06",
+      "snippet": "The 4 BHK apartments measure a carpet area of around 207 square meters (2236 square feet)... While the average price of apartments is around ₹9.5 crore, penthouses cost ₹25 crore",
+      "configs": [
+        {"bhk": "4", "area": 2236, "price_cr": 9.5},
+        {"bhk": "Penthouse", "area": 4847, "price_cr": 25}
+      ]
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "76",
+      "headline": "Dwarka E-way area sees 135% rise in home prices in 5 years: Report",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/dwarka-e-way-area-sees-135-rise-in-home-prices-in-5-yearsreport-101788926097677.html",
+      "figure": "ANAROCK data: Dwarka Expressway avg residential price rose from ₹6,032/sq ft (2021) to ₹14,180/sq ft (H1 2026), vs Gurugram overall avg ₹13,350/sq ft",
+      "psf": 14180
+    },
+    {
+      "sector": "76",
+      "headline": "Dwarka Expressway vs Golf Course Extension: Which Gurugram micromarket offers more value for money?",
+      "publisher": "Business Today",
+      "as_of": "2025-12",
+      "url": "https://www.businesstoday.in/personal-finance/real-estate/story/dwarka-expressway-vs-golf-course-extension-gurugram-micromarket-investors-end-users-508705-2025-12-30",
+      "figure": "average apartment price on Dwarka Expressway micromarket stood at Rs 18,000 per sq ft in 2025",
+      "psf": 18000
+    },
+    {
+      "sector": "77",
+      "headline": "Dwarka Expressway vs Golf Course Extension: Which Gurugram micromarket offers more value for money?",
+      "publisher": "Business Today",
+      "as_of": "2025-12",
+      "url": "https://www.businesstoday.in/personal-finance/real-estate/story/dwarka-expressway-vs-golf-course-extension-gurugram-micromarket-investors-end-users-508705-2025-12-30",
+      "figure": "average price of an apartment in Golf Course Road Extension stood at Rs 22,000 per sq ft in 2025",
+      "psf": 22000
+    },
+    {
+      "sector": "77",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "SPR average residential prices reached around Rs 16,249/sq ft, up 18.4% YoY in 2026 (Magicbricks data); up from ~Rs 9,800/sq ft five years ago",
+      "psf": 16249
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "76",
+      "project": "DLF Privana West",
+      "tried": "news (newsq/artq): multiple 2025-26 articles (HT, Livemint, Moneycontrol) confirm May-2024 launch, 795 apartments sold for Rs 5,590 crore in 3 days, but NONE state a unit area or a ₹/sq ft figure for West specifically (only North=23,000psf and South=18,000psf were quoted by name) so psf could not be computed; developer page dlf.in/residential/dlf-privana-west: no price stated, only regulatory approval mention"
+    },
+    {
+      "sector": "76",
+      "project": "Whiteland The Aspen",
+      "tried": "newsq: 0 relevant 2025-26 items across 2 query variants; developer site whitelandcorporation.com (with and without www) unreachable — 'Socket is closed' on 3 separate attempts including homepage"
+    },
+    {
+      "sector": "76",
+      "project": "Whiteland Blissville",
+      "tried": "newsq: 0 relevant 2025-26 items across 2 query variants; developer site whitelandcorporation.com (with and without www) unreachable — 'Socket is closed' on 3 separate attempts including homepage"
+    },
+    {
+      "sector": "77",
+      "project": "Emaar Palm Select",
+      "tried": "newsq: 0 relevant 2025-26 items across 2 query variants (found only an unrelated new Emaar project 'Serenity Hills'); developer site emaar-india.com unreachable (SSL handshake failure with and without www)"
+    },
+    {
+      "sector": "77",
+      "project": "Emaar Palm Premier",
+      "tried": "newsq: 0 relevant 2025-26 items across 2 query variants; developer site emaar-india.com unreachable (SSL handshake failure with and without www)"
+    },
+    {
+      "sector": "77",
+      "project": "Emaar Palm Heights",
+      "tried": "newsq: 0 relevant 2025-26 items across 2 query variants; developer site emaar-india.com unreachable (SSL handshake failure with and without www)"
+    }
+  ]
+}

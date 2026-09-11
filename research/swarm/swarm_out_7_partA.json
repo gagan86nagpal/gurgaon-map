@@ -1,0 +1,41 @@
+{
+  "quotes": [],
+  "sector_news": [],
+  "no_direct_source": [
+    {
+      "sector": "113",
+      "project": "M3M Capital",
+      "tried": "[Bing newsq] '\"M3M Capital\" Gurugram price': 2 items (both 2026-07-30, ET Realty + Business Standard) but both turn out to be about a DIFFERENT, same-named project — 'M3M Capital Financial Center (CFC)', a commercial office/retail tower in Sector 113 (checked via artq: ₹600cr investment, 1.42 acres, 152 office units + 6 multiplex + 7 retail, no residential psf) — correctly excluded as wrong project per rules; [Bing newsq] '\"M3M Capital\" Sector 113 BHK apartment price': 0 2025-26 items; developer page https://m3mindia.com/residential/m3m-capital: no price stated, 'Enquire Now' only"
+    },
+    {
+      "sector": "113",
+      "project": "M3M Mansion",
+      "tried": "[Bing newsq] '\"M3M Mansion\" Gurugram price': 0 2025-26 items; [Bing newsq] 'M3M Mansion Sector 113 launch price crore': 0 direct hits (returned same M3M-Trehan ₹1900cr and M3M ₹600cr CFC articles); checked ET Realty M3M-Trehan article via artq for 'Mansion' keyword: no matching sentences; developer page https://m3mindia.com/residential/m3m-mansion: no price stated, 'Enquire Now' only"
+    },
+    {
+      "sector": "113",
+      "project": "Smartworld One DXP",
+      "tried": "[Bing newsq] '\"Smartworld One DXP\" Gurugram price': 0 2025-26 items; [Bing newsq] 'Smartworld \"One DXP\" Sector 113 launch price': 0 items (only Trump Residences construction-contract news, which is a different Smartworld-built project, not One DXP); developer page https://smartworlddevelopers.com/projects/onedxp: explicitly 'price on request'"
+    },
+    {
+      "sector": "3A",
+      "project": "Maa Bhagwati Residency, SS Residency Sector 3A, Shree Ganesh Apartment (resale)",
+      "tried": "[Bing newsq] '\"Sector 3A\" Gurugram property price': 0 2025-26 items; [Bing newsq] '\"Maa Bhagwati Residency\" Gurugram': 0 items; [Bing newsq] 'SS Residency Sector 3A Gurugram price': 0 items. No developer site applicable (resale/various)."
+    },
+    {
+      "sector": "9A",
+      "project": "Sector 9A apartments (resale)",
+      "tried": "[Bing newsq] '\"Sector 9A\" Gurugram property price' (sector-level): 0 2025-26 items; [Bing newsq] 'Sector 9A Gurugram resale flat price': 0 items; [Bing newsq] 'Sector 9A Gurugram property rate per sq ft': 2 items but both generic city-wide Gurugram stories with no Sector-9A-specific figure (Moneycontrol circle-rate hike piece, checked via artq, names Sectors 63/63A/64/67 on SPR/Golf Course Ext Road only — not 9A; The Hindu ₹271cr penthouse story, checked via artq, returned no extractable price sentences / not sector-specific) — correctly excluded as not about this sector. No developer site applicable (resale/various)."
+    },
+    {
+      "sector": "10A",
+      "project": "Sector 10A flats (resale)",
+      "tried": "[Bing newsq] '\"Sector 10A\" Gurugram property price' (sector-level): 0 2025-26 items; [Bing newsq] 'Sector 10A Gurugram resale flat price': 0 items; [Bing newsq] 'Sector 10A Gurugram property rate per sq ft': same 2 generic city-wide articles as Sector 9A search (Moneycontrol circle-rate piece names Sectors 63/63A/64/67, not 10A; Hindu penthouse story not sector-specific) — excluded as not about this sector. No developer site applicable (resale/various)."
+    },
+    {
+      "sector": "12A",
+      "project": "Stanford Amaara Residences",
+      "tried": "[Bing newsq] '\"Sector 12A\" Gurugram property price' (sector-level): 0 2025-26 items; [Bing newsq] '\"Stanford Amaara\" Gurugram price': 0 items; [Bing newsq] 'Stanford Developers Amaara Sector 12A launch price': 0 items. No developer domain for Stanford Developers on the provided guess list, so developer-site step skipped after news yielded nothing."
+    }
+  ]
+}

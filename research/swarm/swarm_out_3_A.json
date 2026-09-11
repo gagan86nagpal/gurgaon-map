@@ -1,0 +1,31 @@
+{
+  "quotes": [],
+  "sector_news": [],
+  "no_direct_source": [
+    {
+      "sector": "59",
+      "project": "Max Estate 59",
+      "tried": "news: Google News RSS for \"Max Estate 59\" Gurugram returned zero items (empty feed); retried \"Max Estates\" Gurugram launch price (only found Max Estates' other Gurugram project 'The Terraces at Estate 361' priced from Rs 2.4 Cr, not Sector 59; also surfaced Sep 2025 land-acquisition news: Max Estates bought 7.25 acres in Sector 59 for Rs 534 Cr, targeting a Rs 3,000 Cr project, but no unit/psf price stated) and \"Estate 59\" Max Gurugram price (zero items). developer: maxestates.in/max-estate-59 returned 404; maxestates.in homepage lists The Terraces, Estate 361, Estate 360, Estate 105, Max One, Estate 128, 222 Rajpur but does NOT list a 'Max Estate 59' project at all (likely still pre-launch/land stage as of Sep 2025). No project marketing site found."
+    },
+    {
+      "sector": "60",
+      "project": "Ireo Skyon",
+      "tried": "news: Google News RSS for \"Ireo Skyon\" Gurugram returned only old/irrelevant items (2011, 2013, 2016, 2021 launches; a 2026 boundary-wall-demolition security story; a 2026 'Top 6 luxury residential societies' listicle with no accessible price detail; a 2026 Ireo Boulevard retail-award item). Retried \"Ireo\" Gurugram resale price OR Skyon and Ireo Skyon price per sq ft — no 2025-26 pricing items found either time. developer: ireoworld.com/ireo-skyon returned 404; ireoworld.com homepage no longer belongs to Ireo (resolves to an architecture firm 'Etudes'), so the developer's own site appears defunct/domain-lost. No project marketing site found."
+    },
+    {
+      "sector": "61",
+      "project": "Smartworld Orchard",
+      "tried": "news: Google News RSS for \"Smartworld Orchard\" Gurugram found a Feb 2026 ThePrint story about 800 Gurugram homebuyers alleging fraud ('sold crematorium as green area') and a Mar 2026 ANI item about Smartworld's Rs 1,000 Cr construction contract for 'Trump Residences Gurgaon' — neither is confirmed to be about Orchard specifically and neither states an Orchard price, so not used. developer: smartworlddevelopers.com/smart-world-orchard returned 404, but the correct page smartworlddevelopers.com/projects/orchard was found via the homepage — it confirms 2.5/3 BHK apartments, Sector 61, Golf Course Extn Rd, RERA RC/REP/HARERA/GGM/617/349/2022/92, and status 'Possessions Started' (project is sold out per an earlier page reference), but states NO price — directs buyers to contact the developer. No price figure could be recorded."
+    },
+    {
+      "sector": "62",
+      "project": "Pioneer Araya",
+      "tried": "news: Google News RSS for \"Pioneer Araya\" Gurugram returned only 2021 items (loud-music complaint, Ramlila cultural event). Retried \"Pioneer Urban\" Araya Gurugram price (only a generic Aug 2025 LawChakra homebuyer-rights explainer, no Araya-specific price) and Araya Gurgaon price sq ft (zero items). developer: pioneerurban.in homepage found a project link (araya.php) but the fetched page contained only navigation/brochure-download/contact info, no stated price, configs, or area. No project marketing site found."
+    },
+    {
+      "sector": "62",
+      "project": "Emaar Urban Oasis",
+      "tried": "news: Google News RSS for \"Emaar Urban Oasis\" Gurugram returned essentially one unrelated Housing.com listing item ('Emaar MGF The Palm Drive', Dec 2025) — not about Urban Oasis pricing, not used. developer: emaar-india.com had an SSL handshake failure (site unreachable); emaar.com (Dubai global site) 404'd for Urban Oasis; found the correct India project page at in.emaar.com/en/our-communities/urban-oasis-gurugram/ confirming 3 & 4 BHK luxury apartments in Gurugram, but the page states NO price ('price on request' in effect). No price figure could be recorded."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "quotes": [
+    {
+      "sector": "54",
+      "project": "DLF The Dahlias",
+      "developer": "DLF",
+      "price_psf_min": 193647,
+      "price_psf_max": 193647,
+      "basis": "Ultra-luxury apartment, 6,233 sq ft, DLF City Phase 5, sold to investor Madhusudan Kela for Rs 120.70 Cr => Rs 1,20,70,00,000 / 6,233 sq ft = Rs 193,647/sq ft",
+      "status": "under construction",
+      "source_url": "https://www.businesstoday.in/real-estate/story/madhusudan-kela-buys-ultra-luxury-apartment-in-dlf-dahlias-for-rs121-crore-537040-2026-06-15",
+      "source_type": "news",
+      "publisher": "Business Today",
+      "as_of": "2026-06",
+      "snippet": "Located in DLF City Phase 5, Sector 56, Gurugram, the ultra-luxury apartment has a total area of 6,233 square feet... purchased for ₹120.70 crore",
+      "configs": [
+        {"bhk": "4", "area": 6233, "price_cr": 120.70}
+      ]
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "50",
+      "headline": "Dwarka Expressway vs Golf Course Extension: Which Gurugram micromarket offers more value for money?",
+      "publisher": "Business Today",
+      "as_of": "2025-12",
+      "url": "https://www.businesstoday.in/personal-finance/real-estate/story/dwarka-expressway-vs-golf-course-extension-gurugram-micromarket-investors-end-users-508705-2025-12-30",
+      "figure": "Golf Course Road Extension average apartment price Rs 22,000/sq ft in 2025 (vs Rs 18,000/sq ft on Dwarka Expressway); Anarock cites Gurugram overall rising Rs 9,500/sq ft (Q3 2024) to Rs 12,250/sq ft (2025), up 29%",
+      "psf": 22000
+    },
+    {
+      "sector": "56",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "SPR (Southern Peripheral Road) average residential price ~Rs 16,249/sq ft in 2026, up 18.4% YoY and 165% over 5 years (from ~Rs 9,800/sq ft); Magicbricks data",
+      "psf": 16249
+    },
+    {
+      "sector": "58",
+      "headline": "Gurugram's Southern Peripheral Road emerges as key real estate market",
+      "publisher": "The Tribune",
+      "as_of": "2026-01",
+      "url": "https://www.tribuneindia.com/news/delhi/ggrams-southern-peripheral-road-emerges-as-key-real-estate-market/",
+      "figure": "SPR property prices surged ~125% between Dec 2022 and Dec 2025, average now exceeding Rs 17,000/sq ft; new elevated stretch (Vatika Chowk to NH-48) improves access from Sector 58 to Sector 115",
+      "psf": 17000
+    }
+  ],
+  "no_direct_source": [
+    {"sector": "45", "project": "Unitech Greenwood City Apartment (resale)", "tried": "news: 0 relevant 2025-26 items (only unrelated 2003 item)"},
+    {"sector": "45", "project": "Ardee Platinum Greens (resale)", "tried": "news: 0 items found on Google News or Bing News for 2025-26"},
+    {"sector": "47", "project": "Bestech Park View Spa", "tried": "news: 0 relevant 2025-26 pricing items (2024 item was an unrelated death report); no Bing hits either"},
+    {"sector": "48", "project": "Experion The Trillion", "tried": "news: multiple 2025-26 items (Rs 800cr Tata Projects contract, Rs 2,500cr investment, 2.5M sq ft, 45 floors) but no unit price/psf stated; developer site (experion.co/the-trillion) lists unit sizes (1,534.84 sq ft 3BHK, 1,905.87 sq ft 4BHK) but 'no pricing details found'"},
+    {"sector": "48", "project": "Central Park Resorts", "tried": "news: only hits were for Central Park's separate new launch 'Belanova' (different project, skipped per rule); BusinessWorld article on Central Park's luxury tower revenue target returned 403; developer site centralpark.in/projects/central-park-resorts returned 404"},
+    {"sector": "48", "project": "Central Park II-Bellevue", "tried": "news: 0 relevant 2025-26 items (only 2022-23 structural-audit items)"},
+    {"sector": "49", "project": "Elan The Statement", "tried": "news: Rs 1,600cr investment (HT) states 4BHK unit sizes 4,300-4,500 sq ft across 5 towers but no price stated; construction-commencement and spa-partnership articles also have no price; developer site elangroup.in/elan.co.in both unreachable/404"},
+    {"sector": "49", "project": "Godrej Aristocrat", "tried": "news: 0 2025-26 items specific to Aristocrat (all hits were about a different Godrej project, Zenith); developer site 404"},
+    {"sector": "49", "project": "Vatika City", "tried": "news: 0 2025-26 items with pricing (only sustainability/crime items)"},
+    {"sector": "50", "project": "Elan Nirvana", "tried": "news: 0 items found on Google News or Bing News for 2025-26"},
+    {"sector": "50", "project": "Unitech Nirvana Country Aspen Greens", "tried": "news: 0 items found for 2025-26"},
+    {"sector": "50", "project": "Unitech Fresco", "tried": "news: only 2026 OC-certificate item, no pricing"},
+    {"sector": "51", "project": "Ocus Quantum", "tried": "news: 0 relevant 2025-26 pricing items"},
+    {"sector": "51", "project": "SS Mayfield Gardens", "tried": "news: 0 items found for 2025-26"},
+    {"sector": "53", "project": "Vipul Belmonte", "tried": "news: 0 relevant items (only Vipul Ltd share-price result and old RWA disputes)"},
+    {"sector": "53", "project": "Godrej Sora", "tried": "news: Rs 1,100cr Tata Projects construction-contract articles (FE/BusinessLine/ANI, May 2026) name the project but state no unit price; a Business Standard headline referencing 'Golf Course homes costing Rs 11-15 cr' could not be re-located via Bing/artq; developer site godrejproperties.com/godrej-sora-sector-53-gurugram returned 404"},
+    {"sector": "53", "project": "DLF Westend Heights", "tried": "news: 0 relevant 2025-26 items"},
+    {"sector": "54", "project": "DLF The Crest", "tried": "news: 0 2025-26 items specific to The Crest (hits were about DLF The Dahlias, a different project)"},
+    {"sector": "54", "project": "DLF The Belaire", "tried": "news: 0 relevant 2025-26 items"},
+    {"sector": "54", "project": "DLF The Summit", "tried": "news: 0 pricing items specific to The Summit (one Aug 2026 Body Shop retail-store item, no price)"},
+    {"sector": "54", "project": "DLF Park Place", "tried": "news: 0 relevant 2025-26 pricing items"},
+    {"sector": "54", "project": "Salcon The Verandas", "tried": "news: 0 items found for 2025-26"},
+    {"sector": "54", "project": "Emaar The Palm Springs", "tried": "news: only hit was Emaar's new 'Serenity Hills' project in Sector 86 (different project, skipped per rule)"},
+    {"sector": "56", "project": "Trevoc Royal Residences", "tried": "news: ASK Property Fund Rs 400cr exit from Trevoc/MMR investments, CSR/award items - no unit price stated; developer sites trevoc.com and trevoc.in both unreachable/empty"},
+    {"sector": "57", "project": "The Legend One (resale)", "tried": "news: 0 items found for 2025-26"},
+    {"sector": "57", "project": "BPTP Freedom Park Life (resale)", "tried": "news: 0 relevant pricing items (only an NGT environmental-penalty item, unclear if same society)"},
+    {"sector": "57", "project": "Suncity Sukriti CGHS Ltd (resale)", "tried": "news: 0 items found for 2025-26"},
+    {"sector": "58", "project": "Ireo Grand Arch", "tried": "news: 0 relevant 2025-26 items (only old 2015-17 items)"}
+  ]
+}

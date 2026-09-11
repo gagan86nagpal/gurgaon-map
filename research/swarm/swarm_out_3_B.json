@@ -1,0 +1,52 @@
+{
+  "quotes": [],
+  "sector_news": [],
+  "no_direct_source": [
+    {
+      "sector": "63",
+      "project": "Adani Samsara Vilasa",
+      "tried": "news: Google News RSS search found 1 2025-26 item (Trade Brains, 'From Rs4.25 Crore to Rs20 Crore: Adani Realty's 10 Residential Projects in Gurugram', 7 Sep 2026) but the google news redirect link would not resolve to article text (returned empty shell) in two attempts, so no verbatim figure could be extracted; developer site https://www.adanirealty.com/residential-projects/gurugram/samsara-vilasa loaded fine and states project status 'Sold Out' but gives no price/sq ft or price list."
+    },
+    {
+      "sector": "63",
+      "project": "DLF The Arbour",
+      "tried": "news: RSS search found 1 2025-26 item (Prop News Time, 'How DLF The Arbour contributed to the evolution of Golf Course Extension Road', 12 Jul 2026) but the google news redirect link would not resolve to article text after 2 attempts; other results were 2023-24 (CNBC TV18 Rs1,000cr sales-in-a-jiffy, B L Kashyap contract, Otis elevators) and out of the 2025-26 window or lack price figures. Developer site (dlf.in/residential-projects and dlf.in/the-arbour guess, 404) had no dedicated Arbour price page reachable; corporate site has no pricing info."
+    },
+    {
+      "sector": "65",
+      "project": "Trump Towers Delhi NCR (Tribeca)",
+      "tried": "news: multiple 2025 items confirmed via RSS summary (Times of India 14 May 2025 'sold out on day 1, nets Rs3,250 crore in allotments'; Economic Times 16 May 2025 '298 flats priced up to Rs15 crore sold in a day'; Business Standard 13 May 2025 similar; Hindustan Times 16 Jan/16 Apr 2025 launch pieces) but every individual google news redirect link returned an empty shell (could not resolve to a final publisher URL or full article text) despite repeated attempts, and no article snippet gave a unit AREA in sq ft, so a Rs/sq ft figure could not be computed from the Rs15 crore top price even though the crore figure itself is well corroborated. Business Standard/ET Realty were not retried further per instructions. No project marketing site was linked from the snippets to try directly."
+    },
+    {
+      "sector": "65",
+      "project": "M3M Golf Estate",
+      "tried": "news: RSS searches (project name; project name + price/launch) returned mostly unrelated or off-topic items (Sep 2025 upkeep-fee protest article did not name this project specifically in retrievable text; a Mar 2026 Business Standard Godrej GCER piece and a 2024 Moneycontrol/HT M3M luxury-project piece are outside the 2025-26 relevant window or are about a different M3M project) and one Apr 2026 Indian Express piece on Golf Course Extension Road sales value (+379% YoY) could not be confirmed to name M3M Golf Estate specifically because its google news redirect link would not resolve to article text. Developer page https://m3mindia.com/m3m-golfestate loaded but stated no price/sq ft or price list."
+    },
+    {
+      "sector": "66",
+      "project": "Emaar MGF The Palm Drive Villas",
+      "tried": "news: only 2025-26 hit was a Housing.com portal listing snippet (13 Dec 2025, no price in feed, and Housing.com is a portal so excluded per instructions to skip portal figures); no other project-specific 2025-26 news found. Developer site attempts (emaar-india.com/residential/the-palm-drive) failed with SSL handshake error; no alternate developer URL located without guessing further."
+    },
+    {
+      "sector": "67",
+      "project": "M3M Merlin",
+      "tried": "news: RSS search for the project name and for project+price/resale/launch returned zero 2025-26 items (only 2022 NCDRC tower-halt litigation coverage and a 2022 retail-launch item). Developer site https://m3mindia.com/residential/m3m-merlin loaded and confirms the project is listed as 'Delivered' but states no price/sq ft or price list."
+    },
+    {
+      "sector": "63",
+      "tried": "sector news: RSS search '\"Sector 63\" Gurugram property price' surfaced a promising Realty Plus Magazine headline ('Sector 63: Gurugram's Next Luxury Growth Destination', 22 Jun 2026) but its google news redirect link would not resolve to article text after 2 attempts, so no Rs/sq ft or appreciation figure could be extracted. Other results (HT 'DLF bets big... Rs20,000 crore FY27 launch pipeline', senior-living market sizing) state developer investment/market-size figures, not a Sector 63 price or price-appreciation figure, so were excluded."
+    },
+    {
+      "sector": "65",
+      "tried": "sector news: RSS searches ('Sector 65'+property price; 'Sector 65' SPR + per sq ft) returned only infrastructure/rental/commercial items and two SPR corridor pieces (constructionweekonline.in 19 Jun 2025 'Rs1 lakh crore realty sales', Moneycontrol 13 Aug 2025 'SPR is new hotspot') that discuss market potential/positioning without any stated Rs/sq ft or price-appreciation number."
+    },
+    {
+      "sector": "66",
+      "tried": "sector news: RSS searches ('Sector 66'+property price; 'Sector 66'+Golf Course+price) returned a theft-crime story, a 2021 commercial listing, and the same Apr 2026 Indian Express Golf Course Extension Road '+379% sales value' headline, which reports sales VALUE growth (a volume/value metric) rather than a stated Rs/sq ft price or price-appreciation percentage, and its google news redirect link would not resolve to full text to check for a psf figure inside; excluded as not meeting the stated-figure bar."
+    },
+    {
+      "sector": "67",
+      "tried": "sector news: RSS search '\"Sector 67\" Gurugram property price' and '\"Sector 67\" Gurugram \"per sq ft\"' returned a fatal-accident story, a Realty Today 'Sohna and GCER lead Gurugram's Real Estate growth surge' piece (4 Nov 2025) and a Realty Plus 'Gurugram Witnesses 14.9% Surge In Property Prices' piece (3 Oct 2023, outside 2025-26 window). The Realty Today piece's redirect link would not resolve to article text to check for a Sector 67-specific figure."
+    }
+  ]
+}

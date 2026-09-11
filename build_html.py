@@ -958,7 +958,10 @@ function aggregate(){
     // one row per project: the most direct enabled source is primary, the rest ride along as alternatives
     const byP = {};
     for(const q of all){ const k = q.project.toLowerCase().replace(/\s*\(resale\)$/,''); (byP[k] ||= []).push(q); }
-    const rows = Object.values(byP).map(qs=>{ qs.sort((a,b)=>SRC_RANK[a.src]-SRC_RANK[b.src]); const p = Object.assign({}, qs[0]); p.alts = qs.slice(1); return p; });
+    // single reported deals rank behind every regular quote: they appear on the card but only set the price when nothing else exists
+    const rows = Object.values(byP).map(qs=>{ qs.sort((a,b)=>(SRC_RANK[a.src]+(a.deal?10:0))-(SRC_RANK[b.src]+(b.deal?10:0))); const p = Object.assign({}, qs[0]); p.alts = qs.slice(1);
+      if(!(p.configs && p.configs.length)){ const w = p.alts.find(a=>a.configs && a.configs.length); if(w){ p.configs = w.configs; p.configs_as_of = w.configs_as_of; p.configs_stale = w.configs_stale; p.configs_from = w.sot ? w.sot.label : SRC_LABEL[w.src]; p.source_psf = w.source_psf; } }
+      return p; });
     const mids = rows.map(mid);
     agg[s] = {rows: rows.sort((a,b)=>mid(b)-mid(a)), lo:Math.min(...mids), hi:Math.max(...mids), med:median(mids), n:rows.length};
   }
@@ -1256,7 +1259,8 @@ const cfgTable = q => {
     const pr = lo.price_cr===hi.price_cr ? '₹'+lo.price_cr+' cr' : '₹'+lo.price_cr+' – '+hi.price_cr+' cr';
     const psf = Math.round(cs.reduce((t,c)=>t+c.price_cr*1e7/c.area,0)/cs.length);
     return `<tr><td>${bhkName(b)}</td><td class="n">${area} sq ft</td><td class="n">${pr}</td><td class="n" style="color:var(--muted)">${psf.toLocaleString('en-IN')}/sq ft</td></tr>`; }).join('');
-  const head = q.configs_stale ? `Unit sizes on ${esc(q.sot?q.sot.label:'source')} — its listed prices are launch-era; current asking is ₹${(q.source_psf||mid(q)).toLocaleString('en-IN')}/sq ft` : `Quoted on ${esc(q.sot?q.sot.label:'source')}${q.configs_as_of?' · '+esc(q.configs_as_of):''}`;
+  const from = q.configs_from || (q.sot ? q.sot.label : 'source');
+  const head = q.configs_stale ? `Unit sizes on ${esc(from)} — its listed prices are launch-era; current asking there is ₹${(q.source_psf||mid(q)).toLocaleString('en-IN')}/sq ft` : `${q.configs_from ? 'Unit table from' : 'Quoted on'} ${esc(from)}${q.configs_as_of?' · '+esc(q.configs_as_of):''}`;
   const tail = q.configs_stale ? `<div style="margin-top:4px">${keys.map(b=>{ const cs=by[b], lo=Math.min(...cs.map(c=>c.area)), hi=Math.max(...cs.map(c=>c.area)), p=(q.source_psf||mid(q)); return `${bhkName(b)} ≈ ₹${cr(p*lo)}${hi!==lo?'–'+cr(p*hi):''} cr`; }).join(' · ')} <span>at current asking</span></div>` : '';
   return `<div class="cfgwrap"><table class="cfg"><tr><th colspan="4">${head}</th></tr>${rows}</table></div>${tail}`;
 };
@@ -1300,7 +1304,7 @@ function renderInspector(){
       ${q.source_psf && (q.source_psf < q.price_psf_min*0.85 || q.source_psf > q.price_psf_max*1.15) ? `<div class="basis" style="color:var(--muted)">Square Yards' tracked price is ₹${q.source_psf.toLocaleString('en-IN')}/sq ft${q.configs_as_of?' ('+esc(q.configs_as_of)+')':''}; this row keeps its stronger source.</div>` : ''}
       <div class="meta"><span class="pill ${q.bucket}">${BUCKET_LABEL[q.bucket]}</span><span class="pill src" title="${esc(q.sot?q.sot.what:'')}">${esc(q.sot?q.sot.label:(q.source_type||'source'))}</span>${confPill(q)}<span>${esc(q.as_of||'')}</span>${q.second_source_url?`<a href="${esc(q.second_source_url)}" target="_blank" rel="noopener" style="font-size:11px">2nd source</a>`:''}</div>
       ${q.audit&&q.audit.reason?`<div class="basis" style="color:var(--muted)">Audit: ${esc(q.audit.reason)}</div>`:''}
-      ${q.alts && q.alts.length ? `<div class="alts">Also reported: ${q.alts.map(a=>`<a href="${esc(a.source_url)}" target="_blank" rel="noopener" title="${esc(a.basis||'')}">${esc(a.sot?a.sot.label:SRC_LABEL[a.src])}</a> <b>${fmt(a.price_psf_min)}${a.price_psf_max!==a.price_psf_min?'–'+a.price_psf_max.toLocaleString('en-IN'):''}</b>${a.as_of?' <span style="color:var(--muted)">'+esc(a.as_of)+'</span>':''}`).join(' · ')}</div>` : ''}
+      ${q.alts && q.alts.length ? `<div class="alts">Also reported: ${q.alts.map(a=>`<a href="${esc(a.source_url)}" target="_blank" rel="noopener" title="${esc(a.basis||'')}">${esc(a.sot?a.sot.label:SRC_LABEL[a.src])}${a.deal?' (one reported deal)':''}</a> <b>${fmt(a.price_psf_min)}${a.price_psf_max!==a.price_psf_min?'–'+a.price_psf_max.toLocaleString('en-IN'):''}</b>${a.as_of?' <span style="color:var(--muted)">'+esc(a.as_of)+'</span>':''}`).join(' · ')}</div>` : ''}
       <span class="go">open source ↗</span>
     </li>`).join('');
   insp.innerHTML = `<div class="eyebrow">Sector</div><h2>${secName(k)}</h2>

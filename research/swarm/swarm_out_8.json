@@ -1,0 +1,352 @@
+{
+  "quotes": [
+    {
+      "sector": "99A",
+      "project": "ATS HomeKraft Grandstand Phase 2",
+      "developer": "ATS HomeKraft",
+      "price_psf_min": 14824,
+      "price_psf_max": 14967,
+      "basis": "Project site lists '3.5 BHK 2125 Sq.Ft => Rs 3.15 Cr* Onwards' (3.15Cr/2125sqft=Rs14,824/sqft) and '4.5 BHK 3000 Sq.Ft => Rs 4.49 Cr* Onwards' (4.49Cr/3000sqft=Rs14,967/sqft)",
+      "status": "new launch",
+      "source_url": "https://atsgrandstandgurgaon.in/index.html",
+      "source_type": "project-site",
+      "publisher": "ATS HomeKraft (project microsite)",
+      "as_of": "2026-09",
+      "snippet": "3.5 BHK 2125 Sq.Ft Rs.3.15 Cr* Onwards | 4.5 BHK 3000 Sq.Ft Rs.4.49 Cr* Onwards. BOOKING OPEN, RERA clearance pending.",
+      "configs": [
+        {
+          "bhk": "3.5",
+          "area": 2125,
+          "price_cr": 3.15
+        },
+        {
+          "bhk": "4.5",
+          "area": 3000,
+          "price_cr": 4.49
+        }
+      ]
+    },
+    {
+      "sector": "102A",
+      "project": "Adani The Marq",
+      "developer": "Adani",
+      "price_psf_min": 17895,
+      "price_psf_max": 17895,
+      "basis": "Developer page states 'Price starting @ 4.25 Cr.' for 3BHK/4BHK units sized 2375-3295 sq ft super built-up (220.64-306.11 sq mtrs); computed from stated starting price and stated minimum super-built-up area: 4.25Cr / 2375 sqft = Rs17,895/sqft. Per-sqft figure itself not stated by developer, only starting total price + size range.",
+      "status": "under construction",
+      "source_url": "https://www.adanirealty.com/residential-projects/gurugram/the-marq",
+      "source_type": "developer",
+      "publisher": "Adani Realty (developer site)",
+      "as_of": "2026-09",
+      "snippet": "Price starting @ 4.25 Cr. 3 BHK: 220.64-306.11 Sq. Mtrs. (2375-3295 Sq. Ft.) 4 BHK: 220.64-306.11 Sq. Mtrs. (2375-3295 Sq. Ft.)",
+      "configs": [
+        {
+          "bhk": "3",
+          "area": 2375,
+          "price_cr": 4.25
+        }
+      ]
+    },
+    {
+      "sector": "102A",
+      "project": "Adani The Marq",
+      "developer": "Adani",
+      "price_psf_min": null,
+      "price_psf_max": null,
+      "basis": "Press article (project-listicle) states 'current pricing starting at Rs 4.25 crore' with 'RERA carpet area falls within the range of 1,288 to 1,786 sq ft' for 3 BHK / 3 BHK+Study / 4 BHK homes. This corroborates the Rs4.25Cr starting price from the developer's own site, but on RERA CARPET area (1,288 sqft min) rather than the super-built-up area (2375 sqft) the developer site quotes -- carpet-area psf would compute far higher (~Rs33,000/sqft) than the super-built-up psf used in the other quote row (Rs17,895/sqft). Not treated as a distinct psf figure here since the area basis is ambiguous/inconsistent between the two sources; flagged for the sanity-check pass instead.",
+      "status": "under construction",
+      "source_url": "https://tradebrains.in/money/from-425-crore-to-20-crore-adani-realtys-10-residential-projects-in-gurugram-12501256",
+      "source_type": "news",
+      "publisher": "Tradebrains",
+      "as_of": "2026-09",
+      "snippet": "It has 3 BHK, 3 BHK + Study and 4 BHK homes and the RERA carpet area falls within the range of 1,288 to 1,786 sq ft with current pricing starting at Rs4.25 crore.",
+      "configs": [
+        {
+          "bhk": "3",
+          "area": 1288,
+          "price_cr": 4.25
+        }
+      ]
+    },
+    {
+      "sector": "Manesar",
+      "project": "M3M Gurgaon International City",
+      "developer": "M3M",
+      "price_psf_min": 10667,
+      "price_psf_max": 12308,
+      "basis": "Developer site states 'Starting from ₹1.6 Cr* Onwards'; smallest listed configuration is 2.5 BHK, 1,300-1,500 sq ft (individual config price shown as 'Coming Soon', so exact per-config price not separately published) => ₹1.6 Cr / 1,300-1,500 sq ft = ₹10,667-12,308/sq ft, applying the stated starting price to the smallest config",
+      "status": "new launch",
+      "source_url": "https://www.m3mproperties.com/residential/gurugram/m3m-manesar/",
+      "source_type": "developer",
+      "publisher": "M3M Properties (developer site)",
+      "as_of": "2026-09",
+      "snippet": "Starting from 1.6 Cr* INR Onwards",
+      "configs": [
+        {
+          "bhk": "2.5",
+          "area": 1300,
+          "price_cr": 1.6
+        },
+        {
+          "bhk": "2.5",
+          "area": 1500,
+          "price_cr": 1.6
+        }
+      ]
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "95A",
+      "headline": "Dwarka E-way area sees 135% rise in home prices in 5 years: Report",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/dwarka-e-way-area-sees-135-rise-in-home-prices-in-5-yearsreport-101788926097677.html",
+      "figure": "ANAROCK data: avg residential prices on Dwarka Expressway rose from Rs6,032/sqft (2021) to Rs14,180/sqft (H1 2026), vs Gurugram citywide avg of Rs13,350/sqft; homes above Rs2.5cr now a prominent budget segment; >Rs2.2 lakh crore infra capital deployed around the corridor",
+      "psf": 14180
+    },
+    {
+      "sector": "99A",
+      "headline": "Dwarka Expressway challenges Gurugram's old luxury addresses after 135% price surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-09",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/dwarka-expressway-challenges-gurugram-s-old-luxury-addresses-after-135-price-surge-14025123.html",
+      "figure": "ANAROCK data (same week as the HT 135% report, but a notably higher figure): avg residential prices in the Dwarka Expressway micro-market now ~Rs21,700-24,000/sqft; homes priced above Rs2.5cr are the dominant new-supply budget segment; 3-BHK units are 39% of new supply. NOTE: this Rs21,700-24,000/sqft figure and HT's Rs14,180/sqft figure are both attributed to ANAROCK for the same corridor in the same week -- a real discrepancy in press reporting, not a typo on our part (possibly blended-average vs new-launch-only cuts of the same dataset).",
+      "psf": null
+    },
+    {
+      "sector": "102A",
+      "headline": "Dwarka Expressway property prices double in 7 years: How infrastructure turned NCR corridor into a wealth creator",
+      "publisher": "Business Today",
+      "as_of": "2026-08",
+      "url": "https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24",
+      "figure": "ANAROCK data: avg Dwarka Expressway price rose from Rs5,359/sqft (2019) to over Rs9,600/sqft (H1 2024); industry estimates put cumulative appreciation at 95-105% since 2019, accelerating to 110-120% between 2021 and early 2026. Example cited: Hero Homes (Sector 104) launched Nov 2018 at ~Rs5,000/sqft, now ~Rs16,500/sqft (+230% since launch).",
+      "psf": 9600
+    },
+    {
+      "sector": "110A",
+      "headline": "Move over Bengaluru and Hyderabad: Noida and Gurugram top property price appreciation with up to 125% growth",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-08",
+      "url": "https://www.hindustantimes.com/real-estate/move-over-bengaluru-and-hyderabad-noida-and-gurugram-top-property-price-appreciation-with-up-to-125-growth-heres-why-101786038801601.html",
+      "figure": "ANAROCK data: Gurugram citywide avg residential price rose from Rs6,150/sqft (2019) to Rs13,350/sqft (Q2 2026), +117% (this is a citywide figure, not corridor/sector-specific; Noida's comparable rise was +125%, Mumbai +64% to Rs29,270/sqft)",
+      "psf": 13350
+    },
+    {
+      "sector": "99A",
+      "headline": "Gurugram property prices set to skyrocket as circle rate hikes proposed",
+      "publisher": "Moneycontrol (citing Hindustan Times)",
+      "as_of": "2025-07",
+      "url": "https://www.moneycontrol.com/city/gurugram-property-prices-set-to-skyrocket-as-circle-rate-hikes-proposed-article-13356263.html",
+      "figure": "GOVERNMENT CIRCLE RATE (not market price): proposed hike for 'floors in licensed colonies by developers and HSVP sectors' from Rs9,295 to Rs10,225/sqft; affordable-flat circle rate proposed Rs5,000 to Rs5,500/sqft. Licensed-colony/HSVP-sector rates are the relevant category for New Gurugram/Dwarka Expressway sectors like 95A/99A/102A/110A, though the article does not name these sectors specifically.",
+      "psf": null
+    },
+    {
+      "sector": "37D",
+      "headline": "Dwarka Expressway challenges Gurugram's old luxury addresses after 135% price surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-09",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/dwarka-expressway-challenges-gurugram-s-old-luxury-addresses-after-135-price-surge-14025123.html",
+      "figure": "avg ₹21,700-24,000/sq ft along Dwarka Expressway corridor, up 135% over 5 years (ANAROCK data)",
+      "psf": 22850
+    },
+    {
+      "sector": "88B",
+      "headline": "Dwarka Expressway challenges Gurugram's old luxury addresses after 135% price surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-09",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/dwarka-expressway-challenges-gurugram-s-old-luxury-addresses-after-135-price-surge-14025123.html",
+      "figure": "avg ₹21,700-24,000/sq ft along Dwarka Expressway corridor, up 135% over 5 years (ANAROCK data)",
+      "psf": 22850
+    },
+    {
+      "sector": "Sohna-2",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "avg Sohna residential price ₹10,642/sq ft (Magicbricks data), up >140% over 5 years from ~₹7,600/sq ft",
+      "psf": 10642
+    },
+    {
+      "sector": "Sohna-5",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "avg Sohna residential price ₹10,642/sq ft (Magicbricks data), up >140% over 5 years from ~₹7,600/sq ft",
+      "psf": 10642
+    },
+    {
+      "sector": "Sohna-33",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "avg Sohna residential price ₹10,642/sq ft (Magicbricks data), up >140% over 5 years from ~₹7,600/sq ft",
+      "psf": 10642
+    },
+    {
+      "sector": "Sohna-35",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "avg Sohna residential price ₹10,642/sq ft (Magicbricks data), up >140% over 5 years from ~₹7,600/sq ft",
+      "psf": 10642
+    },
+    {
+      "sector": "Sohna-36",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "avg Sohna residential price ₹10,642/sq ft (Magicbricks data), up >140% over 5 years from ~₹7,600/sq ft",
+      "psf": 10642
+    },
+    {
+      "sector": "Sohna-33",
+      "headline": "Beyond Gurugram's core: Why Sohna has become the new real estate investment hotspot",
+      "publisher": "The Times of India",
+      "as_of": "2026-03",
+      "url": "https://timesofindia.indiatimes.com/real-estate/news/beyond-gurugrams-core-why-sohna-has-become-the-new-real-estate-investment-hotspot/articleshow/129378919.cms",
+      "figure": "Sohna residential prices 'up to 2.3X more affordable' than core Gurugram; premium units priced >₹1 Cr rose from 15% of supply (2019) to 34% (2024)",
+      "psf": null
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "95A",
+      "project": "Signature Roselia Phase 2",
+      "tried": "Google News RSS 'Signature Roselia' Gurugram: only Sector-95 maintenance-hike/protest stories, no 2025-26 pricing; Bing newsq.py 2nd pass 'Signature Global Sector 95 Gurugram': only company-level news (Rs12,000cr FY27 pipeline, Rs2,200cr new-project investment, Rs920cr construction contracts) with no Roselia-specific figure; developer page guess https://signatureglobal.in/projects/signature-global-roselia -> 404; signatureglobal.in homepage's current project list does not include any 'Roselia' project"
+    },
+    {
+      "sector": "95A",
+      "project": "Signature Global The Roselia",
+      "tried": "Google News RSS and Bing newsq.py both returned zero project-specific items across two query variants ('Signature Global Roselia', 'Signature Global Sector 95 Gurugram'); same developer-site/homepage dead end as Roselia Phase 2 (project not listed on current signatureglobal.in site)"
+    },
+    {
+      "sector": "99A",
+      "project": "Conscient Habitat Prime",
+      "tried": "Google News RSS + Bing newsq.py (2 query variants) returned zero Habitat-Prime-specific items -- only other Conscient projects (Elaira Residences, Elevate Homes JV with Hines, Rs1,200cr/Rs4,000cr investment news); developer page conscient.in/habitat-prime lists 2BHK/2BHK+Utility/3BHK configs but explicitly no price, directs to external habitats.in; habitats.in returned HTTP 500 both via WebFetch and is not independently retryable via artq.py (not a news article)"
+    },
+    {
+      "sector": "99A",
+      "project": "ATS Tangerine",
+      "tried": "Google News RSS + Bing newsq.py (2 query variants) returned zero project-specific items (one hit was an unrelated 'ATS' police-unit story, not the developer); developer domain guesses www.ats.co.in (ECONNREFUSED) and www.atsinfrastructure.com (HTTP 526) both failed; could not identify the correct ATS Infrastructure domain within call budget"
+    },
+    {
+      "sector": "110A",
+      "project": "Mahindra Aura",
+      "tried": "Google News RSS + Bing newsq.py (2 query variants) returned only old (2020-2023) structural-safety-audit stories, nothing 2025-26 on pricing; mahindralifespaces.com homepage confirms Mahindra Aura is listed under 'Sold Out Projects' (path /residential/sold-out-projects/mahindra-aura/) with no active pricing shown -- project is fully sold, consistent with the lack of any recent pricing coverage"
+    },
+    {
+      "sector": "79B",
+      "project": "Signature Global City 79B",
+      "developer": "Signature Global",
+      "tried": "newsq (project name; developer+79B+launch price): no 2025-26 hits naming this specific project; company-wide Signature Global news (Sarvam/DXP investments, Sector 71 Lamborghini JV, land buys) found but none reference '79B' or Golf Green 79 with a price; developer site signatureglobal.in/property/city-79b = 404, homepage lists current projects (Sarvam, Cloverdale SPR, Twin Tower DXP, Titanium SPR, De Luxe DXP, Daxin Vistas, City of Colours, Golf Green 79) with no price shown"
+    },
+    {
+      "sector": "88B",
+      "project": "Vatika One Express City",
+      "developer": "Vatika",
+      "tried": "newsq (project name; 'Vatika Express City Sector 88'): no 2025-26 hits; broader Vatika queries surfaced only an NCLAT insolvency-order story (Mar 2026, re: 'Project Aspirations', a different project) and ED asset-attachment/fraud cases (Nov-Dec 2025) -- no pricing; developer site vatikagroup.com/project/one-express-city = 404, homepage has no link to the project"
+    },
+    {
+      "sector": "88B",
+      "project": "Trinity Sky Palazzo",
+      "developer": "Trinity Infratech",
+      "tried": "newsq found real 2025-26 coverage (RERA approval Mar 2025, Financial Express Rs1200cr project Apr 2025, Rs510cr construction contract to BL Kashyap May 2025 with Trinity investing Rs1,200cr for phase-1 345 apartments, Anhad Realty stuck-project revival Jul-Aug 2026) but none state a per-unit or ₹/sq ft price; Financial Express and Tribune articles returned BLOCKED (403/502) via artq; developer not in the prescribed domain list so no developer-site guess made"
+    },
+    {
+      "sector": "37D",
+      "project": "Signature Global Sarvam",
+      "developer": "Signature Global",
+      "tried": "newsq: 2025-26 items are all Vastu-certification/partnership/land-acquisition/results news, none state a unit or ₹/sq ft price; a Dec 2025 ₹4,800cr Dwarka Expressway launch (price range ₹3-4 Cr/unit, IGBC Platinum, wellness-focused, Michael Phelps Swimming Academy -- closely matching Sarvam's known positioning) was found in Free Press Journal/Hindu BusinessLine but the project is not named in the article text and no unit area is given, so a ₹/sq ft figure cannot be computed or safely attributed to Sarvam specifically -- flagged as a lead, not recorded as a quote"
+    },
+    {
+      "sector": "37D",
+      "project": "Signature Global De Luxe DXP",
+      "developer": "Signature Global",
+      "tried": "newsq: only 2024 (pre-2025, excluded) sales/architecture coverage found; no 2025-26 item names this project with a price"
+    },
+    {
+      "sector": "37D",
+      "project": "Ramprastha Primera",
+      "developer": "Ramprastha",
+      "tried": "newsq (project name; developer+launch price; developer+37D): only DTCP balcony-audit (Jul 2026) and ED fraud/asset-attachment stories against Ramprastha Group (Jul-Dec 2025, ₹681cr and ₹1,100cr cases) turned up -- no pricing; developer site ramprastha.com unreachable (connection refused)"
+    },
+    {
+      "sector": "37D",
+      "project": "BPTP The Amaario",
+      "developer": "BPTP",
+      "tried": "newsq (project name; Sector 37D+launch): only maintenance-fee-hike protests (Mar 2025, Aug 2026), a RERA refund order, and SEBI-IPO-scrutiny pieces found -- no 2025-26 price figure; developer site bptp.com returned 403 Forbidden on project page and homepage"
+    },
+    {
+      "sector": "15II",
+      "project": "Anaheeta Homes Luxury Residential Apartments (Sector 15 Part 2, new launch)",
+      "developer": "Ameya Group",
+      "tried": "newsq (project name; developer+Sector 15+Gurugram): 0 relevant 2025-26 items found at all; developer (Ameya Group) not in the prescribed domain list so no developer-site guess made; no sector-specific 2025-26 price/appreciation figure for Sector 15 found either (only city-wide roundups and an April 2026 circle-rate-hike story that name-checks Sector 15 without a figure)"
+    },
+    {
+      "sector": "Sohna-2",
+      "project": "Ashiana Mulberry",
+      "developer": "Ashiana",
+      "tried": "newsq (project name; developer+Sohna+launch price): 0 relevant 2025-26 items, only a Apr 2026 clubhouse-amenity feature (Architect and Interiors India) with no pricing; developer site ashianahousing.com/property/ashiana-mulberry-gurgaon = 404/redirect loop, and the Ashiana homepage's Gurgaon/Sohna listing currently shows 'Ashiana Amarah', not Mulberry -- project may no longer be a live listing"
+    },
+    {
+      "sector": "Sohna-2",
+      "project": "Eldeco Accolade",
+      "developer": "Eldeco",
+      "tried": "newsq (project name; developer+Sohna+launch price): 0 relevant 2025-26 items (only unrelated 2021/2023 Gurugram stories); Eldeco not in the prescribed developer-domain list so no developer-site guess made"
+    },
+    {
+      "sector": "Sohna-5",
+      "project": "Ganga Tathastu",
+      "developer": "Ganga Realty",
+      "tried": "newsq: 0 relevant 2025-26 items naming this project (only 2024 Sohna market-growth pieces, excluded as pre-2025); developer site ganga-realty.com does not resolve (DNS failure); found the actual project site gangarealty.com -> tathastu.co, but its pages (homepage, construction-update) state no price -- 'price on request' effectively"
+    },
+    {
+      "sector": "Sohna-33",
+      "project": "Central Park Flower Valley",
+      "developer": "Central Park",
+      "tried": "newsq (project name; developer+Sohna+launch price): found a Feb 2026 Businessworld piece ('Central Park's Gurugram Luxury Tower Targets Rs 3,000 Cr Revenue') but this appears to be a different, unnamed luxury tower project and artq returned BLOCKED (403); no other 2025-26 item names Flower Valley with a price; developer site centralpark.in/flower-valley = 404, and listing.php confirms the project exists in the site's project dropdown but gives no dedicated page URL or price"
+    },
+    {
+      "sector": "Sohna-33",
+      "project": "Ashiana Anmol",
+      "developer": "Ashiana",
+      "tried": "newsq (project name; developer+Sohna+launch price): 0 relevant 2025-26 items; developer site not separately re-tried (Ashiana's Gurgaon/Sohna homepage listing currently shows only 'Ashiana Amarah', consistent with Anmol/Mulberry being older, no-longer-featured inventory)"
+    },
+    {
+      "sector": "Sohna-33",
+      "project": "Godrej Nature Plus",
+      "developer": "Godrej",
+      "tried": "newsq: 0 relevant 2025-26 items naming this project (only company-wide Godrej Properties land-acquisition and an unrelated 'Godrej Air' settlement story); developer site DOES state a price -- 'INR 1.95 Cr onwards' for a 2 BHK, Sector 33 Gurugram, under construction, possession Jan 2026 -- but no unit area/sq ft is given anywhere on the page, so a ₹/sq ft figure cannot be computed per the rules; recorded here rather than as a quote, flagged as worth a second look (1.95 Cr for 2BHK would land close to the current ₹10,950-12,050/sq ft range if the unit is ~1,600-1,800 sq ft, but that area is not stated so it is not assumed)"
+    },
+    {
+      "sector": "Sohna-33",
+      "project": "Godrej Serenity",
+      "developer": "Godrej",
+      "tried": "newsq: 0 relevant 2025-26 items; developer site godrejproperties.com/gurugram/residential/godrej-serenity = 404, and the Godrej Properties homepage only surfaces a Mumbai 'Godrej Serenity' project, suggesting the Gurugram Serenity project is no longer a live/featured listing on the developer's own site"
+    },
+    {
+      "sector": "Sohna-35",
+      "project": "ATS Homekraft Bonheur Avenue",
+      "developer": "ATS",
+      "tried": "newsq (project name; developer+Sohna+launch price): 0 relevant 2025-26 items; developer site atshomekraft.com is a parked/expired domain (redirects to GoDaddy sale page); a guessed project-microsite domain (atsbonheuravenue.in, following the pattern used by ATS Grandstand's atsgrandstandgurgaon.in) does not resolve (DNS failure)"
+    },
+    {
+      "sector": "Sohna-35",
+      "project": "Silverglades The Melia",
+      "developer": "Silverglades",
+      "tried": "newsq: 0 relevant 2025-26 items; developer site silverglades.com/the-melia.php confirms configs (2 BHK 1,425 sq ft, 3 BHK 1,845 sq ft) but explicitly states 'price: On Request' -- no row per rules"
+    },
+    {
+      "sector": "Sohna-36",
+      "project": "Signature Global Park",
+      "developer": "Signature Global",
+      "tried": "newsq: 0 relevant 2025-26 items naming this project specifically (only company-wide Signature Global news -- Lamborghini JV, DXP investments, results); developer site signatureglobal.in/property/signature-global-park = 404; the developer homepage mentions 'Signature Global Park' only in a past-awards context (ET Real Estate Award), with no current project link or price, suggesting this is an older/already-delivered project no longer actively marketed on the site"
+    }
+  ]
+}

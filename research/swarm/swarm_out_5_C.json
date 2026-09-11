@@ -1,0 +1,96 @@
+{
+  "quotes": [
+    {
+      "sector": "92",
+      "project": "Prestige City / Prestige Sector 92",
+      "developer": "Prestige Group",
+      "price_psf_min": 12700,
+      "price_psf_max": 13100,
+      "basis": "Project site lists configs: 2BHK 1,100-1,300 sq ft at Rs1.4-1.7 Cr (=> Rs12,727-13,077/sq ft); 3BHK 1,500-1,800 sq ft at Rs1.95-2.34 Cr (=> Rs13,000/sq ft both ends); 4BHK 2,000 sq ft at Rs2.60 Cr onwards (=> Rs13,000/sq ft). Range rounded to Rs12,700-13,100/sq ft.",
+      "status": "new launch",
+      "source_url": "https://prestigesector92gurgaon.com/",
+      "source_type": "project-site",
+      "publisher": "Prestige Sector 92 Gurgaon (project marketing site)",
+      "as_of": "2026-09",
+      "snippet": "2 BHK (1,100-1,300 sq.ft.): Rs 1.4 Cr - Rs 1.7 Cr; 3 BHK (1,500-1,800 sq.ft.): Rs 1.95 Cr - Rs 2.34 Cr; 4 BHK (2,000-2,400 sq.ft.): Rs 2.60 Cr onwards",
+      "configs": [
+        {"bhk": "2", "area": 1100, "price_cr": 1.4},
+        {"bhk": "2", "area": 1300, "price_cr": 1.7},
+        {"bhk": "3", "area": 1500, "price_cr": 1.95},
+        {"bhk": "3", "area": 1800, "price_cr": 2.34},
+        {"bhk": "4", "area": 2000, "price_cr": 2.60}
+      ]
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "91",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "SPR (Southern Peripheral Road) corridor avg residential price ~Rs16,249/sq ft, up 18.4% YoY in 2026 and 165% over 5 years (from ~Rs9,800/sq ft); Sector 91 sits on this SPR corridor",
+      "psf": 16249
+    },
+    {
+      "sector": "92",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "SPR (Southern Peripheral Road) corridor avg residential price ~Rs16,249/sq ft, up 18.4% YoY in 2026 and 165% over 5 years (from ~Rs9,800/sq ft); Sector 92 sits on this SPR corridor",
+      "psf": 16249
+    },
+    {
+      "sector": "93",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "SPR (Southern Peripheral Road) corridor avg residential price ~Rs16,249/sq ft, up 18.4% YoY in 2026 and 165% over 5 years (from ~Rs9,800/sq ft); Sector 93 sits on this SPR corridor",
+      "psf": 16249
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "91",
+      "project": "Anant Raj Maceo (now marketed as TARC Maceo)",
+      "tried": "newsq 'TARC Maceo Gurugram price': 0 2025-26 items (only 2022-23 sold-out/OC news, pre-window); newsq 'Anant Raj TARC Gurugram launch price': only stock/share-price analyst notes, no project pricing; developer site tarcltd.com/maceo/ returned an unrelated/broken page (no pricing content). Project is fully sold out since 2023 (resale-only now), which likely explains absence of 2025-26 primary-sale coverage."
+    },
+    {
+      "sector": "92",
+      "project": "Bestech Park View Sanskruti",
+      "tried": "newsq 'Bestech Park View Sanskruti Gurugram price': 0 2025-26 items; newsq 'Bestech Gurugram Sector 92 launch price': 0 2025-26 items; developer site bestechgroup.com/park-view-sanskruti/ loaded but stated no price (older 'Residential Property of the Year 2019' award page only)."
+    },
+    {
+      "sector": "92",
+      "project": "Signature Global City 92",
+      "tried": "newsq 'Signature Global City 92 Gurugram price' and 'Signature Global Sector 92 Gurugram price': only generic Signature Global corporate news (land acquisitions, new JV projects in other sectors, Rs2,200cr/Rs2,900cr/Rs12,000cr investment announcements) with no City 92-specific price; developer site signatureglobal.in/city-92/ returned 404."
+    },
+    {
+      "sector": "93",
+      "project": "Ashiana Amarah (Phase 4 sales data)",
+      "tried": "newsq 'Ashiana Amarah Gurugram price': found Mar 2025 press release (Tribune India / ANI) stating final-phase 3BHK/4BHK 'property prices ranging from Rs2.55 crore to Rs4.30 crore' -- but no unit sizes given, so Rs/sq ft could not be computed (rule requires a stated area). Developer page ashianahousing.com/amarah/ 404'd. Recorded as no_direct_source per the no-invention rule."
+    },
+    {
+      "sector": "93",
+      "project": "DLF Gardencity Enclave",
+      "tried": "newsq 'DLF Gardencity Enclave Gurugram price' and 'DLF Gardencity Gurugram price sq ft': 0 relevant items (only unrelated DLF Sector-86/Camellias penthouse and office-investment news); developer site dlf.in/residential/gardencity-enclave had no project-specific pricing content."
+    },
+    {
+      "sector": "93",
+      "project": "Orris Aanandam Ora",
+      "tried": "newsq 'Orris Aanandam Ora Gurugram price' and 'Orris Gurugram Sector 93 launch price': 0 relevant items (only unrelated Orris Entertainland retail/leisure coverage); developer site orris.in/aanandam-ora/ returned 404."
+    },
+    {
+      "sector": "93",
+      "project": "Ashiana Amarah",
+      "tried": "Same search as 'Ashiana Amarah (Phase 4 sales data)' -- Mar 2025 press release gives a price range (Rs2.55-4.30 Cr) without unit size, so no Rs/sq ft could be computed; no other 2025-26 pricing coverage found; developer page 404'd."
+    },
+    {
+      "sector": "93",
+      "project": "Signature Global City 93",
+      "tried": "newsq 'Signature Global City 93 Gurugram price' and 'Signature Global Sector 93 Gurugram price': only generic Signature Global corporate/investment news, nothing City 93-specific; developer site signatureglobal.in/city-93/ returned 404."
+    }
+  ]
+}

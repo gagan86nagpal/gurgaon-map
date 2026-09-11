@@ -6,16 +6,21 @@
 
 | Source | Quotes | Share | What the figure is |
 |---|---:|---:|---|
-| Square Yards | 195 | 90.3% | project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly |
+| Square Yards | 184 | 85.2% | project page 'current asking price' — listing asks blended with registered-transaction data, updated quarterly |
 | 99acres | 7 | 3.2% | listing-based project/locality average asking price |
-| Business Standard | 3 | 1.4% | reported sale / developer-stated price |
-| bigestate.io | 1 | 0.5% | broker/channel-partner quote — quoted unit price ÷ super area |
+| Livemint | 3 | 1.4% | figure stated in a press report (developer quote, reported deal or market data) |
+| Business Today | 3 | 1.4% | figure stated in a press report (developer quote, reported deal or market data) |
+| Sobha (developer site) | 3 | 1.4% | developer's own published price (usually a 'from' price divided by the stated unit size) |
+| Business Standard | 2 | 0.9% | reported sale / developer-stated price |
+| Hindustan Times | 2 | 0.9% | figure stated in a press report (developer quote, reported deal or market data) |
+| Birla Estates (developer site) | 1 | 0.5% | developer's own published price (usually a 'from' price divided by the stated unit size) |
+| Moneycontrol | 1 | 0.5% | figure stated in a press report (developer quote, reported deal or market data) |
 | Prestige Sector 92 project site | 1 | 0.5% | quoted unit price ÷ super area (project marketing site) |
-| opulnzabode.com | 1 | 0.5% | broker/channel-partner quote — quoted unit price ÷ super area |
-| superluxere.com | 1 | 0.5% | broker/channel-partner quote — quoted unit price ÷ super area |
-| megarealtymax.com | 1 | 0.5% | broker/channel-partner quote — quoted unit price ÷ super area |
 | ATS Grandstand project site | 1 | 0.5% | quoted unit price ÷ super area (project marketing site; not the atshomekraft.com corporate domain) |
+| Adani (developer site) | 1 | 0.5% | developer's own published price (usually a 'from' price divided by the stated unit size) |
 | M3M (developer site) | 1 | 0.5% | developer's own published price |
+| bigestate.io | 1 | 0.5% | broker/channel-partner quote — quoted unit price ÷ super area |
+| opulnzabode.com | 1 | 0.5% | broker/channel-partner quote — quoted unit price ÷ super area |
 | samagrarealty.in | 1 | 0.5% | broker/channel-partner quote — quoted unit price ÷ super area |
 | MagicBricks | 1 | 0.5% | listing-based project average asking price |
 | Housing.com | 1 | 0.5% | listing-based project average asking price |
@@ -23,14 +28,14 @@
 
 | Class | Quotes | Share |
 |---|---:|---:|
-| portal | 204 | 94.4% |
-| broker | 6 | 2.8% |
-| news | 3 | 1.4% |
+| portal | 193 | 89.4% |
+| news | 11 | 5.1% |
+| developer | 6 | 2.8% |
+| broker | 4 | 1.9% |
 | project-site | 2 | 0.9% |
-| developer | 1 | 0.5% |
 
-Rows with a second, independent source recorded: 23 (10.6%).
-Confidence grades among audited rows: A 16, B 52, C 3.
+Rows with a second, independent source recorded: 17 (7.9%).
+Confidence grades among audited rows: A 12, B 66, C 3.
 
 ## Caveats you should know
 
@@ -72,10 +77,10 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 28 | DLF Beverly Park I | 25,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/348/project) |
 | 28 | Silverglades The Ivy | 24,700 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/330/project) |
 | 30 | Unitech Uniworld City | 21,200 | Square Yards | A | 2026-09 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/unitech-uniworld-city/357/project) |
-| 31 | Birla Arika | 23,050–26,000 | Square Yards | B | 2025-12 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/birla-arika/325363/project) |
+| 31 | Birla Arika | 24,810 | Birla Estates (developer site) | B | 2026-09 | [birlaestates.com](https://www.birlaestates.com/birla-arika-gurugram/) |
 | 36A | Krisumi Waterfall Residences | 18,950–21,950 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/krisumi-waterfall-residences/10781/project) |
 | 36A | Krisumi Waterfall Suites | 19,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/krisumi-waterfall-suites/339846/project) |
-| 36A | Krisumi Waterside Residences | 23,980–24,030 | Square Yards | A | 2026-09 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/krisumi-waterside-residences/247870/project) |
+| 36A | Krisumi Waterside Residences | 24,000 | Hindustan Times | B | 2026-04 | [hindustantimes.com](https://www.hindustantimes.com/real-estate/sumitomobacked-krisumi-corporation-launches-new-phases-of-housing-project-in-gurugram-plans-4-500-crore-investment-101776103634320.html) |
 | 37D | BPTP The Amaario | 17,250 | Square Yards | – | 2026-08 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/bptp-the-amaario/247631/project) |
 | 37D | Ramprastha Primera | 10,000–10,950 | Square Yards | B | 2026-07 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/ramprastha-primera/281/project) |
 | 37D | Signature Global De Luxe DXP | 15,350–16,500 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/signature-global-de-luxe-dxp/244108/project) |
@@ -84,7 +89,7 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 41 | South City 1 / South City Arcade (resale) | 16,200 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/south-city-arcade/161672/project) |
 | 41 | Unitech Rakshak (resale) | 9,500 | Square Yards | A | 2026-09 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/unitech-rakshak/371/project) |
 | 42 | DLF The Aralias | 57,550 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/328/project) |
-| 42 | DLF The Camellias | 80,000–100,000 | Business Standard | A | 2026-06 | [business-standard.com](https://www.business-standard.com/finance/personal-finance/270-cr-in-30-days-dlf-camellias-in-gurgaon-is-india-s-most-elite-address-125110900102_1.html) |
+| 42 | DLF The Camellias | 114,865 | Livemint | B | 2026-02 | [livemint.com](https://www.livemint.com/news/trends/rs-85-crore-house-berkshire-hathaways-ajit-jain-buys-luxury-apartment-at-gurugrams-dlf-camellias-details-11771928856691.html) |
 | 42 | DLF The Magnolias | 70,200 | Square Yards | A | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-magnolias/333/project) |
 | 43 | Craft Destination 43 (resale) | 22,150 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/craft-destination-43/218292/project) |
 | 43 | DLF Richmond Park | 26,100 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/356/project) |
@@ -111,7 +116,7 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 54 | DLF Park Place | 35,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-park-place/336/project) |
 | 54 | DLF The Belaire | 36,800 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/338/project) |
 | 54 | DLF The Crest | 54,100 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-aralias/332/project) |
-| 54 | DLF The Dahlias | 100,000–160,000 | Business Standard | A | 2026-08 | [business-standard.com](https://www.business-standard.com/finance/personal-finance/271-crore-for-one-penthouse-dlf-s-the-dahlias-sets-new-luxury-benchmark-126081000587_1.html) |
+| 54 | DLF The Dahlias | 193,647 | Business Today | B | 2026-06 | [businesstoday.in](https://www.businesstoday.in/real-estate/story/madhusudan-kela-buys-ultra-luxury-apartment-in-dlf-dahlias-for-rs121-crore-537040-2026-06-15) |
 | 54 | DLF The Summit | 35,400–37,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-beverly-park-ii/312/project) |
 | 54 | Emaar The Palm Springs | 36,650 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-crest/320/project) |
 | 54 | Salcon The Verandas | 36,100 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/salcon-the-verandas/327/project) |
@@ -127,9 +132,9 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 62 | Pioneer Araya | 24,300–28,000 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/pioneer-araya/21119/project) |
 | 63 | Adani Samsara Vilasa | 18,600–23,250 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/adani-samsara-vilasa/14119/project) |
 | 63 | DLF The Arbour | 24,200–27,250 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-arbour/214735/project) |
-| 63A | Sobha Crescent | 25,000–31,850 | superluxere.com | – | 2026-03 | [superluxere.com](https://superluxere.com/blogs/sobha-crescent-sector-63a-gurgaon-price-list-payment-plan) |
+| 63A | Sobha Crescent | 19,758–25,735 | Sobha (developer site) | B | 2026-09 | [sobha.com](https://www.sobha.com/projects/sobha-crescent/) |
 | 65 | M3M Golf Estate | 25,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-golf-estate/68/project) |
-| 65 | Trump Towers Delhi NCR (Tribeca) | 33,000–40,000 | megarealtymax.com | B | 2026-09 | [megarealtymax.com](https://megarealtymax.com/residential-property/trump-tower-sector-65-gurgaon) |
+| 65 | Trump Towers Delhi NCR (Tribeca) | 40,000 | Moneycontrol | B | 2025-08 | [moneycontrol.com](https://www.moneycontrol.com/news/business/real-estate/area-watch-dlf-to-trump-towers-spr-is-new-hotspot-in-gurugram-real-estate-13445936.html) |
 | 66 | Emaar MGF The Palm Drive Villas | 21,850 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/emaar-mgf-the-palm-drive-villas/20901/project) |
 | 67 | M3M Merlin | 19,050–21,000 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-merlin/61/project) |
 | 68 | M3M Sierra | 12,500–13,400 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-sierra/7396/project) |
@@ -139,15 +144,15 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 69 | Unitech Sunbreeze | 9,500 | 99acres | – | 2026-07 | [99acres.com](https://www.99acres.com/property-rates-and-price-trends-in-sector-69-gurgaon-prffid) |
 | 70 | Signature Global City (Sector 70) | 11,200–14,600 | samagrarealty.in | B | 2025-08 | [samagrarealty.in](https://samagrarealty.in/property/signature-global-city-sector-70-gurgaon/) |
 | 70A | M3M Escala | 13,550–14,550 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-escala/384/project) |
-| 71 | Birla Pravaah | 16,150–16,300 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/birla-pravaah/341472/project) |
+| 71 | Birla Pravaah | 25,000 | Business Standard | B | 2025-12 | [business-standard.com](https://www.business-standard.com/companies/news/birla-estates-pravaah-sells-out-in-24-hours-clocks-rs-1800-crore-sales-in-gurugram-125120900594_1.html) |
 | 71 | Signature Global Titanium SPR (SPR Estate) | 18,000–18,750 | premiumrealtyinfra.com | B | 2026-07 | [premiumrealtyinfra.com](https://premiumrealtyinfra.com/properties/signature-global-spr-estate) |
 | 72 | Tata Primanti | 19,473 | MagicBricks | – | 2026-06 | [magicbricks.com](https://www.magicbricks.com/tata-primanti-sector-72-gurgaon-pdpid-4d4235303030313431) |
 | 72 | Tata Primanti Phase 2 | 16,100–18,150 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/tata-primanti-phase-2/21024/project) |
 | 72 | Tata Primanti-Tower Residences | 16,300–19,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/tata-primanti-tower-residences/223/project) |
 | 73 | DLF Alameda | 15,050 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-alameda/21194/project) |
 | 74 | M3M Skywalk | 17,200–17,450 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-skywalk/225841/project) |
-| 76 | DLF Privana North | 17,050 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-privana-north/339042/project) |
-| 76 | DLF Privana South | 17,150–20,950 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-privana-south/238058/project) |
+| 76 | DLF Privana North | 23,000 | Livemint | B | 2025-06 | [livemint.com](https://www.livemint.com/companies/news/dlf-clocks-11-000-crore-in-bookings-as-privana-north-project-sells-out-in-a-week-11750184557739.html) |
+| 76 | DLF Privana South | 18,000 | Livemint | B | 2025-06 | [livemint.com](https://www.livemint.com/companies/news/dlf-clocks-11-000-crore-in-bookings-as-privana-north-project-sells-out-in-a-week-11750184557739.html) |
 | 76 | DLF Privana West | 24,500 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-privana-west/247372/project) |
 | 76 | Whiteland Blissville | 13,400–16,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/whiteland-blissville/171090/project) |
 | 76 | Whiteland The Aspen | 14,600–17,250 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/whiteland-the-aspen/215900/project) |
@@ -164,7 +169,7 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 79B | Signature Global City 79B | 12,100–14,100 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/signature-global-city-79b/216718/project) |
 | 80 | Eldeco Fairway Reserve | 16,600–17,500 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/eldeco-fairway-reserve/324073/project) |
 | 80 | Godrej Frontier | 10,400–10,550 | Square Yards | A | 2026-07 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/godrej-frontier/125/project) |
-| 80 | Sobha Aranya | 25,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/sobha-aranya/247019/project) |
+| 80 | Sobha Aranya | 25,035 | Sobha (developer site) | B | 2026-09 | [sobha.com](https://www.sobha.com/delhi-ncr/sobha-aranya-flats-sector-80-karma-lakelands/) |
 | 81 | Bestech Park View Grand Spa | 12,500–13,300 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/bestech-park-view-grand-spa/108/project) |
 | 81 | DLF The Ultima | 17,250–17,350 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-the-ultima/119/project) |
 | 81 | DLF Ultima Phase II | 16,900–17,900 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-ultima-phase-ii/21196/project) |
@@ -189,7 +194,7 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 88B | Trinity Sky Palazzo | 9,950 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/trinity-sky-palazzo/325651/project) |
 | 88B | Vatika One Express City | 12,900 | Square Yards | A | 2026-09 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/vatika-one-express-city/727/project) |
 | 89 | M3M Soulitude | 10,950–11,250 | Square Yards | B | 2025-12 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-soulitude/106807/project) |
-| 89A | ATS Marigold | 11,250–12,900 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/ats-marigold/904/project) |
+| 89A | ATS Marigold | 13,500–15,000 | Hindustan Times | B | 2025-07 | [hindustantimes.com](https://www.hindustantimes.com/business/ats-group-repays-133-crore-to-swamih-fund-for-gurugrams-ats-marigold-project-101753964682673.html) |
 | 89A | Adani Aangan | 11,450–13,700 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/adani-aangan/8537/project) |
 | 89A | Vatika Seven Elements | 10,700–12,500 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/vatika-seven-elements/390/project) |
 | 90 | DLF New Town Heights I | 10,750–11,000 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/dlf-new-town-heights-i/184/project) |
@@ -217,17 +222,17 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 102 | Conscient Heritage Max | 12,050–13,850 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/conscient-heritage-max/229/project) |
 | 102 | Emaar Gurgaon Greens | 11,900–12,400 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/emaar-gurgaon-greens/245/project) |
 | 102 | Shapoorji Pallonji Joyville Phase 3 | 15,500–17,050 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/shapoorji-pallonji-joyville-phase-3/102367/project) |
-| 102A | Adani The Marq | 16,400–17,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/adani-the-marq/343450/project) |
+| 102A | Adani The Marq | 17,895 | Adani (developer site) | B | 2026-09 | [adanirealty.com](https://www.adanirealty.com/residential-projects/gurugram/the-marq) |
 | 103 | Godrej Vrikshya | 19,250–19,700 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/godrej-vrikshya/251902/project) |
 | 103 | Whiteland Urban Resort | 25,700–26,800 | Square Yards | A | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/whiteland-urban-resort/250439/project) |
 | 104 | ATS Triumph | 12,950 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/ats-triumph/234/project) |
 | 104 | Central Park Delphine | 28,000–30,000 | Square Yards | A | 2026-09 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/delphine-central-park-estates/341264/project) |
 | 104 | Godrej Premia Tower / Signature Homes | 16,100 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/godrej-premia-tower/5348/project) |
-| 104 | Hero Homes Palatial | 17,850–18,500 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/hero-homes-palatial/325116/project) |
+| 104 | Hero Homes Palatial | 16,500 | Business Today | B | 2026-08 | [businesstoday.in](https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24) |
 | 105 | ATS Homekraft Sanctuary | 13,250–14,000 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/ats-homekraft-sanctuary/308290/project) |
 | 106 | Elan The Presidential | 18,100 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/elan-the-presidential/205270/project) |
 | 106 | Godrej Meridien | 15,500–17,300 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/godrej-meridien/10157/project) |
-| 106 | Sobha Altus | 21,050–23,500 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/sobha-altus/249540/project) |
+| 106 | Sobha Altus | 23,345 | Sobha (developer site) | B | 2026-09 | [sobha.com](https://www.sobha.com/delhi-ncr/sobha-altus-sector-106-gurgaon/) |
 | 107 | M3M Woodshire | 9,650–9,850 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-woodshire/241/project) |
 | 108 | Experion The Heart Song | 11,100–12,400 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/experion-the-heart-song/222/project) |
 | 108 | Experion The Westerlies | 13,450 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/experion-the-westerlies/352/project) |
@@ -239,7 +244,7 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 110 | Indiabulls Enigma | 14,200–15,700 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/indiabulls-enigma/254/project) |
 | 110A | Mahindra Aura | 14,350 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/mahindra-aura/272/project) |
 | 111 | M3M Crown | 16,500 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-crown/214724/project) |
-| 111 | M3M Elie Saab | 33,000–35,000 | Square Yards | A | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-elie-saab/341930/project) |
+| 111 | M3M Elie Saab | 37,000 | Business Today | B | 2026-01 | [businesstoday.in](https://www.businesstoday.in/real-estate/story/m3m-eyes-rs-8300-crore-from-elie-saab-branded-residences-in-gurugram-noida-510767-2026-01-13) |
 | 111 | Puri Diplomatic Greens Phase I | 16,150–16,850 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/puri-diplomatic-greens-phase-i/263/project) |
 | 111 | Puri Diplomatic Residences | 19,000–22,400 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/puri-diplomatic-residences/245971/project) |
 | 112 | Emaar The 88 | 15,500–16,750 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/emaar-the-88/246608/project) |
@@ -249,7 +254,7 @@ Confidence grades among audited rows: A 16, B 52, C 3.
 | 113 | M3M Capital | 15,850–17,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-capital/117500/project) |
 | 113 | M3M Mansion | 18,000–22,000 | Square Yards | B | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/m3m-mansion/246483/project) |
 | 113 | Smartworld One DXP | 19,500–21,000 | Square Yards | A | 2026-09 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/smart-world-one-dxp/210648/project) |
-| Manesar | M3M Gurgaon International City | 11,000–13,500 | M3M (developer site) | – | 2025-11 | [m3mproperties.com](https://www.m3mproperties.com/residential/gurugram/m3m-manesar/) |
+| MANESAR | M3M Gurgaon International City | 10,667–12,308 | M3M (developer site) | B | 2026-09 | [m3mproperties.com](https://www.m3mproperties.com/residential/gurugram/m3m-manesar/) |
 | Sohna-2 | Ashiana Mulberry | 10,250–11,000 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/ashiana-mulberry/8392/project) |
 | Sohna-2 | Eldeco Accolade | 10,300–10,600 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/eldeco-accolade/1151/project) |
 | Sohna-5 | Ganga Tathastu | 7,600 | Square Yards | – | 2026-06 | [squareyards.com](https://www.squareyards.com/gurgaon-residential-property/ganga-tathastu/217052/project) |

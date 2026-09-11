@@ -1,0 +1,46 @@
+{
+  "quotes": [],
+  "sector_news": [],
+  "no_direct_source": [
+    {
+      "sector": "86",
+      "project": "DLF New Town Heights II",
+      "tried": "newsq: 2 queries ('\"DLF New Town Heights\" Gurugram price', 'DLF Sector 86 Gurugram launch price') - 0 relevant 2025-26 items (only DLF's unrelated 'The Dahlias' super-luxury project surfaced on the second query); developer page dlf.in/residential/gurugram/new-town-heights-2 loaded via WebFetch but did not name/price this specific project"
+    },
+    {
+      "sector": "86",
+      "project": "DLF The Skycourt",
+      "tried": "newsq: 2 queries ('\"DLF Skycourt\" OR \"DLF The Skycourt\" Gurugram price', 'DLF Sector 86 Gurugram launch price') - 0 relevant items; developer page dlf.in/residential/gurugram/the-skycourt loaded via WebFetch but did not name/price this specific project"
+    },
+    {
+      "sector": "86",
+      "project": "Emaar Serenity Hills",
+      "tried": "newsq found real Nov 2025 launch coverage (Hindustan Times, siliconindia, ET Realty, Tribune India, all Nov 11-12 2025). artq confirmed via 3 sources: project is 26 acres, ~1000 apartments, Sector 86 (New Gurugram), CEO Kalyan Chakrabarti quoted stating 'prices are in range of Rs 3 crore to Rs 5.7 crore per unit all inclusive'. Separately the same articles state three unit typologies by carpet area: smaller 3BHK 948 sq ft carpet + 235 sq ft balcony, larger 3BHK 1,219 sq ft carpet + 318 sq ft balcony, 4BHK 1,576 sq ft carpet + 430 sq ft balcony. NO source explicitly pairs a given price to a given unit size/type, so a Rs/sq ft figure could not be computed without assuming a pairing (excluded per the never-estimate rule). Recording full detail here since it is a strong, verified, multi-source direct quote at the price level even though it doesn't reduce to Rs/sq ft: launch price Rs 3-5.7 Cr/unit, Nov 2025, Hindustan Times / ET Realty / siliconindia / Tribune India."
+    },
+    {
+      "sector": "89",
+      "project": "M3M Soulitude",
+      "tried": "newsq: 2 queries ('\"M3M Soulitude\" Gurugram price', 'M3M Soulitude Sector 89 Gurugram launch price') - 0 relevant 2025-26 items both times; developer pages m3mindia.com and m3mindia.com/residential/m3m-soulitude loaded via WebFetch, project listed but no price stated"
+    },
+    {
+      "sector": "90",
+      "project": "DLF Regal Gardens",
+      "tried": "newsq: 2 queries ('\"DLF Regal Gardens\" Gurugram price', 'DLF Sector 90 Gurugram launch price') - 0 relevant items (second query surfaced only unrelated DLF Dahlias/senior-living stories); developer page dlf.in/residential/gurugram/regal-gardens loaded via WebFetch but did not name/price this specific project"
+    },
+    {
+      "sector": "90",
+      "project": "DLF New Town Heights I",
+      "tried": "newsq: 2 queries (shared with New Town Heights II query + 'DLF Sector 90 Gurugram launch price') - 0 relevant items; developer page dlf.in/residential/gurugram/new-town-heights loaded via WebFetch but did not name/price this specific project"
+    },
+    {
+      "sector": "90",
+      "project": "SS Camasa",
+      "tried": "newsq: 2 queries ('\"SS Camasa\" Gurugram price', 'SS Group Camasa Sector 90 Gurugram launch price') - 0 relevant 2025-26 items both times; developer site ssgroup-india.com/camasa/ returned 404, /projects/homes/ss-camasa returned 500 error; homepage confirmed project exists but stated no price"
+    }
+  ],
+  "sector_search_notes": {
+    "86": "newsq 'Sector 86 Gurugram property price per sq ft' returned only citywide Gurugram/NCR appreciation stories, none specific to Sector 86 or its Dwarka Expressway corridor - not recorded in sector_news as it fails the sector/corridor-specificity bar.",
+    "89": "newsq 'Sector 89 Gurugram property price per sq ft' returned the same citywide stories, nothing New-Gurugram/Sector-89-specific with a stated figure.",
+    "90": "newsq 'Sector 90 Gurugram property price per sq ft New Gurugram' returned the same citywide stories plus a Delhi circle-rate story (not Gurugram). Best lead in the batch was Hindustan Times (7 Aug 2026, citing ANAROCK): Gurugram citywide average residential price rose from Rs 6,150/sq ft (2019) to Rs 13,350/sq ft (Q2 2026), up 117% - but this is a citywide figure, not attributable to Sector 86/89/90 or the Dwarka Expressway/New Gurugram corridor specifically, so it was excluded from sector_news per the corridor-specificity instruction rather than mis-tagged to one sector."
+  }
+}

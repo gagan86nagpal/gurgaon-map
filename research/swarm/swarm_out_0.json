@@ -1,0 +1,77 @@
+{
+  "quotes": [],
+  "sector_news": [],
+  "no_direct_source": [
+    {
+      "sector": "3",
+      "project": "Sector 3 apartments incl. Godrej Habitat (resale)",
+      "tried": "newsq: 0 2025-26 items for '\"Godrej Habitat\" Gurugram price' (also tried '...3BHK sq ft' and 'carpet area' variants, all empty); developer site godrejproperties.com/gurugram/residential/godrej-habitat states 'INR 2.50 Cr. onwards' for 3 BHK but the page gives no area/size (Plans/Download/Compliance sections are JS-rendered anchors WebFetch can't read), so psf cannot be computed without inventing an area"
+    },
+    {
+      "sector": "5",
+      "project": "Sector 5 villas/floors (resale)",
+      "tried": "newsq 'Sector 5 Gurugram floors price': only 1 hit, a Jul-2025 Moneycontrol circle-rate-hike story with no Sector-5-specific figure; generic multi-property resale, developer 'various', no developer site to check"
+    },
+    {
+      "sector": "6",
+      "project": "WMG Tower Apartments (resale)",
+      "tried": "newsq '\"WMG Tower\" Gurugram price': 0 2025-26 items; developer 'various' (resale) -- no developer site to check"
+    },
+    {
+      "sector": "8",
+      "project": "Ansal Eden Villa (resale)",
+      "tried": "newsq '\"Ansal Eden Villa\" Gurugram price': 0 2025-26 items; developer ansalapi.com guessed project URL 404, homepage lists no Eden Villa link/price (checked in prior pass)"
+    },
+    {
+      "sector": "9",
+      "project": "R Infra Apartment / Huda HBC Society (resale)",
+      "tried": "newsq '\"R Infra Apartment\" Gurugram price': 0 2025-26 items; generic resale society, developer 'various', no developer site to check"
+    },
+    {
+      "sector": "12",
+      "project": "Raheja Qutab Farms / Platinum Greens (resale)",
+      "tried": "newsq '\"Raheja Qutab Farms\" Gurugram price': 0 2025-26 items; developer site raheja.com homepage lists no Qutab Farms/Platinum Greens project or price (checked in prior pass)"
+    },
+    {
+      "sector": "14",
+      "project": "Old DLF Colony / Riddhi Siddhi Apartments (resale)",
+      "tried": "newsq '\"Old DLF Colony\" Gurugram price': 0 2025-26 items; generic resale, developer 'various', no developer site to check"
+    },
+    {
+      "sector": "14",
+      "project": "ODR Residency (resale)",
+      "tried": "newsq '\"ODR Residency\" Gurugram price': 0 2025-26 items; generic resale, developer 'various', no developer site to check"
+    },
+    {
+      "sector": "16",
+      "project": "TDI Palm Court (resale)",
+      "tried": "newsq '\"TDI Palm Court\" Gurugram price': 0 2025-26 items; developer site tdiinfracorp.com unreachable (self-signed cert error on http and https, checked in prior pass)"
+    },
+    {
+      "sector": "17",
+      "project": "Sukh Residency (resale)",
+      "tried": "newsq '\"Sukh Residency\" Gurugram price': 0 2025-26 items; generic resale, developer 'various', no developer site to check"
+    },
+    {
+      "sector": "22",
+      "project": "Ambience Creacions (resale)",
+      "tried": "newsq '\"Ambience Creacions\" Gurugram price': 0 2025-26 items; developer site ambiencegroup.in returned 403 Forbidden (checked in prior pass)"
+    },
+    {
+      "sector": "22",
+      "project": "Alphacorp Gurgaon One 22 (resale)",
+      "tried": "newsq '\"Gurgaon One 22\" Alphacorp price': 0 2025-26 items; developer site alphacorp.in confirms 'GurgaonOne, Sector 22' project exists but states no price (checked in prior pass)"
+    },
+    {
+      "sector": "22",
+      "project": "JMD The Park Way (resale)",
+      "tried": "newsq '\"JMD The Park Way\" Gurugram price': 0 2025-26 items; developer site jmdgroup.in does not list a project by this name among its current lineup, no prices stated for any project (checked in prior pass)"
+    },
+    {
+      "sector": "23",
+      "project": "Ansal Plaza Sector-23 (resale)",
+      "tried": "newsq '\"Ansal Plaza\" Sector 23 Gurugram price': 0 2025-26 items; developer ansalapi.com guessed project URL 404, homepage lists only 'Ansal Plaza Jalandhar', no Sector 23 Gurugram entry or price (checked in prior pass)"
+    }
+  ],
+  "sector_level_search_notes": "Ran 1 newsq per sector for all 11 sectors (3,5,6,8,9,12,14,16,17,22,23) plus 2 broader retries ('old Gurugram sectors property price per sq ft', 'metro old Gurugram prices soaring'). Every hit was a citywide or different-corridor story, not specific to sectors 3-23: (1) Moneycontrol 2026-04-17 'circle rates hiked by up to 75%' -- states collector rate rose from Rs 58,500 to Rs 84,825/sq yd (45%) but only for Sectors 63/63A/64/67 (SPR/Golf Course Ext corridor), not in our list. (2) HT 2026-08-07 (ANAROCK data) -- Gurugram citywide average residential price Rs 6,150/sq ft (2019) to Rs 13,350/sq ft (Q2 2026), +117%; citywide, not sector-specific. (3) BusinessToday 2025-07-24 advisor post -- concrete psf/per-sq-yd examples but all for Sectors 79, 93, 99-103 and 77 (SPR/UER-2/New Gurugram), none in our list. (4) Moneycontrol 2026-09-08 -- Dwarka Expressway corridor at Rs 21,700-24,000/sq ft, again a different corridor. (5) The Hindu 2026-08-10 -- Rs 271 Cr penthouse deal at DLF The Dahlias (Sector 63) at ~Rs 2.6 lakh/sq ft carpet, different sector. No article surfaced a price or appreciation figure tied to sectors 3, 5, 6, 8, 9, 12, 14, 16, 17, 22 or 23 specifically -- these are older/HUDA-era sectors and 2025-26 Gurugram real-estate press coverage is concentrated entirely on the newer growth corridors (SPR, Dwarka Expressway, Golf Course Extension Road, New Gurugram sectors 63-115+), so none were recorded per the 'skip an article that is really about a different sector' rule."
+}

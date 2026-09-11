@@ -1,0 +1,141 @@
+{
+  "quotes": [
+    {
+      "sector": "104",
+      "project": "Hero Homes Palatial",
+      "developer": "Hero Realty",
+      "price_psf_min": 16500,
+      "price_psf_max": 16500,
+      "basis": "Article states the project 'now commands prices of around ₹16,500 per sq. ft.', up from a base launch price of ~₹5,000/sq ft in Nov 2018 (>230% appreciation)",
+      "status": "ready",
+      "source_url": "https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24",
+      "source_type": "news",
+      "publisher": "Business Today",
+      "as_of": "2026-08",
+      "snippet": "Hero Homes in Sector 104, Gurugram... now commands prices of around ₹16,500 per sq. ft., representing appreciation of more than 230% since launch.",
+      "configs": []
+    },
+    {
+      "sector": "106",
+      "project": "Sobha Altus",
+      "developer": "Sobha",
+      "price_psf_min": 17389,
+      "price_psf_max": 23345,
+      "basis": "Developer site states 'Starting at INR 6.7 Cr.' for 4 & 5 bed residences sized 2,870–3,853 sq ft => ₹6.7cr/3,853sqft=₹17,389/sqft to ₹6.7cr/2,870sqft=₹23,345/sqft (computed; ambiguous which size the starting price applies to)",
+      "status": "under construction",
+      "source_url": "https://www.sobha.com/delhi-ncr/sobha-altus-sector-106-gurgaon/",
+      "source_type": "developer",
+      "publisher": "Sobha (developer site)",
+      "as_of": "2026-09",
+      "snippet": "Starting at INR 6.7 Cr. — 4 & 5 Bed Residences: 2,870 – 3,853 Sq.Ft.",
+      "configs": [
+        {"bhk": "4-5", "area": 2870, "price_cr": 6.7},
+        {"bhk": "4-5", "area": 3853, "price_cr": 6.7}
+      ]
+    },
+    {
+      "sector": "111",
+      "project": "M3M Elie Saab",
+      "developer": "M3M",
+      "price_psf_min": 37000,
+      "price_psf_max": 37000,
+      "basis": "M3M Promoter Pankaj Bansal directly quoted '₹37,000/sq ft' price for the Gurugram Sector 111 Dwarka Expressway project (Elie Saab collaboration) to reporters",
+      "status": "new launch",
+      "source_url": "https://www.businesstoday.in/real-estate/story/m3m-eyes-rs-8300-crore-from-elie-saab-branded-residences-in-gurugram-noida-510767-2026-01-13",
+      "source_type": "news",
+      "publisher": "Business Today",
+      "as_of": "2026-01",
+      "snippet": "The price per square feet is Rs 37,000,\" Pankaj Bansal, Promoter, M3M India... told reporters.",
+      "configs": [
+        {"bhk": "4", "area": 4200, "price_cr": 15},
+        {"bhk": "4", "area": 4650, "price_cr": 15}
+      ]
+    },
+    {
+      "sector": "112",
+      "project": "Experion Windchants",
+      "developer": "Experion",
+      "price_psf_min": 22744,
+      "price_psf_max": 23270,
+      "basis": "Developer site states '7.9 Crore Onwards' for 5 BHK Duplex Villament sized 3,394.54–3,473.65 sq ft => ₹7.9cr/3,473.65sqft=₹22,744/sqft to ₹7.9cr/3,394.54sqft=₹23,270/sqft (computed, assuming starting price applies to the 5BHK config)",
+      "status": "ready",
+      "source_url": "https://www.experion.co/windchants",
+      "source_type": "developer",
+      "publisher": "Experion (developer site)",
+      "as_of": "2026-09",
+      "snippet": "7.9 Crore Onwards — 5 BHK Duplex Villament: 3,394.54 to 3,473.65 sq. ft.",
+      "configs": [
+        {"bhk": "5", "area": 3394.54, "price_cr": 7.9},
+        {"bhk": "5", "area": 3473.65, "price_cr": 7.9}
+      ]
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "102-112",
+      "headline": "Dwarka E-way area sees 135% rise in home prices in 5 years: Report",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/dwarka-e-way-area-sees-135-rise-in-home-prices-in-5-yearsreport-101788926097677.html",
+      "figure": "Anarock data: avg residential price on Dwarka Expressway rose from ₹6,032/sq ft (2021) to ₹14,180/sq ft (H1 2026); Gurugram citywide avg ₹13,350/sq ft",
+      "psf": 14180
+    },
+    {
+      "sector": "102-112",
+      "headline": "Dwarka Expressway challenges Gurugram's old luxury addresses after 135% price surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-09",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/dwarka-expressway-challenges-gurugram-s-old-luxury-addresses-after-135-price-surge-14025123.html",
+      "figure": "ANAROCK estimates average residential prices in the Dwarka Expressway micro-market at ~₹21,700-24,000/sq ft; homes above ₹2.5cr now dominant budget segment; 135% price rise over 5 years",
+      "psf": 22850
+    },
+    {
+      "sector": "102-112",
+      "headline": "Dwarka Expressway vs Golf Course Extension: Which Gurugram micromarket offers more value for money?",
+      "publisher": "Business Today",
+      "as_of": "2025-12",
+      "url": "https://www.businesstoday.in/personal-finance/real-estate/story/dwarka-expressway-vs-golf-course-extension-gurugram-micromarket-investors-end-users-508705-2025-12-30",
+      "figure": "Anarock: Gurugram avg price rose from ₹9,500/sq ft (Q3 2024) to ₹12,250/sq ft (2025), +29%; Dwarka Expressway micromarket avg ₹18,000/sq ft in 2025 vs Golf Course Ext Road ₹22,000/sq ft",
+      "psf": 18000
+    },
+    {
+      "sector": "102-112",
+      "headline": "Dwarka Expressway property prices double in 7 years: How infrastructure turned NCR corridor into a wealth creator",
+      "publisher": "Business Today",
+      "as_of": "2026-08",
+      "url": "https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24",
+      "figure": "Anarock: Dwarka Expressway avg price rose from ₹5,359/sq ft (2019) to >₹9,600/sq ft (H1 2024); ~110-120% appreciation 2021 to early 2026",
+      "psf": 9600
+    }
+  ],
+  "no_direct_source": [
+    {"sector": "102", "project": "BPTP Amstoria Verti Greens", "tried": "news: 2025 articles (ET Realty, ConstructionWeek, ET Now) cover ₹3,000cr investment / ₹6,500cr GDV only, no psf stated; developer: bptp.com project page and homepage both returned 403 Forbidden"},
+    {"sector": "102", "project": "Emaar Gurgaon Greens", "tried": "news: 0 relevant 2025-26 items (only unrelated maintenance/outage stories); developer: emaar-india.com connection refused, emaarindia.com timed out"},
+    {"sector": "102", "project": "Shapoorji Pallonji Joyville Phase 3", "tried": "news: 0 relevant 2025-26 items (only 2021 investment articles); developer: joyville.in domain does not resolve (DNS)"},
+    {"sector": "102", "project": "BPTP GAIA Residences", "tried": "news: several 2025 launch articles (TOI, Financial Express, ET Realty, mid-day, webindia123) state ₹3,000cr investment/₹6,500cr GDV/₹910cr contract only, no psf; developer: bptp.com returned 403 Forbidden"},
+    {"sector": "102", "project": "Conscient Heritage Max", "tried": "news: 0 relevant 2025-26 items; developer: conscient.in homepage lists current projects (PARQ, Elaira Residences, Elevate Reserve, Elevate, SOHO) — Heritage Max not among them, likely sold out/delisted, no price found"},
+    {"sector": "103", "project": "Godrej Vrikshya", "tried": "news: 0 relevant 2025-26 items (only unrelated land-deal/settlement stories); developer: godrejproperties.com project page states '₹3.81 Cr. onwards' but no unit size given so psf not computable"},
+    {"sector": "103", "project": "Whiteland Urban Resort", "tried": "news: 0 relevant 2025-26 items; developer: whitelandcorporation.com — SSL handshake failure on project page and on homepage"},
+    {"sector": "104", "project": "Central Park Delphine", "tried": "news: Nov 2025 launch articles (Hindustan Times, ET Realty) state unit prices — studio ₹3-5cr, 3BHK from ₹11cr, 4BHK from ₹15cr — but no unit sizes given so psf not computable; developer: centralpark.in returned 404; centralparkindia.com resolves to an unrelated gaming-platform site"},
+    {"sector": "104", "project": "Godrej Premia Tower / Signature Homes", "tried": "news: 0 relevant items (only unrelated Godrej Gurugram land-acquisition and settlement stories); developer: godrejproperties.com project page 404 — project likely no longer actively listed"},
+    {"sector": "104", "project": "ATS Triumph", "tried": "news: 0 relevant 2025-26 items (only an unrelated 'Haryana ATS police stations' story); developer: ATS main-brand domain not in provided list, atshomekraft.com (sub-brand) is a different entity so not tried for this project"},
+    {"sector": "105", "project": "ATS Homekraft Sanctuary", "tried": "news: 2025 articles cover SWAMIH-fund debt repayment only, no psf; developer: atshomekraft.com is an expired/parked domain (redirects to GoDaddy 'domain for sale' page)"},
+    {"sector": "106", "project": "Godrej Meridien", "tried": "news: 0 relevant project-specific items; developer: godrejproperties.com project page states 'INR 1.62 Cr. onwards' for 1/2/3 BHK but no unit size given so psf not computable"},
+    {"sector": "106", "project": "Elan The Presidential", "tried": "news: 2025-26 articles (Telegraph, Financial Express, BusinessWorld, Moneycontrol) cover ₹3,000cr investment / construction contracts / JW Marriott tie-up only, no psf, and 2 were 403-blocked; developer: elangroup.in — connection refused on homepage"},
+    {"sector": "107", "project": "M3M Woodshire", "tried": "news: only item found was about an unrelated new ₹1,900cr M3M/Trehan IRIS township project; developer: m3mindia.com/residential/m3m-woodshire page has no pricing, directs to sales team"},
+    {"sector": "108", "project": "Sobha City", "tried": "news: 0 relevant project-specific items (only generic FY26 launch-pipeline article); developer: guessed URL sobha.com/delhi-ncr/sobha-city-gurgaon/ returned 404, could not locate exact page via homepage nav text"},
+    {"sector": "108", "project": "Experion The Westerlies", "tried": "news: Oct 2025 articles cover an ₹800cr construction-contract award only, no psf; developer: experion.co/residential-westerlies page has no pricing, directs to enquiry form"},
+    {"sector": "108", "project": "Experion The Heart Song", "tried": "news: 0 relevant project-specific items; developer: experion.co/residential-heartsong page has no pricing, directs to enquiry form"},
+    {"sector": "109", "project": "Sobha International City", "tried": "news: 0 relevant 2025-26 items; developer: guessed URL sobha.com/delhi-ncr/sobha-international-city-gurgaon/ returned 404, could not locate exact page"},
+    {"sector": "109", "project": "ATS Tourmaline", "tried": "news: 0 relevant 2025-26 items; developer: ATS main-brand domain not in provided list, not attempted"},
+    {"sector": "109", "project": "ATS Kocoon", "tried": "news: 0 relevant 2025-26 items; developer: ATS main-brand domain not in provided list, not attempted"},
+    {"sector": "109", "project": "Conscient One (Service Apartments)", "tried": "news: 0 relevant 2025-26 items; developer: conscient.in current project list (PARQ, Elaira Residences, Elevate Reserve, Elevate, SOHO) does not include Conscient One, no price found"},
+    {"sector": "110", "project": "Indiabulls Enigma", "tried": "news: Aug 2026 articles (MSN, Livemint, Moneycontrol) describe a new unnamed ₹3,700cr/21-lakh-sqft Dwarka Expressway project added to Indiabulls' pipeline (implied avg realisation ~₹17,600/sqft) but the project is not named 'Enigma' in any article, so treated as a different/unconfirmed project per rules and not recorded as a quote; developer domain not in provided list, not attempted"},
+    {"sector": "111", "project": "M3M Crown", "tried": "news: 0 relevant project-specific items (only Elie Saab, township, and Noida land-auction stories); developer: m3mindia.com/residential/m3m-crown page has no pricing, directs to sales team"},
+    {"sector": "111", "project": "Puri Diplomatic Residences", "tried": "news: 0 relevant 2025-26 items; developer: puriconstructions.com/project-details/puri-diplomatic-residences page states 'Under Development' status but no price"},
+    {"sector": "111", "project": "Puri Diplomatic Greens Phase I", "tried": "news: 0 relevant 2025-26 items; developer: puriconstructions.com/projects/diplomatic-green page states 'Delivered' status but no price"},
+    {"sector": "112", "project": "Emaar The 88", "tried": "news: Nov 2025/Jan 2025 articles all describe a different, unnamed new ₹1,600cr Emaar project ('Serenity Hills') near Dwarka Expressway, not 'The 88' — skipped as a different project per rules; developer: emaar-india.com connection refused, emaarindia.com timed out"},
+    {"sector": "112", "project": "Emaar Urban Ascent", "tried": "news: same result as Emaar The 88 — only the unrelated 'Serenity Hills' project found; developer: emaar-india.com/emaarindia.com unreachable"},
+    {"sector": "112", "project": "Tata Gurgaon Gateway", "tried": "news: only item found (Financial Express) covers an unrelated Godrej-Tata Projects construction-contract award, no psf for this project; developer: tatarealty.in returned 403 Forbidden, tataprimanti.com does not resolve (DNS)"}
+  ]
+}

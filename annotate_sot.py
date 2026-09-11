@@ -34,9 +34,11 @@ def sot_for(q):
     elif d in BROKER or q.get('source_type') in ('broker', 'broker microsite', 'blog'):
         cls, label, what = 'broker', d, 'broker/channel-partner quote — quoted unit price ÷ super area'
     elif q.get('source_type') == 'developer':
-        cls, label, what = 'developer', d, "developer's own published price"
+        cls, label, what = 'developer', f"{q.get('developer') or d} (developer site)", "developer's own published price (usually a 'from' price divided by the stated unit size)"
+    elif q.get('source_type') == 'project-site':
+        cls, label, what = 'project-site', f"{q.get('project', '')[:28]} project site", 'quoted unit price ÷ stated super area on the project marketing site'
     elif q.get('source_type') == 'news':
-        cls, label, what = 'news', d, 'reported price'
+        cls, label, what = 'news', q.get('publisher') or d, 'figure stated in a press report (developer quote, reported deal or market data)'
     else:
         cls, label, what = 'other', d, q.get('source_type', '')
     return {'cls': cls, 'label': label, 'domain': d, 'what': what}

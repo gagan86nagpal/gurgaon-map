@@ -1,0 +1,58 @@
+{
+  "quotes": [
+    {
+      "sector": "80",
+      "project": "Sobha Aranya",
+      "developer": "Sobha",
+      "price_psf_min": 25035,
+      "price_psf_max": 25035,
+      "basis": "Developer site states 'Starting From INR 7.1 Cr.*' for 3 & 4 Bed Residences with area range 2836-4285 sq.ft.; assuming the starting price corresponds to the smallest area (2836 sq ft), computed psf = 7.1 Cr / 2836 sq ft = ~25,035/sq ft",
+      "status": "under construction",
+      "source_url": "https://www.sobha.com/delhi-ncr/sobha-aranya-flats-sector-80-karma-lakelands/",
+      "source_type": "developer",
+      "publisher": "Sobha (developer site)",
+      "as_of": "2026-09",
+      "snippet": "Starting From INR 7.1 Cr.* | 3 & 4 Bed Residences | 2836 - 4285 Sq.Ft.",
+      "configs": [{"bhk": "3", "area": 2836, "price_cr": 7.1}]
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "80",
+      "headline": "Priced at Rs 14,500 per sq ft, these luxury apartments are set to be in Gurugram Sector 80; developer eyes Rs 1,000 crore in Phase 1 of 5.5 acre project (Conscient Elaira Residences)",
+      "publisher": "Zee Business",
+      "as_of": "2025-04",
+      "url": "https://www.zeebiz.com/real-estate/news-conscient-elaira-residences-luxury-project-gurugram-sector-80-project-1000-crore-turnover-expected-in-phase-1-356160",
+      "figure": "base sale price Rs 14,500 per sq ft for a new luxury launch (Conscient Elaira Residences) in Sector 80",
+      "psf": 14500
+    },
+    {
+      "sector": "81",
+      "headline": "Dwarka Expressway challenges Gurugram's old luxury addresses after 135% price surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-09",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/dwarka-expressway-challenges-gurugram-s-old-luxury-addresses-after-135-price-surge-14025123.html",
+      "figure": "ANAROCK data: avg residential prices on Dwarka Expressway corridor ~Rs 21,700-24,000/sq ft, up 135% over 5 years",
+      "psf": 22850
+    },
+    {
+      "sector": "82",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "Magicbricks data: SPR corridor avg residential price ~Rs 16,249/sq ft, up 165% over 5 years, +18.4% YoY in 2026",
+      "psf": 16249
+    }
+  ],
+  "no_direct_source": [
+    {"sector": "80", "project": "Eldeco Fairway Reserve", "tried": "news (Google News RSS + Bing News RSS, 2 queries): 0 relevant 2025-26 items naming the project; developer site eldecogroup.com/project/eldeco-fairway-reserve/ returned 404"},
+    {"sector": "80", "project": "Godrej Frontier", "tried": "news (Google News RSS + Bing News RSS, 2 queries): 0 relevant items -- only an unrelated GMDA tender article and unrelated Godrej Properties land-acquisition articles (different project); developer site godrejproperties.com does not list 'Godrej Frontier' among current Gurugram projects (likely older/discontinued name); direct project URL returned 404"},
+    {"sector": "81", "project": "DLF Ultima Phase II", "tried": "news (Google News RSS + Bing News RSS, 2 queries): 0 relevant 2025-26 items; dlf.in listing page and dlf.in/residential/dlf-ultima both lack any project-specific pricing (generic contact/disclaimer content only)"},
+    {"sector": "81", "project": "DLF The Ultima", "tried": "news (Google News RSS + Bing News RSS): 0 relevant 2025-26 items; dlf.in/residential/the-ultima page has no pricing (generic contact/disclaimer content)"},
+    {"sector": "81", "project": "Bestech Park View Grand Spa", "tried": "news (Google News RSS + Bing News RSS): 0 relevant 2025-26 items; developer page bestechgroup.com/park-view-grand-spa/ loads but states no price figures ('Enquire Now' contact form only)"},
+    {"sector": "82", "project": "Vatika India Next", "tried": "news (Google News RSS + Bing News RSS): 0 relevant 2025-26 items (only RERA-fine articles about the developer, not project pricing); vatikagroup.com/projects/vatika-india-next returned 404; homepage lists related 'Vatika INXT 2' plots/floors in sectors 88A/88B/82A/83 but no dedicated India Next page or price"},
+    {"sector": "82", "project": "Vatika Seven Lamps", "tried": "news (Google News RSS + Bing News RSS): 0 relevant 2025-26 items; developer site vatikagroup.com/projects/the-seven-lamps returned 404"},
+    {"sector": "82", "project": "Mapsko Casa Bella - Villas", "tried": "news (Google News RSS + Bing News RSS): 0 relevant 2025-26 items (only 2017/2021 maintenance/infra articles); developer site mapsko.com/casa-bella-villas/ returned 404"}
+  ]
+}

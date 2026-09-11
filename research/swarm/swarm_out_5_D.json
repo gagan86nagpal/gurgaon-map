@@ -1,0 +1,58 @@
+{
+  "quotes": [],
+  "sector_news": [
+    {
+      "sector": "95",
+      "headline": "Dwarka Expressway challenges Gurugram's old luxury addresses after 135% price surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-09",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/dwarka-expressway-challenges-gurugram-s-old-luxury-addresses-after-135-price-surge-14025123.html",
+      "figure": "ANAROCK data: Dwarka Expressway corridor (which includes Sector 95) residential prices up 135% over 5 years; average residential prices in the micro-market ~Rs21,700-24,000/sq ft; homes above Rs2.5 Cr now the dominant budget segment, 3BHKs 39% of supply",
+      "psf": 22850
+    },
+    {
+      "sector": "95",
+      "headline": "Dwarka Expressway property prices double in 7 years: How infrastructure turned NCR corridor into a wealth creator",
+      "publisher": "Business Today",
+      "as_of": "2026-08",
+      "url": "https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24",
+      "figure": "Anarock report: avg Dwarka Expressway corridor prices rose from Rs5,359/sq ft (2019) to over Rs9,600/sq ft (H1 2024); ~95-105% appreciation overall, accelerating to ~110-120% between 2021 and early 2026",
+      "psf": 9600
+    },
+    {
+      "sector": "99",
+      "headline": "Dwarka Expressway challenges Gurugram's old luxury addresses after 135% price surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-09",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/dwarka-expressway-challenges-gurugram-s-old-luxury-addresses-after-135-price-surge-14025123.html",
+      "figure": "ANAROCK data: Dwarka Expressway corridor (which includes Sector 99) residential prices up 135% over 5 years; average residential prices in the micro-market ~Rs21,700-24,000/sq ft; homes above Rs2.5 Cr now the dominant budget segment, 3BHKs 39% of supply",
+      "psf": 22850
+    },
+    {
+      "sector": "99",
+      "headline": "Dwarka Expressway property prices double in 7 years: How infrastructure turned NCR corridor into a wealth creator",
+      "publisher": "Business Today",
+      "as_of": "2026-08",
+      "url": "https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24",
+      "figure": "Anarock report: avg Dwarka Expressway corridor prices rose from Rs5,359/sq ft (2019) to over Rs9,600/sq ft (H1 2024); ~95-105% appreciation overall, accelerating to ~110-120% between 2021 and early 2026",
+      "psf": 9600
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "95",
+      "project": "Signature Global Aspire",
+      "tried": "news: newsq.py '\"Signature Global Aspire\" Gurugram price' -> NO 2025-26 ITEMS; newsq.py 'Signature Global Aspire Sector 95 launch' -> NO 2025-26 ITEMS. (A separate query 'Signature Global Dwarka Expressway property' surfaced a Dec 2025 FreePressJournal/PTI story about Signature Global investing Rs4,800cr in an unnamed luxury project on Dwarka Expressway with Phase-1 units priced Rs3-4 Cr each, but the article never names it as Aspire or Superbia, so it was not attributed to either per the 'skip if really about a different project' rule.) Developer site (WebFetch, unchanged): https://signatureglobal.in/aspire/ = 404; https://signatureglobal.in/projects/ = 404; homepage https://signatureglobal.in/ lists only Sarvam, Cloverdale SPR, Twin Tower DXP, Titanium SPR, De Luxe DXP, Daxin Vistas, City of Colours - no Aspire link, no price shown. No project marketing site found."
+    },
+    {
+      "sector": "95",
+      "project": "Signature Global Superbia",
+      "tried": "news: newsq.py '\"Signature Global Superbia\" Gurugram price' -> NO 2025-26 ITEMS; newsq.py 'Signature Global Superbia Sector 95 launch' -> NO 2025-26 ITEMS. Same Dec 2025 Rs4,800cr Dwarka Expressway launch story turned up under a broader developer query but is not identified as Superbia, so excluded. Developer site (WebFetch, unchanged): https://signatureglobal.in/superbia/ = 404; https://signatureglobal.in/projects/ = 404; homepage does not list Superbia or any price. No project marketing site found."
+    },
+    {
+      "sector": "99",
+      "project": "Vatika Sovereign Park",
+      "tried": "news: newsq.py '\"Vatika Sovereign Park\" Gurugram price' -> NO 2025-26 ITEMS; newsq.py 'Vatika Sovereign Park Sector 99 launch' -> NO 2025-26 ITEMS. No 2025-26 coverage of this project found via Bing News RSS either. Developer site (WebFetch, unchanged): https://www.vatikagroup.com/residential/sovereign-park/ = 404; https://www.vatikagroup.com/sovereign-park/ = 404; homepage https://www.vatikagroup.com/ confirms 'Phase 2 launched for Sovereign Park ... located in Sector 99' under a 'New@Vatika' section (developer confirms a recent phase launch) but states no price - directs buyers to call a sales number ('price on request'). Aggregator current_source (bigestate.io) excluded per instructions; no alternate project marketing site found."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "quotes": [
+    {
+      "sector": "36A",
+      "project": "Krisumi Waterside Residences",
+      "developer": "Krisumi",
+      "price_psf_min": 24000,
+      "price_psf_max": 24000,
+      "basis": "Krisumi Corporation chairman Ashok Kapur, quoted on the launch of the project's new 'Forest Reserve' phase: 'Launching our first project at ₹8,500 per sq. ft. ... Today Krisumi City commands around ₹24,000 per sq. ft.' Figure is stated for 'Krisumi City' overall (the township), not disaggregated by phase in the source; attributed here to Waterside Residences because ₹24,000/sq ft closely matches this project's own portal pricing (₹23,980-24,030/sq ft) as the newest, priciest active phase, whereas the older Waterfall Residences/Suites phases trade lower per current portal data.",
+      "status": "under construction",
+      "source_url": "https://www.hindustantimes.com/real-estate/sumitomobacked-krisumi-corporation-launches-new-phases-of-housing-project-in-gurugram-plans-4-500-crore-investment-101776103634320.html",
+      "source_type": "news",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-04",
+      "snippet": "Launching our first project at ₹8,500 per sq. ft. ... Today Krisumi City commands around ₹24,000 per sq. ft., reflecting strong value creation and market leadership.",
+      "configs": []
+    },
+    {
+      "sector": "63A",
+      "project": "Sobha Crescent",
+      "developer": "Sobha",
+      "price_psf_min": 19758,
+      "price_psf_max": 25735,
+      "basis": "Developer page states '3 & 4 Bed Residences', area range '2277 - 2966 Sq.Ft.', and 'Starting from INR 5.86 Cr.'. Price and area are on the same page but not explicitly paired per unit, so computed as a range: 5.86 Cr / 2966 sq ft (largest area) = ~19,758/sq ft, and 5.86 Cr / 2277 sq ft (smallest area, likely matching the 'starting from' price) = ~25,735/sq ft.",
+      "status": "under construction",
+      "source_url": "https://www.sobha.com/projects/sobha-crescent/",
+      "source_type": "developer",
+      "publisher": "Sobha Limited (developer site)",
+      "as_of": "2026-09",
+      "snippet": "3 & 4 Bed Residences ... 2277 - 2966 Sq.Ft. ... Starting from INR 5.86 Cr.*",
+      "configs": []
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "63A",
+      "headline": "Buying property in Gurugram to get costlier as circle rates hiked by up to 75%",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-04",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/buying-property-in-gurugram-to-get-costlier-as-circle-rates-hiked-by-up-to-75-13891784.html",
+      "figure": "Government collector/circle rate (not market price) for Sectors 63, 63A, 64 and 67 (SPR / Golf Course Extension Road corridor) hiked 45%, from Rs 58,500 to Rs 84,825 per square yard (~Rs 6,500 to ~Rs 9,425 per sq ft equivalent, converting 1 sq yd = 9 sq ft)",
+      "psf": 9425
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "36A",
+      "project": "Krisumi Waterfall Residences",
+      "tried": "newsq: 0 2025-26 items for exact project name; newsq 'Krisumi Gurugram launch price' found Apr-2026 HT/Moneycontrol articles quoting chairman that Krisumi's 'first project' (Waterfall Residences) launched in 2021 at ₹8,500/sq ft, but this is a stale 2021 launch figure, not usable as a current 2025-26 price; developer page (krisumi.com/project/waterfall-residences/) has a 'Price List' section but prices are embedded as images, no price text extractable"
+    },
+    {
+      "sector": "36A",
+      "project": "Krisumi Waterfall Suites",
+      "tried": "newsq: 0 items for exact project name and for general 'Krisumi Gurugram launch price' (results were about other phases); developer page (krisumi.com/project/waterfall-suites/) has 'Price List'/'Down Payment Plan' sections but prices are embedded as images, no price text extractable"
+    },
+    {
+      "sector": "70A",
+      "project": "M3M Escala",
+      "tried": "newsq: 0 items for exact project name; 'M3M Escala Sector 70A Gurugram launch price' returned only an unrelated Jan-2026 Moneycontrol article about M3M's Elie Saab-branded residences tie-up (different project, no price figures, no Escala mention) - skipped per rule; developer page (m3mindia.com/residential/m3m-escala, found via homepage nav since direct URL guess 404'd) lists only '2 & 3 BHK Apartments' configuration under 'Delivered' projects, no price or ₹/sq ft stated"
+    }
+  ]
+}

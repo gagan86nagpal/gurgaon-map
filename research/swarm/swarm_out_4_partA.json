@@ -1,0 +1,89 @@
+{
+  "quotes": [
+    {
+      "sector": "71",
+      "project": "Birla Pravaah",
+      "developer": "Birla Estates",
+      "price_psf_min": 25000,
+      "price_psf_max": 25000,
+      "basis": "Business Standard states: project comprises 492 units, 3BHK and 3BHK+utility configurations of 1,358 sq ft and 1,722 sq ft; 'The company achieved an average selling price of around Rs 25,000 per square foot.' (average figure stated directly by the article, not computed)",
+      "status": "new launch (sold out within 24 hrs of launch)",
+      "source_url": "https://www.business-standard.com/companies/news/birla-estates-pravaah-sells-out-in-24-hours-clocks-rs-1800-crore-sales-in-gurugram-125120900594_1.html",
+      "source_type": "news",
+      "publisher": "Business Standard",
+      "as_of": "2025-12",
+      "snippet": "The project is located in Sector 71, Gurugram, and comprises 492 units... The company achieved an average selling price of around Rs 25,000 per square foot.",
+      "configs": []
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "71",
+      "headline": "SPR, Sohna emerge as South Gurugram's next real estate growth engines as prices surge",
+      "publisher": "Moneycontrol",
+      "as_of": "2026-08",
+      "url": "https://www.moneycontrol.com/news/business/real-estate/spr-sohna-emerge-as-south-gurugram-s-next-real-estate-growth-engines-as-prices-surge-14015820.html",
+      "figure": "SPR avg ~Rs 16,249/sq ft, up 18.4% YoY in 2026 (165% over 5 years, from ~Rs 9,800/sq ft); Sohna avg ~Rs 10,642/sq ft (up >140% over 5 years, from ~Rs 7,600/sq ft) -- data attributed to Magicbricks",
+      "psf": 16249
+    },
+    {
+      "sector": "72",
+      "headline": "Dwarka E-way area sees 135% rise in home prices in 5 years: Report",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/dwarka-e-way-area-sees-135-rise-in-home-prices-in-5-yearsreport-101788926097677.html",
+      "figure": "Dwarka Expressway avg residential price rose from Rs 6,032/sq ft (2021) to Rs 14,180/sq ft (H1 2026), vs Gurugram's overall average of Rs 13,350/sq ft -- data attributed to Anarock",
+      "psf": 14180
+    },
+    {
+      "sector": "73",
+      "headline": "Golf Course Extension Road property prices double in 5 years",
+      "publisher": "Hindustan Times",
+      "as_of": "2025-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/golf-course-extension-road-property-prices-double-in-5-years-101757557402455.html",
+      "figure": "GCER new-launch rate rose from ~Rs 8,800/sq ft (2019) to ~Rs 20,267/sq ft (2024); resale values up ~79% over same period, pushing many multistorey apartments above Rs 17,000/sq ft -- attributed to Savills India, Cushman & Wakefield, Square Yards, 99acres",
+      "psf": 20267
+    },
+    {
+      "sector": "74",
+      "headline": "Move over Bengaluru and Hyderabad: Noida and Gurugram top property price appreciation with up to 125% growth",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-08",
+      "url": "https://www.hindustantimes.com/real-estate/move-over-bengaluru-and-hyderabad-noida-and-gurugram-top-property-price-appreciation-with-up-to-125-growth-heres-why-101786038801601.html",
+      "figure": "NOTE: city-wide Gurugram figure, not Sector-74/corridor-specific (no Sector 74-specific article found). Gurugram avg residential price rose 117%, from Rs 6,150/sq ft (2019) to Rs 13,350/sq ft (Q2 2026) -- attributed to Anarock Research",
+      "psf": 13350
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "71",
+      "project": "Signature Global Titanium SPR (SPR Estate)",
+      "tried": "newsq (Bing News RSS) x4 variants ('Signature Global Titanium' Gurugram price; SPR Estate Sector 71 launch price; 'Titanium SPR' Signature Global; SPR Estate Sector 71) returned 0 project-specific hits -- only unrelated Signature Global projects (Prive Iconic Tower/Armani Casa, Tonino Lamborghini tie-up, RMZ mixed-use) surfaced, all different projects. Developer site signatureglobal.in confirms the project (Sector 71, 3.5 BHK & 4.5 BHK, possession 2027) but states no price -- price on request."
+    },
+    {
+      "sector": "72",
+      "project": "Tata Primanti",
+      "tried": "newsq x2 ('Tata Primanti' Gurugram; Tata Primanti Sector 72 launch price crore) returned 0 relevant 2025-26 items. Developer site tatarealty.in returned HTTP 403 on both /tata-primanti and homepage (bot-blocked); tataprimanti.com does not resolve (DNS failure)."
+    },
+    {
+      "sector": "72",
+      "project": "Tata Primanti Phase 2",
+      "tried": "shares developer (Tata Realty) and project family with Tata Primanti above -- same newsq 0-results and tatarealty.in 403 / tataprimanti.com DNS failure; no dedicated 'Phase 2' news items found."
+    },
+    {
+      "sector": "72",
+      "project": "Tata Primanti-Tower Residences",
+      "tried": "shares developer (Tata Realty) and project family with Tata Primanti above -- same newsq 0-results and tatarealty.in 403 / tataprimanti.com DNS failure; no dedicated 'Tower Residences' news items found."
+    },
+    {
+      "sector": "73",
+      "project": "DLF Alameda",
+      "tried": "newsq x2 ('DLF Alameda' Gurugram; DLF Alameda Sector 73 Gurugram price) returned 0 project-specific hits -- only unrelated DLF news (senior-living project, FY27 luxury launch pipeline); artq on the FY27 pipeline HT article found no price sentences mentioning Alameda. Developer page dlf.in/residential/dlf-alameda-sector-73-gurugram loaded but had no project-specific pricing -- price on request."
+    },
+    {
+      "sector": "74",
+      "project": "M3M Skywalk",
+      "tried": "newsq x2 ('M3M Skywalk' Gurugram; M3M Skywalk Sector 74 Gurugram possession price) returned 0 project-specific hits -- only unrelated M3M news (Elie Saab branded residences tie-up). Developer page m3mindia.com/projects/m3m-skywalk loaded and describes the project as already delivered (ready), but states no price -- price on request."
+    }
+  ]
+}

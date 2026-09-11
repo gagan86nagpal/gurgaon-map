@@ -1,0 +1,107 @@
+{
+  "quotes": [
+    {
+      "sector": "89A",
+      "project": "ATS Marigold",
+      "developer": "ATS",
+      "price_psf_min": 13500,
+      "price_psf_max": 15000,
+      "basis": "article states 'The current market prices in the project are reported in the range of ₹13,500-15,000 per sq ft' (contrasted with ₹6,000-6,500/sq ft when SWAMIH fund entered in Feb 2021)",
+      "status": "ready",
+      "source_url": "https://www.hindustantimes.com/business/ats-group-repays-133-crore-to-swamih-fund-for-gurugrams-ats-marigold-project-101753964682673.html",
+      "source_type": "news",
+      "publisher": "Hindustan Times",
+      "as_of": "2025-07",
+      "snippet": "The current market prices in the project are reported in the range of ₹13,500-15,000 per sq ft.",
+      "configs": []
+    }
+  ],
+  "sector_news": [
+    {
+      "sector": "82A",
+      "headline": "Dwarka E-way area sees 135% rise in home prices in 5 years: Report",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/dwarka-e-way-area-sees-135-rise-in-home-prices-in-5-yearsreport-101788926097677.html",
+      "figure": "Corridor-wide (not 82A-specific), per ANAROCK: Dwarka Expressway avg residential price rose from ₹6,032/sq ft (2021) to ₹14,180/sq ft (H1 2026), vs Gurugram overall avg ₹13,350/sq ft",
+      "psf": 14180
+    },
+    {
+      "sector": "82A",
+      "headline": "Dwarka Expressway property prices double in 7 years: How infrastructure turned NCR corridor into a wealth creator",
+      "publisher": "Business Today",
+      "as_of": "2026-08",
+      "url": "https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24",
+      "figure": "Corridor-wide (not 82A-specific), per ANAROCK: avg Dwarka Expressway price rose from ₹5,359/sq ft (2019) to over ₹9,600/sq ft (H1 2024); example cited: Hero Homes Sector 104 launched ~₹5,000/sq ft (2018) now ~₹16,500/sq ft (+230%)",
+      "psf": 9600
+    },
+    {
+      "sector": "88A",
+      "headline": "Dwarka E-way area sees 135% rise in home prices in 5 years: Report",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/dwarka-e-way-area-sees-135-rise-in-home-prices-in-5-yearsreport-101788926097677.html",
+      "figure": "Corridor-wide, per ANAROCK: Dwarka Expressway avg residential price rose from ₹6,032/sq ft (2021) to ₹14,180/sq ft (H1 2026), vs Gurugram overall avg ₹13,350/sq ft. Earlier research (constructionweekonline, May 2026) separately called Sector 88A 'the crown jewel of Dwarka Expressway corridor', supporting relevance of this corridor figure to 88A.",
+      "psf": 14180
+    },
+    {
+      "sector": "88A",
+      "headline": "Dwarka Expressway property prices double in 7 years: How infrastructure turned NCR corridor into a wealth creator",
+      "publisher": "Business Today",
+      "as_of": "2026-08",
+      "url": "https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24",
+      "figure": "Corridor-wide, per ANAROCK: avg Dwarka Expressway price rose from ₹5,359/sq ft (2019) to over ₹9,600/sq ft (H1 2024)",
+      "psf": 9600
+    },
+    {
+      "sector": "89A",
+      "headline": "Dwarka E-way area sees 135% rise in home prices in 5 years: Report",
+      "publisher": "Hindustan Times",
+      "as_of": "2026-09",
+      "url": "https://www.hindustantimes.com/cities/gurugram-news/dwarka-e-way-area-sees-135-rise-in-home-prices-in-5-yearsreport-101788926097677.html",
+      "figure": "Corridor-wide, per ANAROCK: Dwarka Expressway avg residential price rose from ₹6,032/sq ft (2021) to ₹14,180/sq ft (H1 2026), vs Gurugram overall avg ₹13,350/sq ft. ATS Marigold (Sector 89A, on Dwarka Expressway) independently reports ₹13,500-15,000/sq ft current, consistent with this corridor average.",
+      "psf": 14180
+    },
+    {
+      "sector": "89A",
+      "headline": "Dwarka Expressway property prices double in 7 years: How infrastructure turned NCR corridor into a wealth creator",
+      "publisher": "Business Today",
+      "as_of": "2026-08",
+      "url": "https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24",
+      "figure": "Corridor-wide, per ANAROCK: avg Dwarka Expressway price rose from ₹5,359/sq ft (2019) to over ₹9,600/sq ft (H1 2024)",
+      "psf": 9600
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "82A",
+      "project": "Vatika Town Square",
+      "tried": "newsq (2 queries: '\"Vatika Town Square\" Gurugram price' and 'Vatika Sector 82A Gurugram launch'): 0 relevant 2025-26 items (only unrelated Vatika Chowk road-design and NCLAT insolvency stories about a different Vatika project). developer site vatikagroup.com homepage mentions Sector 82A commercial assets (Market Walk, Vatika Crossover SCO plots) but not 'Vatika Town Square' by name, and no pricing disclosed."
+    },
+    {
+      "sector": "88A",
+      "project": "Signature Global Imperial",
+      "tried": "newsq (2 queries: '\"Signature Global Imperial\" Gurugram price' and 'Signature Global launch Gurugram 2025 crore'): found several 2026 Signature Global corporate items (FY27 Rs 12,000cr/Rs 3,500cr launch pipeline, Prive Iconic Tower at SPR, Rs 920cr construction contracts) but none specifically about the 'Imperial' project itself, so skipped per the different-project rule. developer site signatureglobal.in homepage only references Imperial in a 2022 award caption, no price or project link; current homepage lists only newer projects, Imperial page not linked."
+    },
+    {
+      "sector": "88A",
+      "project": "Godrej Icon",
+      "tried": "newsq (2 queries: '\"Godrej Icon\" Gurugram price' and 'Godrej Icon Sector 88A Gurugram'): 0 relevant 2025-26 items. developer site godrejproperties.com/gurugram/residential/godrej-icon states 'INR 74.15 Lakh onwards' (1/2/3/4 BHK) but no area/sq ft given for any configuration so ₹/sq ft cannot be computed -- not recorded as a quote."
+    },
+    {
+      "sector": "88A",
+      "project": "Godrej Oasis",
+      "tried": "newsq (2 queries: '\"Godrej Oasis\" Gurugram price' and 'Godrej Oasis Sector 88A Gurugram'): 0 relevant 2025-26 items. developer site godrejproperties.com/gurugram/residential/godrej-oasis states 'INR 55.86 Lakh onwards' (1/2/3 BHK) but no area given so ₹/sq ft cannot be computed -- not recorded as a quote."
+    },
+    {
+      "sector": "89A",
+      "project": "Vatika Seven Elements",
+      "tried": "newsq (2 queries: '\"Vatika Seven Elements\" Gurugram price' and 'Vatika Seven Elements Sector 89A'): 0 relevant 2025-26 items. developer site vatikagroup.com homepage confirms project exists and that '2 BHKs at Seven Elements, Sector 89A, are sold out' but states no price or ₹/sq ft."
+    },
+    {
+      "sector": "89A",
+      "project": "Adani Aangan",
+      "tried": "newsq (2 queries: '\"Adani Aangan\" Gurugram price' and 'Adani Aangan Sector 89A Gurugram'): found only a tradebrains.in roundup of 10 Adani Realty Gurugram projects (₹4.25cr-₹20cr range) with no sentence specifically pricing Aangan (artq keyword filter for 'Aangan' returned no price sentences -- likely because Aangan, an affordable-housing sold-out project, isn't among the priced luxury projects in that roundup). developer site adanirealty.com/residential-projects/gurugram/aangan confirms Sector 89A, Pataudi Road location, unit sizes (1BHK 343-381 sq ft, 2BHK 578-645 sq ft), status 'Sold Out' under Haryana Affordable Housing Policy -- no price shown because sold out."
+    }
+  ]
+}

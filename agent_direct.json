@@ -1,0 +1,592 @@
+[
+ {
+  "sector": "42",
+  "project": "DLF The Camellias",
+  "developer": "DLF",
+  "price_psf_min": 114865,
+  "price_psf_max": 114865,
+  "basis": "Ajit Jain (Berkshire Hathaway) bought a 7,400 sq ft apartment for ₹85 crore => ₹85,00,00,000 / 7,400 sq ft ≈ ₹1,14,865/sq ft",
+  "status": "resale",
+  "source_url": "https://www.livemint.com/news/trends/rs-85-crore-house-berkshire-hathaways-ajit-jain-buys-luxury-apartment-at-gurugrams-dlf-camellias-details-11771928856691.html",
+  "source_type": "news",
+  "publisher": "Livemint",
+  "as_of": "2026-02",
+  "snippet": "Berkshire's Vice Chairman of Insurance, Ajit Jain, has purchased a 7,400-square-foot apartment for ₹85 crore at DLF Camellias in Gurugram.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Livemint — \"Berkshire's Vice Chairman of Insurance, Ajit Jain, has purchased a 7,400-square-foot apartment for ₹85 crore at DLF Camellias in Gurugram.\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "NA",
+    "area": 7400,
+    "price_cr": 85.0
+   }
+  ],
+  "configs_as_of": "2026-02",
+  "deal": true,
+  "sot": {
+   "cls": "news",
+   "label": "Livemint",
+   "domain": "livemint.com",
+   "what": "figure stated in a press report (developer quote, reported deal or market data)"
+  }
+ },
+ {
+  "sector": "31",
+  "project": "Birla Arika",
+  "developer": "Birla Estates",
+  "price_psf_min": 24810,
+  "price_psf_max": 24810,
+  "basis": "Developer site (birlaestates.com) states 4 BHK 'From ₹10.42 Cr*' (excl. GST/stamp duty). Moneycontrol (Mar 2025) separately states Birla Arika's 4 BHK homes span 4,200 sq ft. => ₹10,42,00,000 / 4,200 sq ft ≈ ₹24,810/sq ft",
+  "status": "new launch",
+  "source_url": "https://www.birlaestates.com/birla-arika-gurugram/",
+  "source_type": "developer",
+  "publisher": "Birla Estates (developer site)",
+  "as_of": "2026-09",
+  "snippet": "From ₹10.42 Cr* (4 BHK) -- '*Prices exclusive of GST, stamp duty, registration and other applicable charges'",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "developer: Birla Estates (developer site) — \"From ₹10.42 Cr* (4 BHK) -- '*Prices exclusive of GST, stamp duty, registration and other applicable charges'\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 4200,
+    "price_cr": 10.42
+   }
+  ],
+  "configs_as_of": "2026-09",
+  "sot": {
+   "cls": "developer",
+   "label": "Birla Estates (developer site)",
+   "domain": "birlaestates.com",
+   "what": "developer's own published price (usually a 'from' price divided by the stated unit size)"
+  }
+ },
+ {
+  "sector": "54",
+  "project": "DLF The Dahlias",
+  "developer": "DLF",
+  "price_psf_min": 193647,
+  "price_psf_max": 193647,
+  "basis": "Ultra-luxury apartment, 6,233 sq ft, DLF City Phase 5, sold to investor Madhusudan Kela for Rs 120.70 Cr => Rs 1,20,70,00,000 / 6,233 sq ft = Rs 193,647/sq ft",
+  "status": "under construction",
+  "source_url": "https://www.businesstoday.in/real-estate/story/madhusudan-kela-buys-ultra-luxury-apartment-in-dlf-dahlias-for-rs121-crore-537040-2026-06-15",
+  "source_type": "news",
+  "publisher": "Business Today",
+  "as_of": "2026-06",
+  "snippet": "Located in DLF City Phase 5, Sector 56, Gurugram, the ultra-luxury apartment has a total area of 6,233 square feet... purchased for ₹120.70 crore",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Business Today — \"Located in DLF City Phase 5, Sector 56, Gurugram, the ultra-luxury apartment has a total area of 6,233 square feet... purchased for ₹120.70 crore\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 6233,
+    "price_cr": 120.7
+   }
+  ],
+  "configs_as_of": "2026-06",
+  "deal": true,
+  "sot": {
+   "cls": "news",
+   "label": "Business Today",
+   "domain": "businesstoday.in",
+   "what": "figure stated in a press report (developer quote, reported deal or market data)"
+  }
+ },
+ {
+  "sector": "65",
+  "project": "Trump Towers Delhi NCR (Tribeca)",
+  "developer": "Tribeca/M3M",
+  "price_psf_min": 40000,
+  "price_psf_max": 40000,
+  "basis": "Article states current resale rate directly: 'The first Trump Tower, in Sector 65, which was launched in 2018 at Rs 13,500 per square feet, is now trading at Rs 40,000 per sq. ft.' Matches the top of the input's current_psf range (33,000-40,000) almost exactly, corroborating it independently.",
+  "status": "resale",
+  "source_url": "https://www.moneycontrol.com/news/business/real-estate/area-watch-dlf-to-trump-towers-spr-is-new-hotspot-in-gurugram-real-estate-13445936.html",
+  "source_type": "news",
+  "publisher": "Moneycontrol",
+  "as_of": "2025-08",
+  "snippet": "The first Trump Tower, in Sector 65, which was launched in 2018 at Rs 13,500 per square feet, is now trading at Rs 40,000 per sq. ft.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Moneycontrol — \"The first Trump Tower, in Sector 65, which was launched in 2018 at Rs 13,500 per square feet, is now trading at Rs 40,000 per sq. ft.\"",
+   "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "news",
+   "label": "Moneycontrol",
+   "domain": "moneycontrol.com",
+   "what": "figure stated in a press report (developer quote, reported deal or market data)"
+  }
+ },
+ {
+  "sector": "71",
+  "project": "Birla Pravaah",
+  "developer": "Birla Estates",
+  "price_psf_min": 25000,
+  "price_psf_max": 25000,
+  "basis": "Business Standard states: project comprises 492 units, 3BHK and 3BHK+utility configurations of 1,358 sq ft and 1,722 sq ft; 'The company achieved an average selling price of around Rs 25,000 per square foot.' (average figure stated directly by the article, not computed)",
+  "status": "new launch (sold out within 24 hrs of launch)",
+  "source_url": "https://www.business-standard.com/companies/news/birla-estates-pravaah-sells-out-in-24-hours-clocks-rs-1800-crore-sales-in-gurugram-125120900594_1.html",
+  "source_type": "news",
+  "publisher": "Business Standard",
+  "as_of": "2025-12",
+  "snippet": "The project is located in Sector 71, Gurugram, and comprises 492 units... The company achieved an average selling price of around Rs 25,000 per square foot.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Business Standard — \"The project is located in Sector 71, Gurugram, and comprises 492 units... The company achieved an average selling price of around Rs 25,000 per square foot.\"",
+   "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "news",
+   "label": "Business Standard",
+   "domain": "business-standard.com",
+   "what": "reported sale / developer-stated price"
+  }
+ },
+ {
+  "sector": "76",
+  "project": "DLF Privana South",
+  "developer": "DLF",
+  "price_psf_min": 18000,
+  "price_psf_max": 18000,
+  "basis": "article states avg ₹18,000/sq ft (industry-expert quote, Aakash Ohri context) for Privana South's Jan-2024 sellout, cited in a June-2025 comparison of DLF Privana North vs South pricing",
+  "status": "under construction",
+  "source_url": "https://www.livemint.com/companies/news/dlf-clocks-11-000-crore-in-bookings-as-privana-north-project-sells-out-in-a-week-11750184557739.html",
+  "source_type": "news",
+  "publisher": "Livemint",
+  "as_of": "2025-06",
+  "snippet": "Prices in this project have gone up to ₹23,000 per sq ft compared to Privana South that was sold at around ₹18,000 per sq ft early last year",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Livemint — \"Prices in this project have gone up to ₹23,000 per sq ft compared to Privana South that was sold at around ₹18,000 per sq ft early last year\"",
+   "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "news",
+   "label": "Livemint",
+   "domain": "livemint.com",
+   "what": "figure stated in a press report (developer quote, reported deal or market data)"
+  }
+ },
+ {
+  "sector": "76",
+  "project": "DLF Privana North",
+  "developer": "DLF",
+  "price_psf_min": 23000,
+  "price_psf_max": 23000,
+  "basis": "article states current prices have gone up to ₹23,000/sq ft (quote attributed to Ohri context)",
+  "status": "new launch",
+  "source_url": "https://www.livemint.com/companies/news/dlf-clocks-11-000-crore-in-bookings-as-privana-north-project-sells-out-in-a-week-11750184557739.html",
+  "source_type": "news",
+  "publisher": "Livemint",
+  "as_of": "2025-06",
+  "snippet": "Prices in this project have gone up to ₹23,000 per sq ft compared to Privana South that was sold at around ₹18,000 per sq ft early last year",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Livemint — \"Prices in this project have gone up to ₹23,000 per sq ft compared to Privana South that was sold at around ₹18,000 per sq ft early last year\"",
+   "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "news",
+   "label": "Livemint",
+   "domain": "livemint.com",
+   "what": "figure stated in a press report (developer quote, reported deal or market data)"
+  }
+ },
+ {
+  "sector": "80",
+  "project": "Sobha Aranya",
+  "developer": "Sobha",
+  "price_psf_min": 25035,
+  "price_psf_max": 25035,
+  "basis": "Developer site states 'Starting From INR 7.1 Cr.*' for 3 & 4 Bed Residences with area range 2836-4285 sq.ft.; assuming the starting price corresponds to the smallest area (2836 sq ft), computed psf = 7.1 Cr / 2836 sq ft = ~25,035/sq ft",
+  "status": "under construction",
+  "source_url": "https://www.sobha.com/delhi-ncr/sobha-aranya-flats-sector-80-karma-lakelands/",
+  "source_type": "developer",
+  "publisher": "Sobha (developer site)",
+  "as_of": "2026-09",
+  "snippet": "Starting From INR 7.1 Cr.* | 3 & 4 Bed Residences | 2836 - 4285 Sq.Ft.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "developer: Sobha (developer site) — \"Starting From INR 7.1 Cr.* | 3 & 4 Bed Residences | 2836 - 4285 Sq.Ft.\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2836,
+    "price_cr": 7.1
+   }
+  ],
+  "configs_as_of": "2026-09",
+  "sot": {
+   "cls": "developer",
+   "label": "Sobha (developer site)",
+   "domain": "sobha.com",
+   "what": "developer's own published price (usually a 'from' price divided by the stated unit size)"
+  }
+ },
+ {
+  "sector": "92",
+  "project": "Prestige City / Prestige Sector 92",
+  "developer": "Prestige Group",
+  "price_psf_min": 12700,
+  "price_psf_max": 13100,
+  "basis": "Project site lists configs: 2BHK 1,100-1,300 sq ft at Rs1.4-1.7 Cr (=> Rs12,727-13,077/sq ft); 3BHK 1,500-1,800 sq ft at Rs1.95-2.34 Cr (=> Rs13,000/sq ft both ends); 4BHK 2,000 sq ft at Rs2.60 Cr onwards (=> Rs13,000/sq ft). Range rounded to Rs12,700-13,100/sq ft.",
+  "status": "new launch",
+  "source_url": "https://prestigesector92gurgaon.com/",
+  "source_type": "project-site",
+  "publisher": "Prestige Sector 92 Gurgaon (project marketing site)",
+  "as_of": "2026-09",
+  "snippet": "2 BHK (1,100-1,300 sq.ft.): Rs 1.4 Cr - Rs 1.7 Cr; 3 BHK (1,500-1,800 sq.ft.): Rs 1.95 Cr - Rs 2.34 Cr; 4 BHK (2,000-2,400 sq.ft.): Rs 2.60 Cr onwards",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "project-site: Prestige Sector 92 Gurgaon (project marketing site) — \"2 BHK (1,100-1,300 sq.ft.): Rs 1.4 Cr - Rs 1.7 Cr; 3 BHK (1,500-1,800 sq.ft.): Rs 1.95 Cr - Rs 2.34 Cr; 4 BHK (2,000-2,400 sq.ft.): Rs 2.60 Cr onwards\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "2",
+    "area": 1100,
+    "price_cr": 1.4
+   },
+   {
+    "bhk": "2",
+    "area": 1300,
+    "price_cr": 1.7
+   },
+   {
+    "bhk": "3",
+    "area": 1500,
+    "price_cr": 1.95
+   },
+   {
+    "bhk": "3",
+    "area": 1800,
+    "price_cr": 2.34
+   },
+   {
+    "bhk": "4",
+    "area": 2000,
+    "price_cr": 2.6
+   }
+  ],
+  "configs_as_of": "2026-09",
+  "sot": {
+   "cls": "project-site",
+   "label": "Prestige Sector 92 project site",
+   "domain": "prestigesector92gurgaon.com",
+   "what": "quoted unit price ÷ super area (project marketing site)"
+  }
+ },
+ {
+  "sector": "104",
+  "project": "Hero Homes Palatial",
+  "developer": "Hero Realty",
+  "price_psf_min": 16500,
+  "price_psf_max": 16500,
+  "basis": "Article states the project 'now commands prices of around ₹16,500 per sq. ft.', up from a base launch price of ~₹5,000/sq ft in Nov 2018 (>230% appreciation)",
+  "status": "ready",
+  "source_url": "https://www.businesstoday.in/personal-finance/story/dwarka-expressway-property-prices-double-in-7-years-how-infrastructure-turned-ncr-corridor-into-a-wealth-creator-550757-2026-08-24",
+  "source_type": "news",
+  "publisher": "Business Today",
+  "as_of": "2026-08",
+  "snippet": "Hero Homes in Sector 104, Gurugram... now commands prices of around ₹16,500 per sq. ft., representing appreciation of more than 230% since launch.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Business Today — \"Hero Homes in Sector 104, Gurugram... now commands prices of around ₹16,500 per sq. ft., representing appreciation of more than 230% since launch.\"",
+   "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "news",
+   "label": "Business Today",
+   "domain": "businesstoday.in",
+   "what": "figure stated in a press report (developer quote, reported deal or market data)"
+  }
+ },
+ {
+  "sector": "106",
+  "project": "Sobha Altus",
+  "developer": "Sobha",
+  "price_psf_min": 23345,
+  "price_psf_max": 23345,
+  "basis": "Developer site states 'Starting at INR 6.7 Cr.' for 4 & 5 bed residences sized 2,870–3,853 sq ft => ₹6.7cr/3,853sqft=₹17,389/sqft to ₹6.7cr/2,870sqft=₹23,345/sqft (computed; ambiguous which size the starting price applies to)",
+  "status": "under construction",
+  "source_url": "https://www.sobha.com/delhi-ncr/sobha-altus-sector-106-gurgaon/",
+  "source_type": "developer",
+  "publisher": "Sobha (developer site)",
+  "as_of": "2026-09",
+  "snippet": "Starting at INR 6.7 Cr. — 4 & 5 Bed Residences: 2,870 – 3,853 Sq.Ft.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "developer: Sobha (developer site) — \"Starting at INR 6.7 Cr. — 4 & 5 Bed Residences: 2,870 – 3,853 Sq.Ft.\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "4-5",
+    "area": 2870,
+    "price_cr": 6.7
+   },
+   {
+    "bhk": "4-5",
+    "area": 3853,
+    "price_cr": 6.7
+   }
+  ],
+  "configs_as_of": "2026-09",
+  "sot": {
+   "cls": "developer",
+   "label": "Sobha (developer site)",
+   "domain": "sobha.com",
+   "what": "developer's own published price (usually a 'from' price divided by the stated unit size)"
+  }
+ },
+ {
+  "sector": "111",
+  "project": "M3M Elie Saab",
+  "developer": "M3M",
+  "price_psf_min": 37000,
+  "price_psf_max": 37000,
+  "basis": "M3M Promoter Pankaj Bansal directly quoted '₹37,000/sq ft' price for the Gurugram Sector 111 Dwarka Expressway project (Elie Saab collaboration) to reporters",
+  "status": "new launch",
+  "source_url": "https://www.businesstoday.in/real-estate/story/m3m-eyes-rs-8300-crore-from-elie-saab-branded-residences-in-gurugram-noida-510767-2026-01-13",
+  "source_type": "news",
+  "publisher": "Business Today",
+  "as_of": "2026-01",
+  "snippet": "The price per square feet is Rs 37,000,\" Pankaj Bansal, Promoter, M3M India... told reporters.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Business Today — \"The price per square feet is Rs 37,000,\" Pankaj Bansal, Promoter, M3M India... told reporters.\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "4",
+    "area": 4200,
+    "price_cr": 15.0
+   },
+   {
+    "bhk": "4",
+    "area": 4650,
+    "price_cr": 15.0
+   }
+  ],
+  "configs_as_of": "2026-01",
+  "sot": {
+   "cls": "news",
+   "label": "Business Today",
+   "domain": "businesstoday.in",
+   "what": "figure stated in a press report (developer quote, reported deal or market data)"
+  }
+ },
+ {
+  "sector": "36A",
+  "project": "Krisumi Waterside Residences",
+  "developer": "Krisumi",
+  "price_psf_min": 24000,
+  "price_psf_max": 24000,
+  "basis": "Krisumi Corporation chairman Ashok Kapur, quoted on the launch of the project's new 'Forest Reserve' phase: 'Launching our first project at ₹8,500 per sq. ft. ... Today Krisumi City commands around ₹24,000 per sq. ft.' Figure is stated for 'Krisumi City' overall (the township), not disaggregated by phase in the source; attributed here to Waterside Residences because ₹24,000/sq ft closely matches this project's own portal pricing (₹23,980-24,030/sq ft) as the newest, priciest active phase, whereas the older Waterfall Residences/Suites phases trade lower per current portal data.",
+  "status": "under construction",
+  "source_url": "https://www.hindustantimes.com/real-estate/sumitomobacked-krisumi-corporation-launches-new-phases-of-housing-project-in-gurugram-plans-4-500-crore-investment-101776103634320.html",
+  "source_type": "news",
+  "publisher": "Hindustan Times",
+  "as_of": "2026-04",
+  "snippet": "Launching our first project at ₹8,500 per sq. ft. ... Today Krisumi City commands around ₹24,000 per sq. ft., reflecting strong value creation and market leadership.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Hindustan Times — \"Launching our first project at ₹8,500 per sq. ft. ... Today Krisumi City commands around ₹24,000 per sq. ft., reflecting strong value creation and market leader\"",
+   "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "news",
+   "label": "Hindustan Times",
+   "domain": "hindustantimes.com",
+   "what": "figure stated in a press report (developer quote, reported deal or market data)"
+  }
+ },
+ {
+  "sector": "63A",
+  "project": "Sobha Crescent",
+  "developer": "Sobha",
+  "price_psf_min": 19758,
+  "price_psf_max": 25735,
+  "basis": "Developer page states '3 & 4 Bed Residences', area range '2277 - 2966 Sq.Ft.', and 'Starting from INR 5.86 Cr.'. Price and area are on the same page but not explicitly paired per unit, so computed as a range: 5.86 Cr / 2966 sq ft (largest area) = ~19,758/sq ft, and 5.86 Cr / 2277 sq ft (smallest area, likely matching the 'starting from' price) = ~25,735/sq ft.",
+  "status": "under construction",
+  "source_url": "https://www.sobha.com/projects/sobha-crescent/",
+  "source_type": "developer",
+  "publisher": "Sobha Limited (developer site)",
+  "as_of": "2026-09",
+  "snippet": "3 & 4 Bed Residences ... 2277 - 2966 Sq.Ft. ... Starting from INR 5.86 Cr.*",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "developer: Sobha Limited (developer site) — \"3 & 4 Bed Residences ... 2277 - 2966 Sq.Ft. ... Starting from INR 5.86 Cr.*\"",
+   "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "developer",
+   "label": "Sobha (developer site)",
+   "domain": "sobha.com",
+   "what": "developer's own published price (usually a 'from' price divided by the stated unit size)"
+  }
+ },
+ {
+  "sector": "89A",
+  "project": "ATS Marigold",
+  "developer": "ATS",
+  "price_psf_min": 13500,
+  "price_psf_max": 15000,
+  "basis": "article states 'The current market prices in the project are reported in the range of ₹13,500-15,000 per sq ft' (contrasted with ₹6,000-6,500/sq ft when SWAMIH fund entered in Feb 2021)",
+  "status": "ready",
+  "source_url": "https://www.hindustantimes.com/business/ats-group-repays-133-crore-to-swamih-fund-for-gurugrams-ats-marigold-project-101753964682673.html",
+  "source_type": "news",
+  "publisher": "Hindustan Times",
+  "as_of": "2025-07",
+  "snippet": "The current market prices in the project are reported in the range of ₹13,500-15,000 per sq ft.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "news: Hindustan Times — \"The current market prices in the project are reported in the range of ₹13,500-15,000 per sq ft.\"",
+   "checked": "2026-09"
+  },
+  "sot": {
+   "cls": "news",
+   "label": "Hindustan Times",
+   "domain": "hindustantimes.com",
+   "what": "figure stated in a press report (developer quote, reported deal or market data)"
+  }
+ },
+ {
+  "sector": "99A",
+  "project": "ATS HomeKraft Grandstand Phase 2",
+  "developer": "ATS HomeKraft",
+  "price_psf_min": 14824,
+  "price_psf_max": 14967,
+  "basis": "Project site lists '3.5 BHK 2125 Sq.Ft => Rs 3.15 Cr* Onwards' (3.15Cr/2125sqft=Rs14,824/sqft) and '4.5 BHK 3000 Sq.Ft => Rs 4.49 Cr* Onwards' (4.49Cr/3000sqft=Rs14,967/sqft)",
+  "status": "new launch",
+  "source_url": "https://atsgrandstandgurgaon.in/index.html",
+  "source_type": "project-site",
+  "publisher": "ATS HomeKraft (project microsite)",
+  "as_of": "2026-09",
+  "snippet": "3.5 BHK 2125 Sq.Ft Rs.3.15 Cr* Onwards | 4.5 BHK 3000 Sq.Ft Rs.4.49 Cr* Onwards. BOOKING OPEN, RERA clearance pending.",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "project-site: ATS HomeKraft (project microsite) — \"3.5 BHK 2125 Sq.Ft Rs.3.15 Cr* Onwards | 4.5 BHK 3000 Sq.Ft Rs.4.49 Cr* Onwards. BOOKING OPEN, RERA clearance pending.\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "3.5",
+    "area": 2125,
+    "price_cr": 3.15
+   },
+   {
+    "bhk": "4.5",
+    "area": 3000,
+    "price_cr": 4.49
+   }
+  ],
+  "configs_as_of": "2026-09",
+  "sot": {
+   "cls": "project-site",
+   "label": "ATS Grandstand project site",
+   "domain": "atsgrandstandgurgaon.in",
+   "what": "quoted unit price ÷ super area (project marketing site; not the atshomekraft.com corporate domain)"
+  }
+ },
+ {
+  "sector": "102A",
+  "project": "Adani The Marq",
+  "developer": "Adani",
+  "price_psf_min": 17895,
+  "price_psf_max": 17895,
+  "basis": "Developer page states 'Price starting @ 4.25 Cr.' for 3BHK/4BHK units sized 2375-3295 sq ft super built-up (220.64-306.11 sq mtrs); computed from stated starting price and stated minimum super-built-up area: 4.25Cr / 2375 sqft = Rs17,895/sqft. Per-sqft figure itself not stated by developer, only starting total price + size range.",
+  "status": "under construction",
+  "source_url": "https://www.adanirealty.com/residential-projects/gurugram/the-marq",
+  "source_type": "developer",
+  "publisher": "Adani Realty (developer site)",
+  "as_of": "2026-09",
+  "snippet": "Price starting @ 4.25 Cr. 3 BHK: 220.64-306.11 Sq. Mtrs. (2375-3295 Sq. Ft.) 4 BHK: 220.64-306.11 Sq. Mtrs. (2375-3295 Sq. Ft.)",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "developer: Adani Realty (developer site) — \"Price starting @ 4.25 Cr. 3 BHK: 220.64-306.11 Sq. Mtrs. (2375-3295 Sq. Ft.) 4 BHK: 220.64-306.11 Sq. Mtrs. (2375-3295 Sq. Ft.)\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "3",
+    "area": 2375,
+    "price_cr": 4.25
+   }
+  ],
+  "configs_as_of": "2026-09",
+  "sot": {
+   "cls": "developer",
+   "label": "Adani (developer site)",
+   "domain": "adanirealty.com",
+   "what": "developer's own published price (usually a 'from' price divided by the stated unit size)"
+  }
+ },
+ {
+  "sector": "MANESAR",
+  "project": "M3M Gurgaon International City",
+  "developer": "M3M",
+  "price_psf_min": 10667,
+  "price_psf_max": 12308,
+  "basis": "Developer site states 'Starting from ₹1.6 Cr* Onwards'; smallest listed configuration is 2.5 BHK, 1,300-1,500 sq ft (individual config price shown as 'Coming Soon', so exact per-config price not separately published) => ₹1.6 Cr / 1,300-1,500 sq ft = ₹10,667-12,308/sq ft, applying the stated starting price to the smallest config",
+  "status": "new launch",
+  "source_url": "https://www.m3mproperties.com/residential/gurugram/m3m-manesar/",
+  "source_type": "developer",
+  "publisher": "M3M Properties (developer site)",
+  "as_of": "2026-09",
+  "snippet": "Starting from 1.6 Cr* INR Onwards",
+  "confidence": "B",
+  "audit": {
+   "verdict": "direct",
+   "reason": "developer: M3M Properties (developer site) — \"Starting from 1.6 Cr* INR Onwards\"",
+   "checked": "2026-09"
+  },
+  "configs": [
+   {
+    "bhk": "2.5",
+    "area": 1300,
+    "price_cr": 1.6
+   },
+   {
+    "bhk": "2.5",
+    "area": 1500,
+    "price_cr": 1.6
+   }
+  ],
+  "configs_as_of": "2026-09",
+  "sot": {
+   "cls": "developer",
+   "label": "M3M (developer site)",
+   "domain": "m3mproperties.com",
+   "what": "developer's own published price"
+  }
+ }
+]

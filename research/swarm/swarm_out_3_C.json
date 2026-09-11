@@ -1,0 +1,55 @@
+{
+  "quotes": [],
+  "sector_news": [
+    {
+      "sector": "70",
+      "headline": "SPR home prices jump 160% In 5 years on Metro, road revamp push",
+      "publisher": "The Times of India",
+      "as_of": "2026-06",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZkt4cUg3WEIwN0RONnNEQmYzdXp5RjQyNGxuVmUzWjg3S2VrUG95THBtdGJSWlliYld3NjdtSlpUZGgxM1g2Y1FsbzRROGV5aWpFU29yZ1pIWF9SQms4ZlU5T0tpNS1nQk4xcUIzYTBodldDNWt0OGVTRGtZTk5ablhESzhVZWFDdVZ4UmpwYjh3SWluY04tVjV2M0lkdUdjdnFCSXowZS0wTU42U0lSb2RkbUJDLXpBbmpreHRpTkFLbGIwNEM1dU1pOEFIdkZWR0HSAdcBQVVfeXFMTnZFLXhMU3dUM2hRd3oyclpGWDA4SzNjUGlPcHNEWUJVeFhBTi1Eem0xSVVtYmZhanRNcGcxTUJnMmxQdjN4ZmZzYVhSRGthc1dqV0JZOEpqb01OeURIX2x3V3BBbWtycThCWkNxMzVuQ3UxRzJWS2lVWjVBZlBSMnFtdlFTelo3RFozSldXM1psVmVWNV8waFRTdl9YaEE3RmVBcm1Eb0FHd09zbmQyTE9WMjl1ZFRoRmRuWU80bGFWNTBKMWx6MTRkQ2ZqVHhBVzBhNFREdkE?oc=5",
+      "figure": "headline states SPR home prices up 160% over 5 years (article body inaccessible; only RSS headline/date/publisher confirmed, no explicit psf figure read)",
+      "psf": null
+    },
+    {
+      "sector": "70",
+      "headline": "Southern Peripheral Road Sees 125% Price Surge as Infrastructure Fuels Demand",
+      "publisher": "Realty Plus Magazine",
+      "as_of": "2026-01",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOOS1pX0RZOGZ3eEF5YWFsdlh5WlBLLVk1bUZYNDEzS0FtdlVnejJkakhGZGI0VDRZQ2dGV1ZVMHg0Rm9MN1c5WjhiRnlsR1QyeGlMbkJEcmtiRUZFT2FJYlFhTFpkUGl5Vk1pV2lDamlBTEEtaWJWZUdra013Q0xVRjhPZTAxRE9Wb3VnWUt3NXoyX3dObUdqTmNMd2JrMVAxczBtcDU2ZVRseUNhWEw0TTdVUjVvcTVNWTk3WC1yZWpySTRkNFJz?oc=5",
+      "figure": "headline states SPR corridor prices up 125% (article body inaccessible; only RSS headline/date/publisher confirmed, no explicit psf figure read)",
+      "psf": null
+    }
+  ],
+  "no_direct_source": [
+    {
+      "sector": "68",
+      "project": "M3M Sierra",
+      "tried": "news: RSS 'M3M Sierra Gurugram' returned only 2016 contract-award items, no 2025-26 pricing; retry 'M3M Gurugram launch price' returned unrelated M3M items (Antalya Hills handover, 2023 luxury-launch piece), nothing on Sierra pricing. Developer site: found real page https://m3mindia.com/residential/m3m-sierra68 (listed under 'Delivered' projects) — page has configs/amenities but states no price, no price list, no 'price on request' language either. Sector 68 sector-news RSS also returned nothing relevant (results were dominated by an unrelated Sector 68, Mohali plot-sale story)."
+    },
+    {
+      "sector": "69",
+      "project": "Smartworld Sky Arc",
+      "tried": "news: RSS found real 2025-26 items but all about construction — Rs 532 crore contract to Varindera Constructions (Feb 2025) and a Jan 2026 TOI brand-profile piece — neither's body was retrievable (Google redirect links resolved to a bare 'Google News' placeholder on WebFetch, no cross-host redirect offered) and neither had a pricing headline anyway. Developer site: found real page https://smartworlddevelopers.com/projects/skyarc — states configs (3/3.5/4.5 BHK) but no price, directs to 'Enquire Now'."
+    },
+    {
+      "sector": "69",
+      "project": "Tulip Purple",
+      "tried": "news: RSS 'Tulip Purple Gurugram' returned no project-relevant items (only unrelated HT Sector-69 civic/infra stories). Retry 'Tulip Infratech Gurugram launch price' surfaced 2026 investment-announcement articles (₹1,100 Cr and ₹6,000 Cr Tulip Infratech investment stories, June 2026) that could plausibly name specific projects, but article bodies were not retrievable via WebFetch (redirect links returned only a 'Google News' placeholder, no cross-host redirect surfaced; Business Standard link skipped per instructions). Developer site: guessed URL https://www.tulipinfratech.com/tulip-purple/ returned 404."
+    },
+    {
+      "sector": "69",
+      "project": "Unitech Sunbreeze",
+      "tried": "news: RSS returned only old items (2017-2019 buyer-grievance/DTCP stories, a 2024 'construction restarts after 12 years' story) — nothing 2025-26, nothing on pricing. Developer site: https://www.unitechgroup.com/ lists 'Sunbreeze' under a Gurgaon 'Sold Out Projects' section with no dedicated page link and no price stated."
+    },
+    {
+      "sector": "69",
+      "project": "Tulip Leaf",
+      "tried": "news: RSS returned a 2019 launch piece (too old) and a Jan 2026 HT 'Sector 69 residents decry civic neglect' story (not pricing, not project-specific). Developer site: guessed URL https://www.tulipinfratech.com/tulip-leaf/ returned 404."
+    },
+    {
+      "sector": "70",
+      "project": "Signature Global City (Sector 70)",
+      "tried": "news: RSS turned up only company-wide items — a ₹2,890 Cr Tonino Lamborghini branded-residences tie-up (Apr 2026, different project) and a ₹1,970 Cr Q1 pre-sales figure (Jul 2026, company-wide, not project/psf specific) — neither names Sector 70 or gives a psf. Developer homepage (signatureglobal.in) does not list a 'Signature Global City Sector 70' project at all; current listed Gurugram projects are Sarvam (37D), Cloverdale SPR (71), Titanium SPR (71), De Luxe DXP (37D), Daxin Vistas, City of Colours — suggesting this project may be delisted/rebranded/sold out. current_source (samagrarealty.in) is itself a portal-style aggregator, not re-collected per instructions."
+    }
+  ]
+}
