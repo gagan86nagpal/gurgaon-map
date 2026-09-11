@@ -1146,13 +1146,15 @@ function flyTo(x, y, w){
 fit(); addEventListener('resize', ()=>{ const c = {x:VB.x+VB.w/2, y:VB.y+VB.h/2, w:VB.w}; fit(); const r=svg.getBoundingClientRect(); VB.w=c.w; VB.h=c.w*r.height/r.width; VB.x=c.x-VB.w/2; VB.y=c.y-VB.h/2; clampVB(); applyVB(); });
 svg.addEventListener('wheel', ev=>{ ev.preventDefault(); zoomAt(Math.exp(ev.deltaY*(ev.deltaMode===1?0.05:0.0016)), ev.clientX, ev.clientY); }, {passive:false});
 const ptrs = new Map(); let dragged = false, pinch0 = null;
-svg.addEventListener('pointerdown', ev=>{ if(ev.button!==0 && ev.pointerType==='mouse') return; ptrs.set(ev.pointerId,{x:ev.clientX,y:ev.clientY,sx:ev.clientX,sy:ev.clientY}); svg.setPointerCapture(ev.pointerId); dragged=false; if(ptrs.size===2){ const [a,b]=[...ptrs.values()]; pinch0 = {d:Math.hypot(a.x-b.x,a.y-b.y), w:VB.w}; } });
+// Pointer capture is taken only once a drag starts: Chrome delivers the click to the capturing element, so
+// capturing on pointerdown would make every plain click land on the <svg> instead of the sector under the cursor.
+svg.addEventListener('pointerdown', ev=>{ if(ev.button!==0 && ev.pointerType==='mouse') return; ptrs.set(ev.pointerId,{x:ev.clientX,y:ev.clientY,sx:ev.clientX,sy:ev.clientY}); dragged=false; if(ptrs.size===2){ const [a,b]=[...ptrs.values()]; pinch0 = {d:Math.hypot(a.x-b.x,a.y-b.y), w:VB.w}; try{ for(const id of ptrs.keys()) svg.setPointerCapture(id); }catch(e){} } });
 svg.addEventListener('pointermove', ev=>{
   const p = ptrs.get(ev.pointerId); if(!p) return;
   const r = svg.getBoundingClientRect();
   if(ptrs.size===1){
     const dx = ev.clientX-p.x, dy = ev.clientY-p.y;
-    if(!dragged && Math.hypot(ev.clientX-p.sx, ev.clientY-p.sy) > 4){ dragged = true; svg.classList.add('dragging'); tip.classList.remove('on'); }
+    if(!dragged && Math.hypot(ev.clientX-p.sx, ev.clientY-p.sy) > 4){ dragged = true; svg.classList.add('dragging'); tip.classList.remove('on'); try{ svg.setPointerCapture(ev.pointerId); }catch(e){} }
     if(dragged){ VB.x -= dx/r.width*VB.w; VB.y -= dy/r.height*VB.h; clampVB(); applyVB(); }
     p.x = ev.clientX; p.y = ev.clientY;
   } else if(ptrs.size===2){
@@ -1332,7 +1334,14 @@ insp.addEventListener('click', ev=>{
   const card = ev.target.closest('.proj[data-url]');
   if(card){ track('source_open', {project: card.dataset.p.slice(0,100), sector: secName(pinned)}); window.open(card.dataset.url, '_blank', 'noopener'); }
 });
-svg.addEventListener('click', ev=>{ if(dragged) return; const t = ev.target.closest('[data-s]'); if(t){ pin(t.dataset.s); return; } const rh = ev.target.closest('.roadhit'); if(rh) pinRoad(rh.dataset.r); });
+svg.addEventListener('click', ev=>{
+  if(dragged) return;
+  // if the browser retargeted the click to the <svg> (pointer capture, some touch stacks), resolve what is under the cursor
+  let el = ev.target;
+  if(el === svg || !el.closest('[data-s], .roadhit')){ const under = document.elementFromPoint(ev.clientX, ev.clientY); if(under && svg.contains(under)) el = under; }
+  const t = el.closest('[data-s]'); if(t){ pin(t.dataset.s); return; }
+  const rh = el.closest('.roadhit'); if(rh) pinRoad(rh.dataset.r);
+});
 svg.addEventListener('keydown', ev=>{ if(ev.key==='Enter'||ev.key===' '){ const t = ev.target.closest('[data-s]'); if(t){ ev.preventDefault(); pin(t.dataset.s);} } });
 
 // ---- chips -------------------------------------------------------------

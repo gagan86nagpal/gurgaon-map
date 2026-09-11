@@ -38,11 +38,16 @@ async def main():
         await page.goto(PAGE)
         await page.wait_for_selector('#inspector')
 
-        # 1. click a sector polygon (a real DOM click, not a JS call)
-        for sec in ('54', '102', '37D'):
+        # 1. click sector polygons with the real mouse (pointerdown/up/click through the drag handler — a synthetic
+        #    dispatchEvent('click') bypasses pointer capture and once hid a Chrome-only bug)
+        async def mouse_click_sector(sec):
             el = page.locator(f'.sector[data-s="{sec}"]').first
-            await el.dispatch_event('click')
+            await el.scroll_into_view_if_needed()
+            box = await el.bounding_box()
+            await page.mouse.click(box['x'] + box['width'] / 2, box['y'] + box['height'] / 2)
             await page.wait_for_timeout(120)
+        for sec in ('54', '102', '37D'):
+            await mouse_click_sector(sec)
             heading = await page.locator('#inspector h2').inner_text()
             check(sec in heading, f'sector {sec}: inspector heading is {heading!r}')
             cards = page.locator('#inspector .proj')
@@ -59,8 +64,7 @@ async def main():
                 check(url and url.startswith('http'), f'sector {sec}: card {name!r} has no source url')
 
         # 2. Sector 102 must show a quoted unit table for Joyville (from the source page), not just the indicative line
-        await page.locator('.sector[data-s="102"]').first.dispatch_event('click')
-        await page.wait_for_timeout(120)
+        await mouse_click_sector('102')
         joy = page.locator('#inspector .proj', has_text='Joyville').first
         check(await joy.count() == 1, 'Joyville card missing in Sector 102')
         if await joy.count():
@@ -86,8 +90,16 @@ async def main():
         check(await chips.count() >= 3, 'source filter chips missing')
         ranks = [int(r) for r in await chips.evaluate_all('els => els.map(e => e.dataset.rank)')]
         check(ranks == sorted(ranks), f'source chips not in directness order: {ranks}')
-        await page.locator('.sector[data-s="37D"]').first.dispatch_event('click'); await page.wait_for_timeout(80)
+        await mouse_click_sector('37D')
         before = await page.locator('#inspector .proj').count()
+        # a small drag must NOT pin a sector, a click after it must still work
+        box = await page.locator('.sector[data-s="54"]').first.bounding_box()
+        await page.mouse.move(box['x'] + 5, box['y'] + 5); await page.mouse.down(); await page.mouse.move(box['x'] + 60, box['y'] + 40, steps=5); await page.mouse.up()
+        await page.wait_for_timeout(100)
+        check('37D' in await page.locator('#inspector h2').inner_text(), 'a drag pinned a sector')
+        await mouse_click_sector('54')
+        check('54' in await page.locator('#inspector h2').inner_text(), 'click after a drag did not pin')
+        await mouse_click_sector('37D')
         sy = page.locator('#srcchips .chip[data-src="squareyards"]')
         await sy.click(); await page.wait_for_timeout(120)
         check(await sy.get_attribute('aria-pressed') == 'false', 'Square Yards chip did not toggle off')
