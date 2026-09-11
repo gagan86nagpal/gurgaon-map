@@ -111,6 +111,19 @@ async def main():
         src_pills = await page.locator('#inspector .proj .pill.src').all_inner_texts()
         check(all(t.strip() for t in src_pills), 'a project card has an empty source pill')
 
+        # 6. light/dark button: flips the theme, changes the page background, and survives a reload
+        bg0 = await page.evaluate("getComputedStyle(document.body).backgroundColor")
+        await page.locator('#theme').click(); await page.wait_for_timeout(80)
+        th = await page.evaluate("document.documentElement.getAttribute('data-theme')")
+        bg1 = await page.evaluate("getComputedStyle(document.body).backgroundColor")
+        check(th in ('light', 'dark'), f'theme attribute not set: {th!r}')
+        check(bg0 != bg1, 'theme toggle did not change the page background')
+        await page.reload(); await page.wait_for_selector('#inspector')
+        check(await page.evaluate("document.documentElement.getAttribute('data-theme')") == th, 'theme choice not persisted across reload')
+        await page.locator('#theme').click(); await page.wait_for_timeout(50)
+        check(await page.evaluate("getComputedStyle(document.body).backgroundColor") == bg0, 'toggling back did not restore the original theme')
+        await page.evaluate("localStorage.removeItem('ggn-theme')")
+
         check(not errors, f'console/page errors: {errors[:3]}')
         await b.close()
     return time.time() - t0

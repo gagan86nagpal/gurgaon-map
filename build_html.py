@@ -513,6 +513,7 @@ SOURCE_NOTE = ('<div class="note"><h3>Where the numbers come from</h3>Of the ' +
 generated = '10 Sep 2026'
 
 PAGE = r'''<title>Gurugram Sector Price Map</title>
+<script>try{const t=localStorage.getItem('ggn-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -616,6 +617,10 @@ header p{margin:6px 0 0;color:var(--ink-2);max-width:70ch;font-size:14px}
 @media (max-width:980px){.stage{grid-template-columns:1fr}.inspector{border-left:0;border-top:1px solid var(--line-2);max-height:none;position:static}.mapwrap{height:78vh}}
 .mapwrap{position:relative;height:calc(100vh - 60px);min-height:560px;overflow:hidden;background:var(--bg)}
 svg.map{width:100%;height:100%;display:block;touch-action:none;cursor:grab;--z:1;--zf:1;user-select:none}
+#theme{margin-top:6px}
+#theme .sun{display:none}
+:root[data-theme="dark"] #theme .sun{display:block} :root[data-theme="dark"] #theme .moon{display:none}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) #theme .sun{display:block} :root:not([data-theme="light"]) #theme .moon{display:none} }
 svg.map.dragging{cursor:grabbing}
 .ctrls{position:absolute;right:14px;bottom:44px;display:flex;flex-direction:column;gap:6px;z-index:4}
 .ctrls button{width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;font:600 18px/1 "IBM Plex Sans",sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.08);display:grid;place-items:center}
@@ -875,6 +880,7 @@ footer p{max-width:90ch;margin:0}
       <button id="zin" title="Zoom in" aria-label="Zoom in">+</button>
       <button id="zout" title="Zoom out" aria-label="Zoom out">−</button>
       <button id="zfit" title="Reset view" aria-label="Reset view"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+      <button id="theme" title="Switch light / dark" aria-label="Switch between light and dark mode"><svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
     </div>
     <div class="hint">Drag to pan · scroll or pinch to zoom · zoom in for minor roads, stations and society names</div>
     <div class="attrib">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</div>
@@ -1165,6 +1171,12 @@ svg.addEventListener('pointermove', ev=>{
 });
 const endPtr = ev=>{ ptrs.delete(ev.pointerId); if(ptrs.size<2) pinch0=null; if(!ptrs.size){ svg.classList.remove('dragging'); setTimeout(()=>{dragged=false;},0); } };
 svg.addEventListener('pointerup', endPtr); svg.addEventListener('pointercancel', endPtr);
+document.getElementById('theme').onclick = ()=>{
+  const root = document.documentElement, sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
+  const cur = root.getAttribute('data-theme') || (sysDark ? 'dark' : 'light'), next = cur === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next); try{ localStorage.setItem('ggn-theme', next); }catch(e){}
+  track('theme_toggle', {theme: next});
+};
 document.getElementById('zin').onclick = ()=>{ const r=svg.getBoundingClientRect(); zoomAt(0.6, r.left+r.width/2, r.top+r.height/2); };
 document.getElementById('zout').onclick = ()=>{ const r=svg.getBoundingClientRect(); zoomAt(1/0.6, r.left+r.width/2, r.top+r.height/2); };
 document.getElementById('zfit').onclick = ()=>{ fit(); };
